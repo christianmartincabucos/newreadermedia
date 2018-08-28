@@ -9,7 +9,11 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name') }}</title>
-
+    <meta property="og:url" content="@yield('og-url', url('/') )">
+    <meta property="og:title" content="@yield('og-title', config('app.name') )" />
+    <meta name="og:description" content="@yield('meta-description', 'New Reader Media is a marketing and publicity firm for enterprising creatives, artists, and independent authors.')" />
+    <meta property="og:image" content="@yield('og-image', url('public/storage/nrmedia-logo2.png'))">
+    <meta property="og:image:size" content="300" />
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
