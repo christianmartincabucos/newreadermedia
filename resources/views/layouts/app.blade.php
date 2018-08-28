@@ -90,9 +90,11 @@
     <script src="{{ asset('js/app.js') }}"></script>
     <script>
         $(".contact-button").click(function() {
+            event.preventDefault();
             $('html,body').animate({
                 scrollTop: $("#footer").offset().top},
                 'slow');
+            return false;
         });
         
     </script>

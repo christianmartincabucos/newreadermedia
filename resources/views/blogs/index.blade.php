@@ -9,8 +9,9 @@
                     {{-- BIG IMAGE --}}
                     <div class="row">
                     <section class="box-section">
-                        <div class="col-md-12">
-                            <h1 class="header-white">Blogs</h1>
+                        <div class="col-md-12"><h1 class="header-white">Blogs</h1></div>
+                        <div class="col-md-8 center-block">
+                            
                             <p style="margin-bottom: .0001pt; text-align: center"><strong><span style="font-size: 24.0pt;">Fright Night Stories from the Scariest Hospitals of the World</span></strong></p>
                             <p style="margin-bottom: .0001pt; text-align: center"><span style="font-size: 20.0pt;">Will You Run from the Haunted or Remain Hunted?</span></p>
                             <p style="margin-bottom: .0001pt; text-align: justify;"><span style="font-size: 12.0pt;">&nbsp;</span></p>

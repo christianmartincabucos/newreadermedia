@@ -16,7 +16,7 @@
 // });
 Route::get('/', 'PageController@index')->name('home');
 
-Auth::routes();
+// Auth::routes();
 
 // Route::get('/home', 'HomeController@index')->name('dashboard');
 Route::get('/about', 'PageController@about')->name('about');
