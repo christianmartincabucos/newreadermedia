@@ -17,7 +17,7 @@
     {{-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet"> --}}
     <link rel="shortcut icon" href="{{{ url('public/storage/nrmedia-logo2.png') }}}">
 </head>
-<body style="background:url({{{ url('public/storage/poster.png') }}}) center center no-repeat;background-size: cover;">
+<body style="background:url({{{ url('public/storage/poster.PNG') }}}) center center no-repeat;background-size: cover;">
     
     <div class="fullscreen-bg">
         
