@@ -17,6 +17,7 @@
 Route::get('/', 'PageController@index')->name('home');
 
 // Auth::routes();
+Route::post('subscriber', 'SubscriberController@store')->name('subscriber.store');
 
 // Route::get('/home', 'HomeController@index')->name('dashboard');
 Route::get('/about', 'PageController@about')->name('about');

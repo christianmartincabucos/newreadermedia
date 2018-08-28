@@ -138,7 +138,7 @@
                     </div>
                     <div class="row">
                     
-                        <div class="col-md-12 text-justify">
+                        <div class="col-md-8 text-justify">
                             <section class="box-section" style="border-top: 3px solid rgb(180, 40, 40);">
                                 <div class="box-article">
                                     <div class="row">
@@ -156,7 +156,7 @@
                             </section>
                             
                         </div>
-                        <div class="hidden col-md-4">
+                        <div class="col-md-4">
                             <section class="box-section" style="border-top: 3px solid rgb(180, 40, 40);">
                                 
                                 <div class="box-article">
@@ -165,18 +165,22 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <h3 class="header-red">Subscribe</h3>
-                                            <p class="hidden text-justify">Our aim is to provide quality content online, and we want to make as much of our content available to everyone—for free. We hope to someday bring our journal to print and infiltrate some real-world spaces to bring all these intrepid new voices to an even wider audience. Since we’re a growing wee ‘un of a new media outlet, we need and greatly appreciate your patronage. In exchange for a subscription to our quarterly journal, you get premium content, updates, services, and more.</p>
+                                            @if ($errors->has('email'))
+                                                <span class="help-block">
+                                                    <strong>{{ $errors->first('email') }}</strong>
+                                                </span>
+                                            @endif
                                             
-                                            <form class="hidden" action="">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" name="name" id="" placeholder="Name">
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="email" class="form-control" name="email" id="" placeholder="Email Address">
+                                            <form method="POST" action="{{ route('subscriber.store') }}">
+                                                {{ csrf_field() }}
+                                                <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }} has-feedback">
+                                                    <input type="email" class="form-control input-lg" name="email" id="" placeholder="Enter your email">
+                                                    <i class="fa fa-envelope-o form-control-feedback" style="text-shadow:none;color:lightgray"></i>
                                                 </div>
                                                 <div class="form-group">
                                                     <button type="submit" class="btn btn-danger bg-red">Submit</button>
                                                 </div>
+                                                
                                             </form>
                                         </div>
                                     </div>

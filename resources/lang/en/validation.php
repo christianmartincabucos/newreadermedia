@@ -103,6 +103,9 @@ return [
         'attribute-name' => [
             'rule-name' => 'custom-message',
         ],
+        'email' => [
+            'unique' => 'The email you entered is already a subscriber.',
+        ],
     ],
 
     /*

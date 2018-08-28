@@ -123,6 +123,7 @@ img.article-thumbnail {
 
 .title-red {
     margin-bottom:5px !important;
+    
     background: #000!important;
     border:2px solid rgb(180, 40, 40)!important;
     padding:10px 15px;
@@ -131,8 +132,10 @@ img.article-thumbnail {
 }
 
 .header-red {
+    
     margin-top:0;background:rgb(180, 40, 40); padding:10px 15px;border-radius: 0 0 25px;
     font-size:18px;
+    
 }
 
 .header-white {
@@ -142,7 +145,7 @@ img.article-thumbnail {
     /* color: rgb(180, 40, 40); */
     /* text-shadow: none; */
     /* font-weight: bold; */
-    width:50%;
+    /* width:50%; */
 }
 
 .article-link {
