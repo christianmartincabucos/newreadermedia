@@ -8,7 +8,7 @@
                 <li><a href="{{ url('/marketing-and-partnership') }}" style="color:#fff">Marketing & Partnership</a></li>
                 <li><a href="{{ url('/screen-adaptation') }}" style="color:#fff">Screen Adaptation</a></li>
                 <li><a href="{{ url('/bookstore-display') }}" style="color:#fff">Bookstore Display</a></li>
-                <li><a href="{{ url('/to-read-list') }}" style="color:#fff">To Read-List</a></li>
+                <li><a href="{{ url('/to-read-list') }}" style="color:#fff">To-Read List</a></li>
                 <li><a href="{{ url('/featured-client') }}" style="color:#fff">Featured Client</a></li>
                 <li><a href="{{ url('/blogs') }}" style="color:#fff">Blogs</a></li>
                 
@@ -28,7 +28,7 @@
             <p><span class="fa fa-phone"></span> 1 800-734-7871</p>
             <p><span class="fa fa-envelope"></span> contact@newreadermedia.com</p>
             
-            <p><a style="margin-right:15px;color:white" href="{{ url('/') }}"><span class="fa fa-twitter"></span></a> <a style="margin-right:15px;color:white"  href="{{ url('/') }}"><span class="fa fa-facebook"></span></a> <a style="margin-right:15px;color:white"  href="{{ url('/') }}"><span class="fa fa-linkedin"></span></a></p>
+            <p class="hidden"><a style="margin-right:15px;color:white" href="{{ url('/') }}"><span class="fa fa-twitter"></span></a> <a style="margin-right:15px;color:white"  href="{{ url('/') }}"><span class="fa fa-facebook"></span></a> <a style="margin-right:15px;color:white"  href="{{ url('/') }}"><span class="fa fa-linkedin"></span></a></p>
         
         </div> 
         <div class="col-md-5 col-md-pull-4" style="border-right:1px solid #eee">

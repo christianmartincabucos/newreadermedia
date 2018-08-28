@@ -162,6 +162,10 @@ img.article-thumbnail {
     
     text-transform: capitalize;
 }
+
+a.link-white {
+    text-decoration: underline;
+}
 .center-block {
     float:none!important;
     margin: 0 auto!important;

@@ -138,7 +138,7 @@
                     </div>
                     <div class="row">
                     
-                        <div class="col-md-8 text-justify">
+                        <div class="col-md-12 text-justify">
                             <section class="box-section" style="border-top: 3px solid rgb(180, 40, 40);">
                                 <div class="box-article">
                                     <div class="row">
@@ -147,8 +147,8 @@
                                             <p class="smallx">New Reader Media is a creative marketing and PR firm. We know a lot of amazing people who rock at what they do, and we can help get your brand stories out into the world.</p>
                                             <p class="smallx">We can help you connect with your audiences and craft your brand with ads and marketing. We produce quality white label content that resonates, from writing to photography to a number of different types of media, including film, infographics, and everything in between.</p>
                                             <p class="smallx">New Reader Media has marketing, ad, and PR services. We’ll get you the right media and online publicist and run advertising campaigns online and beyond.</p>
-                                            <p class="smallx">We can help you publish and publicize your book, and we can help you turn it into a movie. <a href="#" class="contact-button">Contact us</a>.</p>
-                                            <p class="smallx">More info on our <a href="https://www.newreadermagazine.com/services/marketing" target="_blank">Marketing and Partnership</a> page.</p>
+                                            <p class="smallx">We can help you publish and publicize your book, and we can help you turn it into a movie. <a class="link-white" href="#" class="contact-button">Contact us</a>.</p>
+                                            <p class="smallx">More info on our <a class="link-white" href="{{ url('/marketing-and-partnership') }}" target="_blank">Marketing and Partnership</a> page.</p>
                                         </div>
                                     </div>
                                     
@@ -156,7 +156,7 @@
                             </section>
                             
                         </div>
-                        <div class="col-md-4">
+                        <div class="hidden col-md-4">
                             <section class="box-section" style="border-top: 3px solid rgb(180, 40, 40);">
                                 
                                 <div class="box-article">
@@ -166,7 +166,8 @@
                                         <div class="col-md-12">
                                             <h3 class="header-red">Subscribe</h3>
                                             <p class="hidden text-justify">Our aim is to provide quality content online, and we want to make as much of our content available to everyone—for free. We hope to someday bring our journal to print and infiltrate some real-world spaces to bring all these intrepid new voices to an even wider audience. Since we’re a growing wee ‘un of a new media outlet, we need and greatly appreciate your patronage. In exchange for a subscription to our quarterly journal, you get premium content, updates, services, and more.</p>
-                                            <form action="">
+                                            
+                                            <form class="hidden" action="">
                                                 <div class="form-group">
                                                     <input type="text" class="form-control" name="name" id="" placeholder="Name">
                                                 </div>
@@ -308,7 +309,7 @@
                             </section>
                             <section class="box-section" style="border-top: 3px solid rgb(180, 40, 40);">
                                 <div class="box-article">
-                                    <a class="article-link" href="{{ url('/to-read-list') }}"><h3 style="margin-top:0" class="title title-red">To Read-List</h3></a>
+                                    <a class="article-link" href="{{ url('/to-read-list') }}"><h3 style="margin-top:0" class="title title-red">To-Read List</h3></a>
                                     <div class="row">
                                         <div class="col-md-4">
                                           <img class="article-thumbnail" src="{{{ url('public/storage/featured-books/calvin-moir.png') }}}" style="width:100%">

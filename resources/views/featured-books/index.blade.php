@@ -10,7 +10,7 @@
                     <div class="row">
                     <section class="box-section">
                         <div class="col-md-12">
-                            <h1 class="header-white">To Read-List</h1>
+                            <h1 class="header-white">To-Read List</h1>
                             
                         </div>
                         <div class="col-md-8 center-block">

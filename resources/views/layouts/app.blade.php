@@ -63,7 +63,7 @@
                     
                     <li class="{{{ (Request::is(['screen-adaptation', 'screen-adaptation/*']) ? 'active' : '') }}}"><a href="{{ url('/screen-adaptation') }}">Screen Adaptation</a></li>
                     <li class="{{{ (Request::is(['bookstore-display', 'bookstore-display/*']) ? 'active' : '') }}}"><a href="{{ url('/bookstore-display') }}">Bookstore Display</a></li>
-                    <li class="{{{ (Request::is(['to-read-list', 'to-read-list/*']) ? 'active' : '') }}}"><a href="{{ url('/to-read-list') }}">To Read-List</a></li>
+                    <li class="{{{ (Request::is(['to-read-list', 'to-read-list/*']) ? 'active' : '') }}}"><a href="{{ url('/to-read-list') }}">To-Read List</a></li>
                     <li class="{{{ (Request::is(['featured-client', 'featured-client/*']) ? 'active' : '') }}}"><a href="{{ url('/featured-client') }}">Featured Client</a></li>
                     <li class="{{{ (Request::is(['blogs', 'blogs/*']) ? 'active' : '') }}}"><a href="{{ url('/blogs') }}">Blogs</a></li>
                     {{-- <li class="{{{ (Request::is(['partnership', 'partnership/*']) ? 'active' : '') }}}"><a href="{{ url('/partnership') }}" style="border-radius:0">Partnership</a></li> --}}
