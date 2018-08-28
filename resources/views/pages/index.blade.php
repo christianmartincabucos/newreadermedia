@@ -415,7 +415,7 @@
                                             {{-- <img style="width:100%;height:200px" src="{{{ url('public/storage/sample-img-3.jpg') }}}"> --}}
                                             <div class="text-center" style="width:100%;height:300px;;max-height:450px;background:transparent;padding-top:20px;"></div>
                                             <div class="carousel-caption">
-                                                <img src="{{{ url('public/storage/testimonials/cathy-young.png') }}}" alt="" class="img-circle" style="width:100px">
+                                                <img src="{{{ url('public/storage/testimonials/cathy-young.PNG') }}}" alt="" class="img-circle" style="width:100px">
                                                 <h4>"I think you did a wonderful job on the screenplay project. I truly appreciate you, as well as the time and effort you placed into my project."</h4>
                                                 <p class="">- Cathy Young, author Fall</p>
                                             </div>
