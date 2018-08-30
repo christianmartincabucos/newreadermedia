@@ -233,8 +233,24 @@ a.link-white {
     
 }
 
-button:focus, a:focus, input:focus 
-{outline:0!important;}
+button:focus, a:focus, input:focus , input[type=email]:focus
+{outline:0px!important;-webkit-appearance:none;outline-width: 0px}
+
+.subscribe-input {
+    border-color:#ccd0d2;
+    border-right: none!important;
+}
+
+.subscribe-btn {
+    border-left:none !important;
+    background:#fff;
+}
+
+.subscribe-btn:hover, .subscribe-btn:focus {
+    background:#fff;
+    color: rgb(180, 40, 40)!important;
+    border-color:#ccd0d2;
+}
 
 /* modal */
 .modal .modal-content {
