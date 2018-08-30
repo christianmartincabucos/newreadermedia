@@ -165,23 +165,27 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <h3 class="header-red">Subscribe</h3>
+                                            
                                             @if ($errors->has('email'))
                                                 <span class="help-block">
-                                                    <strong>{{ $errors->first('email') }}</strong>
+                                                    <strong class="text-red">{{ $errors->first('email') }}</strong>
                                                 </span>
                                             @endif
-                                            
+                                            <p>Sign up for free newsletters and get more of New Reader Media delivered to your inbox.</p>
                                             <form method="POST" action="{{ route('subscriber.store') }}">
                                                 {{ csrf_field() }}
-                                                <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }} has-feedback">
+                                                <div class="input-group{{ $errors->has('email') ? ' has-errors' : '' }}">
                                                     <input type="email" class="form-control input-lg" name="email" id="" placeholder="Enter your email">
-                                                    <i class="fa fa-envelope-o form-control-feedback" style="text-shadow:none;color:lightgray"></i>
-                                                </div>
-                                                <div class="form-group">
-                                                    <button type="submit" class="btn btn-danger bg-red">Submit</button>
+                                                    {{-- <i class="fa fa-envelope-o form-control-feedback" style="text-shadow:none;color:lightgray"></i> --}}
+                                                    <span class="input-group-btn">
+                                                        <button type="submit" class="btn btn-default btn-lg" style="border-left:transparent"><span class="fa fa-send-o"></span></button>
+                                                    </span>
                                                 </div>
                                                 
+                                                
                                             </form>
+                                            <br>
+                                            <p class="small"><em>By signing up, you agree to receive promotional and marketing emails from New Reader Media.</em></p>
                                         </div>
                                     </div>
                                 </div>
