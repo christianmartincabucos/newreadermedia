@@ -10,7 +10,7 @@
                     <div class="row">
                     <section class="box-section">
                         <div class="col-md-12">
-                            <h1 class="header-white">Featured Client</h1>
+                            <h1 class="header-white">Spotlight</h1>
                             
                         </div>
                         <div class="col-md-3 center-block">

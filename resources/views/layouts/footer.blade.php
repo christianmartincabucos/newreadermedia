@@ -8,8 +8,8 @@
                 <li><a href="{{ url('/marketing-and-partnership') }}" style="color:#fff">Marketing & Partnership</a></li>
                 <li><a href="{{ url('/screen-adaptation') }}" style="color:#fff">Screen Adaptation</a></li>
                 <li><a href="{{ url('/bookstore-display') }}" style="color:#fff">Bookstore Display</a></li>
-                <li><a href="{{ url('/to-read-list') }}" style="color:#fff">To-Read List</a></li>
-                <li><a href="{{ url('/featured-client') }}" style="color:#fff">Featured Client</a></li>
+                
+                <li><a href="{{ url('/spotlight') }}" style="color:#fff">Spotlight</a></li>
                 <li><a href="{{ url('/blogs') }}" style="color:#fff">Blogs</a></li>
                 
                 

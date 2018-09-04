@@ -111,11 +111,11 @@
                                     <div class="divider" style="margin:0 0 5px 0"></div>
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-4">
-                                          <a href="{{ url('/featured-client') }}"><img class="article-thumbnail img-circle" src="{{{ url('public/storage/featured-author/steven-bentley.jpeg') }}}" style="width:100%"></a>
+                                          <a href="{{ url('/spotlight') }}"><img class="article-thumbnail img-circle" src="{{{ url('public/storage/featured-author/steven-bentley.jpeg') }}}" style="width:100%"></a>
                                         </div>
                                         <div class="col-xs-12 col-sm-8">
-                                            <a class="article-link" href="{{ url('/featured-client') }}"><h4 class="title title-red">Featured Client</h4></a><strong>Steven Bentley</strong>
-                                            <p class="small">{{ str_limit("With a career spanning more than thirty years, Steven Bentley, M.D. describes the real world of emergency medicine from the viewpoints of a practicing physician. ",72) }} <br><a class="small read-more" href="{{ url('/featured-author') }}">Read more</a> </p>
+                                            <a class="article-link" href="{{ url('/spotlight') }}"><h4 class="title title-red">Spotlight</h4></a><strong>Steven Bentley</strong>
+                                            <p class="small">{{ str_limit("With a career spanning more than thirty years, Steven Bentley, M.D. describes the real world of emergency medicine from the viewpoints of a practicing physician. ",72) }} <br><a class="small read-more" href="{{ url('/spotlight') }}">Read more</a> </p>
                                         </div>
                                     </div>
                                     <div class="divider" style="margin:0 0 5px 0"></div>
@@ -220,6 +220,24 @@
                             <section class="box-section" style="border-top: 3px solid rgb(180, 40, 40);">
                                 
                                 <div class="box-article">
+                                    
+                                    <div style="position:relative;width:100%;height:300px;background:url({{{ url('public/storage/services/bsd1.jpg') }}}) center center no-repeat;background-size: cover;overflow:hidden">
+                                        <div class="layer" style="background-color: rgba(0, 0, 0, 0.5);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
+                                            <p><a href="{{ url('/bookstore-display') }}"><strong><span style="font-size: 18px;color:#fff">Bookstore Displays: Why are they important?</span></strong></a></p>
+                                            <p class="text-justify">Living in the era of touchscreens and the internet, it makes people doubt the relevance of books, newspapers, and other print materials. The publishing industry continues to struggle against the new wave of online media but everyone should not keep their faces stuck in front of their phone screens. 
+                                                <br><a class="small read-more" href="{{ url('/bookstore-display') }}">Read more</a>
+                                            </p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </section>
+                        </div>
+                        <div class="col-md-4">
+                            <section class="box-section" style="border-top: 3px solid rgb(180, 40, 40);">
+                                
+                                <div class="box-article">
                                     {{-- <img class="article-thumbnail" style="width:100%" src="{{{ url('public/storage/book-to-screen.jpg') }}}">
                                     <h4 class="title"><a href="{{ url('/book-to-screen') }}">Book-to-Screen</a></h4>
                                     <p class="text-justify"> --}}
@@ -235,17 +253,6 @@
                                             
                                         </div>
                                     </div>
-                                </div>
-                                <div class="divider"></div>
-                                <div class="box-article">
-                                    <img class="article-thumbnail" style="width:100%" src="{{{ url('public/storage/services/bsd1.jpg') }}}">
-                                    <h4 class="title"><a href="{{ url('/bookstore-display') }}"><strong>Bookstore Displays: Why are they important?</strong></a></h4>
-                                    <p class="text-justify">
-                                            Living in the era of touchscreens and the internet, it makes people doubt the relevance of books, newspapers, and other print materials. The publishing industry continues to struggle against the new wave of online media but everyone should not keep their faces stuck in front of their phone screens. 
-                                        {{-- <br><small>Travel | Aug 18, 2018</small> --}}
-                                        <br><a class="small read-more" href="{{ url('/bookstore-display') }}">Read more</a> 
-                                    </p>
-                                    
                                 </div>
                                 
                                 
@@ -267,6 +274,31 @@
                                     </div>
                                 </div>
                             </section>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <section class="box-section" style="border-top: 3px solid rgb(180, 40, 40);">
+                                <div class="box-article">
+                                    {{-- <img style="width:100%" src="{{{ url('public/storage/interview.jpg') }}}"> --}}
+                                    <div class="embed-container-x">
+                                        {{-- <iframe width="560" height="315" src="https://www.youtube.com/embed/sDxmMkgPmaQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> --}}
+                                        <video width="100%" height="auto" controls controlsList="nodownload">
+                                            <source src="{{{ url('public/storage/videos/the-final-audit-interview.mp4') }}}" type="video/mp4">
+                                            
+                                              Your browser does not support the video tag.
+                                        </video>
+                                    </div>
+                                    <h4 class="title"><a href="{{ url('/author-interview') }}"><strong>Author Interview: Carnie Matisonn, The Final Audit</strong></a></h4>
+                                    <p class="small text-justify">
+                                            Dr. Carnie Matisonn is an attorney admitted to the High Courts of South Africa, Lesotho and Botswana; recipient of the Norman Rosenberg Law Scholarship, and South African Institute of International Relations Graduate Research Scholarship.
+                                    </p>
+                                
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-md-4">
+                            
                             <section class="box-section" style="border-top: 3px solid rgb(180, 40, 40);">
                                 <div class="box-article">
                                     <h3 style="margin-top:0" class="header-red">Literary Works</h3>
@@ -296,34 +328,18 @@
                             </section>
                             
                         </div>
-                        <div class="col-md-4">
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            
                             <section class="box-section" style="border-top: 3px solid rgb(180, 40, 40);">
                                 <div class="box-article">
-                                    {{-- <img style="width:100%" src="{{{ url('public/storage/interview.jpg') }}}"> --}}
-                                    <div class="embed-container-x">
-                                        {{-- <iframe width="560" height="315" src="https://www.youtube.com/embed/sDxmMkgPmaQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> --}}
-                                        <video width="100%" height="auto" controls controlsList="nodownload">
-                                            <source src="{{{ url('public/storage/videos/the-final-audit-interview.mp4') }}}" type="video/mp4">
-                                            
-                                              Your browser does not support the video tag.
-                                        </video>
-                                    </div>
-                                    <h4 class="title"><a href="{{ url('/author-interview') }}"><strong>Author Interview: Carnie Matisonn, The Final Audit</strong></a></h4>
-                                    <p class="small text-justify">
-                                            Dr. Carnie Matisonn is an attorney admitted to the High Courts of South Africa, Lesotho and Botswana; recipient of the Norman Rosenberg Law Scholarship, and South African Institute of International Relations Graduate Research Scholarship.
-                                    </p>
-                                
-                                </div>
-                            </section>
-                            <section class="box-section" style="border-top: 3px solid rgb(180, 40, 40);">
-                                <div class="box-article">
-                                    <a class="article-link" href="{{ url('/to-read-list') }}"><h3 style="margin-top:0" class="title title-red">To-Read List</h3></a>
+                                    <h3 style="margin-top:0" class="header-white">Recommendations</h3>
                                     <div class="row">
+                                        
                                         <div class="col-md-4">
-                                          <img class="article-thumbnail" src="{{{ url('public/storage/featured-books/calvin-moir.png') }}}" style="width:100%">
-                                        </div>
-                                        <div class="col-md-8">
-                                          <h4 class="title"><a href="{{ url('/to-read-list') }}">The Salt Box</a> <br><small>Calvin Moir</small></h4>
+                                          <h4 class="title"><a href="{{ url('http://calvinmoir.com/') }}" target="_blank">The Salt Box</a> <br><small>by Calvin Moir</small></h4>
                                           <p>{{ str_limit("What had started as a search for his father has suddenly become troubled with deceit and conspiracy, as a
                                                 lad finds himself, instead. The brazen act of Creech Jones&#39; alarming circumstances comes from hatred, pride
                                                 and revenge. Success smiles upon Creech Jones; prestige and privilege accompany him. But on the inside,
@@ -336,52 +352,47 @@
                                                 can bear, and what his intention can attain. What results is a forewarning account about guilt, responsibility
                                                 and how jealousy can tear a loving family apart. The Saltbox has mystery, an atmosphere of quiet bullying
                                                 and much realistically viewed life.",155) }}
-                                                <br><a class="small read-more" href="{{ url('/to-read-list') }}">Read more</a>
+                                                <br><a class="small read-more" href="{{ url('http://calvinmoir.com/') }}" target="_blank">Read more</a>
                                             </p>
                                         </div>
-                                    </div>
-                                    <div class="divider"></div>
-                                    <div class="row">
+                                    
+                                    
+                                    
+                                        
                                         <div class="col-md-4">
-                                          <img class="article-thumbnail" src="{{{ url('public/storage/featured-books/philip-persinger.png') }}}" style="width:100%">
-                                        </div>
-                                        <div class="col-md-8">
-                                          <h4 class="title"><a href="{{ url('/to-read-list') }}">Tools of the Trade</a> <br><small>Philip Persinger</small></h4>
+                                          <h4 class="title"><a href="{{ url('http://philippersinger.com/') }}" target="_blank">Tools of the Trade</a> <br><small>by Philip Persinger</small></h4>
                                             <p>{{ str_limit("A heart-warming tale of alpha males facing a precipitous slide—for beta or for worse. Woody Steele is one of
                                                 the richest men on the planet. Sadly one of his greatest assets has been recently downsized—sorry Casanova.
                                                 Ivan Greenbriar, his fellow billionaire nemesis and creep extraordinaire, turns every activity into a pissing
                                                 contest even when he’s alone. Sargent Scanlon, a hero cop solely on the merits of getting shot in the nuts,
                                                 doesn’t know what fear is until he must match wits with his odious fourteen-year-old stepdaughter—she’s a
                                                 crime against humanity.",155) }}
-                                                <br><a class="small read-more" href="{{ url('/to-read-list') }}">Read more</a>
+                                                <br><a class="small read-more" href="{{ url('http://philippersinger.com/') }}" target="_blank">Read more</a>
                                             </p>
                                         </div>
-                                    </div>
-                                    <div class="divider"></div>
-                                    <div class="row">
+                                    
+                                    
+                                    
+                                        
                                         <div class="col-md-4">
-                                          <img class="article-thumbnail" src="{{{ url('public/storage/featured-books/tom-peavler.png') }}}" style="width:100%">
-                                        </div>
-                                        <div class="col-md-8">
-                                          <h4 class="title"><a href="{{ url('/to-read-list') }}">Readjustment</a> <br><small>Tom Peavler</small></h4>
+                                          <h4 class="title"><a href="{{ url('http://tompeavler.com/') }}" target="_blank">Readjustment</a> <br><small>by Tom Peavler</small></h4>
                                           <p >{{ str_limit("Readjustment is the continuing saga of Charley Johnson. He is an ordinary mechanic who discovers a
                                                 way to adjust carburetors so that they can achieve 100 MPG. He is granted a patent, but his life is
                                                 threatened by Big Oil and The Big Three Automakers. They attempt to prevent him from going into
                                                 production of his adjustment. He faces attacks from Mexican street gangs, Japanese Ninjas, the French
                                                 Foreign Legion, and an army of out-of-work auto makers. He is repeatedly challenged by three sons of
                                                 his deceased partner.",155) }}
-                                                <br><a class="small read-more" href="{{ url('/tp-read-list') }}">Read more</a>    
+                                                <br><a class="small read-more" href="{{ url('http://tompeavler.com/') }}" target="_blank">Read more</a>    
                                             </p>
                                         </div>
-                                    </div>
                                     
+                                    </div>
                                 </div>
                                 
                             </section>
                             
                         </div>
                     </div>
-                    
                    
                     
                 </div>
@@ -408,7 +419,7 @@
                                             <div class="carousel-caption">
                                                 <img src="{{{ url('public/storage/testimonials/paul-antwi.png') }}}" alt="" class="img-circle" style="width:100px">
                                                 <h4>"Thank you so much for this good job you have done of the great story created through the book. I've checked and see everything looks good and ready now."</h4>
-                                                <p class="">- Paul Antwi, author Why Is Satan Against Christians</p>
+                                                <p class="">- Paul Antwi</p>
                                             </div>
                                         </div>
                                         <div class="item">
@@ -417,7 +428,7 @@
                                             <div class="carousel-caption">
                                                 <img src="{{{ url('public/storage/testimonials/carnie-mattisonn.png') }}}" alt="" class="img-circle" style="width:100px">
                                                 <h4>"Your amendments to the script have been carefully and skillfully crafted to portray the story in a smooth and cohesive way that flows easily."</h4>
-                                                <p class="">- Dr. Carnie Matisonn, author The Final Audit</p>
+                                                <p class="">- Dr. Carnie Matisonn</p>
                                             </div>
                                         </div>
                                         <div class="item">
@@ -426,7 +437,7 @@
                                             <div class="carousel-caption">
                                                 <img src="{{{ url('public/storage/testimonials/cathy-young.PNG') }}}" alt="" class="img-circle" style="width:100px">
                                                 <h4>"I think you did a wonderful job on the screenplay project. I truly appreciate you, as well as the time and effort you placed into my project."</h4>
-                                                <p class="">- Cathy Young, author Fall</p>
+                                                <p class="">- Cathy Young</p>
                                             </div>
                                         </div>
                                         
