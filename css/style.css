@@ -148,6 +148,26 @@ img.article-thumbnail {
     /* width:50%; */
 }
 
+span.header-number {
+    float:left;
+    background:#000;
+    border-radius:0px;
+    height:50px;
+    width:50px;
+    font-size:30px;
+    margin-top:-10px;
+    margin-left:-15px;
+    margin-bottom:10px;
+    margin-right:5px;
+    border:3px solid rgb(180,40,40);
+    text-align: center;
+    vertical-align: middle;
+    padding-top:7px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    
+}
+
 .article-link {
     text-decoration: none!important;
 }
