@@ -1,6 +1,6 @@
 {{-- LEFT --}}
-<div class="col-md-4">
-    <h4 class="title"><a href="{{ url('https://www.calvinmoir.com/') }}" target="_blank">The Salt Box</a> <br><small>by Calvin Moir</small></h4>
+<div class="col-md-4 small">
+    <h4 class="title-"><a href="{{ url('https://www.calvinmoir.com/') }}" target="_blank">The Salt Box</a> <br><small>by Calvin Moir</small></h4>
     <p>{{ str_limit("What had started as a search for his father has suddenly become troubled with deceit and conspiracy, as a
         lad finds himself, instead. The brazen act of Creech Jones&#39; alarming circumstances comes from hatred, pride
         and revenge. Success smiles upon Creech Jones; prestige and privilege accompany him. But on the inside,
@@ -82,7 +82,7 @@
 
 
 {{-- CENTER --}}
-<div class="col-md-4">
+<div class="col-md-4 small">
     <h4 class="title"><a href="{{ url('https://philippersinger.com/') }}" target="_blank">Tools of the Trade</a> <br><small>by Philip Persinger</small></h4>
     <p>{{ str_limit("A heart-warming tale of alpha males facing a precipitous slide—for beta or for worse. Woody Steele is one of
         the richest men on the planet. Sadly one of his greatest assets has been recently downsized—sorry Casanova.
@@ -150,7 +150,7 @@
 
 
 {{-- RIGHT --}}
-<div class="col-md-4">
+<div class="col-md-4 small">
     <h4 class="title"><a href="{{ url('https://tompeavler.com/') }}" target="_blank">Readjustment</a> <br><small>by Tom Peavler</small></h4>
     <p >{{ str_limit("Readjustment is the continuing saga of Charley Johnson. He is an ordinary mechanic who discovers a
         way to adjust carburetors so that they can achieve 100 MPG. He is granted a patent, but his life is
