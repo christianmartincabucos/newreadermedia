@@ -222,7 +222,7 @@
                                 <div class="box-article">
                                     
                                     <div style="position:relative;width:100%;height:300px;background:url({{{ url('public/storage/services/bsd1.jpg') }}}) center center no-repeat;background-size: cover;overflow:hidden">
-                                        <div class="layer" style="background-color: rgba(0, 0, 0, 0.5);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
+                                        <div class="layer" style="background-color: rgba(0, 0, 0, 0.7);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
                                             <p><a href="{{ url('/bookstore-display') }}"><strong><span style="font-size: 18px;color:#fff">Bookstore Displays: Why are they important?</span></strong></a></p>
                                             <p class="text-justify">Living in the era of touchscreens and the internet, it makes people doubt the relevance of books, newspapers, and other print materials. The publishing industry continues to struggle against the new wave of online media but everyone should not keep their faces stuck in front of their phone screens. 
                                                 <br><a class="small read-more" href="{{ url('/bookstore-display') }}">Read more</a>
@@ -245,7 +245,7 @@
                                         {{-- <br><small>News | Aug 18, 2018</small> --}}
                                     {{-- </p> --}}
                                     <div style="position:relative;width:100%;height:300px;background:url({{{ url('public/storage/book-to-screen.jpg') }}}) center center no-repeat;background-size: cover;overflow:hidden">
-                                        <div class="layer" style="background-color: rgba(0, 0, 0, 0.5);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
+                                        <div class="layer" style="background-color: rgba(0, 0, 0, 0.7);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
                                             <p><a href="{{ url('/screen-adaptation') }}"><strong><span style="font-size: 18px;color:#fff">The Making of an Adapted Screenplay</span></strong></a></p>
                                             <p class="text-justify">There’s always a tension between plotting and knowing what the character wants. It’s a constant balancing act. One dial moves the storyline horizontally and the other moves it vertically. If you hit the right balance, you get a diagonal— which is not at all an easy feat to achieve.
                                                 <br><a class="small read-more" href="{{ url('/screen-adaptation') }}">Read more</a>
@@ -262,8 +262,8 @@
                             <section class="box-section" style="border-top: 3px solid rgb(180, 40, 40);">
                                 <div class="box-article">
                                    
-                                    <div style="position:relative;width:100%;min-height:300px;background:url({{{ url('public/storage/book-trailer.jpg') }}}) center center no-repeat;background-size: cover;overflow:hidden">
-                                        <div class="layer" style="background-color: rgba(0, 0, 0, 0.5);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
+                                    <div style="position:relative;width:100%;min-height:300px;background:url({{{ url('public/storage/services/bt2.jpg') }}}) center center no-repeat;background-size: cover;overflow:hidden">
+                                        <div class="layer" style="background-color: rgba(0, 0, 0, 0.7);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
                                             
                                             <p><a href="{{ url('/teaser-ads') }}"><strong><span style="font-size: 18px;color:#fff">Teaser Ads, why do we need them?</span></strong></a></p>
                                             <p class="text-justify">If you want to be viral, you have to marry videos. Engagement with a global audience generates more than buzz and hype. It gets your message across instantly. Corporate entities project their personalities through relatable content and no other medium can do this more efficiently than videos.
