@@ -338,53 +338,7 @@
                                     <h3 style="margin-top:0" class="header-white">Recommendations</h3>
                                     <div class="row">
                                         
-                                        <div class="col-md-4">
-                                          <h4 class="title"><a href="{{ url('http://calvinmoir.com/') }}" target="_blank">The Salt Box</a> <br><small>by Calvin Moir</small></h4>
-                                          <p>{{ str_limit("What had started as a search for his father has suddenly become troubled with deceit and conspiracy, as a
-                                                lad finds himself, instead. The brazen act of Creech Jones&#39; alarming circumstances comes from hatred, pride
-                                                and revenge. Success smiles upon Creech Jones; prestige and privilege accompany him. But on the inside,
-                                                there is a void, a deep dissatisfaction, as he suffers a slow agonizing death. Then a casual interest in his
-                                                parents&#39; separation and his family disintegration develops into an obsession with revenge that impelled him
-                                                eventually to act on his fantasies, perhaps in a criminal way. The visit to his father&#39;s house was supposed to
-                                                be a beneficial association. But the surprise trip turns bitter when the prodigal son returns home under a
-                                                different identity to betray his family. Creech Jones&#39; reason for visiting the saltbox is his biggest secret,
-                                                followed by frustration, humiliation - and then destruction. The Saltbox is a tale of what a person&#39;s stamina
-                                                can bear, and what his intention can attain. What results is a forewarning account about guilt, responsibility
-                                                and how jealousy can tear a loving family apart. The Saltbox has mystery, an atmosphere of quiet bullying
-                                                and much realistically viewed life.",155) }}
-                                                <br><a class="small read-more" href="{{ url('http://calvinmoir.com/') }}" target="_blank">Read more</a>
-                                            </p>
-                                        </div>
-                                    
-                                    
-                                    
-                                        
-                                        <div class="col-md-4">
-                                          <h4 class="title"><a href="{{ url('http://philippersinger.com/') }}" target="_blank">Tools of the Trade</a> <br><small>by Philip Persinger</small></h4>
-                                            <p>{{ str_limit("A heart-warming tale of alpha males facing a precipitous slide—for beta or for worse. Woody Steele is one of
-                                                the richest men on the planet. Sadly one of his greatest assets has been recently downsized—sorry Casanova.
-                                                Ivan Greenbriar, his fellow billionaire nemesis and creep extraordinaire, turns every activity into a pissing
-                                                contest even when he’s alone. Sargent Scanlon, a hero cop solely on the merits of getting shot in the nuts,
-                                                doesn’t know what fear is until he must match wits with his odious fourteen-year-old stepdaughter—she’s a
-                                                crime against humanity.",155) }}
-                                                <br><a class="small read-more" href="{{ url('http://philippersinger.com/') }}" target="_blank">Read more</a>
-                                            </p>
-                                        </div>
-                                    
-                                    
-                                    
-                                        
-                                        <div class="col-md-4">
-                                          <h4 class="title"><a href="{{ url('http://tompeavler.com/') }}" target="_blank">Readjustment</a> <br><small>by Tom Peavler</small></h4>
-                                          <p >{{ str_limit("Readjustment is the continuing saga of Charley Johnson. He is an ordinary mechanic who discovers a
-                                                way to adjust carburetors so that they can achieve 100 MPG. He is granted a patent, but his life is
-                                                threatened by Big Oil and The Big Three Automakers. They attempt to prevent him from going into
-                                                production of his adjustment. He faces attacks from Mexican street gangs, Japanese Ninjas, the French
-                                                Foreign Legion, and an army of out-of-work auto makers. He is repeatedly challenged by three sons of
-                                                his deceased partner.",155) }}
-                                                <br><a class="small read-more" href="{{ url('http://tompeavler.com/') }}" target="_blank">Read more</a>    
-                                            </p>
-                                        </div>
+                                        @include('pages.recommendations')
                                     
                                     </div>
                                 </div>
