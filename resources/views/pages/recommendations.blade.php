@@ -1,6 +1,6 @@
 {{-- LEFT --}}
 <div class="col-md-4 small">
-    <h4 class="title-"><a href="{{ url('https://www.calvinmoir.com/') }}" target="_blank">The Salt Box</a> <br><small>by Calvin Moir</small></h4>
+    <h4 class="title"><a href="{{ url('https://www.calvinmoir.com/') }}" target="_blank">The Salt Box</a> <br><small>by Calvin Moir</small></h4>
     <p>{{ str_limit("What had started as a search for his father has suddenly become troubled with deceit and conspiracy, as a
         lad finds himself, instead. The brazen act of Creech Jones&#39; alarming circumstances comes from hatred, pride
         and revenge. Success smiles upon Creech Jones; prestige and privilege accompany him. But on the inside,
