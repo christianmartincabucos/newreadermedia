@@ -1,5 +1,92 @@
 {{-- LEFT --}}
-<div class="col-md-4 small">
+<div class="col-md-12">
+    <div class="row">
+        <div class="col-md-4 small">
+            <h4 class="title"><a href="{{ url('https://www.calvinmoir.com/') }}" target="_blank">The Salt Box</a> <br><small>by Calvin Moir</small></h4>
+            <p>{{ str_limit("What had started as a search for his father has suddenly become troubled with deceit and conspiracy, as a
+                lad finds himself, instead. The brazen act of Creech Jones&#39; alarming circumstances comes from hatred, pride
+                and revenge. Success smiles upon Creech Jones; prestige and privilege accompany him. But on the inside,
+                there is a void, a deep dissatisfaction, as he suffers a slow agonizing death. Then a casual interest in his
+                parents&#39; separation and his family disintegration develops into an obsession with revenge that impelled him
+                eventually to act on his fantasies, perhaps in a criminal way. The visit to his father&#39;s house was supposed to
+                be a beneficial association. But the surprise trip turns bitter when the prodigal son returns home under a
+                different identity to betray his family. Creech Jones&#39; reason for visiting the saltbox is his biggest secret,
+                followed by frustration, humiliation - and then destruction. The Saltbox is a tale of what a person&#39;s stamina
+                can bear, and what his intention can attain. What results is a forewarning account about guilt, responsibility
+                and how jealousy can tear a loving family apart. The Saltbox has mystery, an atmosphere of quiet bullying
+                and much realistically viewed life.",140) }}
+                <a class="small read-more" href="{{ url('https://www.calvinmoir.com/') }}" target="_blank">Read more</a>
+            </p>
+            <div class="divider"></div>
+        </div>
+        <div class="col-md-4 small">
+            <h4 class="title"><a href="{{ url('https://tompeavler.com/') }}" target="_blank">Readjustment</a> <br><small>by Tom Peavler</small></h4>
+            <p >{{ str_limit("Readjustment is the continuing saga of Charley Johnson. He is an ordinary mechanic who discovers a
+                way to adjust carburetors so that they can achieve 100 MPG. He is granted a patent, but his life is
+                threatened by Big Oil and The Big Three Automakers. They attempt to prevent him from going into
+                production of his adjustment. He faces attacks from Mexican street gangs, Japanese Ninjas, the French
+                Foreign Legion, and an army of out-of-work auto makers. He is repeatedly challenged by three sons of
+                his deceased partner.",140) }}
+                <a class="small read-more" href="{{ url('https://tompeavler.com/') }}" target="_blank">Read more</a>    
+            </p>
+            <div class="divider"></div>
+        </div>
+        <div class="col-md-4 small">
+            <h4 class="title"><a href="{{ url('https://philippersinger.com/') }}" target="_blank">Tools of the Trade</a> <br><small>by Philip Persinger</small></h4>
+            <p>{{ str_limit("A heart-warming tale of alpha males facing a precipitous slide—for beta or for worse. Woody Steele is one of
+                the richest men on the planet. Sadly one of his greatest assets has been recently downsized—sorry Casanova.
+                Ivan Greenbriar, his fellow billionaire nemesis and creep extraordinaire, turns every activity into a pissing
+                contest even when he’s alone. Sargent Scanlon, a hero cop solely on the merits of getting shot in the nuts,
+                doesn’t know what fear is until he must match wits with his odious fourteen-year-old stepdaughter—she’s a
+                crime against humanity.",150) }}
+                <a class="small read-more" href="{{ url('https://philippersinger.com/') }}" target="_blank">Read more</a>
+            </p>
+            <div class="divider"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 small">
+            <h4 class="title"><a href="{{ url('https://www.abidshakir.com/') }}" target="_blank">Understanding the Ark</a> <br><small>by Abid Shakir</small></h4>
+            <p>{{ str_limit("This publication is an attempt to make CLEAR the REAL meaning of the glorious ARC and rid
+                acceptance of unrealistic concepts that serve to deprive growth of insight and understanding
+                that support human development. But what we must remember is that satin STILL exist, his
+                plan to undermine human dignity has not slowed at all. One of satin methods is to use blind
+                passion (red and black) over time to weaken humanity morally, from the beginning he said that
+                he would approach man from all sides; to make WRONG seam RIGHT and make RIGHT seam
+                WRONG. Satin is ANTI-ARC he is the ARCH enemy, satin is the master of AN-ARCY so WAKE UP,
+                UNDERSTAND and SEE; the time is NOW.",140) }}
+                <a class="small read-more" href="{{ url('https://www.abidshakir.com/') }}" target="_blank">Read more</a>
+            </p>
+            <div class="divider"></div>
+        </div>
+        <div class="col-md-4 small">
+            <h4 class="title"><a href="{{ url('http://www.charlesarnold.site/') }}" target="_blank">Spiritual Essays: A Personal Collection</a> <br><small>by Charles Arnold</small></h4>
+            <p>{{ str_limit("Spiritual Essays – A Personal Collection, provides answers to many of the questions
+                Christian bible study produces. These questions range from “Why is my life seemingly a
+                mix of blessings and sufferings?”, or “If Satan is real what threat does he pose for me?”
+                or “Why is God such a jealous God?” or “When Christians speak of peace, how does
+                that differ from worldly peace?“",150) }}
+                <a class="small read-more" href="{{ url('http://www.charlesarnold.site/') }}" target="_blank">Read more</a>
+            </p>
+            <div class="divider"></div>
+        </div>
+        <div class="col-md-4 small">
+            <h4 class="title"><a href="{{ url('https://www.burtkempner.com/') }}" target="_blank">Five Fierce Tigers of Rosa Martinez</a> <br><small>by Burt Kempner</small></h4>
+            <p>{{ str_limit("Rosa Martinez is seriously ill. She has the loving support of her mother and grandfather and a
+                doctor who takes good care of her. But she also has a secret weapon. Rosa can summon five
+                tigers to come to her aid when she’s ailing or in big trouble. Her disease may think it has the
+                upper hand, but wait until it encounters Gautama, Arik, Vashti, Selena and Quan – the five
+                fierce tigers of Rosa Martinez. Young readers will delight in their daring adventures and who
+                knows: they may even be able to call forth guardian animals of their own when they need
+                them.",150) }}
+                <a class="small read-more" href="{{ url('https://www.burtkempner.com/') }}" target="_blank">Read more</a>
+            </p>
+            <div class="divider"></div>
+        </div>
+    </div>
+</div>
+<div class="col-md-4 small hidden">
+    
     <h4 class="title"><a href="{{ url('https://www.calvinmoir.com/') }}" target="_blank">The Salt Box</a> <br><small>by Calvin Moir</small></h4>
     <p>{{ str_limit("What had started as a search for his father has suddenly become troubled with deceit and conspiracy, as a
         lad finds himself, instead. The brazen act of Creech Jones&#39; alarming circumstances comes from hatred, pride
@@ -82,7 +169,7 @@
 
 
 {{-- CENTER --}}
-<div class="col-md-4 small">
+<div class="col-md-4 small hidden">
     <h4 class="title"><a href="{{ url('https://philippersinger.com/') }}" target="_blank">Tools of the Trade</a> <br><small>by Philip Persinger</small></h4>
     <p>{{ str_limit("A heart-warming tale of alpha males facing a precipitous slide—for beta or for worse. Woody Steele is one of
         the richest men on the planet. Sadly one of his greatest assets has been recently downsized—sorry Casanova.
@@ -150,7 +237,7 @@
 
 
 {{-- RIGHT --}}
-<div class="col-md-4 small">
+<div class="col-md-4 small hidden">
     <h4 class="title"><a href="{{ url('https://tompeavler.com/') }}" target="_blank">Readjustment</a> <br><small>by Tom Peavler</small></h4>
     <p >{{ str_limit("Readjustment is the continuing saga of Charley Johnson. He is an ordinary mechanic who discovers a
         way to adjust carburetors so that they can achieve 100 MPG. He is granted a patent, but his life is

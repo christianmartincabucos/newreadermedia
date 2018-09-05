@@ -335,7 +335,7 @@
                             
                             <section class="box-section" style="border-top: 3px solid rgb(180, 40, 40);">
                                 <div class="box-article">
-                                    <h3 style="margin-top:0" class="header-white">Recommendations</h3>
+                                    <h3 style="margin-top:0" class="header-white">Something worth a read...</h3>
                                     <div class="row">
                                         
                                         @include('pages.recommendations')
