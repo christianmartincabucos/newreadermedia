@@ -26,7 +26,7 @@
                                     </div>
                                     <div class="col-xs-12 col-sm-8">
                                         <h1 class="title"><a href="{{ url('https://stevenbentleybooks.com/2018/09/03/top-5-most-accurate-medical-dramas/') }}" target="_blank">Top 5 Most Accurate Medical Dramas</a></h1>
-                                        <h4 class="text-muted">Here are the Top 5 most accurate medical dramas that are doctor approved.</h4>
+                                        <h4 class="text-white">Here are the Top 5 most accurate medical dramas that are doctor approved.</h4>
                                         <p><img class="article-thumbnail img-circle" src="{{{ url('public/storage/featured-author/steven-bentley.jpeg') }}}" style="width:20px;height:20px;margin-right:5px;margin-top:5px"> <a class="article-links" href="{{ url('https://stevenbentleybooks.com/') }}" target="_blank">Steven Bentley</a></p>
                                     </div>
                                 </div>

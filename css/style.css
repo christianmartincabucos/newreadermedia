@@ -131,6 +131,14 @@ img.article-thumbnail {
     font-size:16px;
 }
 
+.header-red-box {
+    
+    margin-top:0;background:rgb(180, 40, 40); padding:10px 10px;border-radius: 0 0 25px;
+    border:2px solid rgb(180, 40, 40)!important;
+    font-size:12px;
+    
+}
+
 .header-red {
     
     margin-top:0;background:rgb(180, 40, 40); padding:10px 15px;border-radius: 0 0 25px;
@@ -176,6 +184,14 @@ span.header-number {
     text-decoration: none;
     background: rgb(180, 40, 40)!important;
     border:2px solid rgb(180, 40, 40)!important;
+}
+
+.article-link:hover .header-red-box {
+    
+    text-decoration: none;
+    background: #000!important;
+    border:2px solid rgb(180, 40, 40)!important;
+    
 }
 
 /*  */
