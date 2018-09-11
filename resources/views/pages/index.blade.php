@@ -221,11 +221,11 @@
                                 
                                 <div class="box-article">
                                     
-                                    <div style="position:relative;width:100%;height:250px;background:url({{{ url('public/storage/services/bsd1.jpg') }}}) center center no-repeat;background-size: cover;overflow:hidden">
+                                    <div style="position:relative;width:100%;height:250px;background:url({{{ url('public/storage/services/bsd3.jpg') }}}) center center no-repeat;background-size: cover;overflow:hidden">
                                         <div class="layer" style="background-color: rgba(0, 0, 0, 0.7);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
                                             {{-- <p><a href="{{ url('/bookstore-display') }}"><strong><span style="font-size: 18px;color:#fff">Bookstore Displays: Why are they important?</span></strong></a></p> --}}
-                                            <a class="article-link" href="{{ url('/bookstore-display') }}"><h3 class="header-red-box"><strong>Bookstore Displays: Why are they important?</strong></h3></a>
-                                            <p class="text-justify" style="font-size:12px;position: relative;top: 35%;transform: translateY(-50%); ">Living in the era of touchscreens and the internet, it makes people doubt the relevance of books, newspapers, and other print materials. The publishing industry continues to struggle against the new wave of online media but everyone should not keep their faces stuck in front of their phone screens. 
+                                            <a class="article-link" href="{{ url('/bookstore-display') }}"><h3 class="header-red-box"><strong>Bookstores: A Timeless Place</strong></h3></a>
+                                            <p class="text-justify" style="font-size:12px;position: relative;top: 35%;transform: translateY(-60%); ">In this modern digital age, books are created into audiobooks or converted digitally into e-books for people to read in their own respective smart devices. Not to mention the significant rise of online shopping that delivers your book to your doorstep astoundingly fast. 
                                                 <br><a class="small read-more" href="{{ url('/bookstore-display') }}">Read more</a>
                                             </p>
                                             
@@ -362,10 +362,10 @@
                                 <div id="myCarousel2" class="carousel slide" data-ride="carousel">
                                     <!-- Indicators -->
                                     <ol class="carousel-indicators">
-                                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                                        
+                                        <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+                                        <li data-target="#myCarousel2" data-slide-to="1"></li>
+                                        <li data-target="#myCarousel2" data-slide-to="2"></li>
+                                        <li data-target="#myCarousel2" data-slide-to="3"></li>
                                     </ol>
                                     
                                     <!-- Wrapper for slides -->
@@ -397,7 +397,15 @@
                                                 <p class="">- Cathy Young</p>
                                             </div>
                                         </div>
-                                        
+                                        <div class="item">
+                                            {{-- <img style="width:100%;height:200px" src="{{{ url('public/storage/sample-img-3.jpg') }}}"> --}}
+                                            <div class="text-center" style="width:100%;height:300px;;max-height:450px;background:transparent;padding-top:20px;"></div>
+                                            <div class="carousel-caption">
+                                                <img src="{{{ url('public/storage/testimonials/manuel-pelaez.PNG') }}}" alt="" class="img-circle" style="width:100px">
+                                                <h4>"Their dedication towards professionalism, is unbelievable. They dedicate themselves to bring an author, writer, and artist, to a higher level, without any doubt, I will continue joint ventures with them, into successful outcomes, they are part of my family now, thank you."</h4>
+                                                <p class="">- Manuel Pelaez</p>
+                                            </div>
+                                        </div>
                                         
                                     </div>
                                     

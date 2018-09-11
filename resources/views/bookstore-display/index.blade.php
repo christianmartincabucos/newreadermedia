@@ -9,38 +9,47 @@
                     {{-- BIG IMAGE --}}
                     <div class="row">
                     <section class="box-section">
+                        
                         <div class="col-md-12">
-                            <h1 class="header-white">Bookstore Displays: Why are they important?</h1>
                             
-                            <div style="position:relative;width:100%;height:500px;background:url({{{ url('public/storage/services/bsd1.jpg') }}}) center center no-repeat;background-size: cover;">
+                            <h1 class="header-white">Bookstores: A Timeless Place</h1>
+                            <div style="position:relative;width:100%;height:500px;background:url({{{ url('public/storage/services/bsd3.jpg') }}}) center center no-repeat;background-size: cover;">
                                 <div class="layer" style="background-color: rgba(0, 0, 0, 0.0);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
                                     
                                 </div>
                             </div>
                             
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-8 center-block">
                                         <br>
-                                        <p class="text-justify" style="text-indent:30px"><span style="">Bookstore&mdash;noun. A store where books are sold.</span></p>
-                                        
-                                        <p class="text-justify"  style="text-indent:30px"><span style="">Living in the era of touchscreens and the internet, it makes people doubt the relevance of books, newspapers, and other print materials. The publishing industry continues to struggle against the new wave of online media but everyone should not keep their faces stuck in front of their phone screens.</span></p>
-                                        
-                                        <p class="text-justify"  style="text-indent:30px"><span style="">There are people who continue to spend their time stuck in a book instead of their phone screens. People who love flipping through pages of books, those that love the smell of print, and the feel of the book&rsquo;s paperback covers, still exist. These are the people who take time in browsing books at bookstore, exploring genres one book at a time.</span></p>
-                                        
-                                        <p class="text-justify"  style="text-indent:30px"><span style="">This is why bookstores are important and why a spot at a bookstore helps in promoting books by underground authors. People come into bookstores all the time. The mere fact that a book is displayed, there is enough to let people know of its existence. One hour or more is the average time most people spend at bookstores to browse at books, which means, a chance for your book to be discovered by another bibliophile.</span></p>
-                                        
-                                        <p class="text-justify"  style="text-indent:30px"><span style="">Bookstores always give the readers a lot of different options, and a chance to discover new authors, and other possibilities that their displayed books can offer. Your imagination is the limit, after all.</span></p>
-                                        
-                                        <p class="text-justify"  style="text-indent:30px"><span style="">Aside from helping authors promote their books, bookstores provide these books with homes as well&mdash;by placing&nbsp;them in effective spots, categorizing them according to genre, and also, by holding book signing, and book-reading events.</span></p>
+                                        <p style="margin-bottom: .0001pt; text-align: justify;text-indent:30px"><span style="font-size: 12.0pt;">In this modern digital age, books are created into audiobooks or converted digitally into e-books for people to read in their own respective smart devices. Not to mention the significant rise of online shopping that delivers your book to your doorstep astoundingly fast. </span></p>
+                                        <p style="margin-bottom: .0001pt; text-align: justify;text-indent:30px"><span style="font-size: 12.0pt;">&nbsp;</span></p>
+                                        <p style="margin-bottom: .0001pt; text-align: justify;text-indent:30px"><span style="font-size: 12.0pt;">Some people would say that bookstores are on borrowed time&mdash;but that&rsquo;s not the case. The bookstore is making a comeback by reinventing itself to attract and preserve customers. Bookstores hold events that invite like-minded people in creating a significant and profound experience. It&rsquo;s good for the community and for the business. </span></p>
+                                        <p style="margin-bottom: .0001pt; text-align: justify;text-indent:30px"><span style="font-size: 12.0pt;">&nbsp;</span></p>
+                                        <p style="margin-bottom: .0001pt; text-align: justify;text-indent:30px"><span style="font-size: 12.0pt;">Authors who have their books displayed on the aisles of those bookstores significantly benefit from the events. In addition, authors should use book displays as they help with the marketing and promotion with their book. </span></p>
+                                        <p style="margin-bottom: .0001pt; text-align: justify;text-indent:30px"><span style="font-size: 12.0pt;">&nbsp;</span></p>
+                                        <p style="margin-bottom: .0001pt; text-align: justify;text-indent:30px"><span style="font-size: 12.0pt;">It would be great if the author gets a certain place where it gets more attention and traffic from customers. For this luxury, there is a need to charge extra. This is called <em>co-op</em> or &ldquo;cooperative advertising,&rdquo; wherein the store and the producers share the costs of marketing and promotion of the new book, and in return, they share the profits (just how much depends on the agreement between the parties).</span></p>
+                                        <p style="margin-bottom: .0001pt; text-align: justify;text-indent:30px"><span style="font-size: 12.0pt;">&nbsp;</span></p>
+                                        <p style="margin-bottom: .0001pt; text-align: justify;text-indent:30px"><span style="font-size: 12.0pt;">In order to achieve a better book display in bookstores, keep in mind that the books are the stars of the display. However, eye-catching visual signage helps a lot in attracting customers to take time to check the book. </span></p>
+                                        <p style="margin-bottom: .0001pt; text-align: justify;text-indent:30px"><span style="font-size: 12.0pt;">&nbsp;</span></p>
+                                        <p style="margin-bottom: .0001pt; text-align: justify;text-indent:30px"><span style="font-size: 12.0pt;">Bookstores win over the hearts of their customers because of the heart they put into the store, as well as their impeccable customer service. Personal attention and wholesome customer service always outweigh the technological advancement of online shopping.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+                                        <p style="margin-bottom: .0001pt; text-align: justify;text-indent:30px"><span style="font-size: 12.0pt;">&nbsp;</span></p>
+                                        <p style="margin-bottom: .0001pt; text-align: justify;text-indent:30px"><span style="font-size: 12.0pt;">There&rsquo;s just an ethereal feel being inside a bookstore. The interaction between the staff and different customers, the lovely background music, and the overwhelming book displays. It&rsquo;s one whole pleasant experience.</span></p>
+                                        <p style="margin-bottom: .0001pt; text-align: justify;text-indent:30px"><span style="font-size: 12.0pt;">&nbsp;</span></p>
+                                        <p style="margin-bottom: .0001pt; text-align: justify;text-indent:30px"><span style="font-size: 12.0pt;">&nbsp;</span></p>
                                 </div>
-                                <div class="col-md-6">
-                                        
+                                <div class="col-md-8 center-block">
                                         <br>
-                                        <p class="text-justify"  style="text-indent:30px"><span style="">Being in places like these also helps in making new connections. Imagine having a film producer stumble upon a certain book, and decides to turn that book into a film. The bookstore offers endless possibilities to authors, and readers, alike.</span></p>
                                         
-                                        <p class="text-justify"  style="text-indent:30px"><span style="">These are just a few of the things that make bookstores still relevant, and bookstore displays important. Technology may continue to rapidly rise against books but nothing will ever beat the cream-antique color of the books&rsquo; </span><span style="">pages.</span></p>
-                                        <br>
-                                        <img class="article-thumbnail" src="{{{ url('public/storage/services/bsd2.jpg') }}}" style="width:100%">
+                                        <p style="margin-bottom: .0001pt; text-align: justify;"><strong><span style="font-size: 12.0pt;">References:</span></strong></p>
+                                        <ol>
+                                        <li style="margin-bottom: 15px"><span style="">Anderson, Maxwell. "The Surprising Return of the Independent Bookstore &ndash; THE WEEKEND READER &ndash; Medium." Medium. March 20, 2017. Accessed September 06, 2018. </span><a href="https://medium.com/the-weekend-reader/the-surprising-return-of-the-independent-bookstore-79e18b4c30cb" target="_blank"><span style=" text-decoration: none; text-underline: none;">https://medium.com/the-weekend-reader/the-surprising-return-of-the-independent-bookstore-79e18b4c30cb</span></a>.</li>
+                                        <li style="margin-bottom: 15px"><span style="">Behan, Dawn. "'When I Opened My Bookshop, a Lot of People Told Me I Was Foolish'." The Irish Times. April 24, 2018. Accessed September 06, 2018. </span><a href="https://www.irishtimes.com/culture/books/when-i-opened-my-bookshop-a-lot-of-people-told-me-i-was-foolish-1.3471074" target="_blank"><span style=" text-decoration: none; text-underline: none;">https://www.irishtimes.com/culture/books/when-i-opened-my-bookshop-a-lot-of-people-told-me-i-was-foolish-1.3471074</span></a>.</li>
+                                        <li style="margin-bottom: 15px"><span style="">Brown, Susan. "Twenty Rules for Better Book Displays | NoveList | EBSCOhost." Accessed September 6, 2018. </span><a href="https://www.ebscohost.com/novelist/novelist-special/twenty-rules-for-better-book-displays" target="_blank"><span style=" text-decoration: none; text-underline: none;">https://www.ebscohost.com/novelist/novelist-special/twenty-rules-for-better-book-displays</span></a>.</li>
+                                        <li style="margin-bottom: 15px"><span style="">CBS News. "Once-endangered Bookstores Are Booming Again." CBS News. April 23, Accessed September 06, 2018. </span><a href="https://www.cbsnews.com/news/once-endangered-bookstores-are-booming-again/" target="_blank"><span style=" text-decoration: none; text-underline: none;">https://www.cbsnews.com/news/once-endangered-bookstores-are-booming-again</span></a>.</li>
+                                        <li style="margin-bottom: 15px"><span style="">Peterson, Valerie. "The Best Time to Market Your Book For Sales Success." The Balance Careers. Accessed September 06, 2018. </span><a href="https://www.thebalancecareers.com/how-to-market-your-book-timing-for-book-sales-success-4034709" target="_blank"><span style=" text-decoration: none; text-underline: none;">https://www.thebalancecareers.com/how-to-market-your-book-timing-for-book-sales-success-4034709</span></a>.</li>
+                                        <li style="margin-bottom: 15px"><span style="">Sullivan, Kate. "How Do Bookstores Promote Books? Bookstore Displays and Co-Op Explained." TCK Publishing. August 24, 2018. Accessed September 06, 2018. </span><span style=""><a href="https://www.tckpublishing.com/how-do-bookstores-promote-books/" target="_blank"><span style=" text-decoration: none; text-underline: none;">https://www.tckpublishing.com/how-do-bookstores-promote-books</span></a>.</li>
+                                        </ol>
                                 </div>
                             </div>
                             

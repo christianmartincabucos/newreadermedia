@@ -1,8 +1,8 @@
 <div id="footer" class="box-footer" style="background-color:#222">
                     
-    <div class="row" style="color:#fff;padding:50px 15px">
+    <div class="row" style="color:#fff;padding:30px 15px">
         <div class="col-md-12 text-center" style="margin-bottom:30px">
-            
+            <p class="" style="font-size:20px"><a style="margin-right:15px;color:white" href="https://twitter.com/newreadermedia" target="_blank"><span class="fa fa-twitter"></span></a> <a style="margin-right:15px;color:white"  href="https://www.facebook.com/newreadermedia" target="_blank"><span class="fa fa-facebook"></span></a> <a style="margin-right:15px;color:white"  href="https://www.instagram.com/newreadermedia/" target="_blank"><span class="fa fa-instagram"></span></a></p>
             <ul class="list-inline small">
                 <li><a href="{{ url('/') }}" style="color:#fff">Home</a></li>
                 <li><a href="{{ url('/marketing-and-partnership') }}" style="color:#fff">Marketing & Partnership</a></li>
@@ -22,9 +22,9 @@
             <p><span class="fa fa-map-marker text-red"></span> <small>100 Church Street, Suite 800 New York, NY 10007, USA</small></p>
             <p><span class="fa fa-phone text-red"></span> 1 800-734-7871</p>
             <p><span class="fa fa-envelope text-red"></span> contact@newreadermedia.com</p>
+            <br>
             
-            <p class="hidden"><a style="margin-right:15px;color:white" href="{{ url('/') }}"><span class="fa fa-twitter"></span></a> <a style="margin-right:15px;color:white"  href="{{ url('/') }}"><span class="fa fa-facebook"></span></a> <a style="margin-right:15px;color:white"  href="{{ url('/') }}"><span class="fa fa-linkedin"></span></a></p>
-            <br><br>
+            <br>
         </div>
         <div class="col-md-3 col-md-pull-4 text-center">
             <a href="{{ url('/') }}">
