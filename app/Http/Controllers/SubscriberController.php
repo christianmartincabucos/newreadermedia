@@ -23,7 +23,7 @@ class SubscriberController extends Controller
         $subscriber->email = $request->email;
         $subscriber->save();
 
-        // Mail::to($request->email)->send(new WelcomeMail());
+        Mail::to($request->email)->send(new WelcomeMail());
         
         Toastr::success('You are successfully added to our subscriber list.', 'Success', ["positionClass" => "toast-bottom-center"]);
         return redirect()->back();
@@ -32,11 +32,30 @@ class SubscriberController extends Controller
     public function unsubscribe(Request $request)
     {
 
-        $expected = md5( $user['id'] . $SECRET_STRING );
-    
-        if( $_GET['validation_hash'] != $expected )
-            throw new Exception("Validation failed.");
-    
-        //delete email from subscriber
+        return view('pages.unsubscribe');
     }
+
+    public function delete(Request $request)
+    {
+        // return $request->all();
+        $this->validate($request,[
+            'email' => 'required|email'
+            // 'email' => 'required|email|unique:subscribers'
+        ]);
+        $email = $request->email;
+        $subscriber = Subscriber::where('email', $email)->first();
+        $subscriber->delete();
+
+        
+        
+        Toastr::success('You are successfully removed to our subscriber list.', 'Success', ["positionClass" => "toast-bottom-center"]);
+        return redirect()->route('home');
+    }
+
+    public function testmail()
+    {
+        return view('emails.welcome');
+    }
+
+    
 }

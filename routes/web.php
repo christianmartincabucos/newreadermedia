@@ -18,6 +18,7 @@ Route::get('/', 'PageController@index')->name('home');
 
 // Auth::routes();
 Route::post('subscriber', 'SubscriberController@store')->name('subscriber.store');
+Route::post('subscriber/delete', 'SubscriberController@delete')->name('subscriber.delete');
 
 // Route::get('/home', 'HomeController@index')->name('dashboard');
 Route::get('/about', 'PageController@about')->name('about');
@@ -32,3 +33,7 @@ Route::get('/marketing-and-partnership', 'PartnershipController@index')->name('m
 Route::get('/press-release', 'PressReleaseController@index')->name('press-release');
 Route::get('/author-interview', 'AuthorInterviewController@index')->name('author-interview');
 Route::get('/teaser-ads', 'BookTrailerController@index')->name('teaser-ads');
+
+Route::get('/testmail', 'SubscriberController@testmail')->name('testmail');
+Route::get('/unsubscribe', 'SubscriberController@unsubscribe')->name('unsubscribe');
+
