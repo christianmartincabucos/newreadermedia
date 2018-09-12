@@ -39,8 +39,8 @@ class SubscriberController extends Controller
     {
         // return $request->all();
         $this->validate($request,[
-            'email' => 'required|email'
-            // 'email' => 'required|email|unique:subscribers'
+            // 'email' => 'required|email'
+            'email' => 'required|email|exists:subscribers,email'
         ]);
         $email = $request->email;
         $subscriber = Subscriber::where('email', $email)->first();
