@@ -104,7 +104,7 @@
                       <div class="box-content">
                           <img src="{{{ url('public/storage/services/bsd3.jpg') }}}" style="width:100%">
                           <p style="font-family:'Raleway', sans-serif;color:#222;text-align:justify;font-size:14px">In this modern digital age, books are created into audiobooks or converted digitally into e-books for people to read in their own respective smart devices. Not to mention the significant rise of online shopping that delivers your book to your doorstep astoundingly fast.</p>
-                          <p style="text-align:left"><a href="https://www.newreadermedia.com/bookstore-display" target="_blank" class="btn btn-small">Learn more</a></p>
+                          <p style="text-align:left"><a style="color:#fff" href="https://www.newreadermedia.com/bookstore-display" target="_blank" class="btn btn-small">Learn more</a></p>
                       </div>
                       
                       
@@ -114,7 +114,7 @@
                       <div class="box-content">
                           <img src="{{{ url('public/storage/book-to-screen.jpg') }}}" style="width:100%">
                           <p style="font-family:'Raleway', sans-serif;color:#222;text-align:justify;font-size:14px">There’s always a tension between plotting and knowing what the character wants. It’s a constant balancing act. One dial moves the storyline horizontally and the other moves it vertically. If you hit the right balance, you get a diagonal— which is not at all an easy feat to achieve.</p>
-                          <p style="text-align:left"><a href="https://www.newreadermedia.com/screen-adaptation" target="_blank" class="btn btn-small">Learn more</a></p>
+                          <p style="text-align:left"><a style="color:#fff" href="https://www.newreadermedia.com/screen-adaptation" target="_blank" class="btn btn-small">Learn more</a></p>
                       </div>
                     </td>
                   </tr>
@@ -140,7 +140,7 @@
                         <div class="box-content">
                           <p style="font-family:'Raleway', sans-serif;color:#b42828;text-align:center;font-size:13px">New Reader Media has marketing, ad, and PR services. We’ll get you the right media and online publicist and run advertising campaigns online and beyond.</p>
                           <p style="font-family:'Raleway', sans-serif;color:#b42828;text-align:center;font-size:13px">We can help you publish and publicize your book, and we can help you turn it into a movie.</p>
-                          <p style=""><a href="https://www.newreadermedia.com/" target="_blank" class="btn">Get Started</a></p>
+                          <p style=""><a style="color:#fff" href="https://www.newreadermedia.com/" target="_blank" class="btn">Get Started</a></p>
                         </div>
                       </td>
                     </tr>
@@ -263,7 +263,7 @@
                         <a href="https://www.instagram.com/newreadermedia/" target="_blank"><img src="{{{ url('public/storage/newsletter/ig.png') }}}" style="height:30px"></a>
                       </p>
                       <p style="font-family:'Oswald', sans-serif;color:#fff;text-align:center">CONTACT US</p>
-                      <p style="font-family:'Raleway', sans-serif;color:#fff;text-align:center"><small>100 Church Street, Suite 800 New York, NY 10007, USA<br>1 800-734-7871<br>conact@newreadermagazine.com</small></p>
+                      <p style="font-family:'Raleway', sans-serif;color:#fff;text-align:center"><small>100 Church Street, Suite 800 New York, NY 10007, USA<br>1 800-734-7871<br><span style="color:#fff;text-decoration:none">conact@newreadermagazine.com</span></small></p>
 
                       <p style="font-family:'Raleway', sans-serif;color:#fff;text-align:center"><small><a href="{{ url('/unsubscribe') }}" target="_blank" style="color:#fff">unsubscribe</a></small></p>
                     </td>
