@@ -69,7 +69,11 @@
             
           <table width="640" cellpadding="0" cellspacing="0" border="0" class="wrapper" bgcolor="#FFFFFF">
             <tr>
-              <td height="10" style="font-size:10px; line-height:10px;"><img src="{{{ url('public/storage/newsletter/header.png') }}}" alt="" style="width:100%"></td>
+              <td height="10" style="font-size:10px; line-height:10px;">
+                
+                  <img src="{{{ url('public/storage/newsletter/header.png') }}}" alt="" style="width:100%">
+                  
+              </td>
             </tr>
             <tr>
               <td align="center" valign="top">
@@ -263,7 +267,7 @@
                         <a href="https://www.instagram.com/newreadermedia/" target="_blank"><img src="{{{ url('public/storage/newsletter/ig.png') }}}" style="height:30px"></a>
                       </p>
                       <p style="font-family:'Oswald', sans-serif;color:#fff;text-align:center">CONTACT US</p>
-                      <p style="font-family:'Raleway', sans-serif;color:#fff;text-align:center"><small>100 Church Street, Suite 800 New York, NY 10007, USA<br>1 800-734-7871<br><span style="color:#fff;text-decoration:none">conact@newreadermagazine.com</span></small></p>
+                      <p style="font-family:'Raleway', sans-serif;color:#fff;text-align:center"><small>100 Church Street, Suite 800 New York, NY 10007, USA<br>1 800-734-7871<br><a href="mailto:contact@newreadermedia.com" style="color:#fff;text-decoration:none">contact@newreadermedia.com</a></small></p>
 
                       <p style="font-family:'Raleway', sans-serif;color:#fff;text-align:center"><small><a href="{{ url('/unsubscribe') }}" target="_blank" style="color:#fff">unsubscribe</a></small></p>
                     </td>
