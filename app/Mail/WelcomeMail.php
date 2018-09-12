@@ -28,8 +28,7 @@ class WelcomeMail extends Mailable
      */
     public function build()
     {
-        return $this->from('no-reply@newreadermedia.com')
-                    ->subject('Welcome')
+        return $this->subject('Welcome to New Reader Media')
                     ->view('emails.welcome');
     }
 }
