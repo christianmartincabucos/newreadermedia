@@ -393,7 +393,7 @@
                                             {{-- <img style="width:100%;height:200px" src="{{{ url('public/storage/sample-img-3.jpg') }}}"> --}}
                                             <div class="text-center" style="width:100%;height:300px;;max-height:450px;background:transparent;padding-top:20px;"></div>
                                             <div class="carousel-caption">
-                                                <img src="{{{ url('public/storage/testimonials/manuel-pelaez.PNG') }}}" alt="" class="img-circle" style="width:100px">
+                                                <img src="{{{ url('public/storage/testimonials/manuel-pelaez.png') }}}" alt="" class="img-circle" style="width:100px">
                                                 <h4>"Their dedication towards professionalism, is unbelievable. They dedicate themselves to bring an author, writer, and artist, to a higher level, without any doubt, I will continue joint ventures with them, into successful outcomes, they are part of my family now, thank you."</h4>
                                                 <p class="">- Manuel Pelaez</p>
                                             </div>
