@@ -121,11 +121,11 @@
                                     <div class="divider" style="margin:0 0 5px 0"></div>
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-4">
-                                            <a class="article-link" href="https://www.newreadermagazine.com/download"><img class="article-thumbnail" src="https://www.newreadermagazine.com/images/nrm-second-issue.jpg" style="width:100%"></a>
+                                            <a class="article-link" href="https://www.newreadermagazine.com/download" target="_blank"><img class="article-thumbnail" src="https://www.newreadermagazine.com/images/nrm-third-issue.jpg" style="width:100%"></a>
                                         </div>
                                         <div class="col-xs-12 col-sm-8">
-                                            <a class="article-link" href="https://www.newreadermagazine.com/download"><h4 class="title title-red">New Reader Magazine</h4></a><strong>Issue no. 2</strong>
-                                            <p class="small">{{ str_limit("The second issue is out! In this issue, we leave behind any preconceived notions about where people are from and the worlds they create. ",72) }}<br><a class="small read-more" href="https://www.newreadermagazine.com/download">Read more</a> </p>
+                                            <a class="article-link" href="https://www.newreadermagazine.com/download" target="_blank"><h4 class="title title-red">New Reader Magazine</h4></a><strong>Issue no. 3</strong>
+                                            <p class="small">{{ str_limit("Vol. 1, Issue 3 of New Reader Magazine is out! This quarter we bring you more stories, poems, and interviews with writers, artists, and creative communities from all over the world.",72) }}<br><a class="small read-more" href="https://www.newreadermagazine.com/download">Read more</a> </p>
                                         </div>
                                     </div>
                                     
@@ -365,7 +365,7 @@
                                         <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
                                         <li data-target="#myCarousel2" data-slide-to="1"></li>
                                         <li data-target="#myCarousel2" data-slide-to="2"></li>
-                                        <li data-target="#myCarousel2" data-slide-to="3"></li>
+                                        
                                     </ol>
                                     
                                     <!-- Wrapper for slides -->
@@ -388,15 +388,7 @@
                                                 <p class="">- Dr. Carnie Matisonn</p>
                                             </div>
                                         </div>
-                                        <div class="item">
-                                            {{-- <img style="width:100%;height:200px" src="{{{ url('public/storage/sample-img-3.jpg') }}}"> --}}
-                                            <div class="text-center" style="width:100%;height:300px;;max-height:450px;background:transparent;padding-top:20px;"></div>
-                                            <div class="carousel-caption">
-                                                <img src="{{{ url('public/storage/testimonials/cathy-young.PNG') }}}" alt="" class="img-circle" style="width:100px">
-                                                <h4>"I think you did a wonderful job on the screenplay project. I truly appreciate you, as well as the time and effort you placed into my project."</h4>
-                                                <p class="">- Cathy Young</p>
-                                            </div>
-                                        </div>
+                                        
                                         <div class="item">
                                             {{-- <img style="width:100%;height:200px" src="{{{ url('public/storage/sample-img-3.jpg') }}}"> --}}
                                             <div class="text-center" style="width:100%;height:300px;;max-height:450px;background:transparent;padding-top:20px;"></div>
@@ -406,7 +398,15 @@
                                                 <p class="">- Manuel Pelaez</p>
                                             </div>
                                         </div>
-                                        
+                                        <div class="hidden">
+                                            {{-- <img style="width:100%;height:200px" src="{{{ url('public/storage/sample-img-3.jpg') }}}"> --}}
+                                            <div class="text-center" style="width:100%;height:300px;;max-height:450px;background:transparent;padding-top:20px;"></div>
+                                            <div class="carousel-caption">
+                                                <img src="{{{ url('public/storage/testimonials/cathy-young.PNG') }}}" alt="" class="img-circle" style="width:100px">
+                                                <h4>"I think you did a wonderful job on the screenplay project. I truly appreciate you, as well as the time and effort you placed into my project."</h4>
+                                                <p class="">- Cathy Young</p>
+                                            </div>
+                                        </div>
                                     </div>
                                     
                                     <!-- Left and right controls -->
