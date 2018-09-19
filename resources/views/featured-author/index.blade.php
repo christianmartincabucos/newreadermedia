@@ -38,10 +38,14 @@
 
                             <div class="row">
                                 <div class="col-md-6">
-                                    <img src="{{{ url('public/storage/featured-author/a-license-to-heal.png') }}}" class="" style="width:100%">
+                                    <a href="https://www.amazon.com/License-Heal-Random-Memories-Doctor-ebook/dp/B0793SYDN9/" target="_blank">
+                                        <img src="{{{ url('public/storage/featured-author/a-license-to-heal.png') }}}" class="" style="width:100%">
+                                    </a>
                                 </div>
                                 <div class="col-md-6">
-                                    <img src="{{{ url('public/storage/featured-author/poor-no-more.png') }}}" class="" style="width:100%">
+                                    <a href="https://www.amazon.com/Poor-No-More-American-Dream-ebook/dp/B079653GWF/" target="_blank">
+                                        <img src="{{{ url('public/storage/featured-author/poor-no-more.png') }}}" class="" style="width:100%">
+                                    </a>
                                 </div>
                             </div>
 
