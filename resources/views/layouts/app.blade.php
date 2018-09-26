@@ -83,6 +83,7 @@
                     <li class="{{{ (Request::is(['spotlight', 'spotlight/*']) ? 'active' : '') }}}"><a href="{{ url('/spotlight') }}">Spotlight</a></li>
                     <li class="{{{ (Request::is(['blogs', 'blogs/*']) ? 'active' : '') }}}"><a href="{{ url('/blogs') }}">Blogs</a></li>
                     {{-- <li class="{{{ (Request::is(['partnership', 'partnership/*']) ? 'active' : '') }}}"><a href="{{ url('/partnership') }}" style="border-radius:0">Partnership</a></li> --}}
+                    <li><a data-toggle="modal" href="#subscribe_modal">Subscribe</a></li>
                     <li><a href="#" class="contact-button">Contact Us</a></li>
                     <li role="presentation" class="dropdown hidden">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
@@ -98,7 +99,62 @@
                 </div>
             </nav>
         </div>
+        @if ($errors->has('email'))
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="box" style="margin-bottom:0;background:rgba(180,40,40,.9)">
+                        <div class="box-body">
+                            
+                                <span class="help-block text-center">
+                                    <strong class="text-white"><span class="fa fa-warning"></span> {{ $errors->first('email') }}</strong>
+                                </span>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @endif
         @yield('content')
+        <!-- Modal -->
+        <div id="subscribe_modal" class="modal fade text-white" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <form method="POST" action="{{ route('subscriber.store') }}">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Subscribe</h4>
+                    </div>
+                    <div class="modal-body">
+                            
+                        <p class="text-center">Sign up for free newsletters and get more of New Reader Media delivered to your inbox.</p>
+                        
+                            {{ csrf_field() }}
+                            <div class="input-group{{ $errors->has('email') ? ' has-errors' : '' }}">
+                                <input type="email" class="form-control input-lg subscribe-input" name="email" id="" placeholder="Enter your email" required>
+                                {{-- <i class="fa fa-envelope-o form-control-feedback" style="text-shadow:none;color:lightgray"></i> --}}
+                                <span class="input-group-btn">
+                                    <button type="submit" class="btn btn-default btn-lg subscribe-btn"><span class="fa fa-send-o"></span></button>
+                                </span>
+                            </div>
+                            
+                            
+                        
+                        <br>
+                        <p class="small text-center"><em>By signing up, you agree to receive promotional and marketing emails from New Reader Media.</em></p>
+                            
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
         <a href="#app" class="back-to-top" style="display: inline;color:#fff"><i class="fa fa-arrow-circle-up"></i></a>
     </div>
 

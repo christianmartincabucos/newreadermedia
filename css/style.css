@@ -74,9 +74,13 @@
     font-size: 12px!important;
     vertical-align: middle;
     
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.7)!important;
     color:#fff!important;
     border-color: rgba(255,255,255,.2)!important;
+}
+
+.navbar ul.nav>li>a:focus{
+    background:none!important;
 }
 
 .navbar ul.nav li a{
@@ -100,7 +104,8 @@
     height: 0; 
     overflow: hidden; 
     max-width: 100%; 
-    height: auto; 
+    height: auto;
+     
 }   
 
 .embed-container iframe, .embed-container object, .embed-container embed { 

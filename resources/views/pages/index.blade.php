@@ -98,36 +98,14 @@
                         <div class="col-md-4">
                             <section class="box-section" style="border-top: 3px solid rgb(180, 40, 40);">
                                 <div class="box-article">
+                                        
+                                    <div class="embed-container" style="margin-bottom:10px">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/aqzxUMJiU8A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    </div>
                                     
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-4">
-                                            <a class="article-link" href="{{ url('/press-release') }}"><img class="article-thumbnail" src="{{{ url('public/storage/nrmedia-logo2.png') }}}" style="width:100%;margin:auto 0"></a>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-8">
-                                            <a class="article-link" href="{{ url('/press-release') }}"><h4 class="title title-red">What's New?</h4></a><strong>Press Release</strong>
-                                            <p class="small">International Media Firm Launches Literary Magazine for the New Reader.<br><a class="small read-more" href="{{ url('/press-release') }}">Read more</a></p>
-                                        </div>
-                                    </div>
-                                    <div class="divider" style="margin:0 0 5px 0"></div>
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-4">
-                                          <a href="{{ url('/spotlight') }}"><img class="article-thumbnail img-circle" src="{{{ url('public/storage/featured-author/steven-bentley.jpeg') }}}" style="width:100%"></a>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-8">
-                                            <a class="article-link" href="{{ url('/spotlight') }}"><h4 class="title title-red">Spotlight</h4></a><strong>Steven Bentley</strong>
-                                            <p class="small">{{ str_limit("With a career spanning more than thirty years, Steven Bentley, M.D. describes the real world of emergency medicine from the viewpoints of a practicing physician. ",72) }} <br><a class="small read-more" href="{{ url('/spotlight') }}">Read more</a> </p>
-                                        </div>
-                                    </div>
-                                    <div class="divider" style="margin:0 0 5px 0"></div>
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-4">
-                                            <a class="article-link" href="https://www.newreadermagazine.com/download" target="_blank"><img class="article-thumbnail" src="https://www.newreadermagazine.com/images/nrm-third-issue.jpg" style="width:100%"></a>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-8">
-                                            <a class="article-link" href="https://www.newreadermagazine.com/download" target="_blank"><h4 class="title title-red">New Reader Magazine</h4></a><strong>Issue no. 3</strong>
-                                            <p class="small">{{ str_limit("Vol. 1, Issue 3 of New Reader Magazine is out! This quarter we bring you more stories, poems, and interviews with writers, artists, and creative communities from all over the world.",72) }}<br><a class="small read-more" href="https://www.newreadermagazine.com/download">Read more</a> </p>
-                                        </div>
-                                    </div>
+                                    <h4 class="title"><a href="https://www.youtube.com/watch?v=aqzxUMJiU8A" target="_blank"><strong>Aftermath: Nomads, Pirates and Frogfaces - Official Book Trailer</strong></a></h4>
+                                    <p>A nomad headquarters gets attacked by pirates and later on, saved by a female leader of another nomad group only to reveal they are up against a bigger enemy than the pirates.</p>
+                                   
                                     
                                 </div>
                                 
@@ -161,33 +139,36 @@
                                 
                                 <div class="box-article">
                                     
-                                    
                                     <div class="row">
-                                        <div class="col-md-12">
-                                            <h3 class="header-red">Subscribe</h3>
-                                            
-                                            @if ($errors->has('email'))
-                                                <span class="help-block">
-                                                    <strong class="text-red">{{ $errors->first('email') }}</strong>
-                                                </span>
-                                            @endif
-                                            <p>Sign up for free newsletters and get more of New Reader Media delivered to your inbox.</p>
-                                            <form method="POST" action="{{ route('subscriber.store') }}">
-                                                {{ csrf_field() }}
-                                                <div class="input-group{{ $errors->has('email') ? ' has-errors' : '' }}">
-                                                    <input type="email" class="form-control input-lg subscribe-input" name="email" id="" placeholder="Enter your email">
-                                                    {{-- <i class="fa fa-envelope-o form-control-feedback" style="text-shadow:none;color:lightgray"></i> --}}
-                                                    <span class="input-group-btn">
-                                                        <button type="submit" class="btn btn-default btn-lg subscribe-btn"><span class="fa fa-send-o"></span></button>
-                                                    </span>
-                                                </div>
-                                                
-                                                
-                                            </form>
-                                            <br>
-                                            <p class="small"><em>By signing up, you agree to receive promotional and marketing emails from New Reader Media.</em></p>
+                                        <div class="col-xs-12 col-sm-4">
+                                            <a class="article-link" href="{{ url('/press-release') }}"><img class="article-thumbnail" src="{{{ url('public/storage/nrmedia-logo2.png') }}}" style="width:100%;margin:auto 0"></a>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-8">
+                                            <a class="article-link" href="{{ url('/press-release') }}"><h4 class="title title-red">What's New?</h4></a><strong>Press Release</strong>
+                                            <p class="small">International Media Firm Launches Literary Magazine for the New Reader.<br><a class="small read-more" href="{{ url('/press-release') }}">Read more</a></p>
                                         </div>
                                     </div>
+                                    <div class="divider" style="margin:0 0 5px 0"></div>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-4">
+                                            <a href="{{ url('/spotlight') }}"><img class="article-thumbnail img-circle" src="{{{ url('public/storage/featured-author/steven-bentley.jpeg') }}}" style="width:100%"></a>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-8">
+                                            <a class="article-link" href="{{ url('/spotlight') }}"><h4 class="title title-red">Spotlight</h4></a><strong>Steven Bentley</strong>
+                                            <p class="small">{{ str_limit("With a career spanning more than thirty years, Steven Bentley, M.D. describes the real world of emergency medicine from the viewpoints of a practicing physician. ",72) }} <br><a class="small read-more" href="{{ url('/spotlight') }}">Read more</a> </p>
+                                        </div>
+                                    </div>
+                                    <div class="divider" style="margin:0 0 5px 0"></div>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-4">
+                                            <a class="article-link" href="https://www.newreadermagazine.com/download" target="_blank"><img class="article-thumbnail" src="https://www.newreadermagazine.com/images/nrm-third-issue.jpg" style="width:100%"></a>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-8">
+                                            <a class="article-link" href="https://www.newreadermagazine.com/download" target="_blank"><h4 class="title title-red">New Reader Magazine</h4></a><strong>Issue no. 3</strong>
+                                            <p class="small">{{ str_limit("Vol. 1, Issue 3 of New Reader Magazine is out! This quarter we bring you more stories, poems, and interviews with writers, artists, and creative communities from all over the world.",72) }}<br><a class="small read-more" href="https://www.newreadermagazine.com/download">Read more</a> </p>
+                                        </div>
+                                    </div>
+                                    
                                 </div>
                                 
                             </section>
@@ -423,6 +404,7 @@
                         </div>
                 </div>
                 @include('layouts.footer')
+                
             </div>
         </div>
     </div>
