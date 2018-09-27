@@ -2,7 +2,12 @@
                     
     <div class="row" style="color:#fff;padding:30px 15px">
         <div class="col-md-12 text-center" style="margin-bottom:30px">
-            <p class="" style="font-size:20px"><a style="margin-right:15px;color:white" href="https://twitter.com/newreadermedia" target="_blank"><span class="fa fa-twitter"></span></a> <a style="margin-right:15px;color:white"  href="https://www.facebook.com/newreadermedia" target="_blank"><span class="fa fa-facebook"></span></a> <a style="margin-right:15px;color:white"  href="https://www.instagram.com/newreadermedia/" target="_blank"><span class="fa fa-instagram"></span></a></p>
+            <p class="" style="font-size:20px">
+                <a style="margin-right:15px;color:white" href="https://twitter.com/newreadermedia" target="_blank"><span class="fa fa-twitter"></span></a> 
+                <a style="margin-right:15px;color:white"  href="https://www.facebook.com/newreadermedia" target="_blank"><span class="fa fa-facebook"></span></a> 
+                <a style="margin-right:15px;color:white"  href="https://www.instagram.com/newreadermedia/" target="_blank"><span class="fa fa-instagram"></span></a> 
+                <a style="margin-right:15px;color:white"  href="https://www.youtube.com/channel/UCu0Epqq92V608xnrI2MaGBA" target="_blank"><span class="fa fa-youtube"></span></a>
+            </p>
             <ul class="list-inline small">
                 <li><a href="{{ url('/') }}" style="color:#fff">Home</a></li>
                 <li><a href="{{ url('/marketing-and-partnership') }}" style="color:#fff">Marketing & Partnership</a></li>
