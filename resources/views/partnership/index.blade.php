@@ -41,38 +41,47 @@
                                                 <blockquote class="blockquote small">A personal Media Publicist who will contact Radio stations, TV stations and Newspaper companies starting from your area and our international area coverage. Appointments will be set whenever you will have interviews and guesting to those stations and you will be guided accordingly.</blockquote>
                                                 <div class="divider row"></div>
                                                 <h4>Online Publicist</h4>
-                                                <p>This includes the following:</p>
+                                                <p>Our marketing and strategic team has devised a new and more effective plan. Instead of the
+                                                    traditional approach of doing publicity in social sites, here is our new tactical approach:</p>
                                                 <ul>
-                                                    <li>Website
-                                                        <ul>
-                                                            <li>5 pages - Home, About the Book, AuthorPage, Blog, Contact</li>
-                                                            <li>6 Images and 1 animated</li>
-                                                            <li>1 Email Account</li>
-                                                            <li>Blog Ready</li>
-                                                            <li>Facebook, Twitter, Linkedin, StumbleUpon, Tumblr, Scoop.it, Diigo, Issuu.</li>
-                                                            <li>Domain 1 year</li>
-                                                            <li>WebHosting 1 year</li>
-                                                        </ul>
+                                                    <li>Stage 1: Website Creation <br>
+                                                        <p>A professional website will be designed by our team to feature you and your work. As
+                                                            Forbes.com puts it, there are three main reasons why we need to establish a personal
+                                                            professional website: (1) A website gives you control over your image. (2) Building a reach now
+                                                            can help you later, and; (3) A website allows you to stand out from the competition.</p>
                                                     </li>
-                                                    <li>Web Press Release
-                                                        <ul>
-                                                            <li>Nearly 100% integration into Google News.</li>
-                                                            <li>Free placement of book cover photos, video links, website links, tags and much more.</li>
-                                                            <li>Complimentary Syndication into business news or related websites, with proof of delivery and statistics report.</li>
-                                                            <li>RSS feed and social media integration.</li>
-                                                            <li>Fully Compliant with Webmaster Guidelines.</li>
-                                                            <li>Permanently online and does not expire.</li>
-                                                            <li>Search engine optimized.</li>
-                                                        </ul>
+                                                    <li>Stage 2: Press Release Campaign <br>
+                                                        <p>We will create a comprehensive article about you and your book. This will be sent to more than
+                                                            1,000 media outlets directed to audiences who have specific interests in books, screenplays,
+                                                            bookstores, movie adaptations, and traditional publishers.</p>
                                                     </li>
-                                                    <li>Weekly Blog Posting</li>
+                                                    <li>Stage 3: Blogs <br>
+                                                        <p>Blogs will be created by our writers for the duration of your campaign. This will be posted on
+                                                            your website on a weekly basis. You also have the option of writing your own blog
+                                                            entries/articles and have them posted on your website.</p>
+                                                    </li>
+                                                    <li>Stage 4: Social Media <br>
+                                                        <p>We will create and maintain a Medium account for the duration of your publicity. Medium is a
+                                                            place where words matter. Medium taps into the brains of the world&#39;s most insightful writers,
+                                                            thinkers, and storytellers to bring the smartest takes on topics that matter. This is your target
+                                                            audience. This is a powerful platform because it hosts hundreds and thousands of amateurs
+                                                            and professionals, publications, and publishers. We will also do a campaign for you on our
+                                                            Facebook page. You will be featured on our posts for promotion.</p>
+                                                    </li>
+                                                    <li>Stage 5: Email Marketing <br>
+                                                        <p>We will create an email article for you and blast this using our own email database with your
+                                                            target audience specific to your campaign and genre. This has been proven to have at least
+                                                            85% chance for your campaign to be read.</p>
+                                                    </li>
+                                                    <li>Stage 6: Reports <br>
+                                                        <p>At the end of the campaign, we will provide a report on each of the stages we have executed.
+                                                            This will be sent to you via email. This is our guarantee that we do not just plan, we do all the
+                                                            leg work and execute what we promised.</p>
+                                                    </li>
+                                                    
                                                 </ul>
-                                                <blockquote class="blockqoute small">
-                                                    <p>Website template is submitted to the Author for approval.</p>
-                                                    <p>Social media accounts are created and linked to your website.</p>
-                                                    <p>Weekly blog posts are posted to your website and social media accounts.</p>
-                                                    <p>Web press release is submitted to popular web press release sites.</p>
-                                                </blockquote>
+                                                <p>You will receive an email confirmation once all preparation and materials for this campaign is
+                                                    ready so we can begin with a better publicity campaign.</p>
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
