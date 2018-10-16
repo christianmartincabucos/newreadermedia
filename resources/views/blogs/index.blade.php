@@ -14,6 +14,26 @@
                             <div class="box-article">
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-4">
+                                        <a href="{{ url('http://weightlossbible.net/2018/10/12/the-top-weight-loss-scams-in-the-world/') }}" target="_blank">
+                                            <div style="position:relative;width:100%;height:164px;background:url({{{ url('public/storage/weightlossbibleblog.jpg') }}}) center center no-repeat;background-size: cover;overflow:hidden">
+                                                <div class="layer" style="background-color: rgba(0, 0, 0, 0.0);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
+                                                    
+                                                    
+                                                </div>
+                                            </div>
+                                        </a>
+                                        
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8">
+                                        <h1 class="title"><a href="{{ url('http://weightlossbible.net/2018/10/12/the-top-weight-loss-scams-in-the-world/') }}" target="_blank">The Top Weight Loss Scams in the World</a></h1>
+                                        <h4 class="text-white">The world of fitness can get shady and you could lose more than just pounds if you’re not careful.  Here are the top weight loss scams to avoid.</h4>
+                                        <p><img class="article-thumbnail img-circle" src="{{{ url('public/storage/featured-author/zzeigler.jpg') }}}" style="width:20px;height:20px;margin-right:5px;margin-top:5px"> <a class="article-links" href="{{ url('http://weightlossbible.net/') }}" target="_blank">Zachary Zeigler Ph.D</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-article">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-4">
                                         <a href="{{ url('https://stevenbentleybooks.com/2018/09/03/top-5-most-accurate-medical-dramas/') }}" target="_blank">
                                             <div style="position:relative;width:100%;height:164px;background:url({{{ url('public/storage/scrub.jpg') }}}) center center no-repeat;background-size: cover;overflow:hidden">
                                                 <div class="layer" style="background-color: rgba(0, 0, 0, 0.0);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
@@ -31,12 +51,14 @@
                                     </div>
                                 </div>
                             </div>
+                            
                         </div>
                         <div class="col-md-3">
                             <p><strong>RECENT POSTS</strong></p>
                             
                             <ul class="list-unstyled">
-                                <li><a href="article-link" target="_blank">Top 5 Most Accurate Medical Dramas</a></li>
+                                <li><a href="{{ url('http://weightlossbible.net/2018/10/12/the-top-weight-loss-scams-in-the-world/') }}" class="article-link" target="_blank">The Top Weight Loss Scams in the World</a></li>
+                                <li><a href="{{ url('https://stevenbentleybooks.com/2018/09/03/top-5-most-accurate-medical-dramas/') }}" class="article-link" target="_blank">Top 5 Most Accurate Medical Dramas</a></li>
                             </ul>
                         </div>
                         
