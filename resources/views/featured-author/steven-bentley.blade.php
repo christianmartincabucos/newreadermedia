@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('og-title')Media Spotlight: Steven Bentley @endsection
+@section('meta-description')Steven Bentley, M.D. is an American Board of Emergency Medicine certified ED doctor. His journey began in the mid-1970s, when he chose to pursue a career in medicine. Now, with a career spanning more than thirty years, he works as an emergency-room physician in North Carolina.@endsection
 @section('content')
 <div class="container">
     <div class="row">
