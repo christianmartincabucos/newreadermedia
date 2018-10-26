@@ -39,12 +39,12 @@
 
                             <div class="row">
                                 <div class="col-md-6">
-                                    <a href="https://www.amazon.com/License-Heal-Random-Memories-Doctor-ebook/dp/B0793SYDN9/" target="_blank">
+                                    <a href="https://www.amazon.com/License-Heal-Random-Memories-Doctor-ebook/dp/B0793SYDN9/" target="_blank" rel="nofollow">
                                         <img src="{{{ url('public/storage/featured-author/a-license-to-heal.png') }}}" class="" style="width:100%">
                                     </a>
                                 </div>
                                 <div class="col-md-6">
-                                    <a href="https://www.amazon.com/Poor-No-More-American-Dream-ebook/dp/B079653GWF/" target="_blank">
+                                    <a href="https://www.amazon.com/Poor-No-More-American-Dream-ebook/dp/B079653GWF/" target="_blank" rel="nofollow">
                                         <img src="{{{ url('public/storage/featured-author/poor-no-more.png') }}}" class="" style="width:100%">
                                     </a>
                                 </div>

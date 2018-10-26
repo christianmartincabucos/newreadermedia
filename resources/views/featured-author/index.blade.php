@@ -32,7 +32,7 @@
                             
                             <div class="row">
                                 <div class="col-md-8 center-block">
-                                    <a href="http://http://weightlossbible.net" target="_blank">
+                                    <a href="http://http://weightlossbible.net" target="_blank" rel="nofollow">
                                         <img src="{{{ url('public/storage/featured-author/weight-loss-bible.png') }}}" class="" style="width:100%">
                                     </a>
                                 </div>
@@ -58,7 +58,7 @@
                             </blockquote>
 
 
-                            <h3 class="text-center"><small>visit website at</small><br><a href="http://http://weightlossbible.net">weightlossbible.net</a></h3>
+                            <h3 class="text-center"><small>visit website at</small><br><a href="http://http://weightlossbible.net" target="_blank" rel="nofollow">weightlossbible.net</a></h3>
                             
                         </div>
                         <div class="col-md-3">

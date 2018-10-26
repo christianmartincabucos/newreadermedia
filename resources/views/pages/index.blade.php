@@ -146,7 +146,7 @@
                                         </div>
                                         <div class="col-xs-12 col-sm-8">
                                             <a class="article-link" href="{{ url('/press-release') }}"><h4 class="title title-red">What's New?</h4></a><strong>Press Release</strong>
-                                            <p class="small">International Media Firm Launches Literary Magazine for the New Reader.<br><a class="small read-more" href="{{ url('/press-release') }}">Read more</a></p>
+                                            <p class="small">International Media Firm Launches Literary Magazine for the New Reader.<br><a class="small read-more" href="{{ url('/press-release') }}" rel="nofollow">Read more</a></p>
                                         </div>
                                     </div>
                                     <div class="divider" style="margin:0 0 5px 0"></div>
@@ -156,7 +156,7 @@
                                         </div>
                                         <div class="col-xs-12 col-sm-8">
                                             <a class="article-link" href="{{ url('/spotlight') }}"><h4 class="title title-red">Spotlight</h4></a><strong>Zachary Zeigler</strong>
-                                            <p class="small">{{ str_limit("He teaches Exercise Physiology and Nutrition courses and is an active researcher investigating the impacts of obesity on cardiovascular health. ",72) }} <br><a class="small read-more" href="{{ url('/spotlight') }}">Read more</a> </p>
+                                            <p class="small">{{ str_limit("He teaches Exercise Physiology and Nutrition courses and is an active researcher investigating the impacts of obesity on cardiovascular health. ",72) }} <br><a class="small read-more" href="{{ url('/spotlight') }}" rel="nofollow">Read more</a> </p>
                                         </div>
                                     </div>
                                     <div class="divider" style="margin:0 0 5px 0"></div>
@@ -166,7 +166,7 @@
                                         </div>
                                         <div class="col-xs-12 col-sm-8">
                                             <a class="article-link" href="https://www.newreadermagazine.com/download" target="_blank"><h4 class="title title-red">New Reader Magazine</h4></a><strong>Issue no. 3</strong>
-                                            <p class="small">{{ str_limit("Vol. 1, Issue 3 of New Reader Magazine is out! This quarter we bring you more stories, poems, and interviews with writers, artists, and creative communities from all over the world.",72) }}<br><a class="small read-more" href="https://www.newreadermagazine.com/download">Read more</a> </p>
+                                            <p class="small">{{ str_limit("Vol. 1, Issue 3 of New Reader Magazine is out! This quarter we bring you more stories, poems, and interviews with writers, artists, and creative communities from all over the world.",72) }}<br><a class="small read-more" href="https://www.newreadermagazine.com/download" rel="nofollow">Read more</a> </p>
                                         </div>
                                     </div>
                                     
@@ -208,7 +208,7 @@
                                             {{-- <p><a href="{{ url('/bookstore-display') }}"><strong><span style="font-size: 18px;color:#fff">Bookstore Displays: Why are they important?</span></strong></a></p> --}}
                                             <a class="article-link" href="{{ url('/bookstore-display') }}"><h3 class="header-red-box"><strong>Bookstores: A Timeless Place</strong></h3></a>
                                             <p class="text-justify" style="font-size:12px;position: relative;top: 35%;transform: translateY(-60%); ">In this modern digital age, books are created into audiobooks or converted digitally into e-books for people to read in their own respective smart devices. Not to mention the significant rise of online shopping that delivers your book to your doorstep astoundingly fast. 
-                                                <br><a class="small read-more" href="{{ url('/bookstore-display') }}">Read more</a>
+                                                <br><a class="small read-more" href="{{ url('/bookstore-display') }}" rel="nofollow">Read more</a>
                                             </p>
                                             
                                         </div>
@@ -232,7 +232,7 @@
                                             {{-- <p><a href="{{ url('/screen-adaptation') }}"><strong><span style="font-size: 18px;color:#fff">The Making of an Adapted Screenplay</span></strong></a></p> --}}
                                             <a class="article-link" href="{{ url('/screen-adaptation') }}"><h3 class="header-red-box"><strong>The Making of an Adapted Screenplay</strong></h3></a>
                                             <p class="text-justify" style="font-size:12px;position: relative;top: 35%;transform: translateY(-60%); ">There’s always a tension between plotting and knowing what the character wants. It’s a constant balancing act. One dial moves the storyline horizontally and the other moves it vertically. If you hit the right balance, you get a diagonal— which is not at all an easy feat to achieve.
-                                                <br><a class="small read-more" href="{{ url('/screen-adaptation') }}">Read more</a>
+                                                <br><a class="small read-more" href="{{ url('/screen-adaptation') }}" rel="nofollow">Read more</a>
                                             </p>
                                             
                                         </div>
@@ -252,7 +252,7 @@
                                             {{-- <p><a href="{{ url('/teaser-ads') }}"><strong><span style="font-size: 18px;color:#fff">Teaser Ads, why do we need them?</span></strong></a></p> --}}
                                             <a class="article-link" href="{{ url('/teaser-ads') }}"><h3 class="header-red-box"><strong>Teaser Ads, why do we need them?</strong></h3></a>
                                             <p class="text-justify" style="font-size:12px;position: relative;top: 35%;transform: translateY(-50%); ">If you want to be viral, you have to marry videos. Engagement with a global audience generates more than buzz and hype. It gets your message across instantly. Corporate entities project their personalities through relatable content and no other medium can do this more efficiently than videos.
-                                                <br><a class="small read-more" href="{{ url('/teaser-ads') }}">Read more</a>
+                                                <br><a class="small read-more" href="{{ url('/teaser-ads') }}" rel="nofollow">Read more</a>
                                             </p>
                                         
                                         </div>
