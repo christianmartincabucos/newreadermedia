@@ -16,6 +16,7 @@
     <meta property="og:title" content="@yield('og-title', config('app.name') )" />
     <meta property="og:description" content="@yield('meta-description', 'New Reader Media is a marketing and publicity firm for enterprising creatives, artists, and independent authors.')" />
     <meta property="og:image" content="@yield('og-image', url('public/storage/nrmedia-tag.jpg'))">
+    <link rel="canonical" href="@yield('canonical', URL::current() )"/>
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
