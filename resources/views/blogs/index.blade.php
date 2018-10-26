@@ -1,5 +1,6 @@
 @extends('layouts.app')
-
+@section('og-title')New Reader Media's best, most informative blogs on a variety of topics.@endsection
+@section('meta-description')We find the coolest stuff and curate it for your delectation. We've got a bunch of great topics for the inquiring mind. From haunted houses to SEO techniques. See them here now.@endsection
 @section('content')
 <div class="container">
     <div class="row">
@@ -10,7 +11,7 @@
                     <div class="row">
                     <section class="box-section">
                         <div class="col-md-12"><h1 class="header-white">Blogs</h1></div>
-                        <div class="col-md-9">
+                        <div class="col-md-9 right-divider">
                             <div class="box-article">
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-4">

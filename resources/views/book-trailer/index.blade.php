@@ -1,5 +1,6 @@
 @extends('layouts.app')
-
+@section('og-title')Get hyped with New Reader Media's book trailers and video ads.@endsection
+@section('meta-description')How do you get more people to read your book? Do book trailers really work? Here's some info on ads, teasers, and book trailers and how New Reader Media can help.@endsection
 @section('content')
 <div class="container">
     <div class="row">

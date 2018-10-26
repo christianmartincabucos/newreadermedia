@@ -1,5 +1,6 @@
 @extends('layouts.app')
-
+@section('og-title')Take the first step to turning your book into a movie with NRM screen adaptations.@endsection
+@section('meta-description')Think your book has what it takes to become the next big thing? It might just be. We help you adapt your manuscript into a screenplay and get it into the right hands.@endsection
 @section('content')
 <div class="container">
     <div class="row">

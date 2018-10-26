@@ -27,7 +27,7 @@ Route::get('/services', 'ServicesController@index')->name('services');
 Route::get('/screen-adaptation', 'BookToScreenController@index')->name('screen-adaptation');
 Route::get('/bookstore-display', 'BookstoreDisplayController@index')->name('bookstore-display');
 // Route::get('/to-read-list', 'FeaturedBooksController@index')->name('to-read-list');
-Route::get('/spotlight', 'FeaturedAuthorController@index')->name('spotlight');
+
 Route::get('/blogs', 'BlogsController@index')->name('blogs');
 Route::get('/marketing-and-partnership', 'PartnershipController@index')->name('marketing-and-partnership');
 Route::get('/press-release', 'PressReleaseController@index')->name('press-release');
@@ -37,3 +37,6 @@ Route::get('/teaser-ads', 'BookTrailerController@index')->name('teaser-ads');
 Route::get('/testmail', 'SubscriberController@testmail')->name('testmail');
 Route::get('/unsubscribe', 'SubscriberController@unsubscribe')->name('unsubscribe');
 
+// SPOTLIGHTS
+Route::get('/spotlight', 'FeaturedAuthorController@index')->name('spotlight');
+Route::get('/spotlight/steven-bently', 'FeaturedAuthorController@featured1')->name('spotlight.steven-bentley');

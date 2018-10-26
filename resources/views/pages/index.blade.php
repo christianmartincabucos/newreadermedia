@@ -1,5 +1,6 @@
 @extends('layouts.app')
-
+@section('og-title')Connect to the world and build your brand with New Reader Media.@endsection
+@section('meta-description')New Reader Media is a creative marketing and PR firm. We know a lot of amazing people who rock at what they do, and we can help get your brand stories out into the world.@endsection
 @section('content')
 <div class="container">
     <div class="row">
@@ -151,11 +152,11 @@
                                     <div class="divider" style="margin:0 0 5px 0"></div>
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-4">
-                                            <a href="{{ url('/spotlight') }}"><img class="article-thumbnail img-circle" src="{{{ url('public/storage/featured-author/steven-bentley.jpeg') }}}" style="width:100%"></a>
+                                            <a href="{{ url('/spotlight') }}"><img class="article-thumbnail img-circle" src="{{{ url('public/storage/featured-author/zachary-zeigler.jpg') }}}" style="width:100%"></a>
                                         </div>
                                         <div class="col-xs-12 col-sm-8">
-                                            <a class="article-link" href="{{ url('/spotlight') }}"><h4 class="title title-red">Spotlight</h4></a><strong>Steven Bentley</strong>
-                                            <p class="small">{{ str_limit("With a career spanning more than thirty years, Steven Bentley, M.D. describes the real world of emergency medicine from the viewpoints of a practicing physician. ",72) }} <br><a class="small read-more" href="{{ url('/spotlight') }}">Read more</a> </p>
+                                            <a class="article-link" href="{{ url('/spotlight') }}"><h4 class="title title-red">Spotlight</h4></a><strong>Zachary Zeigler</strong>
+                                            <p class="small">{{ str_limit("He teaches Exercise Physiology and Nutrition courses and is an active researcher investigating the impacts of obesity on cardiovascular health. ",72) }} <br><a class="small read-more" href="{{ url('/spotlight') }}">Read more</a> </p>
                                         </div>
                                     </div>
                                     <div class="divider" style="margin:0 0 5px 0"></div>

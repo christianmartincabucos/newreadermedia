@@ -10,4 +10,9 @@ class FeaturedAuthorController extends Controller
     {
         return view('featured-author.index');
     }
+
+    public function featured1()
+    {
+        return view('featured-author.steven-bentley');
+    }
 }

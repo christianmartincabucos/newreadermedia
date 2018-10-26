@@ -1,5 +1,6 @@
 @extends('layouts.app')
-
+@section('og-title')Have a book? Advertise with NRM's eye-catching bookstore displays.@endsection
+@section('meta-description')People say bookstores are a thing of the past. But are they really? Find out about bookstores and bookstore displays. Get the low-down on this awesome advertising tool.@endsection
 @section('content')
 <div class="container">
     <div class="row">

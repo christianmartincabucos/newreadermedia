@@ -1,5 +1,6 @@
 @extends('layouts.app')
-
+@section('og-title')Spread the word about you and your brand with New Reader Media press releases.@endsection
+@section('meta-description')Keep up to date with what's going on in the New Reader Media and our partners. Find all the latest New Reader Media news and updates here. Read all the newest stories, contests, and more.@endsection
 @section('content')
 <div class="container">
     <div class="row">

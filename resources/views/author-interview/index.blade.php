@@ -1,5 +1,6 @@
 @extends('layouts.app')
-
+@section('og-title')Check out New Reader Media's author interviews for an in-depth look at emerging voices.@endsection
+@section('meta-description')New Reader Media interviews inspiring authors, artists, and creatives from all around the world, to get a look at what inspires their work and what keeps them going.@endsection
 @section('content')
 <div class="container">
     <div class="row">

@@ -1,5 +1,6 @@
 @extends('layouts.app')
-
+@section('og-title')Partner with New Reader Media for the best online publicity and marketing.@endsection
+@section('meta-description')NRM is a marketing and publicity firm for enterprising artists, indie authors, and creatives all over the world. Let us help you build your brand and market your work.@endsection
 @section('content')
 <div class="container">
     <div class="row">
