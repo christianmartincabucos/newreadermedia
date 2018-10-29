@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title')Connect to the world and build your brand with New Reader Media.@endsection
 @section('og-title')Connect to the world and build your brand with New Reader Media.@endsection
 @section('meta-description')New Reader Media is a creative marketing and PR firm. We know a lot of amazing people who rock at what they do, and we can help get your brand stories out into the world.@endsection
 @section('content')

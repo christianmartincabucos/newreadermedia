@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title')Check out New Reader Media's favorite creatives in NRM's Spotlight.@endsection
 @section('og-title')Check out New Reader Media's favorite creatives in NRM's Spotlight.@endsection
 @section('meta-description')Rockstar creatives and awesome authors get the spotlight here. New Reader Media shines a light on underrated voices and emerging authors, artists, and the most inspiring people you'll ever meet.@endsection
 @section('content')

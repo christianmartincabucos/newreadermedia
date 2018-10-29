@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name') }}</title>
+    <title>@yield('title', config('app.name', 'New Reader Media'))</title>
     <meta name="google-site-verification" content="hd1INGpSb_YOxoGy0HWmhkTXgzwzwOmqikxI7BtMFA8" />
     <meta property="fb:app_id" content="1878469292220598">
     <meta property="og:url" content="@yield('og-url', url('/') )">
