@@ -53,9 +53,7 @@
                     <a href="{{ url('/') }}">
                         <img src="{{{ url('public/storage/nrmedia-black.png') }}}" alt="" style="height:120px;">
                     </a>
-                    <a class="hidden pull-right" href="{{ url('/') }}">
-                        <img src="{{{ url('public/storage/sample-ads.gif') }}}" alt="" style="height:90px">
-                    </a>
+                   
                         {{-- <span style="color:#000;font-size:50px">New <span class="text-red">Reader</span> Media</span> --}}
                 </div>
             
