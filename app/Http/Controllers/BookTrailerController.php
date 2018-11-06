@@ -10,4 +10,9 @@ class BookTrailerController extends Controller
     {
         return view('book-trailer.index');
     }
+
+    public function list()
+    {
+        return view('book-trailer.list');
+    }
 }

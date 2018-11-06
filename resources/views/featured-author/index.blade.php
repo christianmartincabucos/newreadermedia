@@ -33,7 +33,7 @@
                             
                             <div class="row">
                                 <div class="col-md-8 center-block">
-                                    <a href="http://http://weightlossbible.net" target="_blank" rel="nofollow">
+                                    <a href="https://www.amazon.com/Weight-Loss-Bible-Scientific-Approach-ebook/dp/B079ZJTQCM/ " target="_blank" rel="nofollow">
                                         <img src="{{{ url('public/storage/featured-author/weight-loss-bible.png') }}}" class="" style="width:100%">
                                     </a>
                                 </div>

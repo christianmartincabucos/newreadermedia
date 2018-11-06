@@ -100,13 +100,13 @@
                         <div class="col-md-4">
                             <section class="box-section" style="border-top: 3px solid rgb(180, 40, 40);">
                                 <div class="box-article">
-                                        
+                                    <a class="article-link" href="{{ url('/trailers') }}"><h4 class="title title-red">Trailers</h4></a>    
                                     <div class="embed-container" style="margin-bottom:10px">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/aqzxUMJiU8A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/O0qePkOcf1o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                                     </div>
                                     
-                                    <h4 class="title"><a href="https://www.youtube.com/watch?v=aqzxUMJiU8A" target="_blank"><strong>Aftermath: Nomads, Pirates and Frogfaces - Official Book Trailer</strong></a></h4>
-                                    <p>A nomad headquarters gets attacked by pirates and later on, saved by a female leader of another nomad group only to reveal they are up against a bigger enemy than the pirates.</p>
+                                    <h4 class="title"><a href="https://www.youtube.com/watch?v=O0qePkOcf1o" target="_blank" rel="nofollow"><strong>Lies Deceit and an Innocent Man - Official Book Trailer</strong></a></h4>
+                                    <p>Todd Bainbridge had his life planned. His future was secured. And in five years he would be a doctor. Bradfords local doctor; Doctor Chandler promised him a partnership in his practice. When Katies body was found on the York moor a week after her disappearance his life fell apart.</p>
                                    
                                     
                                 </div>
