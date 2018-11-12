@@ -41,3 +41,5 @@ Route::get('/unsubscribe', 'SubscriberController@unsubscribe')->name('unsubscrib
 // SPOTLIGHTS
 Route::get('/spotlight', 'FeaturedAuthorController@index')->name('spotlight');
 Route::get('/spotlight/steven-bentley', 'FeaturedAuthorController@featured1')->name('spotlight.steven-bentley');
+Route::get('/spotlight/zachary-zeigler', 'FeaturedAuthorController@featured2')->name('spotlight.zachary-zeigler');
+Route::get('/spotlight/kristy-kraft', 'FeaturedAuthorController@featured3')->name('spotlight.kristy-kraft');

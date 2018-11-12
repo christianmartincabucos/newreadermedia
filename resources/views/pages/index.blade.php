@@ -153,11 +153,11 @@
                                     <div class="divider" style="margin:0 0 5px 0"></div>
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-4">
-                                            <a href="{{ url('/spotlight') }}"><img class="article-thumbnail img-circle" src="{{{ url('public/storage/featured-author/zachary-zeigler.jpg') }}}" style="width:100%"></a>
+                                            <a href="{{ url('/spotlight') }}"><img class="article-thumbnail img-circle" src="{{{ url('public/storage/featured-author/kkraft.jpg') }}}" style="width:100%"></a>
                                         </div>
                                         <div class="col-xs-12 col-sm-8">
-                                            <a class="article-link" href="{{ url('/spotlight') }}"><h4 class="title title-red">Spotlight</h4></a><strong>Zachary Zeigler</strong>
-                                            <p class="small">{{ str_limit("He teaches Exercise Physiology and Nutrition courses and is an active researcher investigating the impacts of obesity on cardiovascular health. ",72) }} <br><a class="small read-more" href="{{ url('/spotlight') }}" rel="nofollow">Read more</a> </p>
+                                            <a class="article-link" href="{{ url('/spotlight') }}"><h4 class="title title-red">Spotlight</h4></a><strong>Kristy K. Kraft</strong>
+                                            <p class="small">{{ str_limit("She enjoys setting up at festivals and events to promote her book, True Treasure.",72) }} <br><a class="small read-more" href="{{ url('/spotlight') }}" rel="nofollow">Read more</a> </p>
                                         </div>
                                     </div>
                                     <div class="divider" style="margin:0 0 5px 0"></div>

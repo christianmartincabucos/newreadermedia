@@ -1,7 +1,7 @@
 @extends('layouts.app')
-@section('title')Check out New Reader Media's favorite creatives in NRM's Spotlight.@endsection
-@section('og-title')Check out New Reader Media's favorite creatives in NRM's Spotlight.@endsection
-@section('meta-description')Rockstar creatives and awesome authors get the spotlight here. New Reader Media shines a light on underrated voices and emerging authors, artists, and the most inspiring people you'll ever meet.@endsection
+@section('title')Media Spotlight: Zachary Zeigler, Ph.D. @endsection
+@section('og-title')Media Spotlight: Zachary Zeigler, Ph.D. @endsection
+@section('meta-description')Dr. Zeigler teaches Exercise Physiology and Nutrition courses and is an active researcher investigating the impacts of obesity on cardiovascular health.@endsection
 @section('content')
 <div class="container">
     <div class="row">
@@ -20,7 +20,7 @@
                             <div class="col-md-4 center-block">
                                 <img src="{{{ url('public/storage/featured-author/zachary-zeigler.jpg') }}}" class="img-circle" style="width:100%">
                             </div>
-                            <h3 class="text-center"><strong>Zachary Zeigler</strong> </h3>
+                            <h3 class="text-center"><strong>Zachary Zeigler, Ph.D.</strong> </h3>
                             <p>Dr. Zeigler received his doctoral degree in Physical Activity, Nutrition, and Wellness from Arizona State University. He
                                 is an Assistant Professor at Grand Canyon University. He teaches Exercise Physiology and Nutrition courses and is an
                                 active researcher investigating the impacts of obesity on cardiovascular health. Dr. Zeigler has five children and has

@@ -1,6 +1,6 @@
 @extends('layouts.app')
-@section('title')Media Spotlight: Steven Bentley @endsection
-@section('og-title')Media Spotlight: Steven Bentley @endsection
+@section('title')Media Spotlight: Steven Bentley, M.D. @endsection
+@section('og-title')Media Spotlight: Steven Bentley, M.D. @endsection
 @section('meta-description')Steven Bentley, M.D. is an American Board of Emergency Medicine certified ED doctor. His journey began in the mid-1970s, when he chose to pursue a career in medicine. Now, with a career spanning more than thirty years, he works as an emergency-room physician in North Carolina.@endsection
 @section('content')
 <div class="container">
@@ -20,7 +20,7 @@
                             <div class="col-md-4 center-block">
                                 <img src="{{{ url('public/storage/featured-author/steven-bentley.jpeg') }}}" class="img-circle" style="width:100%">
                             </div>
-                            <h3 class="text-center"><strong>Steven Bentley</strong> </h3>
+                            <h3 class="text-center"><strong>Steven Bentley, M.D.</strong> </h3>
                             <p>Steven Bentley, M.D. graduated from the Medical College of Georgia in Augusta, Georgia in 1978. The majority of his career has been in the emergency departments of North Carolina hospitals. He grew up in Georgia.</p>
                             <br>
                             <blockquote class="blockquote">
@@ -55,16 +55,7 @@
                             <p>A License to Heal: Random Memories of an ER Doctor is a very blunt account of life in the emergency room from the perspective of the medical staff. Bentley chronicles heartbreaking loss, triumphant recoveries and everything in between, including the emotional toll of trying to help others often on the brink of death. He even touches on the evolution (or devolution) of the American healthcare system. This book is exactly what it claims to be: a random account of one ER doctor’s experiences in the field.</p>
                             <h4 class="text-right text-red"><em>- Pacific Book Review</em></h4>
                         </div>
-                        <div class="col-md-3">
-                            <p><strong>RECENT SPOTLIGHTS</strong></p>
-                        
-                            <ul class="list-unstyled">
-                                <li><a href="{{ route('spotlight') }}" class="article-link">Zachary Zeigler</a></li>
-                                <li><a href="{{ route('spotlight.steven-bentley') }}" class="article-link">Steven Bentley</a></li>
-                                
-                            </ul>
-                            
-                        </div>
+                        @include('featured-author.sidebar')
                         
                     </section>
                     </div>                    
