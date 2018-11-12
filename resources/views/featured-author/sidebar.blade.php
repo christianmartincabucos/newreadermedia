@@ -1,5 +1,5 @@
 <div class="col-md-3">
-    <p><strong>RECENT SPOTLIGHTS</strong></p>
+    <p><strong>OUR SPOTLIGHTS</strong></p>
     
     <ul class="list-unstyled">
         <li><a href="{{ route('spotlight.kristy-kraft') }}" class="article-link">Kristy K. Kraft</a></li>
