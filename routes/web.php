@@ -49,3 +49,4 @@ Route::get('/spotlight/cora-darrah', 'FeaturedAuthorController@featured6')->name
 Route::get('/spotlight/les-klinefelter', 'FeaturedAuthorController@featured7')->name('spotlight.les-klinefelter');
 Route::get('/spotlight/mike-mccluskey', 'FeaturedAuthorController@featured8')->name('spotlight.mike-mccluskey');
 Route::get('/spotlight/skyelar-nelson', 'FeaturedAuthorController@featured9')->name('spotlight.skyelar-nelson');
+Route::get('/spotlight/sharon-brown-keith', 'FeaturedAuthorController@featured10')->name('spotlight.sharon-brown-keith');

@@ -2,6 +2,7 @@
     <p><strong>OUR SPOTLIGHTS</strong></p>
     
     <ul class="list-unstyled">
+        <li><a href="{{ route('spotlight.sharon-brown-keith') }}" class="article-link">Sharon Brown Keith</a></li>
         <li><a href="{{ route('spotlight.skyelar-nelson') }}" class="article-link">Skyelar Nelson</a></li>
         <li><a href="{{ route('spotlight.mike-mccluskey') }}" class="article-link">Mike McCluskey</a></li>
         <li><a href="{{ route('spotlight.les-klinefelter') }}" class="article-link">Les Klinefelter</a></li>

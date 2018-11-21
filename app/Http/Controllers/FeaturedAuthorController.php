@@ -55,4 +55,9 @@ class FeaturedAuthorController extends Controller
     {
         return view('featured-author.skyelar-nelson');
     }
+
+    public function featured10()
+    {
+        return view('featured-author.sharon-brown-keith');
+    }
 }
