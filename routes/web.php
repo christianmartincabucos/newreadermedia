@@ -50,3 +50,10 @@ Route::get('/spotlight/les-klinefelter', 'FeaturedAuthorController@featured7')->
 Route::get('/spotlight/mike-mccluskey', 'FeaturedAuthorController@featured8')->name('spotlight.mike-mccluskey');
 Route::get('/spotlight/skyelar-nelson', 'FeaturedAuthorController@featured9')->name('spotlight.skyelar-nelson');
 Route::get('/spotlight/sharon-brown-keith', 'FeaturedAuthorController@featured10')->name('spotlight.sharon-brown-keith');
+Route::get('/spotlight/abid-shakir', 'FeaturedAuthorController@featured11')->name('spotlight.abid-shakir');
+Route::get('/spotlight/burt-kempner', 'FeaturedAuthorController@featured12')->name('spotlight.burt-kempner');
+Route::get('/spotlight/calvin-moir', 'FeaturedAuthorController@featured13')->name('spotlight.calvin-moir');
+Route::get('/spotlight/charles-arnold', 'FeaturedAuthorController@featured14')->name('spotlight.charles-arnold');
+Route::get('/spotlight/lawrence-stenzel', 'FeaturedAuthorController@featured15')->name('spotlight.lawrence-stenzel');
+Route::get('/spotlight/philip-persinger', 'FeaturedAuthorController@featured16')->name('spotlight.philip-persinger');
+Route::get('/spotlight/tom-peavler', 'FeaturedAuthorController@featured17')->name('spotlight.tom-peavler');
