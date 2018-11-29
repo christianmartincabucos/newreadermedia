@@ -33,7 +33,7 @@
         </div>
         <div class="col-md-3 col-md-pull-4 text-center">
             <a href="{{ url('/') }}">
-                <img style="width:200px" src="{{{ url('public/storage/nrmedia-logo2.png') }}}">
+                <img style="width:200px" src="{{{ url('public/storage/nrmedia-logo2.png') }}}" alt="NRMedia Logo">
             </a>
             
         </div>

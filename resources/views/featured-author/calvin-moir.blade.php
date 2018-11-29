@@ -28,7 +28,7 @@
                             <div class="row">
                                 <div class="col-md-8 center-block">
                                     <a href="https://www.amazon.com/Saltbox-Calvin-Moir/dp/1463432933/" target="_blank" rel="nofollow">
-                                        <img src="{{{ url('public/storage/featured-author/the-saltbox.png') }}}" class="" style="width:100%">
+                                        <img src="{{{ url('public/storage/featured-author/the-saltbox.png') }}}" class="" style="width:100%" alt="The Saltbox">
                                     </a>
                                 </div>
                                 

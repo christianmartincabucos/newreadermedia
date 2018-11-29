@@ -28,7 +28,7 @@
                                     <!-- Wrapper for slides -->
                                     <div class="carousel-inner">
                                         <div class="item active">
-                                            <img style="width:100%" src="{{{ url('public/storage/services/screenplay-service.jpg') }}}">
+                                            <img style="width:100%" src="{{{ url('public/storage/services/screenplay-service.jpg') }}}" alt="Screenplay Service">
                                             <div class="layer" style="background-color: rgba(40, 40, 40, 0.6);position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
                                             <div class="carousel-caption">
                                                 <h1>Screenplay Service</h1>
@@ -36,7 +36,7 @@
                                             </div>
                                         </div>
                                         <div class="item">
-                                            <img style="width:100%" src="{{{ url('public/storage/services/treatment-script-draft-service.jpg') }}}">
+                                            <img style="width:100%" src="{{{ url('public/storage/services/treatment-script-draft-service.jpg') }}}" alt="Treatment Script Draft Service">
                                             <div class="layer" style="background-color: rgba(40, 40, 40, 0.6);position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
                                             <div class="carousel-caption">
                                                 <h1>Treatment/Script Draft Service</h1>
@@ -44,7 +44,7 @@
                                             </div>
                                         </div>
                                         <div class="item">
-                                            <img style="width:100%" src="{{{ url('public/storage/services/synopsis-coverage-service.jpg') }}}">
+                                            <img style="width:100%" src="{{{ url('public/storage/services/synopsis-coverage-service.jpg') }}}" alt="Synopsis Coverage Service">
                                             <div class="layer" style="background-color: rgba(40, 40, 40, 0.6);position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
                                             <div class="carousel-caption">
                                                 <h1>Synopsis/Coverage Service</h1>
@@ -52,7 +52,7 @@
                                             </div>
                                         </div>
                                         <div class="item">
-                                            <img style="width:100%" src="{{{ url('public/storage/services/website-creation.jpg') }}}">
+                                            <img style="width:100%" src="{{{ url('public/storage/services/website-creation.jpg') }}}" alt="Website Creation">
                                             <div class="layer" style="background-color: rgba(40, 40, 40, 0.6);position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
                                             <div class="carousel-caption">
                                                 <h1>Website Creation, Hosting and SEO</h1>
@@ -60,7 +60,7 @@
                                             </div>
                                         </div>
                                         <div class="item">
-                                            <img style="width:100%" src="{{{ url('public/storage/services/publicity-services.jpg') }}}">
+                                            <img style="width:100%" src="{{{ url('public/storage/services/publicity-services.jpg') }}}" alt="Publicity Services">
                                             <div class="layer" style="background-color: rgba(40, 40, 40, 0.6);position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
                                             <div class="carousel-caption">
                                                 <h1>Publicity Services</h1>
@@ -68,7 +68,7 @@
                                             </div>
                                         </div>
                                         <div class="item">
-                                            <img style="width:100%" src="{{{ url('public/storage/services/movie-agent.jpg') }}}">
+                                            <img style="width:100%" src="{{{ url('public/storage/services/movie-agent.jpg') }}}" alt="Movie Agent">
                                             <div class="layer" style="background-color: rgba(40, 40, 40, 0.6);position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
                                             <div class="carousel-caption">
                                                 <h1>Movie Agent</h1>
@@ -76,7 +76,7 @@
                                             </div>
                                         </div>
                                         <div class="item">
-                                            <img style="width:100%" src="{{{ url('public/storage/services/book-trailer.jpg') }}}">
+                                            <img style="width:100%" src="{{{ url('public/storage/services/book-trailer.jpg') }}}" alt="Book Trailer">
                                             <div class="layer" style="background-color: rgba(40, 40, 40, 0.6);position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
                                             <div class="carousel-caption">
                                                 <h1>Teaser Ads</h1>
@@ -143,7 +143,7 @@
                                     
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-4">
-                                            <a class="article-link" href="{{ url('/press-release') }}"><img class="article-thumbnail" src="{{{ url('public/storage/nrmedia-logo2.png') }}}" style="width:100%;margin:auto 0"></a>
+                                            <a class="article-link" href="{{ url('/press-release') }}"><img class="article-thumbnail" src="{{{ url('public/storage/nrmedia-logo2.png') }}}" style="width:100%;margin:auto 0" alt="New Reader Media"></a>
                                         </div>
                                         <div class="col-xs-12 col-sm-8">
                                             <a class="article-link" href="{{ url('/press-release') }}"><h4 class="title title-red">What's New?</h4></a><strong>Press Release</strong>
@@ -153,7 +153,7 @@
                                     <div class="divider" style="margin:0 0 5px 0"></div>
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-4">
-                                            <a href="{{ url('/spotlight') }}"><img class="article-thumbnail img-circle" src="{{{ url('public/storage/featured-author/lindy-kerr.jpg') }}}" style="width:100%"></a>
+                                            <a href="{{ url('/spotlight') }}"><img class="article-thumbnail img-circle" src="{{{ url('public/storage/featured-author/lindy-kerr.jpg') }}}" style="width:100%" alt="Lindy Kerr"></a>
                                         </div>
                                         <div class="col-xs-12 col-sm-8">
                                             <a class="article-link" href="{{ url('/spotlight') }}"><h4 class="title title-red">Spotlight</h4></a><strong>Lindy Kerr</strong>
@@ -163,7 +163,7 @@
                                     <div class="divider" style="margin:0 0 5px 0"></div>
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-4">
-                                            <a class="article-link" href="https://www.newreadermagazine.com/download" target="_blank"><img class="article-thumbnail" src="https://www.newreadermagazine.com/images/nrm-third-issue.jpg" style="width:100%"></a>
+                                            <a class="article-link" href="https://www.newreadermagazine.com/download" target="_blank"><img class="article-thumbnail" src="https://www.newreadermagazine.com/images/nrm-third-issue.jpg" style="width:100%" alt="NRM Third Issue"></a>
                                         </div>
                                         <div class="col-xs-12 col-sm-8">
                                             <a class="article-link" href="https://www.newreadermagazine.com/download" target="_blank"><h4 class="title title-red">New Reader Magazine</h4></a><strong>Issue no. 3</strong>
@@ -206,7 +206,7 @@
                                     
                                     <div style="position:relative;width:100%;height:250px;background:url({{{ url('public/storage/services/bsd3.jpg') }}}) center center no-repeat;background-size: cover;overflow:hidden">
                                         <div class="layer" style="background-color: rgba(0, 0, 0, 0.7);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
-                                            {{-- <p><a href="{{ url('/bookstore-display') }}"><strong><span style="font-size: 18px;color:#fff">Bookstore Displays: Why are they important?</span></strong></a></p> --}}
+                                            
                                             <a class="article-link" href="{{ url('/bookstore-display') }}"><h3 class="header-red-box"><strong>Bookstores: A Timeless Place</strong></h3></a>
                                             <p class="text-justify" style="font-size:12px;position: relative;top: 35%;transform: translateY(-60%); ">In this modern digital age, books are created into audiobooks or converted digitally into e-books for people to read in their own respective smart devices. Not to mention the significant rise of online shopping that delivers your book to your doorstep astoundingly fast. 
                                                 <br><a class="small read-more" href="{{ url('/bookstore-display') }}" rel="nofollow">Read more</a>
@@ -222,15 +222,10 @@
                             <section class="box-section" style="border-top: 3px solid rgb(180, 40, 40);">
                                 
                                 <div class="box-article">
-                                    {{-- <img class="article-thumbnail" style="width:100%" src="{{{ url('public/storage/book-to-screen.jpg') }}}">
-                                    <h4 class="title"><a href="{{ url('/book-to-screen') }}">Book-to-Screen</a></h4>
-                                    <p class="text-justify"> --}}
-                                            {{-- There’s always a tension between plotting and knowing what the character wants. It’s a constant balancing act. One dial moves the storyline horizontally and the other moves it vertically. If you hit the right balance, you get a diagonal— which is not at all an easy feat to achieve. --}}
-                                        {{-- <br><small>News | Aug 18, 2018</small> --}}
-                                    {{-- </p> --}}
+                                    
                                     <div style="position:relative;width:100%;height:250px;background:url({{{ url('public/storage/book-to-screen.jpg') }}}) center center no-repeat;background-size: cover;overflow:hidden">
                                         <div class="layer" style="background-color: rgba(0, 0, 0, 0.7);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
-                                            {{-- <p><a href="{{ url('/screen-adaptation') }}"><strong><span style="font-size: 18px;color:#fff">The Making of an Adapted Screenplay</span></strong></a></p> --}}
+                                            
                                             <a class="article-link" href="{{ url('/screen-adaptation') }}"><h3 class="header-red-box"><strong>The Making of an Adapted Screenplay</strong></h3></a>
                                             <p class="text-justify" style="font-size:12px;position: relative;top: 35%;transform: translateY(-60%); ">There’s always a tension between plotting and knowing what the character wants. It’s a constant balancing act. One dial moves the storyline horizontally and the other moves it vertically. If you hit the right balance, you get a diagonal— which is not at all an easy feat to achieve.
                                                 <br><a class="small read-more" href="{{ url('/screen-adaptation') }}" rel="nofollow">Read more</a>
@@ -250,7 +245,7 @@
                                     <div style="position:relative;width:100%;min-height:250px;background:url({{{ url('public/storage/services/bt2.jpg') }}}) center center no-repeat;background-size: cover;overflow:hidden">
                                         <div class="layer" style="background-color: rgba(0, 0, 0, 0.7);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
                                             
-                                            {{-- <p><a href="{{ url('/teaser-ads') }}"><strong><span style="font-size: 18px;color:#fff">Teaser Ads, why do we need them?</span></strong></a></p> --}}
+                                            
                                             <a class="article-link" href="{{ url('/teaser-ads') }}"><h3 class="header-red-box"><strong>Teaser Ads, why do we need them?</strong></h3></a>
                                             <p class="text-justify" style="font-size:12px;position: relative;top: 35%;transform: translateY(-50%); ">If you want to be viral, you have to marry videos. Engagement with a global audience generates more than buzz and hype. It gets your message across instantly. Corporate entities project their personalities through relatable content and no other medium can do this more efficiently than videos.
                                                 <br><a class="small read-more" href="{{ url('/teaser-ads') }}" rel="nofollow">Read more</a>
@@ -266,9 +261,9 @@
                         <div class="col-md-8">
                             <section class="box-section" style="border-top: 3px solid rgb(180, 40, 40);">
                                 <div class="box-article">
-                                    {{-- <img style="width:100%" src="{{{ url('public/storage/interview.jpg') }}}"> --}}
+                                    
                                     <div class="embed-container-x">
-                                        {{-- <iframe width="560" height="315" src="https://www.youtube.com/embed/sDxmMkgPmaQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> --}}
+                                        
                                         <video width="100%" height="auto" controls controlsList="nodownload">
                                             <source src="{{{ url('public/storage/videos/the-final-audit-interview.mp4') }}}" type="video/mp4">
                                             
@@ -290,7 +285,7 @@
                                     <h3 style="margin-top:0" class="header-red">Literary Works</h3>
                                     <div class="row">
                                         <div class="col-md-4">
-                                          <img class="article-thumbnail" src="https://www.newreadermagazine.com/images/how-seo-can-help-you-build-a-readership-and-market-your-book.jpg" style="width:100%">
+                                          <img class="article-thumbnail" src="https://www.newreadermagazine.com/images/how-seo-can-help-you-build-a-readership-and-market-your-book.jpg" style="width:100%" alt="How SEO Can Help You Build a Readership and Market Your Book">
                                         </div>
                                         <div class="col-md-8">
                                           <h4 class="title"><a href="https://www.newreadermagazine.com/tips-and-guides/how-seo-can-help-you-build-a-readership-and-market-your-book" target="_blank">How SEO Can Help You Build a Readership and Market Your Book</a> <br><small>newreadermagazine.com</small></h4>
@@ -300,7 +295,7 @@
                                     <div class="divider"></div>
                                     <div class="row">
                                         <div class="col-md-4">
-                                          <img class="article-thumbnail" src="https://www.newreadermagazine.com/images/the-beginners-guide-to-the-best-seo-practices-in-2017-and-2018.jpg" style="width:100%">
+                                          <img class="article-thumbnail" src="https://www.newreadermagazine.com/images/the-beginners-guide-to-the-best-seo-practices-in-2017-and-2018.jpg" style="width:100%" alt="The Beginner’s Guide to the Best SEO Practices in 2017 and 2018">
                                         </div>
                                         <div class="col-md-8">
                                           <h4 class="title"><a href="https://www.newreadermagazine.com/tips-and-guides/the-beginners-guide-to-the-best-seo-practices-in-2017-and-2018">The Beginner’s Guide to the Best SEO Practices in 2017 and 2018</a> <br><small>newreadermagazine.com</small></h4>
@@ -357,7 +352,7 @@
                                             {{-- <img style="width:100%;height:200px" src="{{{ url('public/storage/sample-img-1.jpg') }}}"> --}}
                                             <div class="text-center" style="width:100%;height:300px;max-height:450px;background:transparent;padding-top:20px;"></div>
                                             <div class="carousel-caption">
-                                                <img src="{{{ url('public/storage/testimonials/paul-antwi.png') }}}" alt="" class="img-circle" style="width:100px">
+                                                <img src="{{{ url('public/storage/testimonials/paul-antwi.png') }}}" alt="Paul Antwi" class="img-circle" style="width:100px">
                                                 <h4>"Thank you so much for this good job you have done of the great story created through the book. I've checked and see everything looks good and ready now."</h4>
                                                 <p class="">- Paul Antwi</p>
                                             </div>
@@ -366,7 +361,7 @@
                                             {{-- <img style="width:100%;height:200px" src="{{{ url('public/storage/sample-img-2.jpg') }}}"> --}}
                                             <div class="text-center" style="width:100%;height:300px;;max-height:450px;background:transparent;padding-top:20px;"></div>
                                             <div class="carousel-caption">
-                                                <img src="{{{ url('public/storage/testimonials/carnie-mattisonn.png') }}}" alt="" class="img-circle" style="width:100px">
+                                                <img src="{{{ url('public/storage/testimonials/carnie-mattisonn.png') }}}" alt="Carni Mattisonn" class="img-circle" style="width:100px">
                                                 <h4>"Your amendments to the script have been carefully and skillfully crafted to portray the story in a smooth and cohesive way that flows easily."</h4>
                                                 <p class="">- Dr. Carnie Matisonn</p>
                                             </div>
@@ -376,7 +371,7 @@
                                             {{-- <img style="width:100%;height:200px" src="{{{ url('public/storage/sample-img-3.jpg') }}}"> --}}
                                             <div class="text-center" style="width:100%;height:300px;;max-height:450px;background:transparent;padding-top:20px;"></div>
                                             <div class="carousel-caption">
-                                                <img src="{{{ url('public/storage/testimonials/manuel-pelaez.png') }}}" alt="" class="img-circle" style="width:100px">
+                                                <img src="{{{ url('public/storage/testimonials/manuel-pelaez.png') }}}" alt="Manuel Pelaez" class="img-circle" style="width:100px">
                                                 <h4>"Their dedication towards professionalism, is unbelievable. They dedicate themselves to bring an author, writer, and artist, to a higher level, without any doubt, I will continue joint ventures with them, into successful outcomes, they are part of my family now, thank you."</h4>
                                                 <p class="">- Manuel Pelaez</p>
                                             </div>
@@ -385,7 +380,7 @@
                                             {{-- <img style="width:100%;height:200px" src="{{{ url('public/storage/sample-img-3.jpg') }}}"> --}}
                                             <div class="text-center" style="width:100%;height:300px;;max-height:450px;background:transparent;padding-top:20px;"></div>
                                             <div class="carousel-caption">
-                                                <img src="{{{ url('public/storage/testimonials/cathy-young.PNG') }}}" alt="" class="img-circle" style="width:100px">
+                                                <img src="{{{ url('public/storage/testimonials/cathy-young.PNG') }}}" alt="Cathy Young" class="img-circle" style="width:100px">
                                                 <h4>"I think you did a wonderful job on the screenplay project. I truly appreciate you, as well as the time and effort you placed into my project."</h4>
                                                 <p class="">- Cathy Young</p>
                                             </div>

@@ -40,7 +40,7 @@
                                     <p class="text-justify"><span style="">The reality is that we live in an age where many are watching and fewer people are reading. Book trailers are a bridge that links potential readers and authors on a different dimension. A world full of unknown possibilities, that could potentially turn into an escape, a temporary reality, the more you immerse yourself in it.&nbsp;</span></p>
                                     
                                     <p class="text-justify"><span style="">So do the work. Create a great and impressionable book trailer and make your story lasts for all time. Swing from the heels and never look back.</span></p>
-                                    <img class="article-thumbnail" src="{{{ url('public/storage/services/bt1.jpg') }}}" style="width:100%">
+                                    <img class="article-thumbnail" src="{{{ url('public/storage/services/bt1.jpg') }}}" style="width:100%" alt="Teaser Ads">
                                 </div>
                             </div>
                             

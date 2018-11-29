@@ -18,7 +18,7 @@
                         
                         <div class="col-md-9 text-justify right-divider">
                             <div class="col-md-4 center-block">
-                                <img src="{{{ url('public/storage/featured-author/kkraft.jpg') }}}" class="img-circle" style="width:100%">
+                                <img src="{{{ url('public/storage/featured-author/kkraft.jpg') }}}" class="img-circle" style="width:100%" alt="Kristy K. Kraft">
                             </div>
                             <h3 class="text-center"><strong>Kristy K. Kraft</strong> </h3>
                             <p>Author Kristy K. Kraft grew up in Iowa, earning degrees in journalism and German at the University of Iowa, but has lived for many years in Kernersville, NC.  She and her family and friends enjoy spending time at beautiful Smith Mountain Lake, VA, where she loves boating, waterskiing, and time on the dock.</p>
@@ -32,7 +32,7 @@
                             <div class="row">
                                 <div class="col-md-8 center-block">
                                     <a href="https://www.amazon.com/True-Treasure-Kristy-K-Kraft-ebook/dp/B01B8F5GSG/" target="_blank" rel="nofollow">
-                                        <img src="{{{ url('public/storage/featured-author/true-treasure.png') }}}" class="" style="width:100%">
+                                        <img src="{{{ url('public/storage/featured-author/true-treasure.png') }}}" class="" style="width:100%" alt="True Treasure">
                                     </a>
                                 </div>
                                 

@@ -18,7 +18,7 @@
                         
                         <div class="col-md-9 text-justify right-divider">
                             <div class="col-md-4 center-block">
-                                <img src="{{{ url('public/storage/featured-author/cora-darrah.jpg') }}}" class="img-circle" style="width:100%">
+                                <img src="{{{ url('public/storage/featured-author/cora-darrah.jpg') }}}" class="img-circle" style="width:100%" alt="Cora Darrah">
                             </div>
                             <h3 class="text-center"><strong>Cora Darrah</strong> </h3>
                             <p>Cora Darrah has been an educator for over thirty-five years in the public school system. She has taught all grade levels but found the most joy while working with elementary school children. When she retired from the classroom, she decided to write what she was passionate about.</p>
@@ -37,7 +37,7 @@
                             <div class="row">
                                 <div class="col-md-8 center-block">
                                     <a href="https://www.amazon.com/Jerry-Barry-Healthy-Cora-Darrah/dp/0998651427/" target="_blank" rel="nofollow">
-                                        <img src="{{{ url('public/storage/featured-author/jerry-barry-living-healthy.png') }}}" class="" style="width:100%">
+                                        <img src="{{{ url('public/storage/featured-author/jerry-barry-living-healthy.png') }}}" class="" style="width:100%" alt="Jerry Barry: Living Healthy">
                                     </a>
                                 </div>
                                 

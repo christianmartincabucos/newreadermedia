@@ -18,7 +18,7 @@
                         
                         <div class="col-md-9 text-justify right-divider">
                             <div class="col-md-4 center-block">
-                                <img src="{{{ url('public/storage/featured-author/zachary-zeigler.jpg') }}}" class="img-circle" style="width:100%">
+                                <img src="{{{ url('public/storage/featured-author/zachary-zeigler.jpg') }}}" class="img-circle" style="width:100%" alt="Zachary Zeigler">
                             </div>
                             <h3 class="text-center"><strong>Zachary Zeigler, Ph.D.</strong> </h3>
                             <p>Dr. Zeigler received his doctoral degree in Physical Activity, Nutrition, and Wellness from Arizona State University. He
@@ -34,7 +34,7 @@
                             <div class="row">
                                 <div class="col-md-8 center-block">
                                     <a href="https://www.amazon.com/Weight-Loss-Bible-Scientific-Approach-ebook/dp/B079ZJTQCM/ " target="_blank" rel="nofollow">
-                                        <img src="{{{ url('public/storage/featured-author/weight-loss-bible.png') }}}" class="" style="width:100%">
+                                        <img src="{{{ url('public/storage/featured-author/weight-loss-bible.png') }}}" class="" style="width:100%" alt="The Weight Loss Bible">
                                     </a>
                                 </div>
                                 

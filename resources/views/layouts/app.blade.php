@@ -51,7 +51,7 @@
                 
                 <div style="">
                     <a href="{{ url('/') }}">
-                        <img src="{{{ url('public/storage/nrmedia-black.png') }}}" alt="" style="height:120px;">
+                        <img src="{{{ url('public/storage/nrmedia-black.png') }}}" alt="" style="height:120px;" alt="New Reader Media">
                     </a>
                    
                         {{-- <span style="color:#000;font-size:50px">New <span class="text-red">Reader</span> Media</span> --}}

@@ -31,7 +31,7 @@
                                     <p style="margin-bottom: .0001pt; text-align: justify;text-indent:30px"><span style="font-size: 12.0pt;">&nbsp;</span></p>
                                 </div>
                                 <div class="col-md-6">
-                                    <img src="{{{ url('public/storage/services/bsd1.jpg') }}}" style="width:100%">
+                                    <img src="{{{ url('public/storage/services/bsd1.jpg') }}}" style="width:100%" alt="Bookstore Display 1">
                                 </div>
                                 
                             </div>
@@ -40,7 +40,7 @@
                             
                             <div class="row">
                                 <div class="col-md-6">
-                                    <img src="{{{ url('public/storage/services/bsd2.jpg') }}}" style="width:100%">
+                                    <img src="{{{ url('public/storage/services/bsd2.jpg') }}}" style="width:100%" alt="Bookstore Display 2">
                                 </div>
                                 <div class="col-md-6">
                                     <p style="margin-bottom: .0001pt; text-align: justify;text-indent:30px"><span style="font-size: 12.0pt;">In order to achieve a better book display in bookstores, keep in mind that the books are the stars of the display. However, eye-catching visual signage helps a lot in attracting customers to take time to check the book. </span></p>

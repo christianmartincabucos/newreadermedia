@@ -38,7 +38,7 @@
                             <div class="row" style="vertical-align:middle">
                                 <div class="col-md-6">
                                     <p>&nbsp;</p>
-                                    <img src="{{{ url('public/storage/services/bts1.jpg') }}}" style="width:100%">
+                                    <img src="{{{ url('public/storage/services/bts1.jpg') }}}" style="width:100%" alt="Screen Adaptation 1">
                                 </div>
                                 <div class="col-md-6" style="vertical-align:middle">
                                     <p>&nbsp;</p>
@@ -49,7 +49,7 @@
                             <p>&nbsp;</p>
                             <p class="text-justify" style="text-indent:30px">When Farrar, Straus, and Giroux published Aciman&rsquo;s novel in 2007, producers Peter Spears and Howard Rosenman optioned the rights of the book for screenplay. In Hollywood, to option the screen rights of a book means that the buyer bought the &ldquo;exclusive right&rdquo; to purchase the screenplay. This is an accepted standard in the film industry and also a cheaper alternative compared to actually buying the screenplay even without a guaranteed funding for production. To &ldquo;option&rdquo; is to have the exclusive right to buy the work sometime in the future when the budget for production is secured. Contracts may vary in duration, but the usual time frame is within 12 to 18 months. Producers or film executives use that time to put together the financing aspects of filming in place. After Spears and Rosenman optioned the screen rights of the book, they invited their colleague, James Ivory, to produce and write the screenplay. When Luca Guadagnino came onboard, he agreed to not only produce but to codirect the film with Ivory. Both of them then worked on the screenplay for about nine months. Aciman commended their work and approved the screenplay some time in 2015. The screenplay was essential in getting financing for production. With the support of the Italian Ministry of Cultural Heritage and Activities and Tourism and funding from Frenesy Film Company (Guadagnino&rsquo;s own company), France&rsquo;s La Cin&eacute;facture, Brazil&rsquo;s RT Features, M.Y.R.A Entertainment, and Water&rsquo;s End Productions, the producers secured a $3.5-million budget for film production.</p>
                             <p>&nbsp;</p>
-                            <img src="{{{ url('public/storage/services/bts2.jpg') }}}" style="width:100%">
+                            <img src="{{{ url('public/storage/services/bts2.jpg') }}}" style="width:100%" alt="Screen Adaptation 2">
                             <p>&nbsp;</p>
                             <p class="text-red text-center"><strong><span style="font-size: 22.0pt;">"The screenwriter is responsible for molding the story into both the shaper&rsquo;s and the holder&rsquo;s vision. The screenwriter needs to let the story go where it needs to without compromising either vision or the integrity of the story."</span></strong></p>
                             
@@ -63,7 +63,7 @@
                                 <div class="col-md-6">
                                         <p>&nbsp;</p>
                                         <p class="text-justify" style="text-indent:30px">The song played in the final shot of the movie (Elio&rsquo;s devastating close-up), called &ldquo;Visions of Gideon,&rdquo; stunned Aciman after watching the film for the first time at the Berlin Film Festival. The final song stayed with him, long after he walked out of the movie theater and, as happens, so rarely, into the next morning and the evening after that. The ending captured the spirit of the book&mdash;a remembrance of a profound love and lost. There&rsquo;s no guarantee that anyone can get through this story without being made transparent&mdash; to anyone, to the whole world. There will be no dry eyes; it&rsquo;s a disconcerting porousness. An emotional overcoming, distant from joy, more like melancholy&mdash;if melancholy is the recognition of an almost unbearable beauty. It&rsquo;s simply too risky to experience the story&rsquo;s evolved and adapted form in a well-lighted room. That&rsquo;s the kind of comfort for books. But in cinemas&mdash;a shared four-walled enclosure with a big screen&mdash; you&rsquo;ll be safe.</p>
-                                        <img src="{{{ url('public/storage/services/bts3.jpg') }}}" style="width:100%">
+                                        <img src="{{{ url('public/storage/services/bts3.jpg') }}}" style="width:100%" alt="Screen Adaptation 3">
                                 </div>
                             </div>
                             

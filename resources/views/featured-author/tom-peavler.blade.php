@@ -18,7 +18,7 @@
                         
                         <div class="col-md-9 text-justify right-divider">
                             <div class="col-md-4 center-block">
-                                <img src="{{{ url('public/storage/featured-author/tom-peavler.jpg') }}}" class="img-circle" style="width:100%">
+                                <img src="{{{ url('public/storage/featured-author/tom-peavler.jpg') }}}" class="img-circle" style="width:100%" alt="Tom Peavler">
                             </div>
                             <h3 class="text-center"><strong>Tom Peavler</strong> </h3>
                             <p>Tom Peavler was born in Mushkogee Oklahoma in 1940 and graduated from Muskogee Central High in 1958. He was a member of both the State and National Honor Society. In 1962 he graduated from Northeast University with a major in Spanish and English and in 1970 he put together a Country and Western Trio which toured Eastern Kansas. He played lead guitar and was a vocalist with two former students.</p>
@@ -33,7 +33,7 @@
                             <div class="row">
                                 <div class="col-md-8 center-block">
                                     <a href="https://www.amazon.com/Readjustment-Tom-Peavler/dp/144015256X/" target="_blank" rel="nofollow">
-                                        <img src="{{{ url('public/storage/featured-author/readjustment.png') }}}" class="" style="width:100%">
+                                        <img src="{{{ url('public/storage/featured-author/readjustment.png') }}}" class="" style="width:100%" alt="Readjustment">
                                     </a>
                                 </div>
                                 
