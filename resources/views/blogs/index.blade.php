@@ -16,6 +16,27 @@
                             <div class="box-article">
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-4">
+                                        <a href="{{ url('http://authorlesklinefelter.com/2018/10/18/top-charismatic-personalities-with-effective-communication-skills/') }}" target="_blank" rel="nofollow">
+                                            <div style="position:relative;width:100%;height:164px;background:url({{{ url('http://authorlesklinefelter.com/wp-content/uploads/2018/10/1-e1539842946598.jpg') }}}) center center no-repeat;background-size: cover;overflow:hidden;margin-bottom:10px">
+                                                <div class="layer" style="background-color: rgba(0, 0, 0, 0.0);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
+                                                    
+                                                    
+                                                </div>
+                                            </div>
+                                        </a>
+                                        
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8">
+                                        <h2 class="title"><a href="{{ url('http://authorlesklinefelter.com/2018/10/18/top-charismatic-personalities-with-effective-communication-skills/') }}" target="_blank" rel="nofollow">Top Charismatic Personalities with Effective Communication Skills</a></h2>
+                                        <p class="text-white lead" style="margin:0">Having trouble with your communication skills? Let&#039;s take a look at today&#039;s top charismatic personalities and learn from their interactions.</p>
+                                        <small><img class="article-thumbnail img-circle" src="{{{ url('public/storage/featured-author/lklinefelter.jpg') }}}" style="width:20px;height:20px;margin-right:5px;margin-top:5px"> <a class="article-links" href="{{ url('http://authorlesklinefelter.com/') }}" target="_blank" rel="nofollow">Les Klinefelter</a></small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="box-article">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-4">
                                         <a href="{{ url('http://charlescampiseauthor.com/2018/10/17/inspiring-rideshare-tales-thatll-definitely-put-a-smile-on-your-face/') }}" target="_blank" rel="nofollow">
                                             <div style="position:relative;width:100%;height:164px;background:url({{{ url('http://charlescampiseauthor.com/wp-content/uploads/2018/10/g-e1539749035805.jpg') }}}) center center no-repeat;background-size: cover;overflow:hidden;margin-bottom:10px">
                                                 <div class="layer" style="background-color: rgba(0, 0, 0, 0.0);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
@@ -143,7 +164,8 @@
                         <div class="col-md-3">
                             <p><strong>RECENT POSTS</strong></p>
                             
-                            <ul class="list-unstyled">
+                            <ul class="" style="padding-left:20px">
+                                <li><a href="{{ url('http://authorlesklinefelter.com/2018/10/18/top-charismatic-personalities-with-effective-communication-skills/') }}" class="article-link" target="_blank" rel="nofollow">Top Charismatic Personalities</a></li>    
                                 <li><a href="{{ url('http://charlescampiseauthor.com/2018/10/17/inspiring-rideshare-tales-thatll-definitely-put-a-smile-on-your-face/') }}" class="article-link" target="_blank" rel="nofollow">Inspiring Rideshare Tales</a></li>    
                                 <li><a href="{{ url('http://skyelarnelson.com/2018/10/18/partying-as-a-parent-the-fine-line-between-parenting-and-partying/') }}" class="article-link" target="_blank" rel="nofollow">Partying As A Parent</a></li>
                                 <li><a href="{{ url('http://kristykkraft.com/2018/10/18/top-shipwreck-or-castaway-movies/') }}" class="article-link" target="_blank" rel="nofollow">Top Shipwreck or Castaway Movies</a></li>
