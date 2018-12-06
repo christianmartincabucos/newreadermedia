@@ -83,7 +83,7 @@ class FeaturedAuthorController extends Controller
 
     public function featured15()
     {
-        return view('featured-author.lawrence-stenzel');
+        return view('featured-author.lawrence-stentzel');
     }
 
     public function featured16()
