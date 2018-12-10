@@ -58,3 +58,4 @@ Route::get('/spotlight/lawrence-stentzel', 'FeaturedAuthorController@featured15'
 Route::get('/spotlight/philip-persinger', 'FeaturedAuthorController@featured16')->name('spotlight.philip-persinger');
 Route::get('/spotlight/tom-peavler', 'FeaturedAuthorController@featured17')->name('spotlight.tom-peavler');
 Route::get('/spotlight/yvon-bell', 'FeaturedAuthorController@featured18')->name('spotlight.yvon-bell');
+Route::get('/spotlight/wendy-sellers', 'FeaturedAuthorController@featured19')->name('spotlight.wendy-sellers');

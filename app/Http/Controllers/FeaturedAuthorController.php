@@ -100,4 +100,9 @@ class FeaturedAuthorController extends Controller
     {
         return view('featured-author.yvon-bell');
     }
+
+    public function featured19()
+    {
+        return view('featured-author.wendy-sellers');
+    }
 }
