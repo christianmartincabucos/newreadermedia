@@ -12,7 +12,7 @@
                     <div class="row">
                     <section class="box-section">
                         <div class="col-md-12">
-                            <h1 class="header-white">Book Trailers and Video Ads</h1>
+                            <h1 class="header-white">Sneak Peek</h1>
                         </div>
                         <div class="col-md-8 right-divider">
                             <div class="box-article">
@@ -25,7 +25,7 @@
                                 
                                     
                             </div>
-                            <hr>
+                            <div class="divider"></div>
                             <div class="box-article">
                                 <div class="embed-container" style="margin-bottom:10px">
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/O0qePkOcf1o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -36,7 +36,7 @@
                                 
                                     
                             </div>
-                            <hr>
+                            <div class="divider"></div>
                             <div class="box-article">
                                 <div class="embed-container" style="margin-bottom:10px">
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/aqzxUMJiU8A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -51,7 +51,7 @@
                         <div class="col-md-4">
                             <p><strong>RECENT VIDEOS</strong></p>
                             
-                            <ul class="list-unstyled">
+                            <ul class="" style="padding-left:20px">
                                 <li><a href="{{ url('https://www.youtube.com/watch?v=_aA-W-tvz6k') }}" class="article-link" target="_blank" rel="nofollow">Battle with Chronic Fatigue Syndrome</a></li>
                                 <li><a href="{{ url('https://www.youtube.com/watch?v=O0qePkOcf1o') }}" class="article-link" target="_blank" rel="nofollow">Lies Deceit and an Innocent Man</a></li>
                                 <li><a href="{{ url('https://www.youtube.com/watch?v=aqzxUMJiU8A') }}" class="article-link" target="_blank" rel="nofollow">Aftermath: Nomads, Pirates and Frogfaces</a></li>

@@ -76,10 +76,10 @@
                                             </div>
                                         </div>
                                         <div class="item">
-                                            <img style="width:100%" src="{{{ url('public/storage/services/book-trailer.jpg') }}}" alt="Book Trailer">
+                                            <img style="width:100%" src="{{{ url('public/storage/services/book-trailer.jpg') }}}" alt="Sneak Peek">
                                             <div class="layer" style="background-color: rgba(40, 40, 40, 0.6);position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
                                             <div class="carousel-caption">
-                                                <h1>Teaser Ads</h1>
+                                                <h1>Sneak Peek</h1>
                                                 <p>What better way to entice producers than to give them a peek!</p>
                                             </div>
                                         </div>
@@ -100,7 +100,7 @@
                         <div class="col-md-4">
                             <section class="box-section" style="border-top: 3px solid rgb(180, 40, 40);">
                                 <div class="box-article">
-                                    <a class="article-link" href="{{ url('/trailers') }}"><h4 class="title title-red">Trailers</h4></a>    
+                                    <a class="article-link" href="{{ url('/sneak-peek') }}"><h4 class="title title-red">Sneak Peek</h4></a>    
                                     <div class="embed-container" style="margin-bottom:10px">
                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/O0qePkOcf1o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                                     </div>
