@@ -34,6 +34,7 @@ Route::get('/press-release', 'PressReleaseController@index')->name('press-releas
 Route::get('/author-interview', 'AuthorInterviewController@index')->name('author-interview');
 Route::get('/teaser-ads', 'BookTrailerController@index')->name('teaser-ads');
 Route::get('/sneak-peek', 'BookTrailerController@list')->name('sneak-peek');
+Route::get('/subscribe', 'SubscriberController@index')->name('subscribe');
 
 Route::get('/testmail', 'SubscriberController@testmail')->name('testmail');
 Route::get('/unsubscribe', 'SubscriberController@unsubscribe')->name('unsubscribe');

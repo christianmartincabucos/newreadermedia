@@ -11,6 +11,12 @@ use Illuminate\Support\Facades\Mail;
 
 class SubscriberController extends Controller
 {
+
+    public function index()
+    {
+        return view('subscribe.index');
+    }
+
     public function store(Request $request)
     {
         // return $request->all();
