@@ -8,7 +8,7 @@ class FeaturedAuthorController extends Controller
 {
     public function index()
     {
-        return redirect()->route('spotlight.lindy-kerr');
+        return redirect()->route('spotlight.manuel-pelaez');
     }
 
     public function featured1()
@@ -104,5 +104,10 @@ class FeaturedAuthorController extends Controller
     public function featured19()
     {
         return view('featured-author.wendy-sellers');
+    }
+
+    public function featured20()
+    {
+        return view('featured-author.manuel-pelaez');
     }
 }
