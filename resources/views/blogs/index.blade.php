@@ -16,6 +16,27 @@
                             <div class="box-article">
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-4">
+                                        <a href="{{ url('http://amazingcreationsofgod.com/2018/10/19/stories-about-the-beginning-of-everything/') }}" target="_blank" rel="nofollow">
+                                            <div style="position:relative;width:100%;height:164px;background:url({{{ url('http://amazingcreationsofgod.com/wp-content/uploads/2018/10/moonmoon-e1539930473239.jpg') }}}) center center no-repeat;background-size: cover;overflow:hidden;margin-bottom:10px">
+                                                <div class="layer" style="background-color: rgba(0, 0, 0, 0.0);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
+                                                    
+                                                    
+                                                </div>
+                                            </div>
+                                        </a>
+                                        
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8">
+                                        <h2 class="title"><a href="{{ url('http://amazingcreationsofgod.com/2018/10/19/stories-about-the-beginning-of-everything/') }}" target="_blank" rel="nofollow">Stories About The Beginning Of Everything</a></h2>
+                                        <p class="text-white lead" style="margin:0">Imagine hearing stories about creation, different versions of how everything came to be. How would that have changed the way you saw the world?</p>
+                                        <small><img class="article-thumbnail img-circle" src="{{{ url('public/storage/featured-author/lindy-kerr.jpg') }}}" style="width:20px;height:20px;margin-right:5px;margin-top:5px"> <a class="article-links" href="{{ url('http://amazingcreationsofgod.com/') }}" target="_blank" rel="nofollow">Lindy Kerr</a></small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="box-article">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-4">
                                         <a href="{{ url('http://dburyshawbooks.com/2018/10/18/modern-day-poets-from-print-to-screen/') }}" target="_blank" rel="nofollow">
                                             <div style="position:relative;width:100%;height:164px;background:url({{{ url('http://dburyshawbooks.com/wp-content/uploads/2018/10/dfsvlk-e1539850745928.jpg') }}}) center center no-repeat;background-size: cover;overflow:hidden;margin-bottom:10px">
                                                 <div class="layer" style="background-color: rgba(0, 0, 0, 0.0);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
@@ -186,6 +207,7 @@
                             <p><strong>RECENT POSTS</strong></p>
                             
                             <ul class="" style="padding-left:20px">
+                                <li><a href="{{ url('http://amazingcreationsofgod.com/2018/10/19/stories-about-the-beginning-of-everything/') }}" class="article-link" target="_blank" rel="nofollow">Stories About The Beginning Of Everything</a></li>    
                                 <li><a href="{{ url('http://dburyshawbooks.com/2018/10/18/modern-day-poets-from-print-to-screen/') }}" class="article-link" target="_blank" rel="nofollow">Modern-Day Poets</a></li>    
                                 <li><a href="{{ url('http://authorlesklinefelter.com/2018/10/18/top-charismatic-personalities-with-effective-communication-skills/') }}" class="article-link" target="_blank" rel="nofollow">Top Charismatic Personalities</a></li>    
                                 <li><a href="{{ url('http://charlescampiseauthor.com/2018/10/17/inspiring-rideshare-tales-thatll-definitely-put-a-smile-on-your-face/') }}" class="article-link" target="_blank" rel="nofollow">Inspiring Rideshare Tales</a></li>    

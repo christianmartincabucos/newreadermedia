@@ -20,7 +20,7 @@
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/_aA-W-tvz6k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                                 </div>
                                 
-                                <h4 class="title"><a href="https://www.youtube.com/watch?v=_aA-W-tvz6k" target="_blank" rel="nofollow"><strong>Battle with Chronic Fatigue Syndrome - Official Book Trailer</strong></a></h4>
+                                <h4 class="title"><a href="https://www.youtube.com/watch?v=_aA-W-tvz6k" target="_blank" rel="nofollow"><strong>Battle with Chronic Fatigue Syndrome - Sneak Peek</strong></a></h4>
                                 <p>As a former CFS sufferer and current healthcare practitioner, I feel Ms. Butcher provides an informative and interesting perspective on this disease and her road to recovery". Kyrie Kleinfelter, D.C, Upper Cervical Chiropractor. "As a fellow sufferer of CFS, I was truly able to relate to Ms. Butchers' experiences, thoughts and feelings. Her reference to the Word of God comforted my heart. Truly inspiring and honest". Darla Canney, CFS Patient. Ms. Butcher shares her intense and emotional journey of how the autoimmune disease chronic fatigue syndrome impacted her life from her first symptoms to the progress of her treatment and physical, spiritual and emotional recovery. By sharing with others, she hopes to inspire others to seek help so they may lead better lives as well. She wants them to know there is hope.</p>
                                 
                                     
@@ -31,7 +31,7 @@
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/O0qePkOcf1o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                                 </div>
                                 
-                                <h4 class="title"><a href="https://www.youtube.com/watch?v=O0qePkOcf1o" target="_blank" rel="nofollow"><strong>Lies Deceit and an Innocent Man - Official Book Trailer</strong></a></h4>
+                                <h4 class="title"><a href="https://www.youtube.com/watch?v=O0qePkOcf1o" target="_blank" rel="nofollow"><strong>Lies Deceit and an Innocent Man - Sneak Peek</strong></a></h4>
                                 <p>Todd Bainbridge had his life planned. His future was secured. And in five years he would be a doctor. Bradfords local doctor; Doctor Chandler promised him a partnership in his practice. When Katies body was found on the York moor a week after her disappearance his life fell apart.</p>
                                 
                                     
@@ -42,7 +42,7 @@
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/aqzxUMJiU8A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                                 </div>
                                 
-                                <h4 class="title"><a href="https://www.youtube.com/watch?v=aqzxUMJiU8A" target="_blank" rel="nofollow"><strong>Aftermath: Nomads, Pirates and Frogfaces - Official Book Trailer</strong></a></h4>
+                                <h4 class="title"><a href="https://www.youtube.com/watch?v=aqzxUMJiU8A" target="_blank" rel="nofollow"><strong>Aftermath: Nomads, Pirates and Frogfaces - Sneak Peek</strong></a></h4>
                                 <p>A nomad headquarters gets attacked by pirates and later on, saved by a female leader of another nomad group only to reveal they are up against a bigger enemy than the pirates.</p>
                                 
                                     
