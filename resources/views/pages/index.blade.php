@@ -163,11 +163,11 @@
                                     <div class="divider" style="margin:0 0 5px 0"></div>
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-4">
-                                            <a class="article-link" href="https://www.newreadermagazine.com/download" target="_blank"><img class="article-thumbnail" src="https://www.newreadermagazine.com/images/nrm-third-issue.jpg" style="width:100%" alt="NRM Third Issue"></a>
+                                            <a class="article-link" href="https://www.newreadermagazine.com/download" target="_blank"><img class="article-thumbnail" src="https://www.newreadermagazine.com/images/nrm-fourth-issue.jpg" style="width:100%" alt="NRM Fourth Issue"></a>
                                         </div>
                                         <div class="col-xs-12 col-sm-8">
-                                            <a class="article-link" href="https://www.newreadermagazine.com/download" target="_blank"><h4 class="title title-red">New Reader Magazine</h4></a><strong>Issue no. 3</strong>
-                                            <p class="small">{{ str_limit("Vol. 1, Issue 3 of New Reader Magazine is out! This quarter we bring you more stories, poems, and interviews with writers, artists, and creative communities from all over the world.",72) }}<br><a class="small read-more" href="https://www.newreadermagazine.com/download" rel="nofollow">Read more</a> </p>
+                                            <a class="article-link" href="https://www.newreadermagazine.com/download" target="_blank"><h4 class="title title-red">New Reader Magazine</h4></a><strong>Issue no. 4</strong>
+                                            <p class="small">{{ str_limit("New Reader Magazine proudly presents our final issue for the year 2018, “Reclaiming Myths.” This issue we concern ourselves with mythmaking and the power of myth, and how artists, writers, musicians, and social influencers are changing our interior worlds through their work.",72) }}<br><a class="small read-more" href="https://www.newreadermagazine.com/download" rel="nofollow">Read more</a> </p>
                                         </div>
                                     </div>
                                     
