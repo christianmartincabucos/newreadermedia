@@ -59,7 +59,7 @@
                             </blockquote>
 
 
-                            <h3 class="text-center"><small>visit website at</small><br><a href="http://http://weightlossbible.net" target="_blank" rel="nofollow">weightlossbible.net</a></h3>
+                            <h3 class="text-center"><small>visit website at</small><br><a href="https://weightlossbible.net" target="_blank" rel="nofollow">weightlossbible.net</a></h3>
                             
                         </div>
                         @include('featured-author.sidebar')
