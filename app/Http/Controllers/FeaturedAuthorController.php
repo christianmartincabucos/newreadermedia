@@ -8,7 +8,7 @@ class FeaturedAuthorController extends Controller
 {
     public function index()
     {
-        return redirect()->route('spotlight.manuel-pelaez');
+        return redirect()->route('spotlight.lindy-kerr');
     }
 
     public function featured1()
