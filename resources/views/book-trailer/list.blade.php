@@ -12,7 +12,7 @@
                     <div class="row">
                     <section class="box-section">
                         <div class="col-md-12">
-                            <h1 class="header-white">Sneak Peek</h1>
+                            <h1 class="header-white">Sneak Peeks</h1>
                         </div>
                         <div class="col-md-8 right-divider">
                             <div class="box-article">

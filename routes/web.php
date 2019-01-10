@@ -33,7 +33,8 @@ Route::get('/marketing-and-partnership', 'PartnershipController@index')->name('m
 Route::get('/press-release', 'PressReleaseController@index')->name('press-release');
 Route::get('/author-interview', 'AuthorInterviewController@index')->name('author-interview');
 Route::get('/teaser-ads', 'BookTrailerController@index')->name('teaser-ads');
-Route::get('/sneak-peek', 'BookTrailerController@list')->name('sneak-peek');
+Route::get('/sneak-peek', 'BookTrailerController@sneakpeek')->name('sneak-peek');
+Route::get('/sneak-peeks', 'BookTrailerController@list')->name('sneak-peeks');
 Route::get('/subscribe', 'SubscriberController@index')->name('subscribe');
 
 Route::get('/testmail', 'SubscriberController@testmail')->name('testmail');

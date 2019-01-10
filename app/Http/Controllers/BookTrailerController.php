@@ -8,6 +8,11 @@ class BookTrailerController extends Controller
 {
     public function index()
     {
+        return redirect()->route('sneak-peek');
+    }
+
+    public function sneakpeek()
+    {
         return view('book-trailer.index');
     }
 

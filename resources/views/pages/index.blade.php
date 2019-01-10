@@ -100,7 +100,7 @@
                         <div class="col-md-4">
                             <section class="box-section" style="border-top: 3px solid rgb(180, 40, 40);">
                                 <div class="box-article">
-                                    <a class="article-link" href="{{ url('/sneak-peek') }}"><h4 class="title title-red">Sneak Peek</h4></a>    
+                                    <a class="article-link" href="{{ url('/sneak-peeks') }}"><h4 class="title title-red">Sneak Peeks</h4></a>    
                                     <div class="embed-container" style="margin-bottom:10px">
                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/O0qePkOcf1o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                                     </div>
@@ -246,9 +246,9 @@
                                         <div class="layer" style="background-color: rgba(0, 0, 0, 0.7);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
                                             
                                             
-                                            <a class="article-link" href="{{ url('/teaser-ads') }}"><h3 class="header-red-box"><strong>Teaser Ads, why do we need them?</strong></h3></a>
+                                            <a class="article-link" href="{{ url('/sneak-peek') }}"><h3 class="header-red-box"><strong>Sneak Peeks, why do we need them?</strong></h3></a>
                                             <p class="text-justify" style="font-size:12px;position: relative;top: 35%;transform: translateY(-50%); ">If you want to be viral, you have to marry videos. Engagement with a global audience generates more than buzz and hype. It gets your message across instantly. Corporate entities project their personalities through relatable content and no other medium can do this more efficiently than videos.
-                                                <br><a class="small read-more" href="{{ url('/teaser-ads') }}" rel="nofollow">Read more</a>
+                                                <br><a class="small read-more" href="{{ url('/sneak-peek') }}" rel="nofollow">Read more</a>
                                             </p>
                                         
                                         </div>
