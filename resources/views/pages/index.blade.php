@@ -343,6 +343,8 @@
                                         <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
                                         <li data-target="#myCarousel2" data-slide-to="1"></li>
                                         <li data-target="#myCarousel2" data-slide-to="2"></li>
+                                        <li data-target="#myCarousel2" data-slide-to="3"></li>
+                                        <li data-target="#myCarousel2" data-slide-to="4"></li>
                                         
                                     </ol>
                                     
@@ -376,13 +378,24 @@
                                                 <p class="">- Manuel Pelaez</p>
                                             </div>
                                         </div>
-                                        <div class="hidden">
+
+                                        <div class="item">
                                             {{-- <img style="width:100%;height:200px" src="{{{ url('public/storage/sample-img-3.jpg') }}}"> --}}
                                             <div class="text-center" style="width:100%;height:300px;;max-height:450px;background:transparent;padding-top:20px;"></div>
                                             <div class="carousel-caption">
-                                                <img src="{{{ url('public/storage/testimonials/cathy-young.PNG') }}}" alt="Cathy Young" class="img-circle" style="width:100px">
-                                                <h4>"I think you did a wonderful job on the screenplay project. I truly appreciate you, as well as the time and effort you placed into my project."</h4>
-                                                <p class="">- Cathy Young</p>
+                                                <img src="{{{ url('public/storage/testimonials/allen-bonck.jpg') }}}" alt="Allen Bonck" class="img-circle" style="width:100px">
+                                                <h4>"I was especially impressed with your research and attention to details. I feel you really understood the story and made it come alive. I think you asked all the right questions and was willing to hear my input."</h4>
+                                                <p class="">- Allen Bonck</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="item">
+                                            {{-- <img style="width:100%;height:200px" src="{{{ url('public/storage/sample-img-3.jpg') }}}"> --}}
+                                            <div class="text-center" style="width:100%;height:300px;;max-height:450px;background:transparent;padding-top:20px;"></div>
+                                            <div class="carousel-caption">
+                                                <img src="{{{ url('public/storage/testimonials/rita-dunham.jpg') }}}" alt="Rita Dunham" class="img-circle" style="width:100px">
+                                                <h4>"I am really happy with the outcome of A Token for the Journey, and your ability to stick with the simplicity of the storyline. I am very excited about this project. The screewriter reall did an excellent job. Thank you for your committed hard work!"</h4>
+                                                <p class="">- Rita Dunham</p>
                                             </div>
                                         </div>
                                     </div>
