@@ -394,7 +394,7 @@
                                             <div class="text-center" style="width:100%;height:300px;;max-height:450px;background:transparent;padding-top:20px;"></div>
                                             <div class="carousel-caption">
                                                 <img src="{{{ url('public/storage/testimonials/rita-dunham.jpg') }}}" alt="Rita Dunham" class="img-circle" style="width:100px">
-                                                <h4>"I am really happy with the outcome of A Token for the Journey, and your ability to stick with the simplicity of the storyline. I am very excited about this project. The screewriter reall did an excellent job. Thank you for your committed hard work!"</h4>
+                                                <h4>"I am really happy with the outcome of A Token for the Journey, and your ability to stick with the simplicity of the story line. I am very excited about this project. The screenwriter really did an excellent job. Thank you for your committed hard work!"</h4>
                                                 <p class="">- Rita Dunham</p>
                                             </div>
                                         </div>
