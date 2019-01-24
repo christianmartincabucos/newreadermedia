@@ -20,7 +20,7 @@
         <li><a href="{{ route('spotlight.cora-darrah') }}" class="article-link">Cora Darrah</a></li>
         <li><a href="{{ route('spotlight.charles-campise') }}" class="article-link">Charles Campise</a></li>
         <li><a href="{{ route('spotlight.kristy-kraft') }}" class="article-link">Kristy K. Kraft</a></li>
-        <li><a href="{{ route('spotlight.zachary-zeigler') }}" class="article-link">Zachary Zeigler, Ph.D.</a></li>
+        <li class="hidden"><a href="{{ route('spotlight.zachary-zeigler') }}" class="article-link">Zachary Zeigler, Ph.D.</a></li>
         <li><a href="{{ route('spotlight.steven-bentley') }}" class="article-link">Steven Bentley, M.D.</a></li>
         
     </ul>
