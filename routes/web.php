@@ -23,7 +23,7 @@ Route::post('subscriber/delete', 'SubscriberController@delete')->name('subscribe
 // Route::get('/home', 'HomeController@index')->name('dashboard');
 Route::get('/about', 'PageController@about')->name('about');
 Route::get('/contribute', 'PageController@contribute')->name('contribute');
-Route::get('/services', 'ServicesController@index')->name('services');
+// Route::get('/services', 'ServicesController@index')->name('services');
 Route::get('/screen-adaptation', 'BookToScreenController@index')->name('screen-adaptation');
 Route::get('/bookstore-display', 'BookstoreDisplayController@index')->name('bookstore-display');
 // Route::get('/to-read-list', 'FeaturedBooksController@index')->name('to-read-list');
