@@ -35,13 +35,15 @@ class SubscriberController extends Controller
         // $subscriber->email = $request->email;
         // $subscriber->save();
 
-        if( ! Newsletter::isSubscribed($request->email)){
-            Newsletter::subscribe($request->email);
-            Toastr::success('You are successfully added to our subscriber list.', 'Success', ["positionClass" => "toast-bottom-center"]);
-            return redirect()->route('subscribe.thankyou');
-        } else {
+        if(Newsletter::isSubscribed($request->email)){
+            
+            
             Toastr::success('The email is already a subsciber to our list.', 'Success', ["positionClass" => "toast-bottom-center"]);
             return redirect()->route('subscribe');
+        } else {
+            Newsletter::subscribePending($request->email);
+            Toastr::success('You are successfully added to our subscriber list.', 'Success', ["positionClass" => "toast-bottom-center"]);
+            return redirect()->route('subscribe.thankyou');
         }
         
         
@@ -56,6 +58,12 @@ class SubscriberController extends Controller
     {
 
         return view('pages.unsubscribe');
+    }
+
+    public function goodbye()
+    {
+
+        return view('subscribe.goodbye');
     }
 
     public function delete(Request $request)

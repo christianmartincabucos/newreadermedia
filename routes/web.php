@@ -37,6 +37,7 @@ Route::get('/sneak-peek', 'BookTrailerController@sneakpeek')->name('sneak-peek')
 Route::get('/sneak-peeks', 'BookTrailerController@list')->name('sneak-peeks');
 Route::get('/subscribe', 'SubscriberController@index')->name('subscribe');
 Route::get('/subscribe/thankyou', 'SubscriberController@thankyou')->name('subscribe.thankyou');
+Route::get('/subscribe/goodbye', 'SubscriberController@goodbye')->name('subscribe.goodbye');
 
 Route::get('/testmail', 'SubscriberController@testmail')->name('testmail');
 Route::get('/unsubscribe', 'SubscriberController@unsubscribe')->name('unsubscribe');
