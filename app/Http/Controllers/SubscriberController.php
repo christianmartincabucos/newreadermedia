@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 
 use App\Mail\WelcomeMail;
 use Illuminate\Support\Facades\Mail;
+use Newsletter;
 
 class SubscriberController extends Controller
 {
@@ -17,22 +18,38 @@ class SubscriberController extends Controller
         return view('subscribe.index');
     }
 
+    public function thankyou()
+    {
+        return view('subscribe.thankyou');
+    }
+
     public function store(Request $request)
     {
         // return $request->all();
         $this->validate($request,[
-            // 'email' => 'required|email'
-            'email' => 'required|email|unique:subscribers'
+            'email' => 'required|email'
+            // 'email' => 'required|email|unique:subscribers'
         ]);
        
-        $subscriber = new Subscriber();
-        $subscriber->email = $request->email;
-        $subscriber->save();
+        // $subscriber = new Subscriber();
+        // $subscriber->email = $request->email;
+        // $subscriber->save();
 
-        Mail::to($request->email)->send(new WelcomeMail());
+        if( ! Newsletter::isSubscribed($request->email)){
+            Newsletter::subscribe($request->email);
+            Toastr::success('You are successfully added to our subscriber list.', 'Success', ["positionClass" => "toast-bottom-center"]);
+            return redirect()->route('subscribe.thankyou');
+        } else {
+            Toastr::success('The email is already a subsciber to our list.', 'Success', ["positionClass" => "toast-bottom-center"]);
+            return redirect()->route('subscribe');
+        }
         
-        Toastr::success('You are successfully added to our subscriber list.', 'Success', ["positionClass" => "toast-bottom-center"]);
-        return redirect()->back();
+        
+
+        // Mail::to($request->email)->send(new WelcomeMail());
+        
+        // Toastr::success('You are successfully added to our subscriber list.', 'Success', ["positionClass" => "toast-bottom-center"]);
+        // return redirect()->back();
     }
 
     public function unsubscribe(Request $request)
