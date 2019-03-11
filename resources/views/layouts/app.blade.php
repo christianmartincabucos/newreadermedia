@@ -90,7 +90,16 @@
                     <li class="{{{ (Request::is(['bookstore-display', 'bookstore-display/*']) ? 'active' : '') }}}"><a href="{{ url('/bookstore-display') }}">Bookstore Display</a></li>
                     
                     <li class="{{{ (Request::is(['spotlight', 'spotlight/*']) ? 'active' : '') }}}"><a href="{{ url('/spotlight') }}">Spotlight</a></li>
-                    <li class="{{{ (Request::is(['blogs', 'blogs/*']) ? 'active' : '') }}}"><a href="{{ url('/blogs') }}">Blogs</a></li>
+                    <li class="dropdown">
+                        <a href="{{ url('/blogs') }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blogs</a>
+                        <ul class="dropdown-menu">
+                            <li class="{{{ (Request::is(['blogs/editors-picks']) ? 'active' : '') }}}"><a href="{{ url('/blogs/editors-picks') }}">Editor's Picks</a></li>
+                            <li class="hidden {{{ (Request::is(['blogs/*']) ? 'active' : '') }}}"><a href="{{ url('/blogs') }}">Writing Tips</a></li>
+                            <li class="hidden {{{ (Request::is(['blogs/*']) ? 'active' : '') }}}"><a href="{{ url('/blogs') }}">Humor</a></li>
+                            <li class="{{{ (Request::is(['blogs/arts-and-culture']) ? 'active' : '') }}}"><a href="{{ url('/blogs/arts-and-culture') }}">Arts and Culture</a></li>
+                            <li class="hidden {{{ (Request::is(['blogs/*']) ? 'active' : '') }}}"><a href="{{ url('/blogs') }}">News</a></li>
+                        </ul>
+                    </li>
                     {{-- <li class="{{{ (Request::is(['partnership', 'partnership/*']) ? 'active' : '') }}}"><a href="{{ url('/partnership') }}" style="border-radius:0">Partnership</a></li> --}}
                     <li class="{{{ (Request::is(['subscribe', 'subscribe/*']) ? 'active' : '') }}}"><a href="{{ url('/subscribe') }}">Subscribe</a></li>
                     <li><a href="#" class="contact-button">Contact Us</a></li>

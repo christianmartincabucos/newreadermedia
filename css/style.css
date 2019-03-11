@@ -94,10 +94,33 @@
 
 .navbar ul.nav li a:hover,
 .navbar ul.nav li:hover,
+.navbar ul.nav li a:focus,
+.navbar ul.nav li:focus,
+.navbar .dropdown a:focus,
+.navbar .dropdown:focus,
+.dropdown ul.dropdown-menu li a:focus,
 .navbar ul.nav li.active,
-.navbar ul.nav li.active a {
+.navbar ul.nav li.active a,
+.navbar .dropdown a:active,
+.dropdown ul.dropdown-menu li a:active {
     background-color: rgb(180, 40, 40);
     color:#fff!important;
+}
+
+.navbar li.open {
+    background-color:transparent!important;
+}
+
+.dropdown ul.dropdown-menu {
+    background-color:black!important;
+    margin:0!important;
+    padding:0!important;
+    border-radius:0!important;
+}
+
+
+.dropdown ul.dropdown-menu li a{
+    padding:15px;
 }
 
 /* Video Embed */

@@ -64,3 +64,13 @@ Route::get('/spotlight/tom-peavler', 'FeaturedAuthorController@featured17')->nam
 Route::get('/spotlight/yvon-bell', 'FeaturedAuthorController@featured18')->name('spotlight.yvon-bell');
 Route::get('/spotlight/wendy-sellers', 'FeaturedAuthorController@featured19')->name('spotlight.wendy-sellers');
 Route::get('/spotlight/manuel-pelaez', 'FeaturedAuthorController@featured20')->name('spotlight.manuel-pelaez');
+
+// BLOGS
+Route::get('/blogs/editors-picks', 'EditorsPicksController@index')->name('editors-picks');
+Route::get('/blogs/arts-and-culture', 'ArtsAndCultureController@index')->name('arts-and-culture');
+
+// EDITORS PICKS
+Route::get('/blogs/editors-picks/free-as-my-hair', 'EditorsPicksController@blog1')->name('editors-picks.free-as-my-hair');
+
+// ARTS AND CULTURE
+Route::get('/blogs/arts-and-culture/aphantasia', 'ArtsAndCultureController@blog1')->name('arts-and-culture.aphantasia');
