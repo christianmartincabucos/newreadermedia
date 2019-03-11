@@ -102,11 +102,11 @@
                                 <div class="box-article">
                                     <a class="article-link" href="{{ url('/sneak-peeks') }}"><h4 class="title title-red">Sneak Peeks</h4></a>    
                                     <div class="embed-container" style="margin-bottom:10px">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/O0qePkOcf1o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/hvRXBeXfMXo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                                     </div>
                                     
-                                    <h4 class="title"><a href="https://www.youtube.com/watch?v=O0qePkOcf1o" target="_blank" rel="nofollow"><strong>Lies Deceit and an Innocent Man - Sneak Peek</strong></a></h4>
-                                    <p>Todd Bainbridge had his life planned. His future was secured. And in five years he would be a doctor. Bradfords local doctor; Doctor Chandler promised him a partnership in his practice. When Katies body was found on the York moor a week after her disappearance his life fell apart.</p>
+                                    <h4 class="title"><a href="https://www.youtube.com/watch?v=hvRXBeXfMXo" target="_blank" rel="nofollow"><strong>Unspoken Revivalism - Sneak Peek</strong></a></h4>
+                                    <p>As an extraordinary philosopher, Alkawther Makki stresses her incentives for promoting a grandeur ethical humanity; which may be sensed in poems and strongly expressed in proverbs, vindications and assertions.</p>
                                    
                                     
                                 </div>

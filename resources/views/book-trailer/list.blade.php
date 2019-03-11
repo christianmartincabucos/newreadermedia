@@ -17,6 +17,17 @@
                         <div class="col-md-8 right-divider">
                             <div class="box-article">
                                 <div class="embed-container" style="margin-bottom:10px">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/hvRXBeXfMXo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                </div>
+                                
+                                <h4 class="title"><a href="https://www.youtube.com/watch?v=hvRXBeXfMXo" target="_blank" rel="nofollow"><strong>Unspoken Revivalism - Sneak Peek</strong></a></h4>
+                                <p>As an extraordinary philosopher, Alkawther Makki stresses her incentives for promoting a grandeur ethical humanity; which may be sensed in poems and strongly expressed in proverbs, vindications and assertions.</p>
+                                
+                                    
+                            </div>
+                            <div class="divider"></div>
+                            <div class="box-article">
+                                <div class="embed-container" style="margin-bottom:10px">
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/_aA-W-tvz6k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                                 </div>
                                 
@@ -52,6 +63,7 @@
                             <p><strong>RECENT VIDEOS</strong></p>
                             
                             <ul class="" style="padding-left:20px">
+                                <li><a href="{{ url('https://www.youtube.com/watch?v=hvRXBeXfMXo') }}" class="article-link" target="_blank" rel="nofollow">Unspoken Revivalism</a></li>
                                 <li><a href="{{ url('https://www.youtube.com/watch?v=_aA-W-tvz6k') }}" class="article-link" target="_blank" rel="nofollow">Battle with Chronic Fatigue Syndrome</a></li>
                                 <li><a href="{{ url('https://www.youtube.com/watch?v=O0qePkOcf1o') }}" class="article-link" target="_blank" rel="nofollow">Lies Deceit and an Innocent Man</a></li>
                                 <li><a href="{{ url('https://www.youtube.com/watch?v=aqzxUMJiU8A') }}" class="article-link" target="_blank" rel="nofollow">Aftermath: Nomads, Pirates and Frogfaces</a></li>
