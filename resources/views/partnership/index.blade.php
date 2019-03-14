@@ -313,7 +313,7 @@
                                                 <p>Inclusions</p>
                                                 <ul>
                                                     <li>Bookstore Display - physical copy of your book displayed on your favorite store or shop.</li>
-                                                    <li>Personal Shelf – word carved shelf. Displaying 10-20 copies of your book.</li>
+                                                    <li>Personal Shelf – displaying 10-20 copies of your book.</li>
                                                     <li>Stand Up Banner - 2.5 x 6 banner that has a cover and description of your book.</li>
                                                     <li>Author Bio and Contact - direct information to reach you for interviews, book signing and orders.</li>
                                                     <li>Stores - you may choose up to 3 stores that you would want to display, if not, we would be able to provide you some other options.</li>
