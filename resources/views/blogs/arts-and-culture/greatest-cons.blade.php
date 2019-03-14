@@ -2,7 +2,7 @@
 @section('title')Greatest Cons in History @endsection
 @section('og-title')Greatest Cons in History @endsection
 @section('meta-description')People who do cons are called Confidence man or in short “con-man”. They prey on people who are naïve and irresponsible. Over the years, many cons have happened, here are the top 3 greatest cons in history. @endsection
-@section('og-image'){{{ url('public/storage/blogs/arts-and-culture/aphantasia.jpg') }}}@endsection
+@section('og-image'){{{ url('public/storage/blogs/arts-and-culture/victor-lustig.jpg') }}}@endsection
 @section('content')
 <div class="container">
     <div class="row">
