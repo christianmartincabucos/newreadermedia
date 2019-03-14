@@ -74,3 +74,4 @@ Route::get('/blogs/editors-picks/free-as-my-hair', 'EditorsPicksController@blog1
 
 // ARTS AND CULTURE
 Route::get('/blogs/arts-and-culture/aphantasia', 'ArtsAndCultureController@blog1')->name('arts-and-culture.aphantasia');
+Route::get('/blogs/arts-and-culture/greatest-cons-in-history', 'ArtsAndCultureController@blog2')->name('arts-and-culture.greatest-cons-in-history');

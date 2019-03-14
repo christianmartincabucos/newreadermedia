@@ -16,4 +16,10 @@ class ArtsAndCultureController extends Controller
     {
         return view('blogs.arts-and-culture.aphantasia');
     }
+
+    // Greatest Cons in History
+    public function blog2()
+    {
+        return view('blogs.arts-and-culture.greatest-cons');
+    }
 }

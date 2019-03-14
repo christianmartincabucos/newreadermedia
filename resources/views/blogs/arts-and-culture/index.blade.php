@@ -16,6 +16,29 @@
                             <div class="box-article">
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-4">
+                                        <a href="{{ url('blogs/arts-and-culture/greatest-cons-in-history') }}">
+                                            <div style="position:relative;width:100%;height:164px;background:url({{{ url('public/storage/blogs/arts-and-culture/victor-lustig.jpg') }}}) center center no-repeat;background-size: cover;overflow:hidden;margin-bottom:10px">
+                                                <div class="layer" style="background-color: rgba(0, 0, 0, 0.0);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
+                                                    
+                                                    
+                                                </div>
+                                            </div>
+                                        </a>
+                                        
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8">
+                                        <h2 class="title"><a href="{{ url('blogs/arts-and-culture/greatest-cons-in-history') }}">Greatest Cons in History</a></h2>
+                                        <p class="text-white lead" style="margin:0">People who do cons are called Confidence man or in short “con-man”. They prey on people who are naïve and irresponsible. Over the years, many cons have happened, here are the top 3 greatest cons in history.</p>
+                                        <small class="text-muted">by S. Roberts</small>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="box-article">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-4">
                                         <a href="{{ url('blogs/arts-and-culture/aphantasia') }}">
                                             <div style="position:relative;width:100%;height:164px;background:url({{{ url('public/storage/blogs/arts-and-culture/aphantasia.jpg') }}}) center center no-repeat;background-size: cover;overflow:hidden;margin-bottom:10px">
                                                 <div class="layer" style="background-color: rgba(0, 0, 0, 0.0);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
@@ -182,8 +205,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="divider"></div>
-                            <div class="box-article">
+                            <div class="divider hidden"></div>
+                            <div class="box-article hidden">
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-4">
                                         <a href="{{ url('http://weightlossbible.net/2018/10/12/the-top-weight-loss-scams-in-the-world/') }}" target="_blank" rel="nofollow">
