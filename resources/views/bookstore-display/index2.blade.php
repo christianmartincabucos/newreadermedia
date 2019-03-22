@@ -1,5 +1,8 @@
 @extends('layouts.app')
-
+@section('title')9 Reasons Why Bookstores Are Still The Real Deal @endsection
+@section('og-title')9 Reasons Why Bookstores Are Still The Real Deal @endsection
+@section('meta-description')People say bookstores are a thing of the past. But are they really? Find out about bookstores and bookstore displays. Get the low-down on this awesome advertising tool.@endsection
+@section('og-image'){{{ url('public/storage/services/bookstore-v2-1.jpg') }}}@endsection
 @section('content')
 <div class="container">
     <div class="row">
@@ -9,41 +12,99 @@
                     {{-- BIG IMAGE --}}
                     <div class="row">
                     <section class="box-section">
-                        <div class="col-md-12">
-                            <h1 class="header-white">Bookstore Displays: Why are they important?</h1>
+                        
+                        <div class="col-md-12 lead">
                             
-                            <div style="position:relative;width:100%;height:500px;background:url({{{ url('public/storage/services/bsd1.jpg') }}}) center center no-repeat;background-size: cover;">
+                            <h1 class="header-white">9 Reasons Why Bookstores Are Still The Real Deal</h1>
+                            <div style="position:relative;width:100%;height:500px;background:url({{{ url('public/storage/services/bookstore-v2-1.jpg') }}}) center center no-repeat;background-size: cover;">
                                 <div class="layer" style="background-color: rgba(0, 0, 0, 0.0);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
                                     
                                 </div>
                             </div>
+                            <br>
+                            <p>Yes, I know what you&rsquo;re thinking.</p>
+                            <p>Who goes to bookstores anymore? Nowadays one can simply get a book online and have it delivered to the doorstep. E-books? Audiobooks? And shall I say, pirated books?</p>
+                            <p>But there&rsquo;s something that bookstores offer that&rsquo;s better than convenience. It&rsquo;s the <em>experience </em>itself. You can call it <em>cheesy, </em>but really, there&rsquo;s more to it.</p>
+                            <br>
+
                             
                             <div class="row">
                                 <div class="col-md-6">
-                                        <br>
-                                        <p class="text-justify" style="text-indent:30px"><span style="">Bookstore&mdash;noun. A store where books are sold.</span></p>
-                                        
-                                        <p class="text-justify"  style="text-indent:30px"><span style="">Living in the era of touchscreens and the internet, it makes people doubt the relevance of books, newspapers, and other print materials. The publishing industry continues to struggle against the new wave of online media but everyone should not keep their faces stuck in front of their phone screens.</span></p>
-                                        
-                                        <p class="text-justify"  style="text-indent:30px"><span style="">There are people who continue to spend their time stuck in a book instead of their phone screens. People who love flipping through pages of books, those that love the smell of print, and the feel of the book&rsquo;s paperback covers, still exist. These are the people who take time in browsing books at bookstore, exploring genres one book at a time.</span></p>
-                                        
-                                        <p class="text-justify"  style="text-indent:30px"><span style="">This is why bookstores are important and why a spot at a bookstore helps in promoting books by underground authors. People come into bookstores all the time. The mere fact that a book is displayed, there is enough to let people know of its existence. One hour or more is the average time most people spend at bookstores to browse at books, which means, a chance for your book to be discovered by another bibliophile.</span></p>
-                                        
-                                        <p class="text-justify"  style="text-indent:30px"><span style="">Bookstores always give the readers a lot of different options, and a chance to discover new authors, and other possibilities that their displayed books can offer. Your imagination is the limit, after all.</span></p>
-                                        
-                                        <p class="text-justify"  style="text-indent:30px"><span style="">Aside from helping authors promote their books, bookstores provide these books with homes as well&mdash;by placing&nbsp;them in effective spots, categorizing them according to genre, and also, by holding book signing, and book-reading events.</span></p>
+                                    
+                                    <p class="text-red"><strong>1. You get to hold the books and flip its pages in a bookstore. </strong></p>
+                                    <p>I mean, can your online shopping do that? It&rsquo;s just beautiful. Plus, you smell the books. And who doesn&rsquo;t like the smell of books?</p>
+                                    <br>
+                                    <p class="text-red"><strong>2. You get to listen to their lovely music as you browse the books you&rsquo;re looking for.</strong></p>
+                                    <p>You get to listen to some of your favorite music, or even discover some new ones that you might want to add later in your music library. A lot of bookstores have great music.</p>
+                                    
+                                    
                                 </div>
                                 <div class="col-md-6">
-                                        
-                                        <br>
-                                        <p class="text-justify"  style="text-indent:30px"><span style="">Being in places like these also helps in making new connections. Imagine having a film producer stumble upon a certain book, and decides to turn that book into a film. The bookstore offers endless possibilities to authors, and readers, alike.</span></p>
-                                        
-                                        <p class="text-justify"  style="text-indent:30px"><span style="">These are just a few of the things that make bookstores still relevant, and bookstore displays important. Technology may continue to rapidly rise against books but nothing will ever beat the cream-antique color of the books&rsquo; </span><span style="">pages.</span></p>
-                                        <br>
-                                        <img class="article-thumbnail" src="{{{ url('public/storage/services/bsd2.jpg') }}}" style="width:100%">
+                                    <img src="{{{ url('public/storage/services/bookstore-v2-2.jpg') }}}" style="width:100%" alt="Bookstore Display 1">
                                 </div>
+                                
                             </div>
+                            <br>
+                            <p class="text-red"><strong>3. You get that moment of excitement when you see the book you&rsquo;re looking for.</strong></p>
+                            <p>You also feel that moment of excitement when you saw something you never thought you&rsquo;d find in that particular bookstore.</p>
+                            <p>It&rsquo;s like winning the lottery.</p>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="{{{ url('public/storage/services/bookstore-v2-3.jpg') }}}" style="width:100%" alt="Bookstore Display 2">
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="text-red"><strong>4. You can always ask for help with the staff and they&rsquo;ll willingly help you.</strong></p>
+                                    <p>If you can't find the book you&rsquo;re looking for, you can always ask the staff around you. They are usually helpful and accommodating.</p>
+                                    <p>They will also happily talk literature with you.</p>
+                                    <br>
+                                    <p class="text-red"><strong>5. You get to make friends.</strong></p>
+                                    <p>Once you become a regular, there&rsquo;s no doubt you&rsquo;ll end up befriending the rest of the staff and other regulars as well. This kind of friendship is better than any other social media platform can give.</p>
+                                </div>
+                               
+                                
+                            </div>
+                            <br>
                             
+                            
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <p class="text-red"><strong>6. You get to participate in the events held at bookstores.</strong></p>
+                                    <p>Some bookstores hold events that bring like-minded people together. It&rsquo;s great for the community, and it&rsquo;s also great for business.</p>
+                                    <p>What&rsquo;s better than being surrounded by people who share the love for literature as much as you? And also, drinks.</p>
+                                    <br>
+                                    <p class="text-red"><strong>7. You get the chance to meet someone interesting. </strong></p>
+                                    <p>On regular days and on events, there&rsquo;s always a huge chance you&rsquo;ll meet someone interesting. We don&rsquo;t know, you guys might meet a potential best friend, or even better, your soul mate. Love for books? Check.</p>
+                                    <p>Favorite books? Set a date and find out.</p>
+                                    <br>
+                                    <p class="text-red"><strong>8. You are able to help their business and the local economy.</strong></p>
+                                    <p>You are able to help the owners and their employees earn an honest living.</p>
+                                    
+                                </div>
+                                
+                                <div class="col-md-4">
+                                    <img src="{{{ url('public/storage/services/bookstore-v2-4.jpg') }}}" style="width:100%" alt="Bookstore Display 1">
+                                </div>
+                                
+                            </div>
+                            <br>
+                            <p class="text-red"><strong>9. You get to discover new talent.</strong></p>
+                            <p>These new and upcoming talents work so hard in pursuing their dreams and finally getting their work out there. We need more creative people in this world.</p>
+                            <p>Who knows? You might discover your new favorite author.</p>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="{{{ url('public/storage/services/bookstore-v2-5.jpg') }}}" style="width:100%" alt="Bookstore Display 2">
+                                </div>
+                                <div class="col-md-8">
+                                    <br>
+                                    <p class=""><strong>Join us and we&rsquo;ll help you get your book out there.</strong></p>
+                                    <p>The local bookstores we partner with are without a doubt outstanding. We are proud that they are part of the NRM family.</p>
+                                    <p>So if you have a book and you want to get it out there, contact us and we&rsquo;ll take care of putting your book for potential fans to read. You&rsquo;ll be the brains and New Reader Media will take care of all the legwork.</p>
+                                </div>
+                               
+                                
+                            </div>
                             
                             
                         </div>

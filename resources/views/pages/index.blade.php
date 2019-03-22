@@ -28,59 +28,66 @@
                                     <!-- Wrapper for slides -->
                                     <div class="carousel-inner">
                                         <div class="item active">
-                                            <img style="width:100%" src="{{{ url('public/storage/services/screenplay-service.jpg') }}}" alt="Screenplay Service">
+                                            <img style="width:100%" src="{{{ url('public/storage/services/screenplay-service-v2.jpg') }}}" alt="Screenplay Service">
                                             <div class="layer" style="background-color: rgba(40, 40, 40, 0.6);position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
-                                            <div class="carousel-caption">
-                                                <h1>Screenplay Service</h1>
-                                                <p>Your story plus our writers, a complete script masterpiece!</p>
+                                            
+                                            <div class="carousel-caption" style="background-color: rgba(0, 0, 0, 0.5);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
+                                                <p class="text-left"><strong><span style="font-size: 22.0pt;color:#fff">Screenplay Service</span></strong></p>
+                                                <p class="text-left" style="margin-top:0"><span style="font-size: 16.0pt;color:#fff">Your story plus our writers, a complete script masterpiece!</span></p>
                                             </div>
                                         </div>
                                         <div class="item">
                                             <img style="width:100%" src="{{{ url('public/storage/services/treatment-script-draft-service.jpg') }}}" alt="Treatment Script Draft Service">
                                             <div class="layer" style="background-color: rgba(40, 40, 40, 0.6);position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
-                                            <div class="carousel-caption">
-                                                <h1>Treatment/Script Draft Service</h1>
-                                                <p>Chapters and events are the main focus!</p>
+                                            
+                                            <div class="carousel-caption" style="background-color: rgba(0, 0, 0, 0.5);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
+                                                <p class="text-left"><strong><span style="font-size: 22.0pt;color:#fff">Treatment/Script Draft Service</span></strong></p>
+                                                <p class="text-left" style="margin-top:0"><span style="font-size: 16.0pt;color:#fff">Chapters and events are the main focus!</span></p>
                                             </div>
                                         </div>
                                         <div class="item">
-                                            <img style="width:100%" src="{{{ url('public/storage/services/synopsis-coverage-service.jpg') }}}" alt="Synopsis Coverage Service">
+                                            <img style="width:100%" src="{{{ url('public/storage/services/synopsis-coverage-service-v2.jpg') }}}" alt="Synopsis Coverage Service">
                                             <div class="layer" style="background-color: rgba(40, 40, 40, 0.6);position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
-                                            <div class="carousel-caption">
-                                                <h1>Synopsis/Coverage Service</h1>
-                                                <p>Your story ready for the big screen!</p>
+                                            
+                                            <div class="carousel-caption" style="background-color: rgba(0, 0, 0, 0.5);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
+                                                <p class="text-left"><strong><span style="font-size: 22.0pt;color:#fff">Synopsis/Coverage Service</span></strong></p>
+                                                <p class="text-left" style="margin-top:0"><span style="font-size: 16.0pt;color:#fff">Your story ready for the big screen!</span></p>
                                             </div>
                                         </div>
                                         <div class="item">
-                                            <img style="width:100%" src="{{{ url('public/storage/services/website-creation.jpg') }}}" alt="Website Creation">
+                                            <img style="width:100%" src="{{{ url('public/storage/services/website-creation-v2.jpg') }}}" alt="Website Creation">
                                             <div class="layer" style="background-color: rgba(40, 40, 40, 0.6);position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
-                                            <div class="carousel-caption">
-                                                <h1>Website Creation, Hosting and SEO</h1>
-                                                <p>Your professional interactive portfolio!</p>
+                                            
+                                            <div class="carousel-caption" style="background-color: rgba(0, 0, 0, 0.5);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
+                                                <p class="text-left"><strong><span style="font-size: 22.0pt;color:#fff">Website Creation, Hosting and SEO</span></strong></p>
+                                                <p class="text-left" style="margin-top:0"><span style="font-size: 16.0pt;color:#fff">Your professional interactive portfolio!</span></p>
                                             </div>
                                         </div>
                                         <div class="item">
-                                            <img style="width:100%" src="{{{ url('public/storage/services/publicity-services.jpg') }}}" alt="Publicity Services">
+                                            <img style="width:100%" src="{{{ url('public/storage/services/publicity-services-v2.jpg') }}}" alt="Publicity Services">
                                             <div class="layer" style="background-color: rgba(40, 40, 40, 0.6);position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
-                                            <div class="carousel-caption">
-                                                <h1>Publicity Services</h1>
-                                                <p>We make sure you will be famous!</p>
+                                            
+                                            <div class="carousel-caption" style="background-color: rgba(0, 0, 0, 0.5);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
+                                                <p class="text-left"><strong><span style="font-size: 22.0pt;color:#fff">Publicity Services</span></strong></p>
+                                                <p class="text-left" style="margin-top:0"><span style="font-size: 16.0pt;color:#fff">We make sure you will be famous!</span></p>
                                             </div>
                                         </div>
                                         <div class="item">
-                                            <img style="width:100%" src="{{{ url('public/storage/services/movie-agent.jpg') }}}" alt="Movie Agent">
+                                            <img style="width:100%" src="{{{ url('public/storage/services/movie-agent-v2.jpg') }}}" alt="Movie Agent">
                                             <div class="layer" style="background-color: rgba(40, 40, 40, 0.6);position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
-                                            <div class="carousel-caption">
-                                                <h1>Movie Agent</h1>
-                                                <p>Our movie agents will get your story to the right hands!</p>
+                                            
+                                            <div class="carousel-caption" style="background-color: rgba(0, 0, 0, 0.5);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
+                                                <p class="text-left"><strong><span style="font-size: 22.0pt;color:#fff">Movie Agent</span></strong></p>
+                                                <p class="text-left" style="margin-top:0"><span style="font-size: 16.0pt;color:#fff">Our movie agents will get your story to the right hands!</span></p>
                                             </div>
                                         </div>
                                         <div class="item">
-                                            <img style="width:100%" src="{{{ url('public/storage/services/book-trailer.jpg') }}}" alt="Sneak Peek">
+                                            <img style="width:100%" src="{{{ url('public/storage/services/sneak-peek-service-v2.jpg') }}}" alt="Sneak Peek">
                                             <div class="layer" style="background-color: rgba(40, 40, 40, 0.6);position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
-                                            <div class="carousel-caption">
-                                                <h1>Sneak Peek</h1>
-                                                <p>What better way to entice producers than to give them a peek!</p>
+                                            
+                                            <div class="carousel-caption" style="background-color: rgba(0, 0, 0, 0.5);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
+                                                <p class="text-left"><strong><span style="font-size: 22.0pt;color:#fff">Sneak Peek</span></strong></p>
+                                                <p class="text-left" style="margin-top:0"><span style="font-size: 16.0pt;color:#fff">What better way to entice producers than to give them a peek!</span></p>
                                             </div>
                                         </div>
                                     </div>
@@ -204,11 +211,12 @@
                                 
                                 <div class="box-article">
                                     
-                                    <div style="position:relative;width:100%;height:250px;background:url({{{ url('public/storage/services/bsd3.jpg') }}}) center center no-repeat;background-size: cover;overflow:hidden">
+                                    <div style="position:relative;width:100%;height:250px;background:url({{{ url('public/storage/services/bookstore-v2-1.jpg') }}}) center center no-repeat;background-size: cover;overflow:hidden">
                                         <div class="layer" style="background-color: rgba(0, 0, 0, 0.7);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
                                             
-                                            <a class="article-link" href="{{ url('/bookstore-display') }}"><h3 class="header-red-box"><strong>Bookstores: A Timeless Place</strong></h3></a>
-                                            <p class="text-justify" style="font-size:12px;position: relative;top: 35%;transform: translateY(-60%); ">In this modern digital age, books are created into audiobooks or converted digitally into e-books for people to read in their own respective smart devices. Not to mention the significant rise of online shopping that delivers your book to your doorstep astoundingly fast. 
+                                            <a class="article-link" href="{{ url('/bookstore-display') }}"><h3 class="header-red-box"><strong>9 Reasons Why Bookstores Are Still The Real Deal</strong></h3></a>
+                                            <p class="text-justify" style="font-size:12px;position: relative;top: 35%;transform: translateY(-60%); ">Who goes to bookstores anymore? Nowadays one can simply get a book online and have it delivered to the doorstep. E-books? Audiobooks? And shall I say, pirated books? 
+                                                But there’s something that bookstores offer that’s better than convenience. 
                                                 <br><a class="small read-more" href="{{ url('/bookstore-display') }}" rel="nofollow">Read more</a>
                                             </p>
                                             
@@ -223,11 +231,11 @@
                                 
                                 <div class="box-article">
                                     
-                                    <div style="position:relative;width:100%;height:250px;background:url({{{ url('public/storage/book-to-screen.jpg') }}}) center center no-repeat;background-size: cover;overflow:hidden">
+                                    <div style="position:relative;width:100%;height:250px;background:url({{{ url('public/storage/services/adapted-screenplay-v2-1.jpg') }}}) center center no-repeat;background-size: cover;overflow:hidden">
                                         <div class="layer" style="background-color: rgba(0, 0, 0, 0.7);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
                                             
-                                            <a class="article-link" href="{{ url('/screen-adaptation') }}"><h3 class="header-red-box"><strong>The Making of an Adapted Screenplay</strong></h3></a>
-                                            <p class="text-justify" style="font-size:12px;position: relative;top: 35%;transform: translateY(-60%); ">There’s always a tension between plotting and knowing what the character wants. It’s a constant balancing act. One dial moves the storyline horizontally and the other moves it vertically. If you hit the right balance, you get a diagonal— which is not at all an easy feat to achieve.
+                                            <a class="article-link" href="{{ url('/screen-adaptation') }}"><h3 class="header-red-box"><strong>Let’s turn your book into a movie</strong></h3></a>
+                                            <p class="text-justify" style="font-size:12px;position: relative;top: 35%;transform: translateY(-60%); ">If you and your audience can picture the plot and characters inside your head, then think about elevating those images and seeing the actual event right before your eyes. This is what screenplay adaptation aims. They take a book and rewrite it to ensure that the story works as a film.
                                                 <br><a class="small read-more" href="{{ url('/screen-adaptation') }}" rel="nofollow">Read more</a>
                                             </p>
                                             
@@ -242,12 +250,12 @@
                             <section class="box-section" style="border-top: 3px solid rgb(180, 40, 40);">
                                 <div class="box-article">
                                    
-                                    <div style="position:relative;width:100%;min-height:250px;background:url({{{ url('public/storage/services/bt2.jpg') }}}) center center no-repeat;background-size: cover;overflow:hidden">
+                                    <div style="position:relative;width:100%;min-height:250px;background:url({{{ url('public/storage/services/sneak-peeks-v2-1.jpg') }}}) center center no-repeat;background-size: cover;overflow:hidden">
                                         <div class="layer" style="background-color: rgba(0, 0, 0, 0.7);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
                                             
                                             
-                                            <a class="article-link" href="{{ url('/sneak-peek') }}"><h3 class="header-red-box"><strong>Sneak Peeks, why do we need them?</strong></h3></a>
-                                            <p class="text-justify" style="font-size:12px;position: relative;top: 35%;transform: translateY(-50%); ">If you want to be viral, you have to marry videos. Engagement with a global audience generates more than buzz and hype. It gets your message across instantly. Corporate entities project their personalities through relatable content and no other medium can do this more efficiently than videos.
+                                            <a class="article-link" href="{{ url('/sneak-peek') }}"><h3 class="header-red-box"><strong>Sneak Peeks: Why do you need them</strong></h3></a>
+                                            <p class="text-justify" style="font-size:12px;position: relative;top: 35%;transform: translateY(-50%); ">Sneak Peeks have been gaining a lot of interest from the self-published authors lately for a good reason.  Sneak Peeks are ultra-short and cinematic videos which follow the same principle as movie trailers. In less than two minutes, it presents a book’s story while teasing audiences with its best parts.
                                                 <br><a class="small read-more" href="{{ url('/sneak-peek') }}" rel="nofollow">Read more</a>
                                             </p>
                                         
