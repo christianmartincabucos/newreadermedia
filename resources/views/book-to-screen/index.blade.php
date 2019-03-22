@@ -3,6 +3,7 @@
 @section('og-title')Let’s turn your book into a movie @endsection
 @section('meta-description')If you and your audience can picture the plot and characters inside your head, then think about elevating those images and seeing the actual event right before your eyes. This is what screenplay adaptation aims. They take a book and rewrite it to ensure that the story works as a film.@endsection
 @section('og-image'){{{ url('public/storage/services/adapted-screenplay-v2-1.jpg') }}}@endsection
+@section('og-image'){{{ url('/screen-adaptation') }}}@endsection
 @section('content')
 <div class="container">
     <div class="row">
