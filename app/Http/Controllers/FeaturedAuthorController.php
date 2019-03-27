@@ -110,4 +110,25 @@ class FeaturedAuthorController extends Controller
     {
         return view('featured-author.manuel-pelaez');
     }
+
+    // march 2019
+    public function featured21()
+    {
+        return view('featured-author.alex-salaiz');
+    }
+
+    public function featured22()
+    {
+        return view('featured-author.bernadette-butler');
+    }
+    
+    public function featured23()
+    {
+        return view('featured-author.billy-turlington');
+    }
+    
+    public function featured24()
+    {
+        return view('featured-author.charles-glenn');
+    }
 }

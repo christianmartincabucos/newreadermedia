@@ -2,6 +2,10 @@
     <p><strong>OUR SPOTLIGHTS</strong></p>
     
     <ul class="" style="padding-left:20px">
+        <li><a href="{{ route('spotlight.charles-glenn') }}" class="article-link">Dr. Charles G. Glenn</a></li>
+        <li><a href="{{ route('spotlight.billy-turlington') }}" class="article-link">Billy Turlington</a></li>
+        <li><a href="{{ route('spotlight.bernadette-butler') }}" class="article-link">Bernadette Butler</a></li>
+        <li><a href="{{ route('spotlight.alex-salaiz') }}" class="article-link">Alex Salaiz</a></li>
         <li><a href="{{ route('spotlight.lindy-kerr') }}" class="article-link">Lindy Kerr</a></li>
         <li><a href="{{ route('spotlight.manuel-pelaez') }}" class="article-link">Manuel Pelaez</a></li>
         <li><a href="{{ route('spotlight.wendy-sellers') }}" class="article-link">Wendy Sellers</a></li>
