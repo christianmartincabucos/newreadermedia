@@ -1,6 +1,6 @@
 @extends('layouts.app')
-@section('title')Media Spotlight: Dr. Charkes G. Glenn @endsection
-@section('og-title')Media Spotlight: Dr. Charkes G. Glenn @endsection
+@section('title')Media Spotlight: Dr. Charles G. Glenn @endsection
+@section('og-title')Media Spotlight: Dr. Charles G. Glenn @endsection
 @section('meta-description')Dr. Charles G. Glenn. was called into the ministry at the age of twenty. A proud Pastor of King of Kings Temple C.O.G.I.C., San Diego, California.@endsection
 @section('content')
 <div class="container">
@@ -18,9 +18,9 @@
                         
                         <div class="col-md-9 text-justify right-divider">
                             <div class="col-md-4 center-block">
-                                <img src="{{{ url('public/storage/featured-author/charles-glenn.jpg') }}}" class="img-circle" style="width:100%" alt="Dr. Charkes G. Glenn">
+                                <img src="{{{ url('public/storage/featured-author/charles-glenn.jpg') }}}" class="img-circle" style="width:100%" alt="Dr. Charles G. Glenn">
                             </div>
-                            <h3 class="text-center"><strong>Dr. Charkes G. Glenn</strong> </h3>
+                            <h3 class="text-center"><strong>Dr. Charles G. Glenn</strong> </h3>
                             <p>My name is Dr. Charles G. Glenn.  I was married to my lovely wife the late Janet L. Glenn for 45 wonderful years. We have three sons, one daughter, and six grandchildren.  I was born in Shreveport, Louisiana but now reside in San Diego, California.  I received the Lord at the age of twenty, and God also called me into ministry at the age of twenty.  I am the proud Pastor of King of Kings Temple C.O.G.I.C., San Diego, California.</p>
                             <p></p>
                             <br>
