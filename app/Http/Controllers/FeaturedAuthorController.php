@@ -131,4 +131,24 @@ class FeaturedAuthorController extends Controller
     {
         return view('featured-author.charles-glenn');
     }
+
+    public function featured25()
+    {
+        return view('featured-author.gary-smit');
+    }
+    
+    public function featured26()
+    {
+        return view('featured-author.jon-howard-hall');
+    }
+    
+    public function featured27()
+    {
+        return view('featured-author.kay-pratt');
+    }
+
+    public function featured28()
+    {
+        return view('featured-author.kiera-donna-laike');
+    }
 }

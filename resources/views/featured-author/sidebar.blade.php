@@ -2,6 +2,10 @@
     <p><strong>OUR SPOTLIGHTS</strong></p>
     
     <ul class="" style="padding-left:20px">
+        <li><a href="{{ route('spotlight.kiera-donna-laike') }}" class="article-link">Kiera Donna Laike</a></li>
+        <li><a href="{{ route('spotlight.kay-pratt') }}" class="article-link">Kay Pratt</a></li>
+        <li><a href="{{ route('spotlight.jon-howard-hall') }}" class="article-link">Jon Howard Hall</a></li>
+        <li><a href="{{ route('spotlight.gary-smit') }}" class="article-link">Gary Smit</a></li>
         <li><a href="{{ route('spotlight.charles-glenn') }}" class="article-link">Dr. Charles G. Glenn</a></li>
         <li><a href="{{ route('spotlight.billy-turlington') }}" class="article-link">Billy Turlington</a></li>
         <li><a href="{{ route('spotlight.bernadette-butler') }}" class="article-link">Bernadette Butler</a></li>

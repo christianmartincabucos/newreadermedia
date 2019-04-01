@@ -68,6 +68,11 @@ Route::get('/spotlight/alex-salaiz', 'FeaturedAuthorController@featured21')->nam
 Route::get('/spotlight/bernadette-butler', 'FeaturedAuthorController@featured22')->name('spotlight.bernadette-butler');
 Route::get('/spotlight/billy-turlington', 'FeaturedAuthorController@featured23')->name('spotlight.billy-turlington');
 Route::get('/spotlight/charles-glenn', 'FeaturedAuthorController@featured24')->name('spotlight.charles-glenn');
+Route::get('/spotlight/gary-smit', 'FeaturedAuthorController@featured25')->name('spotlight.gary-smit');
+Route::get('/spotlight/jon-howard-hall', 'FeaturedAuthorController@featured26')->name('spotlight.jon-howard-hall');
+Route::get('/spotlight/kay-pratt', 'FeaturedAuthorController@featured27')->name('spotlight.kay-pratt');
+Route::get('/spotlight/kiera-donna-laike', 'FeaturedAuthorController@featured28')->name('spotlight.kiera-donna-laike');
+
 
 // BLOGS
 Route::get('/blogs/editors-picks', 'EditorsPicksController@index')->name('editors-picks');
