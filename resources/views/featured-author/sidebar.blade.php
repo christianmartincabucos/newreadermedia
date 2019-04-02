@@ -2,6 +2,10 @@
     <p><strong>OUR SPOTLIGHTS</strong></p>
     
     <ul class="" style="padding-left:20px">
+        <li><a href="{{ route('spotlight.clifton-west') }}" class="article-link">Clifton L. West III</a></li>
+        <li><a href="{{ route('spotlight.cary-green') }}" class="article-link">Cary J. Green, Ph.D.</a></li>
+        <li><a href="{{ route('spotlight.walter-tunstall') }}" class="article-link">Walter W. Tunstall, Ph.D.</a></li>
+        <li><a href="{{ route('spotlight.ted-lau') }}" class="article-link">Ted Lau</a></li>
         <li><a href="{{ route('spotlight.kiera-donna-laike') }}" class="article-link">Kiera Donna Laike</a></li>
         <li><a href="{{ route('spotlight.kay-pratt') }}" class="article-link">Kay Pratt</a></li>
         <li><a href="{{ route('spotlight.jon-howard-hall') }}" class="article-link">Jon Howard Hall</a></li>
@@ -13,7 +17,7 @@
         <li><a href="{{ route('spotlight.lindy-kerr') }}" class="article-link">Lindy Kerr</a></li>
         <li><a href="{{ route('spotlight.manuel-pelaez') }}" class="article-link">Manuel Pelaez</a></li>
         <li><a href="{{ route('spotlight.wendy-sellers') }}" class="article-link">Wendy Sellers</a></li>
-        <li><a href="{{ route('spotlight.yvon-bell') }}" class="article-link">Yvon Bell</a></li>
+        <li class="hidden"><a href="{{ route('spotlight.yvon-bell') }}" class="article-link">Yvon Bell</a></li>
         <li><a href="{{ route('spotlight.tom-peavler') }}" class="article-link">Tom Peavler</a></li>
         <li><a href="{{ route('spotlight.philip-persinger') }}" class="article-link">Philip B. Persinger</a></li>
         <li><a href="{{ route('spotlight.lawrence-stentzel') }}" class="article-link">Lawrence Stentzel III</a></li>

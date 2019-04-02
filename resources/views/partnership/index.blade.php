@@ -70,7 +70,7 @@
                                                             and professionals, publications, and publishers. We will also do a campaign for you on our
                                                             Facebook page. You will be featured on our posts for promotion.</p>
                                                     </li>
-                                                    <li>Stage 5: Email Marketing <br>
+                                                    <li>Stage 5: Newsletter <br>
                                                         <p>We will create an email article for you and blast this using our own email database with your
                                                             target audience specific to your campaign and genre. This has been proven to have at least
                                                             85% chance for your campaign to be read.</p>
@@ -288,7 +288,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-4">
-                                    <h3 class="title-red">Email Marketing Campaign</h3>
+                                    <h3 class="title-red">Newsletter</h3>
                                     <ul>
                                         <li>500 Thousand</li>
                                         <li>1 Million</li>
