@@ -2,6 +2,7 @@
     <p><strong>OUR SPOTLIGHTS</strong></p>
     
     <ul class="" style="padding-left:20px">
+        <li><a href="{{ route('spotlight.tyrone-holcomb') }}" class="article-link">Tyrone Holcomb</a></li>
         <li><a href="{{ route('spotlight.clifton-west') }}" class="article-link">Clifton L. West III</a></li>
         <li><a href="{{ route('spotlight.cary-green') }}" class="article-link">Cary J. Green, Ph.D.</a></li>
         <li><a href="{{ route('spotlight.walter-tunstall') }}" class="article-link">Walter W. Tunstall, Ph.D.</a></li>

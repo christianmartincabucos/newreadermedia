@@ -76,6 +76,7 @@ Route::get('/spotlight/ted-lau', 'FeaturedAuthorController@featured29')->name('s
 Route::get('/spotlight/walter-tunstall', 'FeaturedAuthorController@featured30')->name('spotlight.walter-tunstall');
 Route::get('/spotlight/cary-green', 'FeaturedAuthorController@featured31')->name('spotlight.cary-green');
 Route::get('/spotlight/clifton-west', 'FeaturedAuthorController@featured32')->name('spotlight.clifton-west');
+Route::get('/spotlight/tyrone-holcomb', 'FeaturedAuthorController@featured33')->name('spotlight.tyrone-holcomb');
 
 
 // BLOGS
