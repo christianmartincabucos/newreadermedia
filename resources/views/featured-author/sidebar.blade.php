@@ -2,6 +2,9 @@
     <p><strong>OUR SPOTLIGHTS</strong></p>
     
     <ul class="" style="padding-left:20px">
+        <li><a href="{{ route('spotlight.bill-sanford') }}" class="article-link">Bill Sanford</a></li>
+        <li><a href="{{ route('spotlight.malaika-horne') }}" class="article-link">Malaika B. Horne</a></li>
+        <li><a href="{{ route('spotlight.richard-jurgensen') }}" class="article-link">Richard A. Jurgensen</a></li>
         <li><a href="{{ route('spotlight.tyrone-holcomb') }}" class="article-link">Tyrone Holcomb</a></li>
         <li><a href="{{ route('spotlight.clifton-west') }}" class="article-link">Clifton L. West III</a></li>
         <li><a href="{{ route('spotlight.cary-green') }}" class="article-link">Cary J. Green, Ph.D.</a></li>
