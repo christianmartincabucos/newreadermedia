@@ -157,8 +157,8 @@
                                             <p class="small">International Media Firm Launches Literary Magazine for the New Reader.<br><a class="small read-more" href="{{ url('/press-release') }}" rel="nofollow">Read more</a></p>
                                         </div>
                                     </div>
-                                    <div class="divider" style="margin:0 0 5px 0"></div>
-                                    <div class="row">
+                                    <div class="divider hidden" style="margin:0 0 5px 0"></div>
+                                    <div class="row hidden">
                                         <div class="col-xs-12 col-sm-4">
                                             <a href="{{ url('/spotlight') }}"><img class="article-thumbnail img-circle" src="{{{ url('public/storage/spotlight.jpg') }}}" style="width:100%" alt="Spotlight"></a>
                                         </div>
