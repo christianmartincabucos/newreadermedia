@@ -218,7 +218,7 @@
                                                     <li>Synopsis/Coverage with Review - highlighting the general story. A basis for agents to pitch the story through movie makers.</li>
                                                     <li>Review – Screenwriter would provide a professional review on how the book would much more adaptable in terms of selling in the Hollywood Industry.</li>
                                                     <li>Proof Reading - Finalizing the draft before we submit it to our agent.</li>
-                                                    <li>New Reader Agent - Contacting Investors, Producers, and Directors</li>
+                                                    <li>New Reader Agent - Contacting Investors, Producers, and Directors.</li>
                                                 </ul>
                                                 <p>Synopsis/Coverage Rights: Author will own all the rights including all the screenwriters input or work.</p>
                                                 <p>Book rights: Author owns the rights.</p>
@@ -229,7 +229,7 @@
                                                     <li>Treatment/Script Draft - highlighting the characters and the events of the story without the dialogue. a basis for film makers.</li>
                                                     <li>Proof Reading – Finalizing the draft before we submit it to our agent.</li>
                                                     <li>Review - Screenwriter would provide a professional review on how the book would much more adaptable in terms of selling in the Hollywood Industry.</li>
-                                                    <li>New Reader Agent - Contacting Investors, Producers, and Directors</li>
+                                                    <li>New Reader Agent - Contacting Investors, Producers, and Directors.</li>
                                                 </ul>
                                                 <p>Treatment/Script Draft Rights: Author will own all the rights including all the screenwriters input or work.</p>
                                                 <p>Book rights: Author owns the rights.</p>
@@ -240,7 +240,7 @@
                                                     <li>Script/Screenplay - highlighting the characters and the events of the story with the dialogue. a basis for film makers.</li>
                                                     <li>Proof Reading – Finalizing the draft before we submit it to our agent.</li>
                                                     <li>Review - Screenwriter would provide a professional review on how the book would much more adaptable in terms of selling in the Hollywood Industry.</li>
-                                                    <li>New Reader Agent - Contacting Investors, Producers, and Directors</li>
+                                                    <li>New Reader Agent - Contacting Investors, Producers, and Directors.</li>
                                                 </ul>
                                                 <p>Screenplay Rights: Author will own all the rights including all the screenwriters input or work.</p>
                                                 <p>Book rights: Author owns the rights.</p>
