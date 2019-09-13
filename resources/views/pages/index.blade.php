@@ -170,11 +170,11 @@
                                     <div class="divider" style="margin:0 0 5px 0"></div>
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-4">
-                                            <a class="article-link" href="https://www.newreadermagazine.com/download" target="_blank"><img class="article-thumbnail" src="https://www.newreadermagazine.com/images/nrm-issue-6.jpg" style="width:100%" alt="NRM Issue 6"></a>
+                                            <a class="article-link" href="https://www.newreadermagazine.com/download" target="_blank"><img class="article-thumbnail" src="https://www.newreadermagazine.com/images/nrm-issue-7.jpg" style="width:100%" alt="NRM Issue 7"></a>
                                         </div>
                                         <div class="col-xs-12 col-sm-8">
                                             <a class="article-link" href="https://www.newreadermagazine.com/download" target="_blank"><h4 class="title title-red">New Reader Magazine</h4></a><strong>Issue no. 6</strong>
-                                            <p class="small">{{ str_limit("New Reader Magazine's second issue of 2019, “Keeper of Fire” is an ode to people who are protecting legacies and stories and to those who have ignited ideas that will be passed along.",72) }}<br><a class="small read-more" href="https://www.newreadermagazine.com/download" rel="nofollow">Read more</a> </p>
+                                            <p class="small">{{ str_limit("For this third quarter, New Reader Magazine's "Herald" pays tribute to unsung heroes and celebrates moments that aspire us to become better versions of ourselves.",72) }}<br><a class="small read-more" href="https://www.newreadermagazine.com/download" rel="nofollow">Read more</a> </p>
                                         </div>
                                     </div>
                                     
