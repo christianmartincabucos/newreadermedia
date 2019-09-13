@@ -174,7 +174,7 @@
                                         </div>
                                         <div class="col-xs-12 col-sm-8">
                                             <a class="article-link" href="https://www.newreadermagazine.com/download" target="_blank"><h4 class="title title-red">New Reader Magazine</h4></a><strong>Issue no. 6</strong>
-                                            <p class="small">{{ str_limit("For this third quarter, New Reader Magazine's "Herald" pays tribute to unsung heroes and celebrates moments that aspire us to become better versions of ourselves.",72) }}<br><a class="small read-more" href="https://www.newreadermagazine.com/download" rel="nofollow">Read more</a> </p>
+                                            <p class="small">{{ str_limit("For this third quarter, New Reader Magazine's 'Herald' pays tribute to unsung heroes and celebrates moments that aspire us to become better versions of ourselves.",72) }}<br><a class="small read-more" href="https://www.newreadermagazine.com/download" rel="nofollow">Read more</a> </p>
                                         </div>
                                     </div>
                                     
