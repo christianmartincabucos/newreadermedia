@@ -33,7 +33,13 @@
 
         gtag('config', 'UA-125947986-1');
     </script>
-
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-4818974161097446",
+        enable_page_level_ads: true
+      });
+    </script>  
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126701606-10"></script>
     <script>
