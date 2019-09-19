@@ -226,7 +226,7 @@
                                                 <h4>Treatment/Script Draft, Agent with Review</h4>
                                                 <p>Inclusions</p>
                                                 <ul>
-                                                    <li>Treatment/Script Draft - highlighting the characters and the events of the story without the dialogue. a basis for film makers.</li>
+                                                    <li>Treatment/Script Draft - highlighting the characters and the events of the story without the dialogue. A basis for film makers.</li>
                                                     <li>Proof Reading – Finalizing the draft before we submit it to our agent.</li>
                                                     <li>Review - Screenwriter would provide a professional review on how the book would much more adaptable in terms of selling in the Hollywood Industry.</li>
                                                     <li>New Reader Agent - Contacting Investors, Producers, and Directors.</li>
@@ -237,7 +237,7 @@
                                                 <h4>Screenplay with Publicist (Online/Media)</h4>
                                                 <p>Inclusions</p>
                                                 <ul>
-                                                    <li>Script/Screenplay - highlighting the characters and the events of the story with the dialogue. a basis for film makers.</li>
+                                                    <li>Script/Screenplay - highlighting the characters and the events of the story with the dialogue. A basis for film makers.</li>
                                                     <li>Proof Reading – Finalizing the draft before we submit it to our agent.</li>
                                                     <li>Review - Screenwriter would provide a professional review on how the book would much more adaptable in terms of selling in the Hollywood Industry.</li>
                                                     <li>New Reader Agent - Contacting Investors, Producers, and Directors.</li>
