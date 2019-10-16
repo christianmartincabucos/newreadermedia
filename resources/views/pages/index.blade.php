@@ -272,15 +272,15 @@
                                     
                                     <div class="embed-container-x">
                                         
-                                        <video width="100%" height="auto" controls controlsList="nodownload">
-                                            <source src="{{{ url('public/storage/videos/the-final-audit-interview.mp4') }}}" type="video/mp4">
+                                        <video width="100%" height="auto" controls controlsList="nodownload" poster="{{{ url('public/storage/videos/alkawther-makki-interview_thumbnail.jpg') }}}">
+                                            <source src="{{{ url('public/storage/videos/alkawther-makki-interview.mp4') }}}" type="video/mp4">
                                             
                                               Your browser does not support the video tag.
                                         </video>
                                     </div>
-                                    <h4 class="title"><a href="{{ url('/author-interview') }}"><strong>Author Interview: Carnie Matisonn, The Final Audit</strong></a></h4>
+                                    <h4 class="title"><a href="{{ url('/author-interview') }}"><strong>Author Interview: Alkawther Makki, Unspoken Revivalism</strong></a></h4>
                                     <p class="small text-justify">
-                                            Dr. Carnie Matisonn is an attorney admitted to the High Courts of South Africa, Lesotho and Botswana; recipient of the Norman Rosenberg Law Scholarship, and South African Institute of International Relations Graduate Research Scholarship.
+                                        Alkawther Makki demonstrates her broad imagination by portraying many forms of persona like an actress in different roles. Her innocent character reflects her real life experiences. On the other hand she can be a witty character in her melodramatic roles, provoking a new and unsurpassed thrilling form of poetry filled with grand illustrations, captivating readers to an exhilarating edge!
                                     </p>
                                 
                                 </div>

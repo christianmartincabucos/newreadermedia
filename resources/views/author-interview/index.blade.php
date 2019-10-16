@@ -13,7 +13,7 @@
                     <section class="box-section">
                         <div class="col-md-12">
                             <h1 class="header-white">Author Interview</h1>
-                            <video width="100%" height="auto" controls controlsList="nodownload">
+                            <video width="100%" height="auto" controls controlsList="nodownload"poster="{{{ url('public/storage/videos/alkawther-makki-interview_thumbnail.jpg') }}}">
                                 <source src="{{{ url('public/storage/videos/the-final-audit-interview.mp4') }}}" type="video/mp4">
                                 
                                     Your browser does not support the video tag.
@@ -30,10 +30,18 @@
                     <section class="box-section">
                         <div class="row">
                             <div class="col-md-8 center-block">
-                                
-                                <h4 class="text-center" style="margin-top:10px"><strong>Author Interview: Carnie Matisonn, The Final Audit</strong></h4>
+                                <?php
+                                    // <h4 class="text-center" style="margin-top:10px"><strong>Author Interview: Carnie Matisonn, The Final Audit</strong></h4>
+                                    // <p class="text-justify">
+                                    //     Dr. Carnie Matisonn is an attorney admitted to the High Courts of South Africa, Lesotho and Botswana; recipient of the Norman Rosenberg Law Scholarship, and South African Institute of International Relations Graduate Research Scholarship.
+                                    // </p>
+                                ?>
+                                <h4 class="text-center" style="margin-top:10px"><strong>Author Interview: Alkawther Makki, Unspoken Revivalism</strong></h4>
                                 <p class="text-justify">
-                                    Dr. Carnie Matisonn is an attorney admitted to the High Courts of South Africa, Lesotho and Botswana; recipient of the Norman Rosenberg Law Scholarship, and South African Institute of International Relations Graduate Research Scholarship.
+                                    Alkawther Makki demonstrates her broad imagination by portraying many forms of persona like an actress in different roles. Her innocent character reflects her real life experiences. On the other hand she can be a witty character in her melodramatic roles, provoking a new and unsurpassed thrilling form of poetry filled with grand illustrations, captivating readers to an exhilarating edge!
+                                </p>
+                                <p class="text-justify">
+                                    As an extraordinary philosopher, Alkawther Makki stresses her incentives for promoting a grandeur ethical humanity; which may be sensed in poems and strongly expressed in proverbs, vindications and assertions. Her theories and definitions, quotes, and vignettes add to this overpowering literary tool for youth, students, teachers and any person pursuing formal or self-education.
                                 </p>
                             </div>
                         </div>
