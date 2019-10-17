@@ -269,18 +269,13 @@
                         <div class="col-md-8">
                             <section class="box-section" style="border-top: 3px solid rgb(180, 40, 40);">
                                 <div class="box-article">
-                                    
-                                    <div class="embed-container-x">
-                                        
-                                        <video width="100%" height="auto" controls controlsList="nodownload" poster="{{{ url('public/storage/videos/alkawther-makki-interview_thumbnail.jpg') }}}">
-                                            <source src="{{{ url('public/storage/videos/alkawther-makki-interview.mp4') }}}" type="video/mp4">
-                                            
-                                              Your browser does not support the video tag.
-                                        </video>
+                                    <div class="embed-container" style="margin-bottom:10px">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/EPSdiTc7psc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                                     </div>
-                                    <h4 class="title"><a href="{{ url('/author-interview') }}"><strong>Author Interview: Alkawther Makki, Unspoken Revivalism</strong></a></h4>
+                                    
+                                    <h4 class="title"><a href="{{ url('https://www.youtube.com/watch?v=EPSdiTc7psc') }}" target="_blank" rel="nofollow"><strong>Author Interview: Alkawther Makki, Unspoken Revivalism</strong></a></h4>
                                     <p class="small text-justify">
-                                        Alkawther Makki demonstrates her broad imagination by portraying many forms of persona like an actress in different roles. Her innocent character reflects her real life experiences. On the other hand she can be a witty character in her melodramatic roles, provoking a new and unsurpassed thrilling form of poetry filled with grand illustrations, captivating readers to an exhilarating edge!
+                                        As an extraordinary philosopher, Alkawther Makki stresses her incentives for promoting a grandeur ethical humanity; which may be sensed in poems and strongly expressed in proverbs, vindications and assertions.
                                     </p>
                                 
                                 </div>
