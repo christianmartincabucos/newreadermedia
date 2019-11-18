@@ -91,12 +91,12 @@ Route::get('/unsubscribe', 'SubscriberController@unsubscribe')->name('unsubscrib
 
 
 // BLOGS
-Route::get('/blogs/editors-picks', 'EditorsPicksController@index')->name('editors-picks');
-Route::get('/blogs/arts-and-culture', 'ArtsAndCultureController@index')->name('arts-and-culture');
+// Route::get('/blogs/editors-picks', 'EditorsPicksController@index')->name('editors-picks');
+// Route::get('/blogs/arts-and-culture', 'ArtsAndCultureController@index')->name('arts-and-culture');
 
 // EDITORS PICKS
-Route::get('/blogs/editors-picks/free-as-my-hair', 'EditorsPicksController@blog1')->name('editors-picks.free-as-my-hair');
+// Route::get('/blogs/editors-picks/free-as-my-hair', 'EditorsPicksController@blog1')->name('editors-picks.free-as-my-hair');
 
 // ARTS AND CULTURE
-Route::get('/blogs/arts-and-culture/aphantasia', 'ArtsAndCultureController@blog1')->name('arts-and-culture.aphantasia');
-Route::get('/blogs/arts-and-culture/greatest-cons-in-history', 'ArtsAndCultureController@blog2')->name('arts-and-culture.greatest-cons-in-history');
+// Route::get('/blogs/arts-and-culture/aphantasia', 'ArtsAndCultureController@blog1')->name('arts-and-culture.aphantasia');
+// Route::get('/blogs/arts-and-culture/greatest-cons-in-history', 'ArtsAndCultureController@blog2')->name('arts-and-culture.greatest-cons-in-history');
