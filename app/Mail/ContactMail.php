@@ -32,7 +32,7 @@ class ContactMail extends Mailable
     public function build()
     {
         return $this->subject('New Reader Media - Contact')
-                    ->from('New Reader Media')
+                    ->from($this->email->email,$this->email->name)
                     ->to('contact@newreadermedia.com')
                     ->view('contact.mail');
     }
