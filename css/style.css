@@ -57,6 +57,10 @@
     color: #000;
 }
 
+#contact-us p>a:hover{
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
+}
 .text-white {
     color: #fff;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);

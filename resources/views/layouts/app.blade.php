@@ -108,7 +108,7 @@
                     </li>
                     {{-- <li class="{{{ (Request::is(['partnership', 'partnership/*']) ? 'active' : '') }}}"><a href="{{ url('/partnership') }}" style="border-radius:0">Partnership</a></li> --}}
                     <li class="{{{ (Request::is(['subscribe', 'subscribe/*']) ? 'active' : '') }}}"><a href="{{ url('/subscribe') }}">Subscribe</a></li>
-                    <li><a href="#" class="contact-button">Contact Us</a></li>
+                    <li class="{{{ (Request::is(['contact', 'contact/*']) ? 'active' : '') }}}"><a href="{{ url('/contact') }}">Contact Us</a></li>
                     <li role="presentation" class="dropdown hidden">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                         Dropdown <span class="caret"></span>

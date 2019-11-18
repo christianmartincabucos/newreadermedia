@@ -1,5 +1,8 @@
 <?php
 
+use Illuminate\Http\Request;
+use App\Mail\ContactMail;
+use Illuminate\Support\Facades\Mail;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,7 +25,7 @@ Route::post('subscriber/delete', 'SubscriberController@delete')->name('subscribe
 
 // Route::get('/home', 'HomeController@index')->name('dashboard');
 Route::get('/about', 'PageController@about')->name('about');
-Route::get('/contribute', 'PageController@contribute')->name('contribute');
+// Route::get('/contribute', 'PageController@contribute')->name('contribute');
 // Route::get('/services', 'ServicesController@index')->name('services');
 Route::get('/screen-adaptation', 'BookToScreenController@index')->name('screen-adaptation');
 Route::get('/bookstore-display', 'BookstoreDisplayController@index')->name('bookstore-display');
@@ -39,7 +42,12 @@ Route::get('/subscribe', 'SubscriberController@index')->name('subscribe');
 Route::get('/subscribe/thankyou', 'SubscriberController@thankyou')->name('subscribe.thankyou');
 Route::get('/subscribe/goodbye', 'SubscriberController@goodbye')->name('subscribe.goodbye');
 
-Route::get('/testmail', 'SubscriberController@testmail')->name('testmail');
+Route::get('/contact', 'ContactController@index')->name('contact');
+Route::post('/contact', function(Request $request){
+    Mail::send(new ContactMail($request));
+    return redirect('/');
+});
+// Route::get('/testmail', 'SubscriberController@testmail')->name('testmail');
 Route::get('/unsubscribe', 'SubscriberController@unsubscribe')->name('unsubscribe');
 
 // SPOTLIGHTS

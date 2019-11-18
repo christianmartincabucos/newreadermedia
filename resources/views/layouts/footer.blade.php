@@ -26,7 +26,7 @@
             <h4 style="margin-top:0">CONTACT US</h4>
             <p><span class="fa fa-map-marker text-red"></span> <small>100 Church Street, Suite 800 New York, NY 10007, USA</small></p>
             <p><span class="fa fa-phone text-red"></span> 1 800-734-7871</p>
-            <p><span class="fa fa-envelope text-red"></span> contact@newreadermedia.com</p>
+            <p><span class="fa fa-envelope text-red"></span> <a  class="text-white" href="{{ url('/contact') }}">contact@newreadermedia.com</a></p>
             <br>
             
             <br>
@@ -38,7 +38,7 @@
             
         </div>
         <div class="col-md-5 col-md-pull-4 border-right">
-            <div class="">
+            <div class="contact-footer">
                
                 
                 <div class="text-center">
