@@ -1,3 +1,3 @@
 <p>From: <b>{{ $email->name}}</b> {{ $email->email}}</p>
-<br>
+<p>Subject: {{ $email->subject}}</p>
 <p>{{ $email->body }}</p>
