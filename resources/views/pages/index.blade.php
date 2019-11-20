@@ -109,11 +109,11 @@
                                 <div class="box-article">
                                     <a class="article-link" href="{{ url('/sneak-peeks') }}"><h4 class="title title-red">Sneak Peeks</h4></a>    
                                     <div class="embed-container" style="margin-bottom:10px">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/hvRXBeXfMXo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/yECQrh2b9Ok" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                                     </div>
                                     
-                                    <h4 class="title"><a href="https://www.youtube.com/watch?v=hvRXBeXfMXo" target="_blank" rel="nofollow"><strong>Unspoken Revivalism - Sneak Peek</strong></a></h4>
-                                    <p>As an extraordinary philosopher, Alkawther Makki stresses her incentives for promoting a grandeur ethical humanity; which may be sensed in poems and strongly expressed in proverbs, vindications and assertions.</p>
+                                    <h4 class="title"><a href="https://www.youtube.com/watch?v=yECQrh2b9Ok" target="_blank" rel="nofollow"><strong>O'er The Ramparts - Official Sneak Peek</strong></a></h4>
+                                    <p>A story of young Laurel O'Malley a daughter of a highly regarded country doctor living just on the outskirts of Baltimore which is under threat of attack by the British. As war becomes ever so real to her and everyone she loves. Laurel finds herself having to stand tall for her country and for the man she has come to love.</p>
                                    
                                     
                                 </div>

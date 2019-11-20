@@ -17,33 +17,34 @@
                         <div class="col-md-8 right-divider">
                             <div class="box-article">
                                 <div class="embed-container" style="margin-bottom:10px">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/hvRXBeXfMXo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/yECQrh2b9Ok" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                
                                 </div>
                                 
-                                <h4 class="title"><a href="https://www.youtube.com/watch?v=hvRXBeXfMXo" target="_blank" rel="nofollow"><strong>Unspoken Revivalism - Sneak Peek</strong></a></h4>
-                                <p>As an extraordinary philosopher, Alkawther Makki stresses her incentives for promoting a grandeur ethical humanity; which may be sensed in poems and strongly expressed in proverbs, vindications and assertions.</p>
+                                <h4 class="title"><a href="https://www.youtube.com/watch?v=yECQrh2b9Ok" target="_blank" rel="nofollow"><strong>O'er The Ramparts - Official Sneak Peek</strong></a></h4>
+                                <p>A story of young Laurel O'Malley a daughter of a highly regarded country doctor living just on the outskirts of Baltimore which is under threat of attack by the British. As war becomes ever so real to her and everyone she loves. Laurel finds herself having to stand tall for her country and for the man she has come to love.</p>
                                 
                                     
                             </div>
                             <div class="divider"></div>
                             <div class="box-article">
                                 <div class="embed-container" style="margin-bottom:10px">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/_aA-W-tvz6k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/N7Whgu39GCM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
                                 
-                                <h4 class="title"><a href="https://www.youtube.com/watch?v=_aA-W-tvz6k" target="_blank" rel="nofollow"><strong>Battle with Chronic Fatigue Syndrome - Sneak Peek</strong></a></h4>
-                                <p>As a former CFS sufferer and current healthcare practitioner, I feel Ms. Butcher provides an informative and interesting perspective on this disease and her road to recovery". Kyrie Kleinfelter, D.C, Upper Cervical Chiropractor. "As a fellow sufferer of CFS, I was truly able to relate to Ms. Butchers' experiences, thoughts and feelings. Her reference to the Word of God comforted my heart. Truly inspiring and honest". Darla Canney, CFS Patient. Ms. Butcher shares her intense and emotional journey of how the autoimmune disease chronic fatigue syndrome impacted her life from her first symptoms to the progress of her treatment and physical, spiritual and emotional recovery. By sharing with others, she hopes to inspire others to seek help so they may lead better lives as well. She wants them to know there is hope.</p>
+                                <h4 class="title"><a href="https://www.youtube.com/watch?v=N7Whgu39GCM" target="_blank" rel="nofollow"><strong>The Adventures of Tina Kaneekchuk and Her Twin Brother, Tommy - Official Sneak Peek</strong></a></h4>
+                                <p>Way up north above the Arctic Circle lived an Eskimo family. They had a very strange sounding last name. It was Kaneekchuk. There were Mama and Papa Kaneekchuk and their twins, Tina and Tommy, who were ten years old.</p>
                                 
                                     
                             </div>
                             <div class="divider"></div>
                             <div class="box-article">
                                 <div class="embed-container" style="margin-bottom:10px">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/O0qePkOcf1o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7mrbiGzAjfU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
                                 
-                                <h4 class="title"><a href="https://www.youtube.com/watch?v=O0qePkOcf1o" target="_blank" rel="nofollow"><strong>Lies Deceit and an Innocent Man - Sneak Peek</strong></a></h4>
-                                <p>Todd Bainbridge had his life planned. His future was secured. And in five years he would be a doctor. Bradfords local doctor; Doctor Chandler promised him a partnership in his practice. When Katies body was found on the York moor a week after her disappearance his life fell apart.</p>
+                                <h4 class="title"><a href="https://www.youtube.com/watch?v=7mrbiGzAjfU" target="_blank" rel="nofollow"><strong>Hell Don't Last Always - Official Sneak Peek</strong></a></h4>
+                                <p>"Hell Don't Last Always" is the sequel to, "I'm Catchin' Hell." The story resumes with Angelica Townsend as she endures mental rehabilitation. She discovers that everyone in this life has a story to tell, the only difference is the author.</p>
                                 
                                     
                             </div>
@@ -63,9 +64,9 @@
                             <p><strong>RECENT VIDEOS</strong></p>
                             
                             <ul class="" style="padding-left:20px">
-                                <li><a href="{{ url('https://www.youtube.com/watch?v=hvRXBeXfMXo') }}" class="article-link" target="_blank" rel="nofollow">Unspoken Revivalism</a></li>
-                                <li><a href="{{ url('https://www.youtube.com/watch?v=_aA-W-tvz6k') }}" class="article-link" target="_blank" rel="nofollow">Battle with Chronic Fatigue Syndrome</a></li>
-                                <li><a href="{{ url('https://www.youtube.com/watch?v=O0qePkOcf1o') }}" class="article-link" target="_blank" rel="nofollow">Lies Deceit and an Innocent Man</a></li>
+                                <li><a href="{{ url('https://www.youtube.com/watch?v=yECQrh2b9Ok') }}" class="article-link" target="_blank" rel="nofollow">O'er The Ramparts</a></li>
+                                <li><a href="{{ url('https://www.youtube.com/watch?v=N7Whgu39GCM') }}" class="article-link" target="_blank" rel="nofollow">The Adventures of Tina Kaneekchuk and Her Twin Brother, Tommy</a></li>
+                                <li><a href="{{ url('https://www.youtube.com/watch?v=7mrbiGzAjfU') }}" class="article-link" target="_blank" rel="nofollow">Hell Don't Last Always</a></li>
                                 <li><a href="{{ url('https://www.youtube.com/watch?v=aqzxUMJiU8A') }}" class="article-link" target="_blank" rel="nofollow">Aftermath: Nomads, Pirates and Frogfaces</a></li>
                                 
                             </ul>
