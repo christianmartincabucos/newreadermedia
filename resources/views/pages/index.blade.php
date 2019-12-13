@@ -170,11 +170,11 @@
                                     <div class="divider" style="margin:0 0 5px 0"></div>
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-4">
-                                            <a class="article-link" href="https://www.newreadermagazine.com/download" target="_blank"><img class="article-thumbnail" src="https://www.newreadermagazine.com/images/nrm-issue-7.jpg" style="width:100%" alt="NRM Issue 7"></a>
+                                            <a class="article-link" href="https://www.newreadermagazine.com/download" target="_blank"><img class="article-thumbnail" src="https://www.newreadermagazine.com/images/nrm-issue-8.jpg" style="width:100%" alt="NRM Issue 8"></a>
                                         </div>
                                         <div class="col-xs-12 col-sm-8">
-                                            <a class="article-link" href="https://www.newreadermagazine.com/download" target="_blank"><h4 class="title title-red">New Reader Magazine</h4></a><strong>Issue no. 7</strong>
-                                            <p class="small">{{ str_limit("For this third quarter, New Reader Magazine's 'Herald' pays tribute to unsung heroes and celebrates moments that aspire us to become better versions of ourselves.",72) }}<br><a class="small read-more" href="https://www.newreadermagazine.com/download" rel="nofollow">Read more</a> </p>
+                                            <a class="article-link" href="https://www.newreadermagazine.com/download" target="_blank"><h4 class="title title-red">New Reader Magazine</h4></a><strong>Issue no. 8</strong>
+                                            <p class="small">{{ str_limit("It's that time of the year again; another edition to close 2019. Taking chances, living the moment and putting up a good fight with life.",72) }}<br><a class="small read-more" href="https://www.newreadermagazine.com/download" rel="nofollow">Read more</a> </p>
                                         </div>
                                     </div>
                                     
