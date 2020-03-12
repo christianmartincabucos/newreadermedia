@@ -45,7 +45,7 @@
                     <br>
                     <p class="text-center">New Reader Media is a marketing and publicity firm for enterprising creatives, artists, and independent authors. We also offer film-to-screen literary agent services and filmmaking services for authors who want to break into the world of film and television.</p>    
                     <br><br>
-                    <p class="small" style="margin-top:15px">Copyright &copy; 2018 {{ config('app.name' )}}. All Rights Reserved.</p>
+                    <p class="small" style="margin-top:15px">Copyright &copy; {{date('Y')}} {{ config('app.name' )}}. All Rights Reserved.</p>
                 </div>
             </div>
         </div>
