@@ -17,9 +17,11 @@ use Illuminate\Support\Facades\Mail;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', 'PageController@index')->name('home');
 
-// Auth::routes();
+Auth::routes();
+Route::post('signout', 'BlogsController@logout')->name('signout');
 Route::post('subscriber', 'SubscriberController@store')->name('subscriber.store');
 Route::post('subscriber/delete', 'SubscriberController@delete')->name('subscriber.delete');
 

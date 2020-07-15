@@ -18,7 +18,7 @@
                         
                         <div class="col-md-9 text-justify right-divider">
                             <div class="col-md-4 center-block">
-                                <img src="{{{ url('public/storage/featured-author/billy-turlington.jpg') }}}" class="img-circle" style="width:100%" alt="Billy Turlington">
+                                <img src="{{{ url('storage/featured-author/billy-turlington.jpg') }}}" class="img-circle" style="width:100%" alt="Billy Turlington">
                             </div>
                             <h3 class="text-center"><strong>Billy Turlington</strong> </h3>
                             <p>Billy Turlington was born and raised on a farm in Covington, Georgia, where he resides today. He and his wife of over ten years have a five-year-old daughter who is the inspiration for the main character in Princess Ariadne of Micheland, his debut book.</p>
@@ -28,7 +28,7 @@
                             <div class="row">
                                 <div class="col-md-4 center-block">
                                     <a href="https://www.amazon.com/Princess-Ariadne-Micheland-Billy-Turlington/dp/147879416X/" target="_blank" rel="nofollow">
-                                        <img src="{{{ url('public/storage/featured-author/billy-turlington-book.png') }}}" class="" style="width:100%" alt="Princess Ariadne of Micheland">
+                                        <img src="{{{ url('storage/featured-author/billy-turlington-book.png') }}}" class="" style="width:100%" alt="Princess Ariadne of Micheland">
                                         
                                     </a>
                                     

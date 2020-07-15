@@ -18,7 +18,7 @@
                         
                         <div class="col-md-9 text-justify right-divider">
                             <div class="col-md-4 center-block">
-                                <img src="{{{ url('public/storage/featured-author/tyrone-holcomb.jpg') }}}" class="img-circle" style="width:100%" alt="Tyrone Holcomb">
+                                <img src="{{{ url('storage/featured-author/tyrone-holcomb.jpg') }}}" class="img-circle" style="width:100%" alt="Tyrone Holcomb">
                             </div>
                             <h3 class="text-center"><strong>Tyrone Holcomb</strong> </h3>
                             <p>Tyrone Holcomb is serving on staff at the Cathedral of Central Texas, the “Christian House of Prayer”. He is a devoted husband to his wife Andrea; a dedicated father of two sons, Omar and Vaughn; two daughters, Jada and Ty.</p>
@@ -29,7 +29,7 @@
                             <div class="row">
                                 <div class="col-md-4 center-block">
                                     <a href="https://www.amazon.com/More-Less-Turning-Disabilities-Possibilities/dp/1629985635/" target="_blank" rel="nofollow">
-                                        <img src="{{{ url('public/storage/featured-author/tyrone-holcomb-book.png') }}}" class="" style="width:100%" alt="More For Less: Turning Disabilities Into Possibilities">
+                                        <img src="{{{ url('storage/featured-author/tyrone-holcomb-book.png') }}}" class="" style="width:100%" alt="More For Less: Turning Disabilities Into Possibilities">
                                         
                                     </a>
                                     

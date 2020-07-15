@@ -18,7 +18,7 @@
                         
                         <div class="col-md-9 text-justify right-divider">
                             <div class="col-md-4 center-block">
-                                <img src="{{{ url('public/storage/featured-author/lawrence-stentzel.jpg') }}}" class="img-circle" style="width:100%" alt="Lawrence Stentzel III">
+                                <img src="{{{ url('storage/featured-author/lawrence-stentzel.jpg') }}}" class="img-circle" style="width:100%" alt="Lawrence Stentzel III">
                             </div>
                             <h3 class="text-center"><strong>Lawrence Stentzel III</strong> </h3>
                             <p>Lawrence Stentzel III received his BA in philosophy from Antioch College West and his MA in integral counselling psychology from The California Institute of Integral Studies. He earned his psychotherapy license and served Solano County Mental Health for 25 years as a clinical supervisor in charge of the 24-hour Crisis Service and ran two forensic mental health programs for mentally ill offenders. He started sitting zazen in 1973, became a member of the Arica mystical school in 1975, embarked on his study and practice of T’ai Chi Ch’uan in 1977, and his Taoist studies in 1978. He is also a practitioner of the tantric system of the Six Yogas of Naropa.</p>
@@ -33,7 +33,7 @@
                             <div class="row">
                                 <div class="col-md-8 center-block">
                                     <a href="https://www.amazon.com/Tale-Tail-Nine-Stars-Odyssey/dp/1546242538/" target="_blank" rel="nofollow">
-                                        <img src="{{{ url('public/storage/featured-author/a-tale-of-the-tail-of-nine-stars.png') }}}" class="" style="width:100%" alt="A Tale of the Tail of Nine Stars">
+                                        <img src="{{{ url('storage/featured-author/a-tale-of-the-tail-of-nine-stars.png') }}}" class="" style="width:100%" alt="A Tale of the Tail of Nine Stars">
                                     </a>
                                 </div>
                                 

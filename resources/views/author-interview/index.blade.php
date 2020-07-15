@@ -13,8 +13,8 @@
                     <section class="box-section">
                         <div class="col-md-12">
                             <h1 class="header-white">Author Interview</h1>
-                            <video width="100%" height="auto" controls controlsList="nodownload"poster="{{{ url('public/storage/videos/alkawther-makki-interview_thumbnail.jpg') }}}">
-                                <source src="{{{ url('public/storage/videos/the-final-audit-interview.mp4') }}}" type="video/mp4">
+                            <video width="100%" height="auto" controls controlsList="nodownload"poster="{{{ url('storage/videos/alkawther-makki-interview_thumbnail.jpg') }}}">
+                                <source src="{{{ url('storage/videos/the-final-audit-interview.mp4') }}}" type="video/mp4">
                                 
                                     Your browser does not support the video tag.
                             </video>

@@ -18,7 +18,7 @@
                         
                         <div class="col-md-9 text-justify right-divider">
                             <div class="col-md-4 center-block">
-                                <img src="{{{ url('public/storage/featured-author/kiera-laike.jpg') }}}" class="img-circle" style="width:100%" alt="Kiera Donna Laike">
+                                <img src="{{{ url('storage/featured-author/kiera-laike.jpg') }}}" class="img-circle" style="width:100%" alt="Kiera Donna Laike">
                             </div>
                             <h3 class="text-center"><strong>Kiera Donna Laike</strong> </h3>
                             <p>Kiera Donna Laike, IRW, has been writing fairy tales for children with whom she worked for 30 years. Each fairy tale emerged out of Kiera&rsquo;s true ability to connect with each child and foster their healing. Through the creation of a story personal to each child, she activates the non-verbal space in the child&rsquo;s brain that then causes the brain to settle and ultimately heal. Out of Kiera&rsquo;s desire to reach as many children as possible with this profound healing, she wrote <em>The Dance of Reflective Relationship </em>for all children. This special book offers a means through which each child&rsquo;s brain will settle, heal, and develop, uniquely in sync with who each of them are on the inside.</p>
@@ -30,7 +30,7 @@
                             <div class="row">
                                 <div class="col-md-4 center-block">
                                     <a href="https://www.amazon.com/Dance-Reflective-Relationship-Fairy-Creation-ebook/dp/B0741DB3JH/ref=sr_1_1?ie=UTF8&qid=1538754067&sr=8-1&keywords=dance+reflective+relationship" target="_blank" rel="nofollow">
-                                        <img src="{{{ url('public/storage/featured-author/kiera-laike-book.png') }}}" class="" style="width:100%" alt="A Dance of Reflective Relationship: A Fairy Tale of Creation">
+                                        <img src="{{{ url('storage/featured-author/kiera-laike-book.png') }}}" class="" style="width:100%" alt="A Dance of Reflective Relationship: A Fairy Tale of Creation">
                                         
                                     </a>
                                     

@@ -18,7 +18,7 @@
                         
                         <div class="col-md-9 text-justify right-divider">
                             <div class="col-md-4 center-block">
-                                <img src="{{{ url('public/storage/featured-author/les-klinefelter.jpg') }}}" class="img-thumbnail" style="width:100%" alt="Les Klinefelter">
+                                <img src="{{{ url('storage/featured-author/les-klinefelter.jpg') }}}" class="img-thumbnail" style="width:100%" alt="Les Klinefelter">
                             </div>
                             <h3 class="text-center"><strong>Les Klinefelter</strong> </h3>
                             <p>Les Klinefelter’s writing and teaching background has helped many people in their efforts to understand human behavior.  After spending over 30 years as a federal employee in a number of senior management positions, Les retired to a cabin on a lake in Vermont.</p>
@@ -37,7 +37,7 @@
                             <div class="row">
                                 <div class="col-md-8 center-block">
                                     <a href="https://www.amazon.com/Why-Effective-Communication-Self-Awareness/dp/1478796065/" target="_blank" rel="nofollow">
-                                        <img src="{{{ url('public/storage/featured-author/why-me.png') }}}" class="" style="width:100%" alt="Why Me? Effective Communication and Self Awareness">
+                                        <img src="{{{ url('storage/featured-author/why-me.png') }}}" class="" style="width:100%" alt="Why Me? Effective Communication and Self Awareness">
                                     </a>
                                 </div>
                                 

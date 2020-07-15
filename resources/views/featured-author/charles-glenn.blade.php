@@ -18,7 +18,7 @@
                         
                         <div class="col-md-9 text-justify right-divider">
                             <div class="col-md-4 center-block">
-                                <img src="{{{ url('public/storage/featured-author/charles-glenn.jpg') }}}" class="img-circle" style="width:100%" alt="Dr. Charles G. Glenn">
+                                <img src="{{{ url('storage/featured-author/charles-glenn.jpg') }}}" class="img-circle" style="width:100%" alt="Dr. Charles G. Glenn">
                             </div>
                             <h3 class="text-center"><strong>Dr. Charles G. Glenn</strong> </h3>
                             <p>My name is Dr. Charles G. Glenn.  I was married to my lovely wife the late Janet L. Glenn for 45 wonderful years. We have three sons, one daughter, and six grandchildren.  I was born in Shreveport, Louisiana but now reside in San Diego, California.  I received the Lord at the age of twenty, and God also called me into ministry at the age of twenty.  I am the proud Pastor of King of Kings Temple C.O.G.I.C., San Diego, California.</p>
@@ -28,7 +28,7 @@
                             <div class="row">
                                 <div class="col-md-4 center-block">
                                     <a href="https://www.amazon.com/Holy-Spirit-Welcome-This-Place/dp/1478799099/" target="_blank" rel="nofollow">
-                                        <img src="{{{ url('public/storage/featured-author/charles-glenn-book.png') }}}" class="" style="width:100%" alt="Holy Spirit You Are Welcome in This Place">
+                                        <img src="{{{ url('storage/featured-author/charles-glenn-book.png') }}}" class="" style="width:100%" alt="Holy Spirit You Are Welcome in This Place">
                                         
                                     </a>
                                     

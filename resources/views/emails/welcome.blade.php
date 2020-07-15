@@ -71,7 +71,7 @@
             <tr>
               <td height="10" style="font-size:10px; line-height:10px;">
                 
-                  <img src="{{{ url('public/storage/newsletter/header.png') }}}" alt="" style="width:100%">
+                  <img src="{{{ url('storage/newsletter/header.png') }}}" alt="" style="width:100%">
                   
               </td>
             </tr>
@@ -106,7 +106,7 @@
                     <td width="300" class="mobile" align="center" valign="top">
                       {{-- Grid Two --}}
                       <div class="box-content">
-                          <img src="{{{ url('public/storage/services/bsd3.jpg') }}}" style="width:100%">
+                          <img src="{{{ url('storage/services/bsd3.jpg') }}}" style="width:100%">
                           <p style="font-family:'Raleway', sans-serif;color:#222;text-align:justify;font-size:14px">In this modern digital age, books are created into audiobooks or converted digitally into e-books for people to read in their own respective smart devices. Not to mention the significant rise of online shopping that delivers your book to your doorstep astoundingly fast.</p>
                           <p style="text-align:left"><a style="color:#fff" href="https://www.newreadermedia.com/bookstore-display" target="_blank" class="btn btn-small">Learn more</a></p>
                       </div>
@@ -116,7 +116,7 @@
                     <td width="300" class="mobile" align="center" valign="top">
                       {{-- Grid Two --}}
                       <div class="box-content">
-                          <img src="{{{ url('public/storage/book-to-screen.jpg') }}}" style="width:100%">
+                          <img src="{{{ url('storage/book-to-screen.jpg') }}}" style="width:100%">
                           <p style="font-family:'Raleway', sans-serif;color:#222;text-align:justify;font-size:14px">There’s always a tension between plotting and knowing what the character wants. It’s a constant balancing act. One dial moves the storyline horizontally and the other moves it vertically. If you hit the right balance, you get a diagonal— which is not at all an easy feat to achieve.</p>
                           <p style="text-align:left"><a style="color:#fff" href="https://www.newreadermedia.com/screen-adaptation" target="_blank" class="btn btn-small">Learn more</a></p>
                       </div>
@@ -262,9 +262,9 @@
                     <td align="center" valign="top" style="">
                       {{-- Grid One --}}
                       <p>
-                        <a href="https://twitter.com/newreadermedia" target="_blank"><img src="{{{ url('public/storage/newsletter/twitter.png') }}}" style="height:30px"></a>
-                        <a href="https://www.facebook.com/newreadermedia" target="_blank"><img src="{{{ url('public/storage/newsletter/fb.png') }}}" style="height:30px"></a>
-                        <a href="https://www.instagram.com/newreadermedia/" target="_blank"><img src="{{{ url('public/storage/newsletter/ig.png') }}}" style="height:30px"></a>
+                        <a href="https://twitter.com/newreadermedia" target="_blank"><img src="{{{ url('storage/newsletter/twitter.png') }}}" style="height:30px"></a>
+                        <a href="https://www.facebook.com/newreadermedia" target="_blank"><img src="{{{ url('storage/newsletter/fb.png') }}}" style="height:30px"></a>
+                        <a href="https://www.instagram.com/newreadermedia/" target="_blank"><img src="{{{ url('storage/newsletter/ig.png') }}}" style="height:30px"></a>
                       </p>
                       <p style="font-family:'Oswald', sans-serif;color:#fff;text-align:center">CONTACT US</p>
                       <p style="font-family:'Raleway', sans-serif;color:#fff;text-align:center"><small>100 Church Street, Suite 800 New York, NY 10007, USA<br>1 800-734-7871<br><a href="mailto:contact@newreadermedia.com" style="color:#fff;text-decoration:none">contact@newreadermedia.com</a></small></p>

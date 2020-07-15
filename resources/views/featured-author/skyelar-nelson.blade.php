@@ -18,7 +18,7 @@
                         
                         <div class="col-md-9 text-justify right-divider">
                             <div class="col-md-4 center-block">
-                                <img src="{{{ url('public/storage/featured-author/skyelar-nelson.jpg') }}}" class="img-circle" style="width:100%" alt="Skyelar Nelson">
+                                <img src="{{{ url('storage/featured-author/skyelar-nelson.jpg') }}}" class="img-circle" style="width:100%" alt="Skyelar Nelson">
                             </div>
                             <h3 class="text-center"><strong>Skyelar Nelson</strong> </h3>
                             <p>Skyelar Nelson has been writing books, plays, and poetry since he was thirteen years old. He currently resides with his beautiful wife and three children in Charlotte, North Carolina, but was born and raised in Flint, Michigan, where he continues to nurture his dream of inspiring others through his writing. Payless is his first book.</p>
@@ -31,7 +31,7 @@
                             <div class="row">
                                 <div class="col-md-8 center-block">
                                     <a href="https://www.amazon.com/Payless-Skyelar-Nelson/dp/148083419X/" target="_blank" rel="nofollow">
-                                        <img src="{{{ url('public/storage/featured-author/payless.png') }}}" class="" style="width:100%" alt="Payless">
+                                        <img src="{{{ url('storage/featured-author/payless.png') }}}" class="" style="width:100%" alt="Payless">
                                     </a>
                                 </div>
                                 

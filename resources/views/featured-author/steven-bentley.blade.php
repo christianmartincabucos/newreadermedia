@@ -18,7 +18,7 @@
                         
                         <div class="col-md-9 text-justify right-divider">
                             <div class="col-md-4 center-block">
-                                <img src="{{{ url('public/storage/featured-author/steven-bentley.jpeg') }}}" class="img-circle" style="width:100%" alt="Steven Bentley">
+                                <img src="{{{ url('storage/featured-author/steven-bentley.jpeg') }}}" class="img-circle" style="width:100%" alt="Steven Bentley">
                             </div>
                             <h3 class="text-center"><strong>Steven Bentley, M.D.</strong> </h3>
                             <p>Steven Bentley, M.D. graduated from the Medical College of Georgia in Augusta, Georgia in 1978. The majority of his career has been in the emergency departments of North Carolina hospitals. He grew up in Georgia.</p>
@@ -41,12 +41,12 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <a href="https://www.amazon.com/License-Heal-Random-Memories-Doctor-ebook/dp/B0793SYDN9/" target="_blank" rel="nofollow">
-                                        <img src="{{{ url('public/storage/featured-author/a-license-to-heal.png') }}}" class="" style="width:100%" alt="A License to Heal">
+                                        <img src="{{{ url('storage/featured-author/a-license-to-heal.png') }}}" class="" style="width:100%" alt="A License to Heal">
                                     </a>
                                 </div>
                                 <div class="col-md-6">
                                     <a href="https://www.amazon.com/Poor-No-More-American-Dream-ebook/dp/B079653GWF/" target="_blank" rel="nofollow">
-                                        <img src="{{{ url('public/storage/featured-author/poor-no-more.png') }}}" class="" style="width:100%" alt="Poor No More">
+                                        <img src="{{{ url('storage/featured-author/poor-no-more.png') }}}" class="" style="width:100%" alt="Poor No More">
                                     </a>
                                 </div>
                             </div>

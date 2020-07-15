@@ -18,7 +18,7 @@
                         
                         <div class="col-md-9 text-justify right-divider">
                             <div class="col-md-4 center-block">
-                                <img src="{{{ url('public/storage/featured-author/gary-smit.jpg') }}}" class="img-circle" style="width:100%" alt="Gary Smit">
+                                <img src="{{{ url('storage/featured-author/gary-smit.jpg') }}}" class="img-circle" style="width:100%" alt="Gary Smit">
                             </div>
                             <h3 class="text-center"><strong>Gary Smit</strong> </h3>
                             <p>Gary Smit holds bachelor’s and master’s degrees and a doctorate in educational administration from Northern Illinois University.  Committing 34 years to public education, he has been a teacher, principal and served 25 years as a school superintendent. His most recent superintendency was Lombard School District 44 in suburban Chicago where he was instrumental in the adoption and implementation of CHARACTER COUNTS!</p>
@@ -31,7 +31,7 @@
                             <div class="row">
                                 <div class="col-md-4 center-block">
                                     <a href="https://www.amazon.com/Instilling-Touchstones-Character-Gary-Smit/dp/1621374769" target="_blank" rel="nofollow">
-                                        <img src="{{{ url('public/storage/featured-author/gary-smit-book.png') }}}" class="" style="width:100%" alt="Instilling Touchstones of Character">
+                                        <img src="{{{ url('storage/featured-author/gary-smit-book.png') }}}" class="" style="width:100%" alt="Instilling Touchstones of Character">
                                         
                                     </a>
                                     

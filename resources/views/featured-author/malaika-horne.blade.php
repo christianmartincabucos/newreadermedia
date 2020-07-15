@@ -18,7 +18,7 @@
                         
                         <div class="col-md-9 text-justify right-divider">
                             <div class="col-md-4 center-block">
-                                <img src="{{{ url('public/storage/featured-author/malaika-horne.jpg') }}}" class="img-circle" style="width:100%" alt="Malaika B. Horne">
+                                <img src="{{{ url('storage/featured-author/malaika-horne.jpg') }}}" class="img-circle" style="width:100%" alt="Malaika B. Horne">
                             </div>
                             <h3 class="text-center"><strong>Malaika B. Horne</strong> </h3>
                             <p>Malaika B. Horne is the founding director of the Executive Leadership Consortium at the University of Missouri- St. Louis. She is also an academic writer, book author and journalist, writing on topics about politics, health and social causes to women&rsquo;s issues.</p>
@@ -27,7 +27,7 @@
                             <div class="row">
                                 <div class="col-md-5 center-block">
                                     <a href="https://exaltmotherhood.com/" target="_blank" rel="nofollow">
-                                        <img src="{{{ url('public/storage/featured-author/malaika-horne-book.png') }}}" class="" style="width:100%" alt="Mother Wit">
+                                        <img src="{{{ url('storage/featured-author/malaika-horne-book.png') }}}" class="" style="width:100%" alt="Mother Wit">
                                         
                                     </a>
                                     

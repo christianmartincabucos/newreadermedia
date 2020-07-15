@@ -18,7 +18,7 @@
                         
                         <div class="col-md-9 text-justify right-divider">
                             <div class="col-md-4 center-block">
-                                <img src="{{{ url('public/storage/featured-author/philip-persinger.jpg') }}}" class="img-circle" style="width:100%" alt="Philip Persinger">
+                                <img src="{{{ url('storage/featured-author/philip-persinger.jpg') }}}" class="img-circle" style="width:100%" alt="Philip Persinger">
                             </div>
                             <h3 class="text-center"><strong>Philip B. Persinger</strong> </h3>
                             <p>Philip B. Persinger has been writing stuff for over 40 years. Early on, he wrote the Fishing News for the Montauk Pioneer. That might have been easier if he had ever gone fishing. Then he supported a playwriting habit by setting type—legitimate theatre, he’s got an MFA from Chapel Hill to prove it. Then he wrote code. He leaned how to do that at Vassar by majoring in ancient Greek—they’re both about syntax. In 2002 Fate bounced him on the head, which he recounted in his first award-winning novel. He also got an instant family just by signing a piece of paper. He had been an expert on childrearing before he had some. That changed everything. He and Emily are very happy in their old house and art studio in the Hudson River Valley.</p>
@@ -34,7 +34,7 @@
                             <div class="row">
                                 <div class="col-md-8 center-block">
                                     <a href="https://www.amazon.com/Tools-Trade-Philip-B-Persinger-ebook/dp/B01CD0NOF2/" target="_blank" rel="nofollow">
-                                        <img src="{{{ url('public/storage/featured-author/tools-of-the-trade.png') }}}" class="" style="width:100%" alt="Tools of the Trade">
+                                        <img src="{{{ url('storage/featured-author/tools-of-the-trade.png') }}}" class="" style="width:100%" alt="Tools of the Trade">
                                     </a>
                                 </div>
                                 

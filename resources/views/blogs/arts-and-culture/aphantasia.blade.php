@@ -2,7 +2,7 @@
 @section('title')Aphantasia: Weak Imagination or No Imagination at All? @endsection
 @section('og-title')Aphantasia: Weak Imagination or No Imagination at All? @endsection
 @section('meta-description')Remarkable blind mind condition you’ve probably never realized was true. @endsection
-@section('og-image'){{{ url('public/storage/blogs/arts-and-culture/aphantasia.jpg') }}}@endsection
+@section('og-image'){{{ url('storage/blogs/arts-and-culture/aphantasia.jpg') }}}@endsection
 @section('content')
 <div class="container">
     <div class="row">
@@ -26,7 +26,7 @@
                                             </small>
                                         </h1>
                                         
-                                        <div style="position:relative;width:100%;height:500px;background:url({{{ url('public/storage/blogs/arts-and-culture/aphantasia.jpg') }}}) center center no-repeat;background-size: cover;overflow:hidden;margin-bottom:10px">
+                                        <div style="position:relative;width:100%;height:500px;background:url({{{ url('storage/blogs/arts-and-culture/aphantasia.jpg') }}}) center center no-repeat;background-size: cover;overflow:hidden;margin-bottom:10px">
                                             <div class="layer" style="background-color: rgba(0, 0, 0, 0.0);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
                                                 
                                                 
@@ -44,7 +44,7 @@
                                         <p>“Imagine you are on top of a mountain…”</p>
                                         
                                         <p class="text-center">
-                                            <img src="{{{ url('public/storage/blogs/arts-and-culture/meditation-spiritual-yoga.jpg') }}}" alt="Meditation-Spiritual-Yoga" style="width:100%">
+                                            <img src="{{{ url('storage/blogs/arts-and-culture/meditation-spiritual-yoga.jpg') }}}" alt="Meditation-Spiritual-Yoga" style="width:100%">
                                         </p>
                                         <br>
                                         <p>It’s just black. Nothing.</p>
@@ -54,7 +54,7 @@
                                         <p>And on the other hand, if this is just a case of poor imagination, I’ll feel unimaginative and undeserving of my career--- especially that I’m writing and making films for a living.</p>
                                         
                                         <p class="text-center">
-                                            <img src="{{{ url('public/storage/blogs/arts-and-culture/youtuber-blogger-screenwriter.jpg') }}}" alt="Youtuber-Blogger-Screenwriter" style="width:100%">
+                                            <img src="{{{ url('storage/blogs/arts-and-culture/youtuber-blogger-screenwriter.jpg') }}}" alt="Youtuber-Blogger-Screenwriter" style="width:100%">
                                         </p>
                                         <br>
                                         <p>This is a glass-shattering moment for me. Looking back, my childhood felt like a lie. I wondered how daydreaming went for some people now that I realize that maybe, just maybe, my “daydreaming techniques” were wrong.</p>
@@ -68,7 +68,7 @@
                                         <p>I know I'm an over-thinker to the point where my internal voice doesn’t literally shut up. It’s like there’s a voice in my head, narrating what I know instead of visualizing them. It has helped me a lot in processing information.</p>
                                         <p>When someone tells me to close my eyes and imagine an apple, I don’t necessarily see an apple at the back of my mind. No mental image, whatsoever.</p>
                                         <p class="text-center">
-                                            <img src="{{{ url('public/storage/blogs/arts-and-culture/apple-food-fruit.jpg') }}}" alt="Apple-Food-Fruit" style="width:100%">
+                                            <img src="{{{ url('storage/blogs/arts-and-culture/apple-food-fruit.jpg') }}}" alt="Apple-Food-Fruit" style="width:100%">
                                         </p>
                                         <br>
                                         <p>Instead, an internal voice processes what I know of an apple. An apple commonly comes with a red or green color. It’s somewhat round similar to the size of a human fist.</p>

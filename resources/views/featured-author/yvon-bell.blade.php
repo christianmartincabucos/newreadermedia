@@ -18,7 +18,7 @@
                         
                         <div class="col-md-9 text-justify right-divider">
                             <div class="col-md-4 center-block">
-                                <img src="{{{ url('public/storage/featured-author/yvon-bell.jpg') }}}" class="img-circle" style="width:100%" alt="Yvon Bell">
+                                <img src="{{{ url('storage/featured-author/yvon-bell.jpg') }}}" class="img-circle" style="width:100%" alt="Yvon Bell">
                             </div>
                             <h3 class="text-center"><strong>Yvon Bell</strong> </h3>
                             <p>Yvon Bell B.A. (University of Pretoria), Business woman and financial coach traveled from South Africa to the United States to speak with audiences in both small and arena-sized venues, leading discussions on how others can prepare and achieve communication with God. In her book, Messages from God, Bell shares her astonishing life experience in exacting detail. In short, Messages from God is a factual account serving as a map for readers to join her on an extraordinary, life-changing trip. Yvon Bell is a down to earth, country girl passionate to share and teach of Gods Voice in a solemn bid to change the thinking regarding Gods voice and His heart for future generations. Bells Journey with Gods voice changed her entire way of living. You too can find your true destiny by reading this book.</p>
@@ -28,7 +28,7 @@
                             <div class="row">
                                 <div class="col-md-8 center-block">
                                     <a href="https://www.amazon.com/Messages-God-Hear-Never-Before/dp/1532034768/ref=sr_1_3?s=books&ie=UTF8&qid=1530643332&sr=1-3&keywords=Yvon+Bell" target="_blank" rel="nofollow">
-                                        <img src="{{{ url('public/storage/featured-author/messages-from-god-yvon-bell.png') }}}" class="" style="width:100%" alt="Messages from God: Hear God Like Never Before">
+                                        <img src="{{{ url('storage/featured-author/messages-from-god-yvon-bell.png') }}}" class="" style="width:100%" alt="Messages from God: Hear God Like Never Before">
                                     </a>
                                 </div>
                                 

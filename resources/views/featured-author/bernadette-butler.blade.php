@@ -18,7 +18,7 @@
                         
                         <div class="col-md-9 text-justify right-divider">
                             <div class="col-md-4 center-block">
-                                <img src="{{{ url('public/storage/featured-author/bernadette-butler.jpg') }}}" class="img-circle" style="width:100%" alt="Bernadette Butler">
+                                <img src="{{{ url('storage/featured-author/bernadette-butler.jpg') }}}" class="img-circle" style="width:100%" alt="Bernadette Butler">
                             </div>
                             <h3 class="text-center"><strong>Bernadette Butler</strong> </h3>
                             <p>Bernadette Butler is a wife and mother of three children and two step-children. Born and raised in Chicago, Illinois, her home life was challenging. Later, she moved to Southern California, where she lived for thirty years. She later made Ohio her home.
@@ -33,7 +33,7 @@
                             <div class="row">
                                 <div class="col-md-4 center-block">
                                     <a href="https://www.amazon.com/Living-Autism-Bernadette-Butler/dp/1641386045" target="_blank" rel="nofollow">
-                                        <img src="{{{ url('public/storage/featured-author/bernadette-butler-book.png') }}}" class="" style="width:100%" alt="Living with Autism">
+                                        <img src="{{{ url('storage/featured-author/bernadette-butler-book.png') }}}" class="" style="width:100%" alt="Living with Autism">
                                         
                                     </a>
                                     

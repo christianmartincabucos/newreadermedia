@@ -18,7 +18,7 @@
                         
                         <div class="col-md-9 text-justify right-divider">
                             <div class="col-md-4 center-block">
-                                <img src="{{{ url('public/storage/featured-author/richard-jurgensen.jpg') }}}" class="img-circle" style="width:100%" alt="Richard A. Jurgensen">
+                                <img src="{{{ url('storage/featured-author/richard-jurgensen.jpg') }}}" class="img-circle" style="width:100%" alt="Richard A. Jurgensen">
                             </div>
                             <h3 class="text-center"><strong>Richard A. Jurgensen</strong> </h3>
                             <p>Richard A. Jurgensen earned a Bachelor of Science in Chemistry from Colorado State University and a M.D. degree from the University of Colorado before heading to Hawaii for residency training where he established a private practice in psychiatry. He specializes in dream interpretation and medication techniques as a consultant to individuals interested in personal growth.</p>
@@ -29,7 +29,7 @@
                             <div class="row">
                                 <div class="col-md-5 center-block">
                                     <a href="https://landofpo.net/" target="_blank" rel="nofollow">
-                                        <img src="{{{ url('public/storage/featured-author/richard-jurgensen-book.png') }}}" class="" style="width:100%" alt="Land of Po">
+                                        <img src="{{{ url('storage/featured-author/richard-jurgensen-book.png') }}}" class="" style="width:100%" alt="Land of Po">
                                         
                                     </a>
                                     

@@ -28,7 +28,7 @@
                             <div class="row">
                                 <div class="col-md-8 center-block">
                                     <a href="http://charlesarnold.site/" target="_blank" rel="nofollow">
-                                        <img src="{{{ url('public/storage/featured-author/spiritual-essays.png') }}}" class="" style="width:100%" alt="Spiritual Essays">
+                                        <img src="{{{ url('storage/featured-author/spiritual-essays.png') }}}" class="" style="width:100%" alt="Spiritual Essays">
                                     </a>
                                 </div>
                                 

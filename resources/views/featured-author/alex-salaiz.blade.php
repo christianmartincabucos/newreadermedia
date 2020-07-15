@@ -18,7 +18,7 @@
                         
                         <div class="col-md-9 text-justify right-divider">
                             <div class="col-md-4 center-block">
-                                <img src="{{{ url('public/storage/featured-author/alex-salaiz.jpg') }}}" class="img-circle" style="width:100%" alt="Alex Salaiz">
+                                <img src="{{{ url('storage/featured-author/alex-salaiz.jpg') }}}" class="img-circle" style="width:100%" alt="Alex Salaiz">
                             </div>
                             <h3 class="text-center"><strong>Alex Salaiz</strong> </h3>
                             <p>Alex Salaiz received his B.A. degree in Political Science from Saint Mary’s University in San Antonio, Texas.  He is a retired government employee after directing a major federal agency in Denver, Colorado.  He is also a retired Army officer with the rank of Lieutenant Colonel retiring after 36 years of both active and reserve duty.  His last active duty assignment was state sides in support of ‘Operation Iraqi Freedom’. This is Alex’s third and final book, ‘Revenge Without Remorse’, in the trilogy of FBI Special Agent Chad Winters. His first book, ‘This Nation Under Attack’, was published in 2014 and the second book, ‘Unholy Terror Waged on Our Beloved Nation’, was published in 2016. Alex lives in San Antonio, Texas with his wife Nellie, a retired school teacher. They have three grown sons and a bunch of grandkids.</p>
@@ -29,21 +29,21 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <a href="https://www.amazon.com/This-Nation-under-Attack-Salaiz/dp/1460245539" target="_blank" rel="nofollow">
-                                        <img src="{{{ url('public/storage/featured-author/alex-salaiz-book-1.png') }}}" class="" style="width:100%" alt="This Nation Under Attack">
+                                        <img src="{{{ url('storage/featured-author/alex-salaiz-book-1.png') }}}" class="" style="width:100%" alt="This Nation Under Attack">
                                         <h4 class="text-center"><strong>This Nation under Attack</strong> </h4>
                                     </a>
                                     
                                 </div>
                                 <div class="col-md-4">
                                     <a href="https://www.amazon.com/Unholy-Terror-Waged-Beloved-Nation-ebook/dp/B072M5XGY8/" target="_blank" rel="nofollow">
-                                        <img src="{{{ url('public/storage/featured-author/alex-salaiz-book-2.png') }}}" class="" style="width:100%" alt="Unholy Terror Waged on Our Beloved Nation">
+                                        <img src="{{{ url('storage/featured-author/alex-salaiz-book-2.png') }}}" class="" style="width:100%" alt="Unholy Terror Waged on Our Beloved Nation">
                                         <h4 class="text-center"><strong>Unholy Terror Waged on Our Beloved Nation</strong> </h4>
                                     </a>
                                     
                                 </div>
                                 <div class="col-md-4">
                                     <a href="https://www.amazon.com/Revenge-Without-Remorse-Special-Winters-ebook/dp/B07K2LQVF8/" target="_blank" rel="nofollow">
-                                        <img src="{{{ url('public/storage/featured-author/alex-salaiz-book-3.png') }}}" class="" style="width:100%" alt="Revenge Without Remorse">
+                                        <img src="{{{ url('storage/featured-author/alex-salaiz-book-3.png') }}}" class="" style="width:100%" alt="Revenge Without Remorse">
                                         <h4 class="text-center"><strong>Revenge Without Remorse</strong> </h4>
                                     </a>
                                     

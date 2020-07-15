@@ -21,28 +21,28 @@
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner">
                                 <div class="item active">
-                                    <img style="width:100%" src="{{{ url('public/storage/sample-img-1.jpg') }}}">
+                                    <img style="width:100%" src="{{{ url('storage/sample-img-1.jpg') }}}">
                                     <div class="carousel-caption">
                                         <h1>Instagram that shit</h1>
                                         <p>Snelsten dichtbij hectaren beletsel lamamijn is op. Planters geschikt machtige die resident elk negritos passeert men are. Afneemt mei gedaald men metalen wij opzicht proeven.</p>
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <img style="width:100%" src="{{{ url('public/storage/sample-img-2.jpg') }}}">
+                                    <img style="width:100%" src="{{{ url('storage/sample-img-2.jpg') }}}">
                                     <div class="carousel-caption">
                                         <h1>O.P.A.W.</h1>
                                         <p>Af inhouds ik ze gevolge schijnt nu hoeveel. Om of stellen afwegen beperkt percent te. Gelden genoeg kriang are mee.</p>
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <img style="width:100%" src="{{{ url('public/storage/sample-img-3.jpg') }}}">
+                                    <img style="width:100%" src="{{{ url('storage/sample-img-3.jpg') }}}">
                                     <div class="carousel-caption">
                                         <h1>Another Opaw</h1>
                                         <p>Leeningen far der vernielen maleische behoorden wassching. Is om bijgang anderen blijven al vlakten. Het eens den een meer kan door heen.</p>
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <img style="width:100%" src="{{{ url('public/storage/sample-img-4.jpg') }}}">
+                                    <img style="width:100%" src="{{{ url('storage/sample-img-4.jpg') }}}">
                                     <div class="carousel-caption">
                                         <h1>Where is my Five minutes?</h1>
                                         <p>Toe lot sap ten europeesch ongunstige verscholen plotseling.</p>
@@ -66,16 +66,16 @@
                     <section class="box-section hidden">
                         <div class="row">
                             <div class="col-md-3">
-                                <img style="width:100%" src="{{{ url('public/storage/no-image.jpg') }}}">
+                                <img style="width:100%" src="{{{ url('storage/no-image.jpg') }}}">
                             </div>
                             <div class="col-md-3">
-                                <img style="width:100%" src="{{{ url('public/storage/no-image.jpg') }}}">
+                                <img style="width:100%" src="{{{ url('storage/no-image.jpg') }}}">
                             </div>
                             <div class="col-md-3">
-                                <img style="width:100%" src="{{{ url('public/storage/no-image.jpg') }}}">
+                                <img style="width:100%" src="{{{ url('storage/no-image.jpg') }}}">
                             </div>
                             <div class="col-md-3">
-                                <img style="width:100%" src="{{{ url('public/storage/no-image.jpg') }}}">
+                                <img style="width:100%" src="{{{ url('storage/no-image.jpg') }}}">
                             </div>
                         </div>
                     </section>
@@ -86,7 +86,7 @@
                             <section class="box-section" style="border-top: 3px solid rgb(180, 40, 40);">
                                 
                                 <div class="box-article">
-                                    <img style="width:100%" src="{{{ url('public/storage/sample-img-5.jpg') }}}">
+                                    <img style="width:100%" src="{{{ url('storage/sample-img-5.jpg') }}}">
                                     <h4><a href="{{ url('/') }}">The Art of Peace</a></h4>
                                     <p>
                                         Verzameld daaronder gewijzigd al stichting ze na. Gehouden veertien zoo sembilan millioen van lamamijn bij vluchten. 
@@ -96,7 +96,7 @@
                                 </div>
                                 <div class="divider"></div>
                                 <div class="box-article">
-                                        <img style="width:100%" src="{{{ url('public/storage/sample-img-6.jpg') }}}">
+                                        <img style="width:100%" src="{{{ url('storage/sample-img-6.jpg') }}}">
                                     <h4><a href="{{ url('/') }}">Travel Guide for Dummies</a></h4>
                                     <p>
                                         Verzameld daaronder gewijzigd al stichting ze na. Gehouden veertien zoo sembilan millioen van lamamijn bij vluchten. 
@@ -111,7 +111,7 @@
                         <div class="col-md-6">
                             <section class="box-section" style="border-top: 3px solid rgb(180, 40, 40);">
                                 <div class="box-article">
-                                    <img style="width:100%" src="{{{ url('public/storage/sample-video-1.jpg') }}}">
+                                    <img style="width:100%" src="{{{ url('storage/sample-video-1.jpg') }}}">
                                    
                                     <p class="small">
                                         Verzameld daaronder gewijzigd al stichting ze na. Gehouden veertien zoo sembilan millioen van lamamijn bij vluchten.
@@ -124,7 +124,7 @@
                                     
                                     <div class="row">
                                         <div class="col-md-4">
-                                          <img src="{{{ url('public/storage/sample-thumbnail-1.jpg') }}}" style="width:100%">
+                                          <img src="{{{ url('storage/sample-thumbnail-1.jpg') }}}" style="width:100%">
                                         </div>
                                         <div class="col-md-8">
                                           <h4><a href="{{ url('/') }}">I Hate Nothing About U</a> <br><small>Author Name</small></h4>
@@ -134,7 +134,7 @@
                                     <div class="divider"></div>
                                     <div class="row">
                                         <div class="col-md-4">
-                                          <img src="{{{ url('public/storage/sample-thumbnail-2.jpg') }}}" style="width:100%">
+                                          <img src="{{{ url('storage/sample-thumbnail-2.jpg') }}}" style="width:100%">
                                         </div>
                                         <div class="col-md-8">
                                           <h4><a href="{{ url('/') }}">this must be the place</a> <br><small>Author Name</small></h4>
@@ -144,7 +144,7 @@
                                     <div class="divider"></div>
                                     <div class="row">
                                         <div class="col-md-4">
-                                          <img src="{{{ url('public/storage/sample-thumbnail-3.jpg') }}}" style="width:100%">
+                                          <img src="{{{ url('storage/sample-thumbnail-3.jpg') }}}" style="width:100%">
                                         </div>
                                         <div class="col-md-8">
                                           <h4><a href="{{ url('/') }}">Honeybee</a> <br><small>Author Name</small></h4>
@@ -162,7 +162,7 @@
                    
                     
                 </div>
-                <div class="box-body" style="position:relative;width:100%;background:url({{{ url('public/storage/sample-background.jpeg') }}}) center center no-repeat;background-size: cover;">
+                <div class="box-body" style="position:relative;width:100%;background:url({{{ url('storage/sample-background.jpeg') }}}) center center no-repeat;background-size: cover;">
                     <div class="layer" style="background-color: rgba(255, 255, 255, 0.7);position: absolute;top: 0;left: 0;width: 100%;height: 100%;">
                     </div>
                     <div class="row">
@@ -213,7 +213,7 @@
                             
                         </div>
                         <div class="col-md-3 text-center">
-                            <img style="width:200px" src="{{{ url('public/storage/nrmedia-logo.png') }}}">
+                            <img style="width:200px" src="{{{ url('storage/nrmedia-logo.png') }}}">
                         </div>
                         <div class="col-md-4 col-md-push-5">
                             <h4>GET IN TOUCH</h4>

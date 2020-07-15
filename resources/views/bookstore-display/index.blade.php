@@ -2,7 +2,7 @@
 @section('title')9 Reasons Why Bookstores Are Still The Real Deal @endsection
 @section('og-title')9 Reasons Why Bookstores Are Still The Real Deal @endsection
 @section('meta-description')People say bookstores are a thing of the past. But are they really? Find out about bookstores and bookstore displays. Get the low-down on this awesome advertising tool.@endsection
-@section('og-image'){{{ url('public/storage/services/bookstore-v2-1.jpg') }}}@endsection
+@section('og-image'){{{ url('storage/services/bookstore-v2-1.jpg') }}}@endsection
 @section('og-url'){{{ url('/bookstore-display') }}}@endsection
 @section('content')
 <div class="container">
@@ -17,7 +17,7 @@
                         <div class="col-md-12 lead">
                             
                             <h1 class="header-white">9 Reasons Why Bookstores Are Still The Real Deal</h1>
-                            <div style="position:relative;width:100%;height:500px;background:url({{{ url('public/storage/services/bookstore-v2-1.jpg') }}}) center center no-repeat;background-size: cover;">
+                            <div style="position:relative;width:100%;height:500px;background:url({{{ url('storage/services/bookstore-v2-1.jpg') }}}) center center no-repeat;background-size: cover;">
                                 <div class="layer" style="background-color: rgba(0, 0, 0, 0.0);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
                                     
                                 </div>
@@ -41,7 +41,7 @@
                                     
                                 </div>
                                 <div class="col-md-6">
-                                    <img src="{{{ url('public/storage/services/bookstore-v2-2.jpg') }}}" style="width:100%" alt="Bookstore Display 1">
+                                    <img src="{{{ url('storage/services/bookstore-v2-2.jpg') }}}" style="width:100%" alt="Bookstore Display 1">
                                 </div>
                                 
                             </div>
@@ -52,7 +52,7 @@
                             <br>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <img src="{{{ url('public/storage/services/bookstore-v2-3.jpg') }}}" style="width:100%" alt="Bookstore Display 2">
+                                    <img src="{{{ url('storage/services/bookstore-v2-3.jpg') }}}" style="width:100%" alt="Bookstore Display 2">
                                 </div>
                                 <div class="col-md-6">
                                     <p class="text-red"><strong>4. You can always ask for help with the staff and they&rsquo;ll willingly help you.</strong></p>
@@ -84,7 +84,7 @@
                                 </div>
                                 
                                 <div class="col-md-4">
-                                    <img src="{{{ url('public/storage/services/bookstore-v2-4.jpg') }}}" style="width:100%" alt="Bookstore Display 1">
+                                    <img src="{{{ url('storage/services/bookstore-v2-4.jpg') }}}" style="width:100%" alt="Bookstore Display 1">
                                 </div>
                                 
                             </div>
@@ -95,7 +95,7 @@
                             <br>
                             <div class="row">
                                 <div class="col-md-4">
-                                    <img src="{{{ url('public/storage/services/bookstore-v2-5.jpg') }}}" style="width:100%" alt="Bookstore Display 2">
+                                    <img src="{{{ url('storage/services/bookstore-v2-5.jpg') }}}" style="width:100%" alt="Bookstore Display 2">
                                 </div>
                                 <div class="col-md-8">
                                     <br>

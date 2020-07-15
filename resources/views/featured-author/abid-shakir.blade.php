@@ -18,7 +18,7 @@
                         
                         <div class="col-md-9 text-justify right-divider">
                             <div class="col-md-4 center-block">
-                                <img src="{{{ url('public/storage/featured-author/abid-shakir.jpg') }}}" class="img-circle" style="width:100%" alt="Abid Shakir">
+                                <img src="{{{ url('storage/featured-author/abid-shakir.jpg') }}}" class="img-circle" style="width:100%" alt="Abid Shakir">
                             </div>
                             <h3 class="text-center"><strong>Abid Shakir</strong> </h3>
                             <p>As a teenager, I always wanted my own business, but I had no idea as to how to get started. After finishing high school in 1966 I worked as a merchant seaman for two and a half years. In 1969 I was drafted into the United States Army, where I served for two years; one year was spent in Vietnam as an Infantry Soldier. After serving in the military, I got a job driving tractor trailer trucks long distances. During that time, I had a continuing desire to own my own business. I thought I needed a large amount of money to get started; but realized later that was not the case.</p>
@@ -33,7 +33,7 @@
                             <div class="row">
                                 <div class="col-md-8 center-block">
                                     <a href="https://www.amazon.com/Understanding-Ark-Abid-Shakir/dp/1479765465/" target="_blank" rel="nofollow">
-                                        <img src="{{{ url('public/storage/featured-author/understanding-the-ark.png') }}}" class="" style="width:100%" alt="Understanding the Ark">
+                                        <img src="{{{ url('storage/featured-author/understanding-the-ark.png') }}}" class="" style="width:100%" alt="Understanding the Ark">
                                     </a>
                                 </div>
                                 

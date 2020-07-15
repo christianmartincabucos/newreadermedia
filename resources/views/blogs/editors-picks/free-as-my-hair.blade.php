@@ -2,7 +2,7 @@
 @section('title')Free As My Hair @endsection
 @section('og-title')Free As My Hair @endsection
 @section('meta-description')Have you ever gone through an old photo album and just cringe at the haircut you rocked back in the day?@endsection
-@section('og-image'){{{ url('public/storage/blogs/editors-picks/free-as-my-hair.jpg') }}}@endsection
+@section('og-image'){{{ url('storage/blogs/editors-picks/free-as-my-hair.jpg') }}}@endsection
 @section('content')
 <div class="container">
     <div class="row">
@@ -26,7 +26,7 @@
                                             </small>
                                         </h1>
                                         
-                                        <div style="position:relative;width:100%;height:500px;background:url({{{ url('public/storage/blogs/editors-picks/free-as-my-hair.jpg') }}}) center center no-repeat;background-size: cover;overflow:hidden;margin-bottom:10px">
+                                        <div style="position:relative;width:100%;height:500px;background:url({{{ url('storage/blogs/editors-picks/free-as-my-hair.jpg') }}}) center center no-repeat;background-size: cover;overflow:hidden;margin-bottom:10px">
                                             <div class="layer" style="background-color: rgba(0, 0, 0, 0.0);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
                                                 
                                                 

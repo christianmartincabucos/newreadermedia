@@ -18,7 +18,7 @@
                         
                         <div class="col-md-9 text-justify right-divider">
                             <div class="col-md-4 center-block">
-                                <img src="{{{ url('public/storage/featured-author/bill-sanford.jpg') }}}" class="img-circle" style="width:100%" alt="Bill Sanford">
+                                <img src="{{{ url('storage/featured-author/bill-sanford.jpg') }}}" class="img-circle" style="width:100%" alt="Bill Sanford">
                             </div>
                             <h3 class="text-center"><strong>Bill Sanford</strong> </h3>
                             <p>Bill Sanford is a native-born Texan. In the early &rsquo;70s, he served two years as a teaching missionary in Mexico. When he returned to the US, he served in the air force in Louisiana and Utah and also began his college education. He graduated from the University of Texas at Austin in 1982 with a Bachelor of Arts degree in Psychology and Spanish. Currently, he lives in Grand Prairie, Texas, with his wife Debra, where he teaches Spanish at a local school district.</p>
@@ -27,7 +27,7 @@
                             <div class="row">
                                 <div class="col-md-5 center-block">
                                     <a href="https://booksofjasher.com/" target="_blank" rel="nofollow">
-                                        <img src="{{{ url('public/storage/featured-author/bill-sanford-book.png') }}}" class="" style="width:100%" alt="The Scar of Cain: The Book of Jasher">
+                                        <img src="{{{ url('storage/featured-author/bill-sanford-book.png') }}}" class="" style="width:100%" alt="The Scar of Cain: The Book of Jasher">
                                         
                                     </a>
                                     

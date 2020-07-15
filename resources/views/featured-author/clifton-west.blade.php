@@ -18,7 +18,7 @@
                         
                         <div class="col-md-9 text-justify right-divider">
                             <div class="col-md-4 center-block">
-                                <img src="{{{ url('public/storage/featured-author/clifton-west.jpg') }}}" class="img-circle" style="width:100%" alt="Clifton L. West III">
+                                <img src="{{{ url('storage/featured-author/clifton-west.jpg') }}}" class="img-circle" style="width:100%" alt="Clifton L. West III">
                             </div>
                             <h3 class="text-center"><strong>Clifton L. West III</strong> </h3>
                             <p>Clifton L. West III worked as a software developer at IBM. He also served as a coach and assistant professor at Massachusetts Institute of Technology. He is a father of two and now is stepfather to one, has four grandchildren and two great grandchildren. Now he’s a deacon at Shiloh Baptist Church in Sacramento, California.</p>
@@ -29,7 +29,7 @@
                             <div class="row">
                                 <div class="col-md-4 center-block">
                                     <a href="https://www.amazon.com/Life-Time-Clifton-West-III/dp/1457553341/" target="_blank" rel="nofollow">
-                                        <img src="{{{ url('public/storage/featured-author/clifton-west-book.png') }}}" class="" style="width:100%" alt="Of Life and Time">
+                                        <img src="{{{ url('storage/featured-author/clifton-west-book.png') }}}" class="" style="width:100%" alt="Of Life and Time">
                                         
                                     </a>
                                     

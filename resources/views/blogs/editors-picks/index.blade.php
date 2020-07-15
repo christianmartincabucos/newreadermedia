@@ -17,7 +17,7 @@
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-4">
                                         <a href="{{ url('blogs/editors-picks/free-as-my-hair') }}">
-                                            <div style="position:relative;width:100%;height:164px;background:url({{{ url('public/storage/blogs/editors-picks/free-as-my-hair.jpg') }}}) center center no-repeat;background-size: cover;overflow:hidden;margin-bottom:10px">
+                                            <div style="position:relative;width:100%;height:164px;background:url({{{ url('storage/blogs/editors-picks/free-as-my-hair.jpg') }}}) center center no-repeat;background-size: cover;overflow:hidden;margin-bottom:10px">
                                                 <div class="layer" style="background-color: rgba(0, 0, 0, 0.0);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
                                                     
                                                     

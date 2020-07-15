@@ -6,7 +6,6 @@
         <div class="col-md-12">
             <div class="box" style="margin-bottom:0">
                 <div class="box-body">
-                    {{-- BIG IMAGE --}}
                     <div class="row">
                     <section class="box-section">
                         <div class="col-md-12">

@@ -18,7 +18,7 @@
                         
                         <div class="col-md-9 text-justify right-divider">
                             <div class="col-md-4 center-block">
-                                <img src="{{{ url('public/storage/featured-author/lindy-kerr.jpg') }}}" class="img-circle" style="width:100%" alt="Lindy Kerr">
+                                <img src="{{{ url('storage/featured-author/lindy-kerr.jpg') }}}" class="img-circle" style="width:100%" alt="Lindy Kerr">
                             </div>
                             <h3 class="text-center"><strong>Lindy Kerr</strong> </h3>
                             <p>Lindy Kerr is a long-time lover and observer of God’s beautiful creation. She grew up on a farm in Northwest New Mexico and fell in love with creation as a young child. Now, Lindy lives in the extreme Southwest corner of New Mexico, where God is evident in everything because only He could program the living things to survive in the desert. Lindy and her husband raised 4 boys who are now grown with families of their own. Lindy is a certified teacher in Science and Family and Consumer Sciences and taught Mid-School for 7 years. She would tell her students that science is the art of wondering- and she has wondered how the mysterious and complicated wonders of the earth have come to be. She has concluded that only an Almighty Creator could create such magnificence. The desire to share in that wonder and awe has bubbled over into this little book about seeds. Soak in the Joy of Creation!</p>
@@ -30,7 +30,7 @@
                             <div class="row">
                                 <div class="col-md-8 center-block">
                                     <a href="https://www.amazon.com/GodS-Amazing-Creation-Story-Seeds-ebook/dp/B079N4GM87/" target="_blank" rel="nofollow">
-                                        <img src="{{{ url('public/storage/featured-author/gods-amazing-creation.png') }}}" class="" style="width:100%" alt="Gods Amazing Creation">
+                                        <img src="{{{ url('storage/featured-author/gods-amazing-creation.png') }}}" class="" style="width:100%" alt="Gods Amazing Creation">
                                     </a>
                                 </div>
                                 

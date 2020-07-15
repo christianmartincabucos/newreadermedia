@@ -18,7 +18,7 @@
                         
                         <div class="col-md-9 text-justify right-divider">
                             <div class="col-md-4 center-block text-center">
-                                <img src="{{{ url('public/storage/featured-author/sharon-keith-brown.jpg') }}}" class="img-thumbnail" style="width:200px" alt="Sharon Brown Keith">
+                                <img src="{{{ url('storage/featured-author/sharon-keith-brown.jpg') }}}" class="img-thumbnail" style="width:200px" alt="Sharon Brown Keith">
                             </div>
                             <h3 class="text-center"><strong>Sharon Brown Keith</strong> </h3>
                             <p>Sharon Brown Keith lives outside of Tyler, Texas, in the charming community of Arp. She and her husband, Brian, have two grown sons, Chris and Charles. Sharon is retired but works part-time as a junior high counselor. After a couple of days of enjoying her part-time work status by lounging on the couch, eating bonbons, and painting her nails, Sharon decided to put her time to better use and began writing her memoir, Mockingbird Moments. This is her first book.</p>
@@ -35,7 +35,7 @@
                             <div class="row">
                                 <div class="col-md-8 center-block">
                                     <a href="https://www.amazon.com/Mockingbird-Moments-Sharon-Brown-Keith-ebook/dp/B071Z2ZTV2/ref=sr_1_3?ie=UTF8&qid=1540269921&sr=8-3&keywords=sharon+brown+keith" target="_blank" rel="nofollow">
-                                        <img src="{{{ url('public/storage/featured-author/mockingbird-moments.png') }}}" class="" style="width:100%" alt="Mockingbird Moments: A Memoir">
+                                        <img src="{{{ url('storage/featured-author/mockingbird-moments.png') }}}" class="" style="width:100%" alt="Mockingbird Moments: A Memoir">
                                     </a>
                                 </div>
                                 

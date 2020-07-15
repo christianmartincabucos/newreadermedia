@@ -28,7 +28,7 @@
                                     <!-- Wrapper for slides -->
                                     <div class="carousel-inner">
                                         <div class="item active">
-                                            <img style="width:100%" src="{{{ url('public/storage/services/screenplay-service-v2.jpg') }}}" alt="Screenplay Service">
+                                            <img style="width:100%" src="{{{ url('storage/services/screenplay-service-v2.jpg') }}}" alt="Screenplay Service">
                                             <div class="layer" style="background-color: rgba(40, 40, 40, 0.6);position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
                                             
                                             <div class="carousel-caption" style="background-color: rgba(0, 0, 0, 0.5);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
@@ -37,7 +37,7 @@
                                             </div>
                                         </div>
                                         <div class="item">
-                                            <img style="width:100%" src="{{{ url('public/storage/services/treatment-script-draft-service.jpg') }}}" alt="Treatment Script Draft Service">
+                                            <img style="width:100%" src="{{{ url('storage/services/treatment-script-draft-service.jpg') }}}" alt="Treatment Script Draft Service">
                                             <div class="layer" style="background-color: rgba(40, 40, 40, 0.6);position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
                                             
                                             <div class="carousel-caption" style="background-color: rgba(0, 0, 0, 0.5);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
@@ -46,7 +46,7 @@
                                             </div>
                                         </div>
                                         <div class="item">
-                                            <img style="width:100%" src="{{{ url('public/storage/services/synopsis-coverage-service-v2.jpg') }}}" alt="Synopsis Coverage Service">
+                                            <img style="width:100%" src="{{{ url('storage/services/synopsis-coverage-service-v2.jpg') }}}" alt="Synopsis Coverage Service">
                                             <div class="layer" style="background-color: rgba(40, 40, 40, 0.6);position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
                                             
                                             <div class="carousel-caption" style="background-color: rgba(0, 0, 0, 0.5);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
@@ -55,7 +55,7 @@
                                             </div>
                                         </div>
                                         <div class="item">
-                                            <img style="width:100%" src="{{{ url('public/storage/services/website-creation-v2.jpg') }}}" alt="Website Creation">
+                                            <img style="width:100%" src="{{{ url('storage/services/website-creation-v2.jpg') }}}" alt="Website Creation">
                                             <div class="layer" style="background-color: rgba(40, 40, 40, 0.6);position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
                                             
                                             <div class="carousel-caption" style="background-color: rgba(0, 0, 0, 0.5);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
@@ -64,7 +64,7 @@
                                             </div>
                                         </div>
                                         <div class="item">
-                                            <img style="width:100%" src="{{{ url('public/storage/services/publicity-services-v2.jpg') }}}" alt="Publicity Services">
+                                            <img style="width:100%" src="{{{ url('storage/services/publicity-services-v2.jpg') }}}" alt="Publicity Services">
                                             <div class="layer" style="background-color: rgba(40, 40, 40, 0.6);position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
                                             
                                             <div class="carousel-caption" style="background-color: rgba(0, 0, 0, 0.5);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
@@ -73,7 +73,7 @@
                                             </div>
                                         </div>
                                         <div class="item">
-                                            <img style="width:100%" src="{{{ url('public/storage/services/movie-agent-v2.jpg') }}}" alt="Movie Agent">
+                                            <img style="width:100%" src="{{{ url('storage/services/movie-agent-v2.jpg') }}}" alt="Movie Agent">
                                             <div class="layer" style="background-color: rgba(40, 40, 40, 0.6);position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
                                             
                                             <div class="carousel-caption" style="background-color: rgba(0, 0, 0, 0.5);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
@@ -82,7 +82,7 @@
                                             </div>
                                         </div>
                                         <div class="item">
-                                            <img style="width:100%" src="{{{ url('public/storage/services/sneak-peek-service-v2.jpg') }}}" alt="Sneak Peek">
+                                            <img style="width:100%" src="{{{ url('storage/services/sneak-peek-service-v2.jpg') }}}" alt="Sneak Peek">
                                             <div class="layer" style="background-color: rgba(40, 40, 40, 0.6);position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
                                             
                                             <div class="carousel-caption" style="background-color: rgba(0, 0, 0, 0.5);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
@@ -150,7 +150,7 @@
                                     
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-4">
-                                            <a class="article-link" href="{{ url('/press-release') }}"><img class="article-thumbnail" src="{{{ url('public/storage/nrmedia-logo2.png') }}}" style="width:100%;margin:auto 0" alt="New Reader Media"></a>
+                                            <a class="article-link" href="{{ url('/press-release') }}"><img class="article-thumbnail" src="{{{ url('storage/nrmedia-logo2.png') }}}" style="width:100%;margin:auto 0" alt="New Reader Media"></a>
                                         </div>
                                         <div class="col-xs-12 col-sm-8">
                                             <a class="article-link" href="{{ url('/press-release') }}"><h4 class="title title-red">What's New?</h4></a><strong>Press Release</strong>
@@ -160,7 +160,7 @@
                                     <div class="divider hidden" style="margin:0 0 5px 0"></div>
                                     <div class="row hidden">
                                         <div class="col-xs-12 col-sm-4">
-                                            <a href="{{ url('/spotlight') }}"><img class="article-thumbnail img-circle" src="{{{ url('public/storage/spotlight.jpg') }}}" style="width:100%" alt="Spotlight"></a>
+                                            <a href="{{ url('/spotlight') }}"><img class="article-thumbnail img-circle" src="{{{ url('storage/spotlight.jpg') }}}" style="width:100%" alt="Spotlight"></a>
                                         </div>
                                         <div class="col-xs-12 col-sm-8">
                                             <a class="article-link" href="{{ url('/spotlight') }}"><h4 class="title title-red">Spotlight</h4></a>
@@ -190,16 +190,16 @@
                     <section class="box-section hidden">
                         <div class="row">
                             <div class="col-md-3">
-                                <img style="width:100%" src="{{{ url('public/storage/no-image.jpg') }}}">
+                                <img style="width:100%" src="{{{ url('storage/no-image.jpg') }}}">
                             </div>
                             <div class="col-md-3">
-                                <img style="width:100%" src="{{{ url('public/storage/no-image.jpg') }}}">
+                                <img style="width:100%" src="{{{ url('storage/no-image.jpg') }}}">
                             </div>
                             <div class="col-md-3">
-                                <img style="width:100%" src="{{{ url('public/storage/no-image.jpg') }}}">
+                                <img style="width:100%" src="{{{ url('storage/no-image.jpg') }}}">
                             </div>
                             <div class="col-md-3">
-                                <img style="width:100%" src="{{{ url('public/storage/no-image.jpg') }}}">
+                                <img style="width:100%" src="{{{ url('storage/no-image.jpg') }}}">
                             </div>
                         </div>
                     </section>
@@ -211,7 +211,7 @@
                                 
                                 <div class="box-article">
                                     
-                                    <div style="position:relative;width:100%;height:250px;background:url({{{ url('public/storage/services/bookstore-v2-1.jpg') }}}) center center no-repeat;background-size: cover;overflow:hidden">
+                                    <div style="position:relative;width:100%;height:250px;background:url({{{ url('storage/services/bookstore-v2-1.jpg') }}}) center center no-repeat;background-size: cover;overflow:hidden">
                                         <div class="layer" style="background-color: rgba(0, 0, 0, 0.7);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
                                             
                                             <a class="article-link" href="{{ url('/bookstore-display') }}"><h3 class="header-red-box"><strong>9 Reasons Why Bookstores Are Still The Real Deal</strong></h3></a>
@@ -231,7 +231,7 @@
                                 
                                 <div class="box-article">
                                     
-                                    <div style="position:relative;width:100%;height:250px;background:url({{{ url('public/storage/services/adapted-screenplay-v2-1.jpg') }}}) center center no-repeat;background-size: cover;overflow:hidden">
+                                    <div style="position:relative;width:100%;height:250px;background:url({{{ url('storage/services/adapted-screenplay-v2-1.jpg') }}}) center center no-repeat;background-size: cover;overflow:hidden">
                                         <div class="layer" style="background-color: rgba(0, 0, 0, 0.7);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
                                             
                                             <a class="article-link" href="{{ url('/screen-adaptation') }}"><h3 class="header-red-box"><strong>Let’s turn your book into a movie</strong></h3></a>
@@ -250,7 +250,7 @@
                             <section class="box-section" style="border-top: 3px solid rgb(180, 40, 40);">
                                 <div class="box-article">
                                    
-                                    <div style="position:relative;width:100%;min-height:250px;background:url({{{ url('public/storage/services/sneak-peeks-v2-1.jpg') }}}) center center no-repeat;background-size: cover;overflow:hidden">
+                                    <div style="position:relative;width:100%;min-height:250px;background:url({{{ url('storage/services/sneak-peeks-v2-1.jpg') }}}) center center no-repeat;background-size: cover;overflow:hidden">
                                         <div class="layer" style="background-color: rgba(0, 0, 0, 0.7);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
                                             
                                             
@@ -335,7 +335,7 @@
                     
                 </div>
                 
-                <div class="" style="position:relative;width:100%;background:url({{{ url('public/storage/sample-background.jpeg') }}}) center center no-repeat;background-size: cover;">
+                <div class="" style="position:relative;width:100%;background:url({{{ url('storage/sample-background.jpeg') }}}) center center no-repeat;background-size: cover;">
                     <div class="layer" style="background-color: rgba(180, 40, 40, 0.8);position: absolute;top: 0;left: 0;width: 100%;height: 100%;">
                     </div>
                     <div class="col-md-12s">
@@ -354,49 +354,49 @@
                                     <!-- Wrapper for slides -->
                                     <div class="carousel-inner">
                                         <div class="item active">
-                                            {{-- <img style="width:100%;height:200px" src="{{{ url('public/storage/sample-img-1.jpg') }}}"> --}}
+                                            {{-- <img style="width:100%;height:200px" src="{{{ url('storage/sample-img-1.jpg') }}}"> --}}
                                             <div class="text-center" style="width:100%;height:300px;max-height:450px;background:transparent;padding-top:20px;"></div>
                                             <div class="carousel-caption">
-                                                <img src="{{{ url('public/storage/testimonials/paul-antwi.png') }}}" alt="Paul Antwi" class="img-circle" style="width:100px">
+                                                <img src="{{{ url('storage/testimonials/paul-antwi.png') }}}" alt="Paul Antwi" class="img-circle" style="width:100px">
                                                 <h4>"Thank you so much for this good job you have done of the great story created through the book. I've checked and see everything looks good and ready now."</h4>
                                                 <p class="">- Paul Antwi</p>
                                             </div>
                                         </div>
                                         <div class="item">
-                                            {{-- <img style="width:100%;height:200px" src="{{{ url('public/storage/sample-img-2.jpg') }}}"> --}}
+                                            {{-- <img style="width:100%;height:200px" src="{{{ url('storage/sample-img-2.jpg') }}}"> --}}
                                             <div class="text-center" style="width:100%;height:300px;;max-height:450px;background:transparent;padding-top:20px;"></div>
                                             <div class="carousel-caption">
-                                                <img src="{{{ url('public/storage/testimonials/carnie-mattisonn.png') }}}" alt="Carni Mattisonn" class="img-circle" style="width:100px">
+                                                <img src="{{{ url('storage/testimonials/carnie-mattisonn.png') }}}" alt="Carni Mattisonn" class="img-circle" style="width:100px">
                                                 <h4>"Your amendments to the script have been carefully and skillfully crafted to portray the story in a smooth and cohesive way that flows easily."</h4>
                                                 <p class="">- Dr. Carnie Matisonn</p>
                                             </div>
                                         </div>
                                         
                                         <div class="item">
-                                            {{-- <img style="width:100%;height:200px" src="{{{ url('public/storage/sample-img-3.jpg') }}}"> --}}
+                                            {{-- <img style="width:100%;height:200px" src="{{{ url('storage/sample-img-3.jpg') }}}"> --}}
                                             <div class="text-center" style="width:100%;height:300px;;max-height:450px;background:transparent;padding-top:20px;"></div>
                                             <div class="carousel-caption">
-                                                <img src="{{{ url('public/storage/testimonials/manuel-pelaez.png') }}}" alt="Manuel Pelaez" class="img-circle" style="width:100px">
+                                                <img src="{{{ url('storage/testimonials/manuel-pelaez.png') }}}" alt="Manuel Pelaez" class="img-circle" style="width:100px">
                                                 <h4>"Their dedication towards professionalism, is unbelievable. They dedicate themselves to bring an author, writer, and artist, to a higher level, without any doubt, I will continue joint ventures with them, into successful outcomes, they are part of my family now, thank you."</h4>
                                                 <p class="">- Manuel Pelaez</p>
                                             </div>
                                         </div>
 
                                         <div class="item">
-                                            {{-- <img style="width:100%;height:200px" src="{{{ url('public/storage/sample-img-3.jpg') }}}"> --}}
+                                            {{-- <img style="width:100%;height:200px" src="{{{ url('storage/sample-img-3.jpg') }}}"> --}}
                                             <div class="text-center" style="width:100%;height:300px;;max-height:450px;background:transparent;padding-top:20px;"></div>
                                             <div class="carousel-caption">
-                                                <img src="{{{ url('public/storage/testimonials/allen-bonck.jpg') }}}" alt="Allen Bonck" class="img-circle" style="width:100px">
+                                                <img src="{{{ url('storage/testimonials/allen-bonck.jpg') }}}" alt="Allen Bonck" class="img-circle" style="width:100px">
                                                 <h4>"I was especially impressed with your research and attention to details. I feel you really understood the story and made it come alive. I think you asked all the right questions and was willing to hear my input."</h4>
                                                 <p class="">- Allen Bonck</p>
                                             </div>
                                         </div>
                                         
                                         <div class="item">
-                                            {{-- <img style="width:100%;height:200px" src="{{{ url('public/storage/sample-img-3.jpg') }}}"> --}}
+                                            {{-- <img style="width:100%;height:200px" src="{{{ url('storage/sample-img-3.jpg') }}}"> --}}
                                             <div class="text-center" style="width:100%;height:300px;;max-height:450px;background:transparent;padding-top:20px;"></div>
                                             <div class="carousel-caption">
-                                                <img src="{{{ url('public/storage/testimonials/rita-dunham.jpg') }}}" alt="Rita Dunham" class="img-circle" style="width:100px">
+                                                <img src="{{{ url('storage/testimonials/rita-dunham.jpg') }}}" alt="Rita Dunham" class="img-circle" style="width:100px">
                                                 <h4>"I am really happy with the outcome of A Token for the Journey, and your ability to stick with the simplicity of the story line. I am very excited about this project. The screenwriter really did an excellent job. Thank you for your committed hard work!"</h4>
                                                 <p class="">- Rita Dunham</p>
                                             </div>

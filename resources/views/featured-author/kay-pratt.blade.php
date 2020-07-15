@@ -18,7 +18,7 @@
                         
                         <div class="col-md-9 text-justify right-divider">
                             <div class="col-md-4 center-block">
-                                <img src="{{{ url('public/storage/featured-author/kay-pratt.jpg') }}}" class="img-circle" style="width:100%" alt="Kay Pratt">
+                                <img src="{{{ url('storage/featured-author/kay-pratt.jpg') }}}" class="img-circle" style="width:100%" alt="Kay Pratt">
                             </div>
                             <h3 class="text-center"><strong>Kay Pratt</strong> </h3>
                             <p>Kay Pratt is a Certified Expressive Art’s Practitioner and a Spiritual Life Coach residing in Ridgefield, Washington. She is an Artist and an Author with a focus on helping others move forward with their lives through creativity following treatment for serious injury, illness and trauma. Her practice includes helping men, women and families overcome the many challenges associated with long term rehabilitation and recovery.</p>
@@ -33,7 +33,7 @@
                             <div class="row">
                                 <div class="col-md-4 center-block">
                                     <a href="https://www.amazon.com/Help-Brain-Injury-Feels-Dropped/dp/1478718072" target="_blank" rel="nofollow">
-                                        <img src="{{{ url('public/storage/featured-author/kay-pratt-book.png') }}}" class="" style="width:100%" alt="Help! I Have a Brain Injury and It Feels Like I've Dropped Out of the Sky">
+                                        <img src="{{{ url('storage/featured-author/kay-pratt-book.png') }}}" class="" style="width:100%" alt="Help! I Have a Brain Injury and It Feels Like I've Dropped Out of the Sky">
                                         
                                     </a>
                                     

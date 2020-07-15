@@ -18,7 +18,7 @@
                         
                         <div class="col-md-9 text-justify right-divider">
                             <div class="col-md-4 center-block">
-                                <img src="{{{ url('public/storage/featured-author/cary-green.jpg') }}}" class="img-circle" style="width:100%" alt="Cary J. Green, Ph.D.">
+                                <img src="{{{ url('storage/featured-author/cary-green.jpg') }}}" class="img-circle" style="width:100%" alt="Cary J. Green, Ph.D.">
                             </div>
                             <h3 class="text-center"><strong>Cary J. Green, Ph.D.</strong> </h3>
                             <p>Cary J. Green, PhD, equips students with skills for academic success and employability. Dr. Green spent twenty years teaching and advising university students before founding <a class="link-white" href="https://www.caryjgreen.com/">CaryJGreen.com</a>. He has served as director of a college-level recruiting and career center, department chair, and associate dean for academic programs. He recently received a Parent and Teacher Choice Award from HowToLearn.com, and Parenting 2.0 recognized Green as a Global Presence Ambassador for his commitment to developing success skills in young people.</p>
@@ -29,7 +29,7 @@
                             <div class="row">
                                 <div class="col-md-5 center-block">
                                     <a href="https://www.caryjgreen.com/" target="_blank" rel="nofollow">
-                                        <img src="{{{ url('public/storage/featured-author/cary-green-book.png') }}}" class="" style="width:100%" alt="SUCCESS SKILLS: For High School, College, and Career">
+                                        <img src="{{{ url('storage/featured-author/cary-green-book.png') }}}" class="" style="width:100%" alt="SUCCESS SKILLS: For High School, College, and Career">
                                         
                                     </a>
                                     

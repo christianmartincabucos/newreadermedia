@@ -18,7 +18,7 @@
                         
                         <div class="col-md-9 text-justify right-divider">
                             <div class="col-md-4 center-block">
-                                <img src="{{{ url('public/storage/featured-author/mmccluskey.png') }}}" class="img-thumbnail" style="width:100%" alt="Mike McCluskey">
+                                <img src="{{{ url('storage/featured-author/mmccluskey.png') }}}" class="img-thumbnail" style="width:100%" alt="Mike McCluskey">
                             </div>
                             <h3 class="text-center"><strong>Mike McCluskey</strong> </h3>
                             <p>The author of 42 self-published books including: 14 full-length poem books, 16 poetry chapbooks and 12 short story books, Mike McCluskey has been a resident of Holly, Michigan for the past 26 years. Mike began writing as a young child in the 1980’s. He had a notebook with various monsters on the cover and he would fill the pages with short stories of horror and monsters. He would then share these stories with family and neighbors. After they were read, Mike would erase all the stories and write the pages once again with new stories. Mike wrote his first poem in 1991 to his mother as a mother’s day gift. He ultimately began a lifelong dedication to poetry in 1997, while occasionally writing short stories. After many failed attempts at getting his work published, Mike started self-publishing his own books to share his art and inner turmoil. So DARK MAN INC. began in 2002.</p>
@@ -33,7 +33,7 @@
                             <div class="row">
                                 <div class="col-md-8 center-block">
                                     <a href="https://www.amazon.com/THERAPY-Mike-McCluskey/dp/1984513532/" target="_blank" rel="nofollow">
-                                        <img src="{{{ url('public/storage/featured-author/therapy.png') }}}" class="" style="width:100%" alt="Therapy">
+                                        <img src="{{{ url('storage/featured-author/therapy.png') }}}" class="" style="width:100%" alt="Therapy">
                                     </a>
                                 </div>
                                 

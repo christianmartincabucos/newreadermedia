@@ -18,7 +18,7 @@
                         
                         <div class="col-md-9 text-justify right-divider">
                             <div class="col-md-4 center-block">
-                                <img src="{{{ url('public/storage/featured-author/manuel-pelaez.jpg') }}}" class="img-circle" style="width:100%" alt="Manuel Pelaez">
+                                <img src="{{{ url('storage/featured-author/manuel-pelaez.jpg') }}}" class="img-circle" style="width:100%" alt="Manuel Pelaez">
                             </div>
                             <h3 class="text-center"><strong>Manuel Pelaez</strong> </h3>
                             <p>He worked 30 years for the local government in Miami as a manager. He went to school in MDCC and FIU. He is presently working in the health and fitness industry, owning a gym, and music studio. He's an author, and artist who enjoys writing in his spare time.</p>
@@ -30,7 +30,7 @@
                             <div class="row">
                                 <div class="col-md-8 center-block">
                                     <a href="https://www.amazon.com/Project-Manuel-Pelaez/dp/1543475426" target="_blank" rel="nofollow">
-                                        <img src="{{{ url('public/storage/featured-author/the-project.png') }}}" class="" style="width:100%" alt="The Project">
+                                        <img src="{{{ url('storage/featured-author/the-project.png') }}}" class="" style="width:100%" alt="The Project">
                                     </a>
                                 </div>
                                 
@@ -42,7 +42,7 @@
                             <div class="row">
                                 <div class="col-md-8 center-block">
                                     <a href="https://www.amazon.com/Hunt-Manuel-Pelaez/dp/1543482562/" target="_blank" rel="nofollow">
-                                        <img src="{{{ url('public/storage/featured-author/the-hunt.png') }}}" class="" style="width:100%" alt="The Hunt">
+                                        <img src="{{{ url('storage/featured-author/the-hunt.png') }}}" class="" style="width:100%" alt="The Hunt">
                                     </a>
                                 </div>
                                 
@@ -55,7 +55,7 @@
                             <div class="row">
                                 <div class="col-md-8 center-block">
                                     <a href="https://www.amazon.com/dp/1984516043" target="_blank" rel="nofollow">
-                                        <img src="{{{ url('public/storage/featured-author/the-program.png') }}}" class="" style="width:100%" alt="The Program">
+                                        <img src="{{{ url('storage/featured-author/the-program.png') }}}" class="" style="width:100%" alt="The Program">
                                     </a>
                                 </div>
                                 

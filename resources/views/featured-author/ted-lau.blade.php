@@ -18,7 +18,7 @@
                         
                         <div class="col-md-9 text-justify right-divider">
                             <div class="col-md-4 center-block">
-                                <img src="{{{ url('public/storage/featured-author/ted-lau.jpg') }}}" class="img-circle" style="width:100%" alt="Ted Lau">
+                                <img src="{{{ url('storage/featured-author/ted-lau.jpg') }}}" class="img-circle" style="width:100%" alt="Ted Lau">
                             </div>
                             <h3 class="text-center"><strong>Ted Lau</strong> </h3>
                             <p>Greetings to the readers of the world, my name is: Ted C. Lau. My life in a nutshell, I was born and raised in Southern California. My parents immigrated to the United States from Hong Kong, which was a British Colony then. My parents worked as chefs, and I grew up working in the restaurant business. I would think, I had a childhood that wasn’t too much out of the ordinary. I had a standard curriculum of public schooling, and I had participated in the All American sports such as Football. I went to UC Santa Barbara for college, and started having a taste of freedom. It was said that UCSB is a party school, however I would like to think of it as having an awesome social environment. “Party hard, Study hard,” somehow through sweat, tears, & beers I had graduated; in chemistry of all majors. Like most graduates we became a part of the workforce. Years had passed, and felt nearly I had worked myself nearly to death... “Carpe Diem”, somehow I had journeyed into making creative arts again. Enjoying life, and having fun. Cheers to the world!</p>
@@ -27,7 +27,7 @@
                             <div class="row">
                                 <div class="col-md-4 center-block">
                                     <a href="https://www.amazon.com/PornStarRapper-Quotes-Vol-1/dp/1388689634/" target="_blank" rel="nofollow">
-                                        <img src="{{{ url('public/storage/featured-author/ted-lau-book.png') }}}" class="" style="width:100%" alt="20 One F#ckN Quotes Vol. #1">
+                                        <img src="{{{ url('storage/featured-author/ted-lau-book.png') }}}" class="" style="width:100%" alt="20 One F#ckN Quotes Vol. #1">
                                         
                                     </a>
                                     

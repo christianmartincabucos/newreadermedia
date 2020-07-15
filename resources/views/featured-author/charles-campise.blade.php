@@ -18,7 +18,7 @@
                         
                         <div class="col-md-9 text-justify right-divider">
                             <div class="col-md-4 center-block">
-                                <img src="{{{ url('public/storage/featured-author/charles-campise.jpg') }}}" class="img-circle" style="width:100%" alt="Charles Campise">
+                                <img src="{{{ url('storage/featured-author/charles-campise.jpg') }}}" class="img-circle" style="width:100%" alt="Charles Campise">
                             </div>
                             <h3 class="text-center"><strong>Charles Campise</strong> </h3>
                             <p>Charles Campise was born in Houston, Texas. He is the grandson of immigrants from Poggioreale, Sicily, who came to an Italian settlement near Bryan, Texas in the late 1880s. He has a Bachelor's degree in Philosophy and a double Master's, covering Educational Psychology and Social Work. He has become fluent in Spanish through his own personal efforts at study. He retired from service to the foster care system in Texas in June 2014 after forty-four years. Then, he began looking for something fun to do. He found an offer from a ride-sharing company on the fourth day of retirement, signed up, and was driving one week later on.</p>
@@ -34,7 +34,7 @@
                             <div class="row">
                                 <div class="col-md-8 center-block">
                                     <a href="https://www.amazon.com/Adventures-Rideshare-Driver-Charles-Campise/dp/1478743204/" target="_blank" rel="nofollow">
-                                        <img src="{{{ url('public/storage/featured-author/adventures-of-a-rideshare-driver.png') }}}" class="" style="width:100%" alt="Adventures of a Rideshare Driver">
+                                        <img src="{{{ url('storage/featured-author/adventures-of-a-rideshare-driver.png') }}}" class="" style="width:100%" alt="Adventures of a Rideshare Driver">
                                     </a>
                                 </div>
                                 

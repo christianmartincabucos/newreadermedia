@@ -18,7 +18,7 @@
                         
                         <div class="col-md-9 text-justify right-divider">
                             <div class="col-md-4 center-block">
-                                <img src="{{{ url('public/storage/featured-author/burt-kempner.jpg') }}}" class="img-circle" style="width:100%" alt="Burt Kempner">
+                                <img src="{{{ url('storage/featured-author/burt-kempner.jpg') }}}" class="img-circle" style="width:100%" alt="Burt Kempner">
                             </div>
                             <h3 class="text-center"><strong>Burt Kempner</strong> </h3>
                             <p>Writer-Producer Burt Kempner has worked professionally in New York, Philadelphia, Washington, D.C., and Florida. His work has won numerous major awards, and has been seen by groups ranging in size from a national television audience in the United States to a half-dozen Maori chieftains in New Zealand. Spurred by his love for young people, he started writing children's books in 2015.</p>
@@ -31,7 +31,7 @@
                             <div class="row">
                                 <div class="col-md-8 center-block">
                                     <a href="https://www.amazon.com/Five-Fierce-Tigers-Rosa-Martinez/dp/153560980X/ref=sr_1_1?ie=UTF8&qid=1541646355&sr=8-1&keywords=five+fierce+tigers" target="_blank" rel="nofollow">
-                                        <img src="{{{ url('public/storage/featured-author/five-fierce-tigers.png') }}}" class="" style="width:100%" alt="The Five Fierce Tigers of Rosa Martinez">
+                                        <img src="{{{ url('storage/featured-author/five-fierce-tigers.png') }}}" class="" style="width:100%" alt="The Five Fierce Tigers of Rosa Martinez">
                                     </a>
                                 </div>
                                 

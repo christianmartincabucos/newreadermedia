@@ -18,7 +18,7 @@
                         
                         <div class="col-md-9 text-justify right-divider">
                             <div class="col-md-4 center-block">
-                                <img src="{{{ url('public/storage/featured-author/wendy-sellers.jpg') }}}" class="img-circle" style="width:100%" alt="Wendy Sellers">
+                                <img src="{{{ url('storage/featured-author/wendy-sellers.jpg') }}}" class="img-circle" style="width:100%" alt="Wendy Sellers">
                             </div>
                             <h3 class="text-center"><strong>Wendy Sellers</strong> </h3>
                             <p>Wendy Sellers is "The HR Lady" who is different from most HR people. She is laser-focused on the bottom line, not emotions. Wendy is often heard saying "Suck It Up, Buttercup." The phrase has taken a whole new meaning. In the past, it was directed at what she believed were inept employees. Now it is directed at the true root cause: inept leaders. In this book, she will show you how to be a strong yet positive, effective leader using skills that motivate people to want to work hard for you and, eventually, increase the bottom line. You will learn exactly how to be a leader people will follow.</p>
@@ -35,7 +35,7 @@
                             <div class="row">
                                 <div class="col-md-8 center-block">
                                     <a href="https://www.amazon.com/dp/1543930832/" target="_blank" rel="nofollow">
-                                        <img src="{{{ url('public/storage/featured-author/suck-it-up-buttercup.png') }}}" class="" style="width:100%" alt="Suck It Up, Buttercup: Be a Leader People Will Follow">
+                                        <img src="{{{ url('storage/featured-author/suck-it-up-buttercup.png') }}}" class="" style="width:100%" alt="Suck It Up, Buttercup: Be a Leader People Will Follow">
                                     </a>
                                 </div>
                                 

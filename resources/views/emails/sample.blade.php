@@ -56,7 +56,7 @@
             
           <table width="640" cellpadding="0" cellspacing="0" border="0" class="wrapper" bgcolor="#FFFFFF">
             <tr>
-              <td height="10" style="font-size:10px; line-height:10px;"><img src="{{{ url('public/storage/newsletter/header.png') }}}" alt="" style="width:100%"></td>
+              <td height="10" style="font-size:10px; line-height:10px;"><img src="{{{ url('storage/newsletter/header.png') }}}" alt="" style="width:100%"></td>
             </tr>
             <tr>
               <td align="center" valign="top">
@@ -89,7 +89,7 @@
                     <td width="300" class="mobile" align="center" valign="top">
                       {{-- Grid Two --}}
                       <div class="box-content">
-                          <img src="{{{ url('public/storage/services/bsd3.jpg') }}}" style="width:100%">
+                          <img src="{{{ url('storage/services/bsd3.jpg') }}}" style="width:100%">
                           <p style="font-family:'Raleway', sans-serif;color:#222;text-align:justify"><small>In this modern digital age, books are created into audiobooks or converted digitally into e-books for people to read in their own respective smart devices. Not to mention the significant rise of online shopping that delivers your book to your doorstep astoundingly fast.</small></p>
                       </div>
                       
@@ -98,7 +98,7 @@
                     <td width="300" class="mobile" align="center" valign="top">
                       {{-- Grid Two --}}
                       <div class="box-content">
-                          <img src="{{{ url('public/storage/services/bsd3.jpg') }}}" style="width:100%">
+                          <img src="{{{ url('storage/services/bsd3.jpg') }}}" style="width:100%">
                           <p style="font-family:'Raleway', sans-serif;color:#222;text-align:justify"><small>In this modern digital age, books are created into audiobooks or converted digitally into e-books for people to read in their own respective smart devices. Not to mention the significant rise of online shopping that delivers your book to your doorstep astoundingly fast.</small></p>
                       </div>
                     </td>
@@ -217,9 +217,9 @@
                     <td align="center" valign="top" style="">
                       {{-- Grid One --}}
                       <p>
-                        <a href="" target="_blank"><img src="{{{ url('public/storage/newsletter/twitter.png') }}}" style="height:30px"></a>
-                        <a href="" target="_blank"><img src="{{{ url('public/storage/newsletter/fb.png') }}}" style="height:30px"></a>
-                        <a href="" target="_blank"><img src="{{{ url('public/storage/newsletter/ig.png') }}}" style="height:30px"></a>
+                        <a href="" target="_blank"><img src="{{{ url('storage/newsletter/twitter.png') }}}" style="height:30px"></a>
+                        <a href="" target="_blank"><img src="{{{ url('storage/newsletter/fb.png') }}}" style="height:30px"></a>
+                        <a href="" target="_blank"><img src="{{{ url('storage/newsletter/ig.png') }}}" style="height:30px"></a>
                       </p>
                       <p style="font-family:'Oswald', sans-serif;color:#fff;text-align:center">CONTACT US</p>
                       <p style="font-family:'Raleway', sans-serif;color:#fff;text-align:center"><small>100 Church Street, Suite 800 New York, NY 10007, USA<br>1 800-734-7871<br>conact@newreadermagazine.com</small></p>

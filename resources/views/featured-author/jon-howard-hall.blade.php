@@ -18,7 +18,7 @@
                         
                         <div class="col-md-9 text-justify right-divider">
                             <div class="col-md-4 center-block">
-                                <img src="{{{ url('public/storage/featured-author/jon-howard-hall.jpg') }}}" class="img-circle" style="width:100%" alt="Jon Howard Hall">
+                                <img src="{{{ url('storage/featured-author/jon-howard-hall.jpg') }}}" class="img-circle" style="width:100%" alt="Jon Howard Hall">
                             </div>
                             <h3 class="text-center"><strong>Jon Howard Hall</strong> </h3>
                             <p>Jon Howard Hall, writer of historical fiction, enjoys touring national battlefields and cemeteries whenever he has a chance. These sites usually provide him with the inspiration he needs for his novels set during the American Civil War era. His favorite place to visit is Gettysburg.</p>
@@ -31,7 +31,7 @@
                             <div class="row">
                                 <div class="col-md-4 center-block">
                                     <a href="https://www.amazon.com/Corporal-Archer-Siege-Vicksburg-Historical-ebook/dp/B079KJLZK5/" target="_blank" rel="nofollow">
-                                        <img src="{{{ url('public/storage/featured-author/jon-howard-hall-book.png') }}}" class="" style="width:100%" alt="Corporal Archer and the Siege of Vicksburg: A Novel of Historical Fiction">
+                                        <img src="{{{ url('storage/featured-author/jon-howard-hall-book.png') }}}" class="" style="width:100%" alt="Corporal Archer and the Siege of Vicksburg: A Novel of Historical Fiction">
                                         
                                     </a>
                                     

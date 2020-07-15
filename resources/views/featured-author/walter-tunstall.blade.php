@@ -18,7 +18,7 @@
                         
                         <div class="col-md-9 text-justify right-divider">
                             <div class="col-md-4 center-block">
-                                <img src="{{{ url('public/storage/featured-author/walter-tunstall.jpg') }}}" class="img-circle" style="width:100%" alt="Walter W. Tunstall, Ph.D.">
+                                <img src="{{{ url('storage/featured-author/walter-tunstall.jpg') }}}" class="img-circle" style="width:100%" alt="Walter W. Tunstall, Ph.D.">
                             </div>
                             <h3 class="text-center"><strong>Walter W. Tunstall, Ph.D.</strong> </h3>
                             <p>Walter W. Tunstall, Ph. D. earned B. S., M. S., and Ph.D. degrees at Virginia Commonwealth University. He taught courses in Psychology at numerous colleges in Virginia and Washington State, and he worked in public institutions with chronically disabled persons in both states. Dr. Tunstall is retired and lives in Olympia, Washington.</p>
@@ -29,7 +29,7 @@
                             <div class="row">
                                 <div class="col-md-4 center-block">
                                     <a href="https://www.amazon.com/Origin-Dignity-Its-Creation-Enhancement/dp/1480851744/" target="_blank" rel="nofollow">
-                                        <img src="{{{ url('public/storage/featured-author/walter-tunstall-book.png') }}}" class="" style="width:100%" alt="On the Origin of Dignity: Its Creation and Enhancement">
+                                        <img src="{{{ url('storage/featured-author/walter-tunstall-book.png') }}}" class="" style="width:100%" alt="On the Origin of Dignity: Its Creation and Enhancement">
                                         
                                     </a>
                                     
