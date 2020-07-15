@@ -56,7 +56,7 @@
         }
 
         .float-right {
-            float: right !important;
+            float: right !important;git 
             margin-right: 5px;
         }
 
