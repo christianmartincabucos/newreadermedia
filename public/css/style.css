@@ -1,5 +1,9 @@
 /* BOX */
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body{
+    font-family: 'Montserrat'!important;
+    font-weight: 400!important;
+}
 .box {
     margin-bottom: 22px;
     /* background-color: #fff; */

@@ -338,83 +338,81 @@
                 <div class="" style="position:relative;width:100%;background:url({{{ url('storage/sample-background.jpeg') }}}) center center no-repeat;background-size: cover;">
                     <div class="layer" style="background-color: rgba(180, 40, 40, 0.8);position: absolute;top: 0;left: 0;width: 100%;height: 100%;">
                     </div>
-                    <div class="col-md-12s">
-                            <div class="">
-                                <div id="myCarousel2" class="carousel slide" data-ride="carousel">
-                                    <!-- Indicators -->
-                                    <ol class="carousel-indicators">
-                                        <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
-                                        <li data-target="#myCarousel2" data-slide-to="1"></li>
-                                        <li data-target="#myCarousel2" data-slide-to="2"></li>
-                                        <li data-target="#myCarousel2" data-slide-to="3"></li>
-                                        <li data-target="#myCarousel2" data-slide-to="4"></li>
-                                        
-                                    </ol>
-                                    
-                                    <!-- Wrapper for slides -->
-                                    <div class="carousel-inner">
-                                        <div class="item active">
-                                            {{-- <img style="width:100%;height:200px" src="{{{ url('storage/sample-img-1.jpg') }}}"> --}}
-                                            <div class="text-center" style="width:100%;height:300px;max-height:450px;background:transparent;padding-top:20px;"></div>
-                                            <div class="carousel-caption">
-                                                <img src="{{{ url('storage/testimonials/paul-antwi.png') }}}" alt="Paul Antwi" class="img-circle" style="width:100px">
-                                                <h4>"Thank you so much for this good job you have done of the great story created through the book. I've checked and see everything looks good and ready now."</h4>
-                                                <p class="">- Paul Antwi</p>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            {{-- <img style="width:100%;height:200px" src="{{{ url('storage/sample-img-2.jpg') }}}"> --}}
-                                            <div class="text-center" style="width:100%;height:300px;;max-height:450px;background:transparent;padding-top:20px;"></div>
-                                            <div class="carousel-caption">
-                                                <img src="{{{ url('storage/testimonials/carnie-mattisonn.png') }}}" alt="Carni Mattisonn" class="img-circle" style="width:100px">
-                                                <h4>"Your amendments to the script have been carefully and skillfully crafted to portray the story in a smooth and cohesive way that flows easily."</h4>
-                                                <p class="">- Dr. Carnie Matisonn</p>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="item">
-                                            {{-- <img style="width:100%;height:200px" src="{{{ url('storage/sample-img-3.jpg') }}}"> --}}
-                                            <div class="text-center" style="width:100%;height:300px;;max-height:450px;background:transparent;padding-top:20px;"></div>
-                                            <div class="carousel-caption">
-                                                <img src="{{{ url('storage/testimonials/manuel-pelaez.png') }}}" alt="Manuel Pelaez" class="img-circle" style="width:100px">
-                                                <h4>"Their dedication towards professionalism, is unbelievable. They dedicate themselves to bring an author, writer, and artist, to a higher level, without any doubt, I will continue joint ventures with them, into successful outcomes, they are part of my family now, thank you."</h4>
-                                                <p class="">- Manuel Pelaez</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="item">
-                                            {{-- <img style="width:100%;height:200px" src="{{{ url('storage/sample-img-3.jpg') }}}"> --}}
-                                            <div class="text-center" style="width:100%;height:300px;;max-height:450px;background:transparent;padding-top:20px;"></div>
-                                            <div class="carousel-caption">
-                                                <img src="{{{ url('storage/testimonials/allen-bonck.jpg') }}}" alt="Allen Bonck" class="img-circle" style="width:100px">
-                                                <h4>"I was especially impressed with your research and attention to details. I feel you really understood the story and made it come alive. I think you asked all the right questions and was willing to hear my input."</h4>
-                                                <p class="">- Allen Bonck</p>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="item">
-                                            {{-- <img style="width:100%;height:200px" src="{{{ url('storage/sample-img-3.jpg') }}}"> --}}
-                                            <div class="text-center" style="width:100%;height:300px;;max-height:450px;background:transparent;padding-top:20px;"></div>
-                                            <div class="carousel-caption">
-                                                <img src="{{{ url('storage/testimonials/rita-dunham.jpg') }}}" alt="Rita Dunham" class="img-circle" style="width:100px">
-                                                <h4>"I am really happy with the outcome of A Token for the Journey, and your ability to stick with the simplicity of the story line. I am very excited about this project. The screenwriter really did an excellent job. Thank you for your committed hard work!"</h4>
-                                                <p class="">- Rita Dunham</p>
-                                            </div>
-                                        </div>
+                    <div class="">
+                        <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel2" data-slide-to="1"></li>
+                                <li data-target="#myCarousel2" data-slide-to="2"></li>
+                                <li data-target="#myCarousel2" data-slide-to="3"></li>
+                                <li data-target="#myCarousel2" data-slide-to="4"></li>
+                                
+                            </ol>
+                            
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    {{-- <img style="width:100%;height:200px" src="{{{ url('storage/sample-img-1.jpg') }}}"> --}}
+                                    <div class="text-center" style="width:100%;height:300px;max-height:450px;background:transparent;padding-top:20px;"></div>
+                                    <div class="carousel-caption">
+                                        <img src="{{{ url('storage/testimonials/paul-antwi.png') }}}" alt="Paul Antwi" class="img-circle" style="width:100px">
+                                        <h4>"Thank you so much for this good job you have done of the great story created through the book. I've checked and see everything looks good and ready now."</h4>
+                                        <p class="">- Paul Antwi</p>
                                     </div>
-                                    
-                                    <!-- Left and right controls -->
-                                    <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
-                                        {{-- <span class="fa fa-chevron-left"></span> --}}
-                                        {{-- <span class="sr-only">Previous</span> --}}
-                                    </a>
-                                    <a class="right carousel-control" href="#myCarousel2" data-slide="next">
-                                        {{-- <span class="glyphicon glyphicon-chevron-right"></span> --}}
-                                        {{-- <span class="sr-only">Next</span> --}}
-                                    </a>
-                                </div> 
+                                </div>
+                                <div class="item">
+                                    {{-- <img style="width:100%;height:200px" src="{{{ url('storage/sample-img-2.jpg') }}}"> --}}
+                                    <div class="text-center" style="width:100%;height:300px;;max-height:450px;background:transparent;padding-top:20px;"></div>
+                                    <div class="carousel-caption">
+                                        <img src="{{{ url('storage/testimonials/carnie-mattisonn.png') }}}" alt="Carni Mattisonn" class="img-circle" style="width:100px">
+                                        <h4>"Your amendments to the script have been carefully and skillfully crafted to portray the story in a smooth and cohesive way that flows easily."</h4>
+                                        <p class="">- Dr. Carnie Matisonn</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="item">
+                                    {{-- <img style="width:100%;height:200px" src="{{{ url('storage/sample-img-3.jpg') }}}"> --}}
+                                    <div class="text-center" style="width:100%;height:300px;;max-height:450px;background:transparent;padding-top:20px;"></div>
+                                    <div class="carousel-caption">
+                                        <img src="{{{ url('storage/testimonials/manuel-pelaez.png') }}}" alt="Manuel Pelaez" class="img-circle" style="width:100px">
+                                        <h4>"Their dedication towards professionalism, is unbelievable. They dedicate themselves to bring an author, writer, and artist, to a higher level, without any doubt, I will continue joint ventures with them, into successful outcomes, they are part of my family now, thank you."</h4>
+                                        <p class="">- Manuel Pelaez</p>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    {{-- <img style="width:100%;height:200px" src="{{{ url('storage/sample-img-3.jpg') }}}"> --}}
+                                    <div class="text-center" style="width:100%;height:300px;;max-height:450px;background:transparent;padding-top:20px;"></div>
+                                    <div class="carousel-caption">
+                                        <img src="{{{ url('storage/testimonials/allen-bonck.jpg') }}}" alt="Allen Bonck" class="img-circle" style="width:100px">
+                                        <h4>"I was especially impressed with your research and attention to details. I feel you really understood the story and made it come alive. I think you asked all the right questions and was willing to hear my input."</h4>
+                                        <p class="">- Allen Bonck</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="item">
+                                    {{-- <img style="width:100%;height:200px" src="{{{ url('storage/sample-img-3.jpg') }}}"> --}}
+                                    <div class="text-center" style="width:100%;height:300px;;max-height:450px;background:transparent;padding-top:20px;"></div>
+                                    <div class="carousel-caption">
+                                        <img src="{{{ url('storage/testimonials/rita-dunham.jpg') }}}" alt="Rita Dunham" class="img-circle" style="width:100px">
+                                        <h4>"I am really happy with the outcome of A Token for the Journey, and your ability to stick with the simplicity of the story line. I am very excited about this project. The screenwriter really did an excellent job. Thank you for your committed hard work!"</h4>
+                                        <p class="">- Rita Dunham</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                            
+                            <!-- Left and right controls -->
+                            <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
+                                {{-- <span class="fa fa-chevron-left"></span> --}}
+                                {{-- <span class="sr-only">Previous</span> --}}
+                            </a>
+                            <a class="right carousel-control" href="#myCarousel2" data-slide="next">
+                                {{-- <span class="glyphicon glyphicon-chevron-right"></span> --}}
+                                {{-- <span class="sr-only">Next</span> --}}
+                            </a>
+                        </div> 
+                    </div>
                 </div>
                 @include('layouts.footer')
                 
