@@ -14,7 +14,8 @@
         "parsedown/laravel": "^1.2",
         "spatie/laravel-newsletter": "^4.2",
         "unisharp/laravel-ckeditor": "^4.7",
-        "watson/canonical": "^1.0"
+        "watson/canonical": "^1.0",
+        "yajra/laravel-disqus": "^1.2"
     },
     "require-dev": {
         "filp/whoops": "~2.0",

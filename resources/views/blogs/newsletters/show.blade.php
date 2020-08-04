@@ -1,7 +1,10 @@
 @extends('layouts.app')
-@section('title')New Reader Media's best, most informative blogs on a variety of topics.@endsection
-@section('og-title')New Reader Media's best, most informative blogs on a variety of topics.@endsection
-@section('meta-description')We find the coolest stuff and curate it for your delectation. We've got a bunch of great topics for the inquiring mind. From haunted houses to SEO techniques. See them here now.@endsection
+
+@foreach ($datas as $data)
+    @section('title') {!! $data->title !!}@endsection
+    @section('meta-description') {!! $data->meta_desc !!}@endsection
+@endforeach
+
 @section('content')
 <div class="container">
     <div class="row">
@@ -12,6 +15,7 @@
                     <div class="row">
                         <section class="box-section">
                             @foreach ($datas as $data)
+
                             <!-- <img src="" style="width:100%;"> -->
                             <div class="col-md-12 lead">
                                 <div class="px-5">

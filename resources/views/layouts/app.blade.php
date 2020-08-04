@@ -461,6 +461,7 @@
 
         })
     </script> -->
+    <script id="dsq-count-scr" src="//newreadermedia.disqus.com/count.js" async></script>
 </body>
 
 </html>

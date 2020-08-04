@@ -1,6 +1,8 @@
 /node_modules
 /public/hot
+/resources/views/admin
 /storage
+/storage/admin-lte
 /storage/*.key
 /vendor
 /.idea
