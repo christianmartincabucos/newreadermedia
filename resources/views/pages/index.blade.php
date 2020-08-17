@@ -10,121 +10,123 @@
                 <div class="box-body">
                     {{-- BIG IMAGE --}}
                     <div class="row">
-                    <section class="box-section">
-                        <div class="col-md-8">
-                            <div class="" style="margin-bottom:15px">
-                                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                                    <!-- Indicators -->
-                                    <ol class="carousel-indicators">
-                                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                                        <li data-target="#myCarousel" data-slide-to="3"></li>
-                                        <li data-target="#myCarousel" data-slide-to="4"></li>
-                                        <li data-target="#myCarousel" data-slide-to="5"></li>
-                                        <li data-target="#myCarousel" data-slide-to="6"></li>
-                                    </ol>
-                                    
-                                    <!-- Wrapper for slides -->
-                                    <div class="carousel-inner">
-                                        <div class="item active">
-                                            <img style="width:100%" src="{{{ url('storage/services/screenplay-service-v2.jpg') }}}" alt="Screenplay Service">
-                                            <div class="layer" style="background-color: rgba(40, 40, 40, 0.6);position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
-                                            
-                                            <div class="carousel-caption" style="background-color: rgba(0, 0, 0, 0.5);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
-                                                <p class="text-left"><strong><span style="font-size: 22.0pt;color:#fff">Screenplay Service</span></strong></p>
-                                                <p class="text-left" style="margin-top:0"><span style="font-size: 16.0pt;color:#fff">Your story plus our writers, a complete script masterpiece!</span></p>
+                        <section class="box-section">
+                            <div class="col-md-8">
+                                <div class="" style="margin-bottom:15px">
+                                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                                            <li data-target="#myCarousel" data-slide-to="4"></li>
+                                            <li data-target="#myCarousel" data-slide-to="5"></li>
+                                            <li data-target="#myCarousel" data-slide-to="6"></li>
+                                        </ol>
+
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner">
+                                            <div class="item active">
+                                                <img style="width:100%" src="{{{ url('storage/services/screenplay-service-v2.jpg') }}}" alt="Screenplay Service">
+                                                <div class="layer" style="background-color: rgba(40, 40, 40, 0.6);position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
+
+                                                <div class="carousel-caption" style="background-color: rgba(0, 0, 0, 0.5);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
+                                                    <p class="text-left"><strong><span style="font-size: 22.0pt;color:#fff">Screenplay Service</span></strong></p>
+                                                    <p class="text-left" style="margin-top:0"><span style="font-size: 16.0pt;color:#fff">Your story plus our writers, a complete script masterpiece!</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <img style="width:100%" src="{{{ url('storage/services/treatment-script-draft-service.jpg') }}}" alt="Treatment Script Draft Service">
+                                                <div class="layer" style="background-color: rgba(40, 40, 40, 0.6);position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
+
+                                                <div class="carousel-caption" style="background-color: rgba(0, 0, 0, 0.5);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
+                                                    <p class="text-left"><strong><span style="font-size: 22.0pt;color:#fff">Treatment/Script Draft Service</span></strong></p>
+                                                    <p class="text-left" style="margin-top:0"><span style="font-size: 16.0pt;color:#fff">Chapters and events are the main focus!</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <img style="width:100%" src="{{{ url('storage/services/synopsis-coverage-service-v2.jpg') }}}" alt="Synopsis Coverage Service">
+                                                <div class="layer" style="background-color: rgba(40, 40, 40, 0.6);position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
+
+                                                <div class="carousel-caption" style="background-color: rgba(0, 0, 0, 0.5);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
+                                                    <p class="text-left"><strong><span style="font-size: 22.0pt;color:#fff">Synopsis/Coverage Service</span></strong></p>
+                                                    <p class="text-left" style="margin-top:0"><span style="font-size: 16.0pt;color:#fff">Your story ready for the big screen!</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <img style="width:100%" src="{{{ url('storage/services/website-creation-v2.jpg') }}}" alt="Website Creation">
+                                                <div class="layer" style="background-color: rgba(40, 40, 40, 0.6);position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
+
+                                                <div class="carousel-caption" style="background-color: rgba(0, 0, 0, 0.5);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
+                                                    <p class="text-left"><strong><span style="font-size: 22.0pt;color:#fff">Website Creation, Hosting and SEO</span></strong></p>
+                                                    <p class="text-left" style="margin-top:0"><span style="font-size: 16.0pt;color:#fff">Your professional interactive portfolio!</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <img style="width:100%" src="{{{ url('storage/services/publicity-services-v2.jpg') }}}" alt="Publicity Services">
+                                                <div class="layer" style="background-color: rgba(40, 40, 40, 0.6);position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
+
+                                                <div class="carousel-caption" style="background-color: rgba(0, 0, 0, 0.5);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
+                                                    <p class="text-left"><strong><span style="font-size: 22.0pt;color:#fff">Publicity Services</span></strong></p>
+                                                    <p class="text-left" style="margin-top:0"><span style="font-size: 16.0pt;color:#fff">We make sure you will be famous!</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <img style="width:100%" src="{{{ url('storage/services/movie-agent-v2.jpg') }}}" alt="Movie Agent">
+                                                <div class="layer" style="background-color: rgba(40, 40, 40, 0.6);position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
+
+                                                <div class="carousel-caption" style="background-color: rgba(0, 0, 0, 0.5);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
+                                                    <p class="text-left"><strong><span style="font-size: 22.0pt;color:#fff">Movie Agent</span></strong></p>
+                                                    <p class="text-left" style="margin-top:0"><span style="font-size: 16.0pt;color:#fff">Our movie agents will get your story to the right hands!</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <img style="width:100%" src="{{{ url('storage/services/sneak-peek-service-v2.jpg') }}}" alt="Sneak Peek">
+                                                <div class="layer" style="background-color: rgba(40, 40, 40, 0.6);position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
+
+                                                <div class="carousel-caption" style="background-color: rgba(0, 0, 0, 0.5);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
+                                                    <p class="text-left"><strong><span style="font-size: 22.0pt;color:#fff">Sneak Peek</span></strong></p>
+                                                    <p class="text-left" style="margin-top:0"><span style="font-size: 16.0pt;color:#fff">What better way to entice producers than to give them a peek!</span></p>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="item">
-                                            <img style="width:100%" src="{{{ url('storage/services/treatment-script-draft-service.jpg') }}}" alt="Treatment Script Draft Service">
-                                            <div class="layer" style="background-color: rgba(40, 40, 40, 0.6);position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
-                                            
-                                            <div class="carousel-caption" style="background-color: rgba(0, 0, 0, 0.5);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
-                                                <p class="text-left"><strong><span style="font-size: 22.0pt;color:#fff">Treatment/Script Draft Service</span></strong></p>
-                                                <p class="text-left" style="margin-top:0"><span style="font-size: 16.0pt;color:#fff">Chapters and events are the main focus!</span></p>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <img style="width:100%" src="{{{ url('storage/services/synopsis-coverage-service-v2.jpg') }}}" alt="Synopsis Coverage Service">
-                                            <div class="layer" style="background-color: rgba(40, 40, 40, 0.6);position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
-                                            
-                                            <div class="carousel-caption" style="background-color: rgba(0, 0, 0, 0.5);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
-                                                <p class="text-left"><strong><span style="font-size: 22.0pt;color:#fff">Synopsis/Coverage Service</span></strong></p>
-                                                <p class="text-left" style="margin-top:0"><span style="font-size: 16.0pt;color:#fff">Your story ready for the big screen!</span></p>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <img style="width:100%" src="{{{ url('storage/services/website-creation-v2.jpg') }}}" alt="Website Creation">
-                                            <div class="layer" style="background-color: rgba(40, 40, 40, 0.6);position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
-                                            
-                                            <div class="carousel-caption" style="background-color: rgba(0, 0, 0, 0.5);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
-                                                <p class="text-left"><strong><span style="font-size: 22.0pt;color:#fff">Website Creation, Hosting and SEO</span></strong></p>
-                                                <p class="text-left" style="margin-top:0"><span style="font-size: 16.0pt;color:#fff">Your professional interactive portfolio!</span></p>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <img style="width:100%" src="{{{ url('storage/services/publicity-services-v2.jpg') }}}" alt="Publicity Services">
-                                            <div class="layer" style="background-color: rgba(40, 40, 40, 0.6);position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
-                                            
-                                            <div class="carousel-caption" style="background-color: rgba(0, 0, 0, 0.5);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
-                                                <p class="text-left"><strong><span style="font-size: 22.0pt;color:#fff">Publicity Services</span></strong></p>
-                                                <p class="text-left" style="margin-top:0"><span style="font-size: 16.0pt;color:#fff">We make sure you will be famous!</span></p>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <img style="width:100%" src="{{{ url('storage/services/movie-agent-v2.jpg') }}}" alt="Movie Agent">
-                                            <div class="layer" style="background-color: rgba(40, 40, 40, 0.6);position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
-                                            
-                                            <div class="carousel-caption" style="background-color: rgba(0, 0, 0, 0.5);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
-                                                <p class="text-left"><strong><span style="font-size: 22.0pt;color:#fff">Movie Agent</span></strong></p>
-                                                <p class="text-left" style="margin-top:0"><span style="font-size: 16.0pt;color:#fff">Our movie agents will get your story to the right hands!</span></p>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <img style="width:100%" src="{{{ url('storage/services/sneak-peek-service-v2.jpg') }}}" alt="Sneak Peek">
-                                            <div class="layer" style="background-color: rgba(40, 40, 40, 0.6);position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
-                                            
-                                            <div class="carousel-caption" style="background-color: rgba(0, 0, 0, 0.5);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
-                                                <p class="text-left"><strong><span style="font-size: 22.0pt;color:#fff">Sneak Peek</span></strong></p>
-                                                <p class="text-left" style="margin-top:0"><span style="font-size: 16.0pt;color:#fff">What better way to entice producers than to give them a peek!</span></p>
-                                            </div>
-                                        </div>
+
+                                        <!-- Left and right controls -->
+                                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                            {{-- <span class="fa fa-chevron-left"></span> --}}
+                                            {{-- <span class="sr-only">Previous</span> --}}
+                                        </a>
+                                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                            {{-- <span class="glyphicon glyphicon-chevron-right"></span> --}}
+                                            {{-- <span class="sr-only">Next</span> --}}
+                                        </a>
                                     </div>
-                                    
-                                    <!-- Left and right controls -->
-                                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                                        {{-- <span class="fa fa-chevron-left"></span> --}}
-                                        {{-- <span class="sr-only">Previous</span> --}}
-                                    </a>
-                                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                                        {{-- <span class="glyphicon glyphicon-chevron-right"></span> --}}
-                                        {{-- <span class="sr-only">Next</span> --}}
-                                    </a>
-                                </div> 
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <section class="box-section" style="border-top: 3px solid rgb(180, 40, 40);">
-                                <div class="box-article">
-                                    <a class="article-link" href="{{ url('/sneak-peeks') }}"><h4 class="title title-red">Sneak Peeks</h4></a>    
-                                    <div class="embed-container" style="margin-bottom:10px">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/yECQrh2b9Ok" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                                    </div>
-                                    
-                                    <h4 class="title"><a href="https://www.youtube.com/watch?v=yECQrh2b9Ok" target="_blank" rel="nofollow"><strong>O'er The Ramparts - Official Sneak Peek</strong></a></h4>
-                                    <p>A story of young Laurel O'Malley a daughter of a highly regarded country doctor living just on the outskirts of Baltimore which is under threat of attack by the British. As war becomes ever so real to her and everyone she loves. Laurel finds herself having to stand tall for her country and for the man she has come to love.</p>
-                                   
-                                    
                                 </div>
-                                
-                            </section>
-                        </div>
-                        
-                    </section>
+                            </div>
+                            <div class="col-md-4">
+                                <section class="box-section" style="border-top: 3px solid rgb(180, 40, 40);">
+                                    <div class="box-article">
+                                        <a class="article-link" href="{{ url('/sneak-peeks') }}">
+                                            <h4 class="title title-red">Sneak Peeks</h4>
+                                        </a>
+                                        <div class="embed-container" style="margin-bottom:10px">
+                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/yECQrh2b9Ok" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                        </div>
+
+                                        <h4 class="title"><a href="https://www.youtube.com/watch?v=yECQrh2b9Ok" target="_blank" rel="nofollow"><strong>O'er The Ramparts - Official Sneak Peek</strong></a></h4>
+                                        <p>A story of young Laurel O'Malley a daughter of a highly regarded country doctor living just on the outskirts of Baltimore which is under threat of attack by the British. As war becomes ever so real to her and everyone she loves. Laurel finds herself having to stand tall for her country and for the man she has come to love.</p>
+
+
+                                    </div>
+
+                                </section>
+                            </div>
+
+                        </section>
                     </div>
                     <div class="row">
-                    
+
                         <div class="col-md-8 text-justify">
                             <section class="box-section" style="border-top: 3px solid rgb(180, 40, 40);">
                                 <div class="box-article">
@@ -138,22 +140,24 @@
                                             <p class="smallx">More info on our <a class="link-white" href="{{ url('/marketing-and-partnership') }}" target="_blank">Marketing and Partnership</a> page.</p>
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                             </section>
-                            
+
                         </div>
                         <div class="col-md-4">
                             <section class="box-section" style="border-top: 3px solid rgb(180, 40, 40);">
-                                
+
                                 <div class="box-article">
-                                    
+
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-4">
                                             <a class="article-link" href="{{ url('/press-release') }}"><img class="article-thumbnail" src="{{{ url('storage/nrmedia-logo2.png') }}}" style="width:100%;margin:auto 0" alt="New Reader Media"></a>
                                         </div>
                                         <div class="col-xs-12 col-sm-8">
-                                            <a class="article-link" href="{{ url('/press-release') }}"><h4 class="title title-red">What's New?</h4></a><strong>Press Release</strong>
+                                            <a class="article-link" href="{{ url('/press-release') }}">
+                                                <h4 class="title title-red">What's New?</h4>
+                                            </a><strong>Press Release</strong>
                                             <p class="small">International Media Firm Launches Literary Magazine for the New Reader.<br><a class="small read-more" href="{{ url('/press-release') }}" rel="nofollow">Read more</a></p>
                                         </div>
                                     </div>
@@ -163,7 +167,9 @@
                                             <a href="{{ url('/spotlight') }}"><img class="article-thumbnail img-circle" src="{{{ url('storage/spotlight.jpg') }}}" style="width:100%" alt="Spotlight"></a>
                                         </div>
                                         <div class="col-xs-12 col-sm-8">
-                                            <a class="article-link" href="{{ url('/spotlight') }}"><h4 class="title title-red">Spotlight</h4></a>
+                                            <a class="article-link" href="{{ url('/spotlight') }}">
+                                                <h4 class="title title-red">Spotlight</h4>
+                                            </a>
                                             <p class="small">{{ str_limit("Check out who gets to be in New Reader Media's spotlight.",72) }} <br><a class="small read-more" href="{{ url('/spotlight') }}" rel="nofollow">Read more</a> </p>
                                         </div>
                                     </div>
@@ -173,17 +179,19 @@
                                             <a class="article-link" href="https://www.newreadermagazine.com/download" target="_blank"><img class="article-thumbnail" src="https://www.newreadermagazine.com/images/nrm-issue-10.jpg" style="width:100%" alt="NRM Issue 9"></a>
                                         </div>
                                         <div class="col-xs-12 col-sm-8">
-                                            <a class="article-link" href="https://www.newreadermagazine.com/download" target="_blank"><h4 class="title title-red">New Reader Magazine</h4></a><strong>Houdini</strong>
+                                            <a class="article-link" href="https://www.newreadermagazine.com/download" target="_blank">
+                                                <h4 class="title title-red">New Reader Magazine</h4>
+                                            </a><strong>Houdini</strong>
                                             <p class="small">{{ str_limit('June 2020 | Vol. 3 Issue 10',72) }}<br><a class="small read-more" href="https://www.newreadermagazine.com/download" rel="nofollow">Read more</a> </p>
                                         </div>
                                     </div>
-                                    
+
                                 </div>
-                                
+
                             </section>
                         </div>
-                        
-                    
+
+
                     </div>
                     <br>
                     {{-- SLIDER IMAGES --}}
@@ -203,62 +211,68 @@
                             </div>
                         </div>
                     </section>
-                    
+
                     {{-- ARTICLES --}}
                     <div class="row">
                         <div class="col-md-4">
                             <section class="box-section" style="border-top: 3px solid rgb(180, 40, 40);">
-                                
+
                                 <div class="box-article">
-                                    
+
                                     <div style="position:relative;width:100%;height:250px;background:url({{{ url('storage/services/bookstore-v2-1.jpg') }}}) center center no-repeat;background-size: cover;overflow:hidden">
                                         <div class="layer" style="background-color: rgba(0, 0, 0, 0.7);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
-                                            
-                                            <a class="article-link" href="{{ url('/bookstore-display') }}"><h3 class="header-red-box"><strong>9 Reasons Why Bookstores Are Still The Real Deal</strong></h3></a>
-                                            <p class="text-justify" style="font-size:12px;position: relative;top: 35%;transform: translateY(-60%); ">Who goes to bookstores anymore? Nowadays one can simply get a book online and have it delivered to the doorstep. E-books? Audiobooks? And shall I say, pirated books? 
-                                                But there’s something that bookstores offer that’s better than convenience. 
+
+                                            <a class="article-link" href="{{ url('/bookstore-display') }}">
+                                                <h3 class="header-red-box"><strong>9 Reasons Why Bookstores Are Still The Real Deal</strong></h3>
+                                            </a>
+                                            <p class="text-justify" style="font-size:12px;position: relative;top: 35%;transform: translateY(-60%); ">Who goes to bookstores anymore? Nowadays one can simply get a book online and have it delivered to the doorstep. E-books? Audiobooks? And shall I say, pirated books?
+                                                But there’s something that bookstores offer that’s better than convenience.
                                                 <br><a class="small read-more" href="{{ url('/bookstore-display') }}" rel="nofollow">Read more</a>
                                             </p>
-                                            
+
                                         </div>
                                     </div>
                                 </div>
-                                
+
                             </section>
                         </div>
                         <div class="col-md-4">
                             <section class="box-section" style="border-top: 3px solid rgb(180, 40, 40);">
-                                
+
                                 <div class="box-article">
-                                    
+
                                     <div style="position:relative;width:100%;height:250px;background:url({{{ url('storage/services/adapted-screenplay-v2-1.jpg') }}}) center center no-repeat;background-size: cover;overflow:hidden">
                                         <div class="layer" style="background-color: rgba(0, 0, 0, 0.7);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
-                                            
-                                            <a class="article-link" href="{{ url('/screen-adaptation') }}"><h3 class="header-red-box"><strong>Let’s turn your book into a movie</strong></h3></a>
+
+                                            <a class="article-link" href="{{ url('/screen-adaptation') }}">
+                                                <h3 class="header-red-box"><strong>Let’s turn your book into a movie</strong></h3>
+                                            </a>
                                             <p class="text-justify" style="font-size:12px;position: relative;top: 35%;transform: translateY(-60%); ">If you and your audience can picture the plot and characters inside your head, then think about elevating those images and seeing the actual event right before your eyes. This is what screenplay adaptation aims. They take a book and rewrite it to ensure that the story works as a film.
                                                 <br><a class="small read-more" href="{{ url('/screen-adaptation') }}" rel="nofollow">Read more</a>
                                             </p>
-                                            
+
                                         </div>
                                     </div>
                                 </div>
-                                
-                                
+
+
                             </section>
                         </div>
                         <div class="col-md-4">
                             <section class="box-section" style="border-top: 3px solid rgb(180, 40, 40);">
                                 <div class="box-article">
-                                   
+
                                     <div style="position:relative;width:100%;min-height:250px;background:url({{{ url('storage/services/sneak-peeks-v2-1.jpg') }}}) center center no-repeat;background-size: cover;overflow:hidden">
                                         <div class="layer" style="background-color: rgba(0, 0, 0, 0.7);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
-                                            
-                                            
-                                            <a class="article-link" href="{{ url('/sneak-peek') }}"><h3 class="header-red-box"><strong>Sneak Peeks: Why do you need them</strong></h3></a>
-                                            <p class="text-justify" style="font-size:12px;position: relative;top: 35%;transform: translateY(-50%); ">Sneak Peeks have been gaining a lot of interest from the self-published authors lately for a good reason.  Sneak Peeks are ultra-short and cinematic videos which follow the same principle as movie trailers. In less than two minutes, it presents a book’s story while teasing audiences with its best parts.
+
+
+                                            <a class="article-link" href="{{ url('/sneak-peek') }}">
+                                                <h3 class="header-red-box"><strong>Sneak Peeks: Why do you need them</strong></h3>
+                                            </a>
+                                            <p class="text-justify" style="font-size:12px;position: relative;top: 35%;transform: translateY(-50%); ">Sneak Peeks have been gaining a lot of interest from the self-published authors lately for a good reason. Sneak Peeks are ultra-short and cinematic videos which follow the same principle as movie trailers. In less than two minutes, it presents a book’s story while teasing audiences with its best parts.
                                                 <br><a class="small read-more" href="{{ url('/sneak-peek') }}" rel="nofollow">Read more</a>
                                             </p>
-                                        
+
                                         </div>
                                     </div>
                                 </div>
@@ -272,69 +286,69 @@
                                     <div class="embed-container" style="margin-bottom:10px">
                                         <iframe width="560" height="315" src="https://www.youtube.com/embed/EPSdiTc7psc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                                     </div>
-                                    
+
                                     <h4 class="title"><a href="{{ url('https://www.youtube.com/watch?v=EPSdiTc7psc') }}" target="_blank" rel="nofollow"><strong>Author Interview: Alkawther Makki, Unspoken Revivalism</strong></a></h4>
                                     <p class="small text-justify">
                                         As an extraordinary philosopher, Alkawther Makki stresses her incentives for promoting a grandeur ethical humanity; which may be sensed in poems and strongly expressed in proverbs, vindications and assertions.
                                     </p>
-                                
+
                                 </div>
                             </section>
                         </div>
                         <div class="col-md-4">
-                            
+
                             <section class="box-section" style="border-top: 3px solid rgb(180, 40, 40);">
                                 <div class="box-article">
                                     <h3 style="margin-top:0" class="header-red">Literary Works</h3>
                                     <div class="row">
                                         <div class="col-md-4">
-                                          <img class="article-thumbnail" src="https://www.newreadermagazine.com/images/how-seo-can-help-you-build-a-readership-and-market-your-book.jpg" style="width:100%" alt="How SEO Can Help You Build a Readership and Market Your Book">
+                                            <img class="article-thumbnail" src="https://www.newreadermagazine.com/images/how-seo-can-help-you-build-a-readership-and-market-your-book.jpg" style="width:100%" alt="How SEO Can Help You Build a Readership and Market Your Book">
                                         </div>
                                         <div class="col-md-8">
-                                          <h4 class="title"><a href="https://www.newreadermagazine.com/tips-and-guides/how-seo-can-help-you-build-a-readership-and-market-your-book" target="_blank"  rel="nofollow">How SEO Can Help You Build a Readership and Market Your Book</a> <br><small>newreadermagazine.com</small></h4>
-                                          <p class="text-justify">So, you’ve written the book. Now what? Find a readership, connect with other authors, and market your book with these simple SEO techniques.</p>
+                                            <h4 class="title"><a href="https://www.newreadermagazine.com/tips-and-guides/how-seo-can-help-you-build-a-readership-and-market-your-book" target="_blank" rel="nofollow">How SEO Can Help You Build a Readership and Market Your Book</a> <br><small>newreadermagazine.com</small></h4>
+                                            <p class="text-justify">So, you’ve written the book. Now what? Find a readership, connect with other authors, and market your book with these simple SEO techniques.</p>
                                         </div>
                                     </div>
                                     <div class="divider"></div>
                                     <div class="row">
                                         <div class="col-md-4">
-                                          <img class="article-thumbnail" src="https://www.newreadermagazine.com/images/the-beginners-guide-to-the-best-seo-practices-in-2017-and-2018.jpg" style="width:100%" alt="The Beginner’s Guide to the Best SEO Practices in 2017 and 2018">
+                                            <img class="article-thumbnail" src="https://www.newreadermagazine.com/images/the-beginners-guide-to-the-best-seo-practices-in-2017-and-2018.jpg" style="width:100%" alt="The Beginner’s Guide to the Best SEO Practices in 2017 and 2018">
                                         </div>
                                         <div class="col-md-8">
-                                          <h4 class="title"><a href="https://www.newreadermagazine.com/tips-and-guides/the-beginners-guide-to-the-best-seo-practices-in-2017-and-2018" target="_blank"  rel="nofollow">The Beginner’s Guide to the Best SEO Practices in 2017 and 2018</a> <br><small>newreadermagazine.com</small></h4>
-                                          <p class="text-justify">SEO doesn’t have to be scary at all. We'll help you tame the beast and appease the Google gods with this simple guide to the best and the latest in SEO practices.</p>
+                                            <h4 class="title"><a href="https://www.newreadermagazine.com/tips-and-guides/the-beginners-guide-to-the-best-seo-practices-in-2017-and-2018" target="_blank" rel="nofollow">The Beginner’s Guide to the Best SEO Practices in 2017 and 2018</a> <br><small>newreadermagazine.com</small></h4>
+                                            <p class="text-justify">SEO doesn’t have to be scary at all. We'll help you tame the beast and appease the Google gods with this simple guide to the best and the latest in SEO practices.</p>
                                         </div>
                                     </div>
-                                    
-                                    
+
+
                                 </div>
-                                
+
                             </section>
-                            
+
                         </div>
-                        
+
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            
+
                             <section class="box-section" style="border-top: 3px solid rgb(180, 40, 40);">
                                 <div class="box-article">
                                     <h3 style="margin-top:0" class="header-red">Something worth a read...</h3>
                                     <div class="row">
-                                        
+
                                         @include('pages.recommendations')
-                                    
+
                                     </div>
                                 </div>
-                                
+
                             </section>
-                            
+
                         </div>
                     </div>
-                   
-                    
+
+
                 </div>
-                
+
                 <div class="" style="position:relative;width:100%;background:url({{{ url('storage/sample-background.jpeg') }}}) center center no-repeat;background-size: cover;">
                     <div class="layer" style="background-color: rgba(180, 40, 40, 0.8);position: absolute;top: 0;left: 0;width: 100%;height: 100%;">
                     </div>
@@ -347,9 +361,9 @@
                                 <li data-target="#myCarousel2" data-slide-to="2"></li>
                                 <li data-target="#myCarousel2" data-slide-to="3"></li>
                                 <li data-target="#myCarousel2" data-slide-to="4"></li>
-                                
+
                             </ol>
-                            
+
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner">
                                 <div class="item active">
@@ -370,7 +384,7 @@
                                         <p class="">- Dr. Carnie Matisonn</p>
                                     </div>
                                 </div>
-                                
+
                                 <div class="item">
                                     {{-- <img style="width:100%;height:200px" src="{{{ url('storage/sample-img-3.jpg') }}}"> --}}
                                     <div class="text-center" style="width:100%;height:300px;;max-height:450px;background:transparent;padding-top:20px;"></div>
@@ -390,7 +404,7 @@
                                         <p class="">- Allen Bonck</p>
                                     </div>
                                 </div>
-                                
+
                                 <div class="item">
                                     {{-- <img style="width:100%;height:200px" src="{{{ url('storage/sample-img-3.jpg') }}}"> --}}
                                     <div class="text-center" style="width:100%;height:300px;;max-height:450px;background:transparent;padding-top:20px;"></div>
@@ -401,7 +415,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <!-- Left and right controls -->
                             <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
                                 {{-- <span class="fa fa-chevron-left"></span> --}}
@@ -411,13 +425,98 @@
                                 {{-- <span class="glyphicon glyphicon-chevron-right"></span> --}}
                                 {{-- <span class="sr-only">Next</span> --}}
                             </a>
-                        </div> 
+                        </div>
                     </div>
                 </div>
                 @include('layouts.footer')
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="myModal" style="padding-right:0px!important;">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h4 class="modal-title">Create Blog</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <div class="modal-body">
+                <!-- <form id="form-blog" method="POST" action="{{ route('blog.post') }}">
+                    {{ csrf_field() }}
+                    <div class="row">
+                        <div class="col-md-12">
+                            @foreach($errors->all() as $error)
+                            <div class="alert alert-success alert-dismissible fade in">
+                                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                                <strong>Success!</strong>{{ $error }}
+                            </div>
+                            @endforeach
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="title">Title</label>
+                                <input type="text" class="form-control" name="title" id="title" required placeholder="Enter title...">
+                            </div>
+
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="title">Meta Description</label>
+                                <input type="text" class="form-control" name="meta-desc" id="meta-desc" required placeholder="Enter meta description...">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="author">Author</label>
+                                <input type="text" class="form-control" name="author" id="author" required placeholder="Enter author...">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="sel1">Category</label>
+                                <select class="form-control" name="category">
+                                    @foreach($categories as $category)
+                                    <option value="{{$category->blog_category_id}}">{{ $category->category_name }}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="author">Image</label>
+                                <input type="file" class="form-control" name="image" id="image" required placeholder="Browse image...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="blog-editor">Description:</label>
+
+                        <textarea name="blog-editor" id="blog-editor" rows="40" style="color:#000!important; visibility: visible!important;">
+                        </textarea>
+                    </div>
+                    <div class="text-right">
+
+                        <button type="submit" class="btn btn-primary">Save</button>
+                        <button type="button" class="btn btn-warning" id="btn-blogclear" onclick="event.preventDefault();
+                                                     document.getElementById('form-blog').reset();">Clear</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </form> -->
+                @include('templates.form-blog')
                 
             </div>
         </div>
     </div>
 </div>
+
 @endsection

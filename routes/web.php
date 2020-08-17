@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use App\Mail\ContactMail;
 use Illuminate\Support\Facades\Mail;
+use App\BlogCategory;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,18 +14,27 @@ use Illuminate\Support\Facades\Mail;
 | contains the "web" middleware group. Now create something great!
 |
 */
-// Route::get('/', function () {
-    //     return view('welcome');
-// });
+Route::group(['middleware' => 'TwoFA'], function(){
+    Route::get('/blog/newsletters/{slug}', 'BlogsController@shownewsletters')->name('blog-shownewsletters');
+    Route::get('/blogs/newsletters', 'BlogsController@newsletters')->name('blog-newsletters');
+    Route::post('/blog/post', 'BlogsController@store')->name('blog.post');
+    Route::get('/blogs/reviews', 'TestimonialController@index')->name('reviews');
+    Route::get('/blogs', 'BlogsController@index')->name('blogs');
+    Route::get('/blog/new-reader-media/{blog}', 'BlogsController@show')->name('blog-show');
+    Route::get('/blogs/new-reader-media', 'BlogsController@newreadermedia')->name('blog-nrm');
+    Route::get('/blogs/media', 'BlogsController@media')->name('blog-media');
+    Route::get('/blogs/media/{slug}', 'BlogsController@mediashow')->name('blog-media-show');
+});
+Route::get('getcategory', 'BlogsController@getCategory');
 Route::get('/', 'HomeController@index')->name('home');
-// Route::get('/', 'PageController@index')->name('home');
+Route::get('verify' , 'VerifyOTPController@showverifyform');
+Route::post('verifyOTP' ,'VerifyOTPController@verify')->name('verifyOTP');
+Route::post('resendOTP', 'ResendController@resend')->name('resendOTP');
 
 Auth::routes();
-Route::post('signout', 'BlogsController@logout')->name('signout');
 Route::post('subscriber', 'SubscriberController@store')->name('subscriber.store');
 Route::post('subscriber/delete', 'SubscriberController@delete')->name('subscriber.delete');
 
-// Route::get('/home', 'HomeController@index')->name('dashboard');
 Route::get('/about', 'PageController@about')->name('about');
 // Route::get('/contribute', 'PageController@contribute')->name('contribute');
 // Route::get('/services', 'ServicesController@index')->name('services');
@@ -35,16 +45,7 @@ Route::get('/bookstore-display', 'BookstoreDisplayController@index')->name('book
 Route::get('/administrator', 'AdminController@admin')->name('administrator');
 
 Route::post('ckeditor/upload', 'BlogsController@upload')->name('ckeditor.upload');
-Route::get('/blog/newsletters/{slug}', 'BlogsController@shownewsletters')->name('blog-shownewsletters');
-Route::get('/blogs/newsletters', 'BlogsController@newsletters')->name('blog-newsletters');
 
-Route::post('/blogs/post', 'BlogsController@store')->name('blog.post');
-Route::get('/blogs/reviews', 'TestimonialController@index')->name('reviews');
-Route::get('/blogs', 'BlogsController@index')->name('blogs');
-Route::get('/blog/new-reader-media/{blog}', 'BlogsController@show')->name('blog-show');
-Route::get('/blogs/new-reader-media', 'BlogsController@newreadermedia')->name('blog-nrm');
-Route::get('/blogs/media', 'BlogsController@media')->name('blog-media');
-Route::get('/blogs/media/{slug}', 'BlogsController@mediashow')->name('blog-media-show');
 Route::get('/marketing-and-partnership', 'PartnershipController@index')->name('marketing-and-partnership');
 Route::get('/press-release', 'PressReleaseController@index')->name('press-release');
 Route::get('/author-interview', 'AuthorInterviewController@index')->name('author-interview');

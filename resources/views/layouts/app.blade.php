@@ -197,6 +197,8 @@
                     <li><a href="{{ route('login') }}">Login</a></li>
                     <li><a href="{{ route('register') }}">Register</a></li>
                     @else
+                    @if(Auth::user()->is_verified != 0)
+                    <li> <a data-toggle="modal" data-target="#myModal">Create Blog</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>
                             {{ Auth::user()->name }} <span class="caret"></span>
@@ -204,17 +206,18 @@
 
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="{{ route('signout') }}" onclick="event.preventDefault();
+                                <a href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                     Logout
                                 </a>
 
-                                <form id="logout-form" action="{{ route('signout') }}" method="POST" style="display: none;">
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                     {{ csrf_field() }}
                                 </form>
                             </li>
                         </ul>
                     </li>
+                    @endif
                     @endguest
                 </ul>
             </div>
@@ -301,8 +304,9 @@
 
         <a href="#app" class="back-to-top" style="display: inline;color:#fff"><i class="fa fa-arrow-circle-up"></i></a>
     </div>
-    <script src="{{ asset('tinymce/tinymce.js') }}"></script>
-    <script>
+
+    <!-- <script src="{{ asset('tinymce/tinymce.js') }}"></script> -->
+    <!-- <script>
         var editor_config = {
             path_absolute: "{{ URL::to('/') }}/",
             selector: "textarea",
@@ -315,31 +319,7 @@
                 "image code"
             ],
             images_upload_url: "/ckeditor/upload",
-            /* images_upload_handler: function(blobInfo, success, failure) {
-                var xhr, formData;
-                xhr = new XMLHttpRequest();
-                xhr.withCredentials = false;
-                xhr.open('POST', '/ckeditor/upload');
-                var token = '{{ csrf_token() }}';
-                xhr.setRequestHeader("X-CSRF-Token", token);
-                xhr.onload = function() {
-                    var json;
-                    if (xhr.status != 200) {
-                        failure('HTTP Error: ' + xhr.status);
-                        return;
-                    }
-                    json = JSON.parse(xhr.responseText);
-
-                    if (!json || typeof json.location != 'string') {
-                        failure('Invalid JSON: ' + xhr.responseText);
-                        return;
-                    }
-                    success(json.location);
-                };
-                formData = new FormData();
-                formData.append('file', blobInfo.blob(), blobInfo.filename());
-                xhr.send(formData);
-            }, */
+            
             file_picker_types: 'image',
             file_picker_callback: function(cb, value, meta) {
                 var input = document.createElement('input');
@@ -387,12 +367,24 @@
         };
 
         tinymce.init(editor_config);
-    </script>
+    </script> -->
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     {!! Toastr::message() !!}
     <script>
+        $(document).ready(function() {
+            const timeout = 300000; // 900000 ms = 15 minutes
+            var idleTimer = 300000;
+            $('*').bind('mousemove click mouseup mousedown keydown keypress keyup submit change mouseenter scroll resize dblclick', function() {
+                clearTimeout(idleTimer);
+
+                idleTimer = setTimeout(function() {
+                    document.getElementById('logout-form').submit();
+                }, timeout);
+            });
+            $("body").trigger("mousemove");
+        });
         $(".contact-button").click(function() {
             event.preventDefault();
             $('html,body').animate({
@@ -442,25 +434,6 @@
     <!-- <script src="{{ asset('vendor/unisharp/laravel-ckeditor/ckeditor.js') }}"></script>
     <script src="{{ asset('vendor/unisharp/laravel-ckeditor/adapters/jquery.js') }}"></script> -->
 
-    <!-- <script type="text/javascript">
-        CKEDITOR.replace('blog-editor', {
-
-            height: 500,
-            filebrowserUploadUrl: "{{ route('ckeditor.upload', ['_token' => csrf_token() ])}}",
-            filebrowserUploadMethod: 'form'
-        });
-    </script> -->
-    <!-- <script>
-        $(document).ready(function() {
-            $('textarea').ckeditor();
-            CKEDITOR.replace('blog-editor', {
-                height: 400,
-                filebrowserUploadUrl: "{{route('ckeditor.upload', ['_token' => csrf_token() ])}}",
-                filebrowserUploadMethod: 'form'
-            })
-
-        })
-    </script> -->
     <script id="dsq-count-scr" src="//newreadermedia.disqus.com/count.js" async></script>
 </body>
 

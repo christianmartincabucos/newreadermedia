@@ -16,6 +16,13 @@ class BlogsController extends Controller
     {
         $this->middleware('auth');
     }
+    public function getCategory(){
+
+        $category = BlogCategory::where('status', 1)->orderBy('blog_category_id', 'desc')->get();
+        return response()->json([
+            'categories' => $category
+        ]); 
+    }
     public function index()
     {
         return view('blogs.index');
@@ -47,9 +54,8 @@ class BlogsController extends Controller
     {
         $datas      = Blog::where(['status' => 1, 'category_id' => 4 ])->orderBy('blog_id', 'desc')->paginate(5);
         $recent     = Blog::where(['status' => 1, 'category_id' => 4])->orderBy('blog_id', 'desc')->take(3)->get();
-        $categories = BlogCategory::where('status', 1)->orderBy('blog_category_id', 'desc')->get();
         
-        return view('blogs.newsletters.index', compact(['datas', 'recent', 'categories']));
+        return view('blogs.newsletters.index', compact(['datas', 'recent']));
     }
     public function logout(Request $request)
     {
@@ -96,17 +102,22 @@ class BlogsController extends Controller
     }
     public function store(Request $request)
     {
-        Blog::create([
-            'image' => $request->input('image'),
-            'category_id' => $request->input('category'),
-            'title' => $request->input('title'),
-            'meta_desc' => $request->input('meta-desc'),
-            'body'  => $request->input('blog-editor'),
-            'author'  => $request->input('author'),
-            
+        $data = Blog::create([
+                'image' => $request->input('image'),
+                'category_id' => $request->input('category'),
+                'title' => $request->input('title'),
+                'meta_desc' => $request->input('meta_desc'),
+                'body'  => $request->input('body'),
+                'author'  => $request->input('author'), 
         ]);
-        
-        return redirect()->route('blog-newsletters')->with('success', "Your blog has been submitted.");
+
+        if ($request->expectsJson()) {
+            return response()->json([
+                    'data' => $data,
+                    'message' => "Your blog has been submitted."
+                ]);
+        }
+        return redirect('/')->with('success', "Your blog has been submitted.");
 
     }
 }   
