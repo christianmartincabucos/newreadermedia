@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use App\BlogCategory;
 
 class HomeController extends Controller
@@ -15,6 +16,7 @@ class HomeController extends Controller
     public function __construct()
     {
         // $this->middleware('auth');
+        
     }
 
     /**
@@ -24,8 +26,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $categories = BlogCategory::where('status', 1)->orderBy('blog_category_id', 'desc')->get();
-
+        if (Auth::check()){
+            if (Auth::user()->is_verified == 0) {
+                return redirect('verify');
+            }
+        }
+        $categories = BlogCategory::where('status', 1)->orderBy('category_id', 'desc')->get();
+        
         return view('pages.index', compact('categories'));
     }
     public function verify()

@@ -6,11 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class BlogCategory extends Model
 {
-    protected $table = "blog_categories";
-    protected $primaryKey = "blog_category_id";
+    protected $table = 'blog_categories';
+    protected $primaryKey  = 'category_id';
     protected $fillable = ['category_name'];
 
     public function blog(){
-        return $this->hasOne('App\Blog');
+        return $this->hasMany('App\Blog');
     }
 }

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddUserTypeInUserTable extends Migration
+class CreateStatusReferenceTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,11 @@ class AddUserTypeInUserTable extends Migration
      */
     public function up()
     {
-        Schema::table('users', function (Blueprint $table) {
-            $table->string('user_type')->default('default')->after('email');
+        Schema::create('status_reference', function (Blueprint $table) {
+            $table->bigIncrements('status_id');
+            $table->string('status_code');
+            $table->string('status_name');
+            $table->timestamps();
         });
     }
 
@@ -25,8 +28,6 @@ class AddUserTypeInUserTable extends Migration
      */
     public function down()
     {
-        Schema::table('user', function (Blueprint $table) {
-            //
-        });
+        Schema::dropIfExists('status_reference');
     }
 }

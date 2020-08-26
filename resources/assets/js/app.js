@@ -11,7 +11,9 @@ require('./bootstrap');
 window.Vue = require('vue');
 import VueIziToast from "vue-izitoast";
 import "izitoast/dist/css/iziToast.min.css";
+import DataTable from "laravel-vue-datatable";
 
+Vue.use(DataTable);
 Vue.use(VueIziToast);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -20,6 +22,11 @@ Vue.use(VueIziToast);
  */
 
 Vue.component('form-blog', require('./components/CreateBlog.vue'));
+Vue.component('approve-blog', require('./components/ApprovePost.vue'));
+Vue.component('show-media', require('./components/ShowMedia.vue'));
+Vue.component("show-nmagazine", require("./components/ShowNmagazine.vue"));
+Vue.component("show-reviews", require("./components/ShowReviews.vue"));
+Vue.component("show-writing", require("./components/ShowWriting.vue"));
 
 Vue.config.productionTip = false;
 

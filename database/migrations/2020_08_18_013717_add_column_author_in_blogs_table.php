@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddUserTypeInUserTable extends Migration
+class AddColumnAuthorInBlogsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,8 @@ class AddUserTypeInUserTable extends Migration
      */
     public function up()
     {
-        Schema::table('users', function (Blueprint $table) {
-            $table->string('user_type')->default('default')->after('email');
+        Schema::table('blogs', function (Blueprint $table) {
+            $table->string('author')->after('body');
         });
     }
 
@@ -25,7 +25,7 @@ class AddUserTypeInUserTable extends Migration
      */
     public function down()
     {
-        Schema::table('user', function (Blueprint $table) {
+        Schema::table('blogs', function (Blueprint $table) {
             //
         });
     }

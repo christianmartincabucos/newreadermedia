@@ -25,7 +25,26 @@ Route::group(['middleware' => 'TwoFA'], function(){
     Route::get('/blogs/media', 'BlogsController@media')->name('blog-media');
     Route::get('/blogs/media/{slug}', 'BlogsController@mediashow')->name('blog-media-show');
 });
+
+Route::group(['middleware' => 'is_admin'], function () {
+    Route::get('/administrator', 'AdminController@admin')->name('administrator');
+    Route::prefix('administrator')->group(function () {
+        Route::get('/users', 'AdminController@adminusers')->name('admin.users');
+        Route::get('/media', 'BlogsController@adminmedia')->name('admin.media');
+        Route::get('/nmagazine', 'BlogsController@adminnmagazine')->name('admin.nmagazine');
+        Route::get('/writingtips', 'BlogsController@adminnwritingtips')->name('admin.writingtips');
+        Route::get('/reviews', 'BlogsController@adminreviews')->name('admin.reviews');
+        Route::get('/media/{blog}', 'BlogsController@showadminmedia')->name('admin.show');
+        Route::post('/approve/{blog}', 'BlogsController@approve')->name('admin.approve');
+        Route::post('/updateblog/{blog}', 'BlogsController@updateblog');
+        Route::post('/user/update/{user}', 'AdminController@update')->name('user.update');
+    });
+});
+
+Route::post('getstatus', 'StatusRefenceController@getStatus');
 Route::get('getcategory', 'BlogsController@getCategory');
+Route::get('getmedia', 'BlogsController@getmedia');
+Route::post('getmedia', 'BlogsController@getmedia');
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('verify' , 'VerifyOTPController@showverifyform');
 Route::post('verifyOTP' ,'VerifyOTPController@verify')->name('verifyOTP');
@@ -42,9 +61,8 @@ Route::get('/screen-adaptation', 'BookToScreenController@index')->name('screen-a
 Route::get('/bookstore-display', 'BookstoreDisplayController@index')->name('bookstore-display');
 // Route::get('/to-read-list', 'FeaturedBooksController@index')->name('to-read-list');
 
-Route::get('/administrator', 'AdminController@admin')->name('administrator');
-
-Route::post('ckeditor/upload', 'BlogsController@upload')->name('ckeditor.upload');
+// Route::get('/administrator', 'AdminController@admin')->name('administrator');
+Route::post('tinymce/upload', 'BlogsController@upload')->name('tinymce.upload');
 
 Route::get('/marketing-and-partnership', 'PartnershipController@index')->name('marketing-and-partnership');
 Route::get('/press-release', 'PressReleaseController@index')->name('press-release');

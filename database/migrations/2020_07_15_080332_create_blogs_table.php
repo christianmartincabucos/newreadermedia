@@ -20,6 +20,7 @@ class CreateBlogsTable extends Migration
             $table->string('image');
             $table->string('slug')->unique();
             $table->text('body');
+            $table->bigInteger('status')->unsigned();
             $table->timestamps();
         });
     }

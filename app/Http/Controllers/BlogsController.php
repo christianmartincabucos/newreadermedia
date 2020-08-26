@@ -15,10 +15,72 @@ class BlogsController extends Controller
     public function __construct()
     {
         $this->middleware('auth');
+        
+    }
+
+    public function adminmedia()
+    {
+        return view('admin.blogs.media.media');
+    }
+    public function adminnmagazine()
+    {
+        return view('admin.blogs.nmagazine.nmagazine');
+    }
+    public function adminreviews()
+    {
+        return view('admin.blogs.reviews.reviews');
+    }
+    public function adminnwritingtips()
+    {
+        return view('admin.blogs.newsletters.newsletters');
+    }
+    public function showadminmedia(Blog $blog){
+        return response()->json([
+            'data' => $blog
+        ]); 
+        // return view('admin.blogs.media.edit', compact('blog'));
+    }
+    
+    public function updateblog(Request $request, Blog $blog){
+        $blog->status = $request->status;
+        $blog->save();
+
+        if ($request->expectsJson()) {
+            return response()->json([
+                'data' => $blog,
+                'message' => '`'.$blog->title.'` '."blog have been inactive."
+            ]);
+        }
+        return redirect()->route('admin.media');
+    }
+    
+    public function approve(Request $request, Blog $blog){
+        $blog->post_status = $request->post_status;
+        $blog->save();
+
+        if ($request->expectsJson()) {
+            return response()->json([
+                'data' => $blog,
+                'message' => '`'.$blog->title.'` '."blog have been approve."
+            ]);
+        }
+        return redirect()->route('admin.media');
+    }
+    public function getmedia(Request $request){
+        $blog = Blog::where([
+            'status'            => 1, 
+            'category_id'       => $request->category_id, 
+            'post_status'       => $request->post_status],)
+            ->orderBy('blog_id', 'desc')
+            ->paginate(7);
+            
+        return response()->json([
+            'data' => $blog
+        ]); 
     }
     public function getCategory(){
 
-        $category = BlogCategory::where('status', 1)->orderBy('blog_category_id', 'desc')->get();
+        $category = BlogCategory::where('status', 1)->orderBy('category_id', 'desc')->get();
         return response()->json([
             'categories' => $category
         ]); 
@@ -71,15 +133,26 @@ class BlogsController extends Controller
     }
     public function upload(Request $request)
     {
-        $imgpath = request()->file('upload')->store('uploaded', 'public');
+        dd($request->file('file'));
+        /* $folder = uniqid();
+        if (!\Storage::exists($folder)) {
+            \Storage::disk('posts')->makeDirectory($folder);
+        }
+
+        $imgpath = \Storage::disk('posts')->put($folder, request()->file('file'))->store('uploaded', 'public');
+
+        return \Response::json(['folder' => $folder, 'location' => '/storage/blogs/posts/' . $imgpath]);
+        
+        $imgpath = request()->file('file')->store('uploaded', 'public');
         return response()->json(['location' => '/' . $imgpath]);
-        if ($request->hasFile('upload')) {
-            $originName = $request->file('upload')->getClientOriginalName();
+         */
+        if ($request->hasFile('file')) {
+            $originName = $request->file('file')->getClientOriginalName();
             $fileName = pathinfo($originName, PATHINFO_FILENAME);
-            $extension = $request->file('upload')->getClientOriginalExtension();
+            $extension = $request->file('file')->getClientOriginalExtension();
             $fileName = $fileName . '_' . time() . '.' . $extension;
 
-            $imgpath = request()->file('upload')->move(public_path('storage/blogs/newsletter'), $fileName);
+            $imgpath = request()->file('file')->move(public_path('storage/blogs/newsletter'), $fileName);
             // $imgpath = request()->file('upload')->store('storage/blogs/newsletter', 'public');
             
             return response()->json(['location' => '/' . $imgpath]);
@@ -96,7 +169,7 @@ class BlogsController extends Controller
     {
         $datas      = Blog::where(['status' => 1, 'category_id' => 1])->orderBy('blog_id', 'desc')->paginate(5);
         $recent     = Blog::where(['status' => 1, 'category_id' => 1])->orderBy('blog_id','desc')->take(3)->get();
-        $categories = BlogCategory::where('status', 1)->orderBy('blog_category_id','desc')->get();
+        $categories = BlogCategory::where('status', 1)->orderBy('category_id','desc')->get();
 
         return view('blogs.new-reader-media.index', compact(['datas', 'recent', 'categories']));    
     }
@@ -117,7 +190,8 @@ class BlogsController extends Controller
                     'message' => "Your blog has been submitted."
                 ]);
         }
-        return redirect('/')->with('success', "Your blog has been submitted.");
+        return redirect('/');
 
     }
+
 }   

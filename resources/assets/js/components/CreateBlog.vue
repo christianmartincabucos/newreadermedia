@@ -28,7 +28,6 @@
                     <div class="form-group">
                         <label for="sel1">Category</label>
                         <select class="form-control" name="category" v-model="formData.category">
-                            <option value="0" selected>Select Blog Category</option>
                             <option v-for="category in blogcategories" v-bind:value="category.category_id" :key="category.blog_category_id">{{ category.category_name }}</option>
 
                         </select>
@@ -64,10 +63,50 @@
                         toolbar:
                         'insertfile undo redo | formatselect | bold italic backcolor | \
                         alignleft aligncenter alignright alignjustify | \
-                        bullist numlist outdent indent | removeformat | link image media | fullscreen | code | help'
+                        bullist numlist outdent indent | removeformat | link image media | fullscreen | code | help',
+                        /* without images_upload_url set, Upload tab won't show up*/
+                        convert_urls : false,
+                        automatic_uploads: false, 
+                        images_upload_base_path: '/public/storage/blogs/',
+                        relative_urls : false,
+
+                        // override default upload handler to simulate successful upload
+                        images_upload_handler: function (blobInfo, success, failure,folderName) {
+                            var xhr, formData;
+                            xhr = new XMLHttpRequest();
+                            xhr.withCredentials = false;
+                        
+                            xhr.open('POST', '/api/upload-image');
+                            var token = document.head.querySelector('[name=csrf-token]').content;
+                            xhr.setRequestHeader('X-CSRF-Token', token);
+                        
+                            xhr.onload = function() {
+                                var json;
+                            
+                                if (xhr.status != 200) {
+                                    failure('HTTP Error: ' + xhr.status);
+                                    return;
+                                }
+                                json = JSON.parse(xhr.responseText);
+
+                                if (!json || typeof json.location != 'string') {
+                                    failure('Invalid JSON: ' + xhr.responseText);
+                                    return;
+                                }
+                                success(json.location);
+                            
+                            };
+                        
+                            formData = new FormData();
+                            formData.append('file', blobInfo.blob(), blobInfo.filename());
+                    
+                            xhr.send(formData);
+                        
+                        }                
                     }"
                     v-model="formData.body" 
                     value="test"
+                    v-cloak
                     />
             </div>
             <div class="text-right">
@@ -118,7 +157,7 @@ export default {
             for (let i = 0; i < response.data.categories.length; i++) {
                
                 $this.blogcategories.push({
-                    'category_id' :response.data.categories[i]['blog_category_id'],
+                    'category_id' :response.data.categories[i]['category_id'],
                     'category_name' : response.data.categories[i]['category_name']
                 })
                 

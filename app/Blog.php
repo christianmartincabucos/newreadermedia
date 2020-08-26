@@ -7,9 +7,9 @@ use Illuminate\Support\Str;
 
 class Blog extends Model
 {
-    protected $table = "blogs";
-    protected $primaryKey = "blog_id";
-    protected $fillable=['image','category_id', 'title', 'meta_desc','body', 'author'];
+    protected $table = 'blogs';
+    protected $primaryKey = 'blog_id';
+    protected $fillable=['image','category_id', 'title', 'meta_desc','body', 'author' ];
 
     public function setTitleAttribute($value)
     {

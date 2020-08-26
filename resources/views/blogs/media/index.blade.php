@@ -42,6 +42,7 @@
                                 <div class="text-center">
                                     {{ $datas->links() }}
                                 </div>
+                                
                             </div>
                             <div class="col-md-3">
                                 <p><strong>RECENT POSTS</strong></p>

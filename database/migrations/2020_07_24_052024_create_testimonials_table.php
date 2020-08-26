@@ -17,7 +17,6 @@ class CreateTestimonialsTable extends Migration
             $table->bigIncrements('testimonial_id');
             $table->text('body');
             $table->bigInteger('user_id')->unsigned();
-            $table->foreign('user_id')->references('id')->on('users');
 
             $table->timestamps();
         });

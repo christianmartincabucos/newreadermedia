@@ -56,8 +56,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'newreadermagazine@newreadermagazine.com'),
-        'name' => env('MAIL_FROM_NAME', 'New Reader Media Login Verification Code'),
+        'address' => env('MAIL_FROM_ADDRESS', 'verification@newreadermedia.com'),
+        'name' => env('MAIL_FROM_NAME', 'New Reader Media'),
     ],
 
     /*
