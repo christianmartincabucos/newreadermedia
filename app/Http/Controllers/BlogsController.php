@@ -182,6 +182,7 @@ class BlogsController extends Controller
                 'meta_desc' => $request->input('meta_desc'),
                 'body'  => $request->input('body'),
                 'author'  => $request->input('author'), 
+                'posted_by'  => auth()->id(), 
         ]);
 
         if ($request->expectsJson()) {

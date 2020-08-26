@@ -16,7 +16,7 @@ class AdminController extends Controller
     }
     public function admin()
     {
-        if (Auth::user()->is_verified == 0) {
+        if (Auth::user()->is_verified == 6) {
             return redirect('verify');
         }
         $mediaapprove = Blog::where(['status' => 1, 'category_id' => 2, 'post_status' => 4])->count();

@@ -52,8 +52,8 @@ class LoginController extends Controller
 
     public function logout(Request $request)
     {
-        // dd(auth()->user()->update(['is_verified' => 0]));
-        auth()->user()->update(['is_verified' => 0]);
+        // dd(auth()->user()->update(['is_verified' => 6]));
+        auth()->user()->update(['is_verified' => 6]);
         $this->guard()->logout();
 
         $request->session()->invalidate();

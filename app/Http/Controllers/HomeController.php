@@ -26,8 +26,9 @@ class HomeController extends Controller
      */
     public function index()
     {
+
         if (Auth::check()){
-            if (Auth::user()->is_verified == 0) {
+            if (Auth::user()->is_verified == 6) {
                 return redirect('verify');
             }
         }

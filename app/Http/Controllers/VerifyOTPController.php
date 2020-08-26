@@ -16,7 +16,7 @@ class VerifyOTPController extends Controller
     {
         // dd(auth()->user()->OTP());
         if(request('OTP') == auth()->user()->OTP()){
-            auth()->user()->update(['is_verified' => true]);
+            auth()->user()->update(['is_verified' => 5]);
             return redirect('/');
         } 
 
@@ -27,7 +27,7 @@ class VerifyOTPController extends Controller
     {
         // dd(auth()->user()->is_verified());
         // dd(Auth::user()->is_verified);
-        if (Auth::user()->is_verified == 0){
+        if (Auth::user()->is_verified == 6){
             return view('verify-otp.verify');
         }
         return redirect('/');

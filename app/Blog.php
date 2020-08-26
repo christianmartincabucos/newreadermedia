@@ -9,13 +9,17 @@ class Blog extends Model
 {
     protected $table = 'blogs';
     protected $primaryKey = 'blog_id';
-    protected $fillable=['image','category_id', 'title', 'meta_desc','body', 'author' ];
+    protected $fillable=['image','category_id', 'title', 'meta_desc','body', 'author', 'posted_by' ];
 
     public function setTitleAttribute($value)
     {
 
         $this->attributes['title']  = $value;
         $this->attributes['slug'] = Str::slug($value);
+    }
+    public function users()
+    {
+        return $this->belongsTo('App\User');
     }
     public function category()
     {

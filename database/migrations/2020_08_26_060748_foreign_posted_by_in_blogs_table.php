@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddColumnIsVerifiesInUsersTable extends Migration
+class ForeignPostedByInBlogsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,8 @@ class AddColumnIsVerifiesInUsersTable extends Migration
      */
     public function up()
     {
-        Schema::table('users', function (Blueprint $table) {
-            $table->bigInteger('is_verified')->unsigned()->after('status');
+        Schema::table('blogs', function (Blueprint $table) {
+            $table->foreign('posted_by')->references('id')->on('users')->change();
         });
     }
 
@@ -25,7 +25,7 @@ class AddColumnIsVerifiesInUsersTable extends Migration
      */
     public function down()
     {
-        Schema::table('users', function (Blueprint $table) {
+        Schema::table('blogs', function (Blueprint $table) {
             //
         });
     }
