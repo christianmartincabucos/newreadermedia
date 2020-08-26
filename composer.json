@@ -7,11 +7,16 @@
     "require": {
         "php": ">=7.0.0",
         "brian2694/laravel-toastr": "^5.5",
+        "doctrine/dbal": "^2.10",
+        "eduardokum/laravel-mail-auto-embed": "^1.0",
         "fideloper/proxy": "~3.3",
         "laravel/framework": "5.5.*",
         "laravel/tinker": "~1.0",
+        "parsedown/laravel": "^1.2",
         "spatie/laravel-newsletter": "^4.2",
-        "watson/canonical": "^1.0"
+        "unisharp/laravel-ckeditor": "^4.7",
+        "watson/canonical": "^1.0",
+        "yajra/laravel-disqus": "^1.2"
     },
     "require-dev": {
         "filp/whoops": "~2.0",

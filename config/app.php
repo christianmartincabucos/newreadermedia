@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'NRMedia'),
 
     /*
     |--------------------------------------------------------------------------
@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+    'url' => env('APP_URL', 'http://127.0.0.1:8000'),
 
     /*
     |--------------------------------------------------------------------------
@@ -168,14 +168,17 @@ return [
          * Package Service Providers...
          */
         Brian2694\Toastr\ToastrServiceProvider::class,
+        Parsedown\Providers\ParsedownServiceProvider::class,
         /*
          * Application Service Providers...
          */
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
+        Unisharp\Ckeditor\ServiceProvider::class,
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        App\Providers\RouteServiceProvider::class,  
+        Yajra\Disqus\DisqusServiceProvider::class
 
     ],
 

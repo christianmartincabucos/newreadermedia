@@ -14,7 +14,7 @@
                             <div class="col-md-12 ">
                                 <h1 class="header-white">Blogs
 
-                                <a class="btn btn-maron btn-sm float-right btn-curve">Create Blog</a>
+                                    <a class="btn btn-maron btn-sm float-right btn-curve" data-toggle="modal" data-target="#myModal">Create Blog</a>
                                 </h1>
                             </div>
                             <div class="col-md-9 right-divider">
@@ -236,4 +236,26 @@
 
     </div>
 </div>
+<!-- <div class="modal fade" id="myModal" style="padding-right:0px!important;">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h4 class="modal-title">Modal Heading</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <div class="modal-body">
+                    <textarea name="blog-editor" id="blog-editor" style="color:#000!important; visibility: visible!important;">
+                        This is my textarea to be replaced with CKEditor 4.
+                    </textarea>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div> -->
 @endsection

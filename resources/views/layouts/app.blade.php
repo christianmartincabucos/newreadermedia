@@ -27,6 +27,32 @@
     <link rel="shortcut icon" href="{{{ url('storage/nrmedia-logo2.png') }}}">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <style>
+        .panel-review {
+            font-weight: bold;
+            background: #ddd;
+            color: #000;
+            padding: 5rem;
+            border-radius: 15px 40px 100px 20px;
+        }
+
+        .px-5 {
+            padding-left: 5rem !important;
+            padding-right: 5rem !important;
+        }
+
+        .box-section a {
+            color: #fff !important;
+            text-shadow: none !important;
+        }
+
+        .box-section a:hover {
+            font-weight: bold;
+        }
+
+        .cke_source {
+            color: #000 !important;
+        }
+
         .panel-default>.panel-heading {
             margin-bottom: 22px;
             /* background-color: #fff; */
@@ -43,10 +69,11 @@
             color: #fff;
         }
 
-        .btn-maron{
-            border-color: #B42828!important;
+        .btn-maron {
+            border-color: #B42828 !important;
             background-color: transparent !important;
         }
+
         .btn-maron:hover {
             background-color: #B42828 !important;
         }
@@ -56,15 +83,56 @@
         }
 
         .float-right {
-            float: right !important;git 
+            float: right !important;
             margin-right: 5px;
         }
 
         .btn-curve {
             /* border-radius: 5px 5px 25px!important; */
         }
+
+        .modal-dialog {
+            width: 98% !important;
+        }
+
+        .modal {
+            color: #fff !important;
+            border-radius: 5px !important;
+        }
+
+        .modal .modal-header,
+        .modal-footer {
+            background: rgb(180, 40, 40) !important;
+            padding: 5px !important;
+        }
+
+        .modal .modal-content {
+            border-radius: .3rem !important;
+            background: rgba(0, 0, 0, 0.9) !important;
+        }
+
+        /* .pagination>li>a,
+        .pagination>li>span {
+            background-color: #333 !important;
+            border: 1px solid #ddd !important;
+        }
+        */
+        .pagination>li>a:hover {
+            background-color: #333 !important;
+        }
+
+        .pagination>li>a,
+        .pagination>li>span {
+            background-color: rgba(0, 0, 0, 0.9) !important;
+            border: 1px solid #a94442 !important;
+        }
+
+        /*  .modal-content{
+            height: 100%!important;
+        } */
     </style>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125947986-1"></script>
+
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -111,7 +179,8 @@
 
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    <!-- New Reader Media -->
+                    <img src="{{ asset('storage/nrmedia.png')}}" style="width:70px;">
                 </a>
             </div>
 
@@ -128,6 +197,8 @@
                     <li><a href="{{ route('login') }}">Login</a></li>
                     <li><a href="{{ route('register') }}">Register</a></li>
                     @else
+                    @if(Auth::user()->is_verified != 0)
+                    <li> <a data-toggle="modal" data-target="#myModal">Create Blog</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>
                             {{ Auth::user()->name }} <span class="caret"></span>
@@ -135,17 +206,18 @@
 
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="{{ route('signout') }}" onclick="event.preventDefault();
+                                <a href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                     Logout
                                 </a>
 
-                                <form id="logout-form" action="{{ route('signout') }}" method="POST" style="display: none;">
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                     {{ csrf_field() }}
                                 </form>
                             </li>
                         </ul>
                     </li>
+                    @endif
                     @endguest
                 </ul>
             </div>
@@ -162,9 +234,8 @@
         </video>
     </div>
     <div id="app">
-        @guest
-        @else
-        <div class="container">
+        <div class="container hide-show">
+
             <div id="banner" style="height:120px;background:url({{{ url('storage/reel-bg4.jpg') }}});background-size: cover;border-bottom: 1px solid rgba(255,255,255,.2);padding:0;">
 
                 <div style="">
@@ -199,14 +270,16 @@
                             <li class="{{{ (Request::is(['bookstore-display', 'bookstore-display/*']) ? 'active' : '') }}}"><a href="{{ url('/bookstore-display') }}">Bookstore Display</a></li>
 
                             <li class="  {{{ (Request::is(['spotlight', 'spotlight/*']) ? 'active' : '') }}}"><a href="{{ url('/spotlight') }}">Spotlight</a></li>
+
                             <li class="dropdown ">
                                 <a href="{{ url('/blogs') }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blogs</a>
                                 <ul class="dropdown-menu">
-                                    <li class="{{{ (Request::is(['blogs/editors-picks']) ? 'active' : '') }}}"><a href="{{ url('/blogs/editors-picks') }}">Editor's Picks</a></li>
-                                    <li class=" {{{ (Request::is(['blogs/*']) ? 'active' : '') }}}"><a href="{{ url('/blogs') }}">Writing Tips</a></li>
-                                    <li class=" {{{ (Request::is(['blogs/*']) ? 'active' : '') }}}"><a href="{{ url('/blogs') }}">Humor</a></li>
-                                    <li class="{{{ (Request::is(['blogs/arts-and-culture']) ? 'active' : '') }}}"><a href="{{ url('/blogs/arts-and-culture') }}">Arts and Culture</a></li>
-                                    <li class=" {{{ (Request::is(['blogs/*']) ? 'active' : '') }}}"><a href="{{ url('/blogs') }}">News</a></li>
+                                    <li class="{{{ (Request::is(['blogs-media']) ? 'active' : '') }}}"><a href="{{ url('/blogs/media') }}">Media</a></li>
+                                    <li class=" {{{ (Request::is(['blog-nrm/*']) ? '' : '') }}}"><a href="{{ url('/blogs/new-reader-media') }}">NMagazine</a></li>
+                                    <li class=" {{{ (Request::is(['reviews/*']) ? '' : '') }}}"><a href="{{ url('/blogs/reviews') }}">Reviews</a></li>
+                                    <!-- <li class=" {{{ (Request::is(['blogs/*']) ? '' : '') }}}"><a href="{{ url('/blogs') }}"></a></li> -->
+                                    <!-- <li class="{{{ (Request::is(['blogs/arts-and-culture']) ? '' : '') }}}"><a href="{{ url('/blogs/arts-and-culture') }}">Arts and Culture</a></li> -->
+                                    <li class=" {{{ (Request::is(['blogs-newsletters*']) ? '' : '') }}}"><a href="{{ url('/blogs/newsletters') }}">Writing Tips</a></li>
                                 </ul>
                             </li>
                             {{-- <li class="{{{ (Request::is(['partnership', 'partnership/*']) ? 'active' : '') }}}"><a href="{{ url('/partnership') }}" style="border-radius:0">Partnership</a></li> --}}
@@ -226,17 +299,92 @@
                 </div>
             </nav>
         </div>
-        @endguest
+
         @yield('content')
 
         <a href="#app" class="back-to-top" style="display: inline;color:#fff"><i class="fa fa-arrow-circle-up"></i></a>
     </div>
 
+    <!-- <script src="{{ asset('tinymce/tinymce.js') }}"></script> -->
+    <!-- <script>
+        var editor_config = {
+            path_absolute: "{{ URL::to('/') }}/",
+            selector: "textarea",
+            height: 400,
+            plugins: [
+                "advlist autolink lists link image charmap print preview hr anchor pagebreak",
+                "searchreplace wordcount visualblocks visualchars code fullscreen",
+                "insertdatetime media nonbreaking save table contextmenu directionality",
+                "emoticons template paste textcolor colorpicker textpattern",
+                "image code"
+            ],
+            images_upload_url: "/ckeditor/upload",
+            
+            file_picker_types: 'image',
+            file_picker_callback: function(cb, value, meta) {
+                var input = document.createElement('input');
+                input.setAttribute('type', 'file');
+                input.setAttribute('accept', 'image/*');
+                input.onchange = function() {
+                    var file = this.files[0];
+
+                    var reader = new FileReader();
+                    reader.readAsDataURL(file);
+                    reader.onload = function() {
+                        var id = 'blobid' + (new Date()).getTime();
+                        var blobCache = tinymce.activeEditor.editorUpload.blobCache;
+                        var base64 = reader.result.split(',')[1];
+                        var blobInfo = blobCache.create(id, file, base64);
+                        blobCache.add(blobInfo);
+                        cb(blobInfo.blobUri(), {
+                            title: file.name
+                        });
+                    };
+                };
+                input.click();
+            },
+            toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image media | fullscreen | code",
+            relative_urls: false,
+            file_browser_callback: function(field_name, url, type, win) {
+                var x = window.innerWidth || document.documentElement.clientWidth || document.getElementByTagName('body')[0].clientWidth;
+                var y = window.innerHeight || document.documentElement.clientHeight || document.grtElementByTagName('body')[0].clientHeight;
+                var cmsURL = editor_config.path_absolute + 'laravel-filemanaget?field_name' + field_name;
+                if (type = 'image') {
+                    cmsURL = cmsURL + '&type=Images';
+                } else {
+                    cmsUrl = cmsURL + '&type=Files';
+                }
+
+                tinyMCE.activeEditor.windowManager.open({
+                    file: cmsURL,
+                    title: 'Filemanager',
+                    width: x * 0.8,
+                    height: y * 0.8,
+                    resizeble: 'yes',
+                    close_previous: 'no'
+                });
+            }
+        };
+
+        tinymce.init(editor_config);
+    </script> -->
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     {!! Toastr::message() !!}
     <script>
+        $(document).ready(function() {
+            const timeout = 300000; // 900000 ms = 15 minutes
+            var idleTimer = 300000;
+            $('*').bind('mousemove click mouseup mousedown keydown keypress keyup submit change mouseenter scroll resize dblclick', function() {
+                clearTimeout(idleTimer);
+
+                idleTimer = setTimeout(function() {
+                    document.getElementById('logout-form').submit();
+                }, timeout);
+            });
+            $("body").trigger("mousemove");
+        });
         $(".contact-button").click(function() {
             event.preventDefault();
             $('html,body').animate({
@@ -283,6 +431,10 @@
 
         });
     </script>
+    <!-- <script src="{{ asset('vendor/unisharp/laravel-ckeditor/ckeditor.js') }}"></script>
+    <script src="{{ asset('vendor/unisharp/laravel-ckeditor/adapters/jquery.js') }}"></script> -->
+
+    <script id="dsq-count-scr" src="//newreadermedia.disqus.com/count.js" async></script>
 </body>
 
 </html>

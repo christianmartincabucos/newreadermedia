@@ -4,10 +4,14 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use App\Mail\OTPMail; 
+use Illuminate\Http\Request; 
+use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Mail;
 
 class LoginController extends Controller
 {
-    /*
+    /* 
     |--------------------------------------------------------------------------
     | Login Controller
     |--------------------------------------------------------------------------
@@ -25,7 +29,37 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/verify';
+
+    /**
+     * Attempt to log the user into the application.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return bool
+     */
+    protected function attemptLogin(Request $request)
+    {
+        $result = $this->guard()->attempt(
+            $this->credentials($request),
+            $request->filled('remember')
+        );   
+        if($result){ 
+            // dd(auth()->user());
+            auth()->user()->sendOTP();
+        }
+        return $result;
+    }
+
+    public function logout(Request $request)
+    {
+        // dd(auth()->user()->update(['is_verified' => 6]));
+        auth()->user()->update(['is_verified' => 6]);
+        $this->guard()->logout();
+
+        $request->session()->invalidate();
+
+        return redirect('/');
+    }
 
     /**
      * Create a new controller instance.

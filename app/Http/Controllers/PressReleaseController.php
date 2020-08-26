@@ -8,6 +8,6 @@ class PressReleaseController extends Controller
 {
     public function index()
     {
-        return view('press-release.index');
+        // return view('press-release.index');
     }
 }

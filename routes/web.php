@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use App\Mail\ContactMail;
 use Illuminate\Support\Facades\Mail;
+use App\BlogCategory;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,19 +14,46 @@ use Illuminate\Support\Facades\Mail;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::group(['middleware' => 'TwoFA'], function(){
+    Route::get('/blog/newsletters/{slug}', 'BlogsController@shownewsletters')->name('blog-shownewsletters');
+    Route::get('/blogs/newsletters', 'BlogsController@newsletters')->name('blog-newsletters');
+    Route::post('/blog/post', 'BlogsController@store')->name('blog.post');
+    Route::get('/blogs/reviews', 'TestimonialController@index')->name('reviews');
+    Route::get('/blogs', 'BlogsController@index')->name('blogs');
+    Route::get('/blog/new-reader-media/{blog}', 'BlogsController@show')->name('blog-show');
+    Route::get('/blogs/new-reader-media', 'BlogsController@newreadermedia')->name('blog-nrm');
+    Route::get('/blogs/media', 'BlogsController@media')->name('blog-media');
+    Route::get('/blogs/media/{slug}', 'BlogsController@mediashow')->name('blog-media-show');
+});
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/', 'PageController@index')->name('home');
+Route::group(['middleware' => 'is_admin'], function () {
+    Route::get('/administrator', 'AdminController@admin')->name('administrator');
+    Route::prefix('administrator')->group(function () {
+        Route::get('/users', 'AdminController@adminusers')->name('admin.users');
+        Route::get('/media', 'BlogsController@adminmedia')->name('admin.media');
+        Route::get('/nmagazine', 'BlogsController@adminnmagazine')->name('admin.nmagazine');
+        Route::get('/writingtips', 'BlogsController@adminnwritingtips')->name('admin.writingtips');
+        Route::get('/reviews', 'BlogsController@adminreviews')->name('admin.reviews');
+        Route::get('/media/{blog}', 'BlogsController@showadminmedia')->name('admin.show');
+        Route::post('/approve/{blog}', 'BlogsController@approve')->name('admin.approve');
+        Route::post('/updateblog/{blog}', 'BlogsController@updateblog');
+        Route::post('/user/update/{user}', 'AdminController@update')->name('user.update');
+    });
+});
+
+Route::post('getstatus', 'StatusRefenceController@getStatus');
+Route::get('getcategory', 'BlogsController@getCategory');
+Route::get('getmedia', 'BlogsController@getmedia');
+Route::post('getmedia', 'BlogsController@getmedia');
+Route::get('/', 'HomeController@index')->name('home');
+Route::get('verify' , 'VerifyOTPController@showverifyform');
+Route::post('verifyOTP' ,'VerifyOTPController@verify')->name('verifyOTP');
+Route::post('resendOTP', 'ResendController@resend')->name('resendOTP');
 
 Auth::routes();
-Route::post('signout', 'BlogsController@logout')->name('signout');
 Route::post('subscriber', 'SubscriberController@store')->name('subscriber.store');
 Route::post('subscriber/delete', 'SubscriberController@delete')->name('subscriber.delete');
 
-// Route::get('/home', 'HomeController@index')->name('dashboard');
 Route::get('/about', 'PageController@about')->name('about');
 // Route::get('/contribute', 'PageController@contribute')->name('contribute');
 // Route::get('/services', 'ServicesController@index')->name('services');
@@ -33,7 +61,9 @@ Route::get('/screen-adaptation', 'BookToScreenController@index')->name('screen-a
 Route::get('/bookstore-display', 'BookstoreDisplayController@index')->name('bookstore-display');
 // Route::get('/to-read-list', 'FeaturedBooksController@index')->name('to-read-list');
 
-Route::get('/blogs', 'BlogsController@index')->name('blogs');
+// Route::get('/administrator', 'AdminController@admin')->name('administrator');
+Route::post('tinymce/upload', 'BlogsController@upload')->name('tinymce.upload');
+
 Route::get('/marketing-and-partnership', 'PartnershipController@index')->name('marketing-and-partnership');
 Route::get('/press-release', 'PressReleaseController@index')->name('press-release');
 Route::get('/author-interview', 'AuthorInterviewController@index')->name('author-interview');

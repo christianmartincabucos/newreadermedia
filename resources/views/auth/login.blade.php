@@ -1,4 +1,12 @@
 @extends('layouts.app')
+@guest
+<style>
+    .hide-show{
+        display: none!important;
+    }
+</style>
+@else
+@endguest
 
 @section('content')
 <div class="container">
