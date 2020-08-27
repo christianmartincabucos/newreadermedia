@@ -188,16 +188,16 @@ export default {
         saveBlog(e, data){
             switch (e) {
                 case 1:
-                    if(this.formData.title == null){
+                    if(this.formData.title == ''){
                         return this.$toast.warning('Title is required.', "Warning", {timeout: 2000, position:'topRight'});
                     }
-                    if(this.formData.meta_desc == null){
+                    if(this.formData.meta_desc == ''){
                         return this.$toast.warning('Meta Description is required.', "Warning", {timeout: 2000, position:'topRight'});
                     }
                     if(this.formData.meta_desc == '0'){
                         return this.$toast.warning('Category is required.', "Warning", {timeout: 2000, position:'topRight'});
                     }
-                    if(this.formData.body == null){
+                    if(this.formData.body == ''){
                         return this.$toast.warning('Body Description is required.', "Warning", {timeout: 2000, position:'topRight'});
                     }
                     this.callAxios('post', '/blog/post', this.formData, 1)

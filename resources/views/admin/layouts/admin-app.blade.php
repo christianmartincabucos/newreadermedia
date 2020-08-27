@@ -79,7 +79,7 @@
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
-            <a href="index3.html" class="brand-link">
+            <a href="{{ route('administrator') }}" class="brand-link">
                 <span class="brand-text font-weight-light">New Reader Media | Admin</span>
             </a>
 
@@ -90,7 +90,7 @@
                     <div class="image">
                     </div>
                     <div class="info">
-                        <a href="#" class="d-block"> {{ Auth::user()->name }}
+                        <a class="d-block"> {{ Auth::user()->name }}
                         </a>
                     </div>
                 </div>
@@ -106,14 +106,7 @@
                                 </p>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a href="/administrator/users" class="nav-link">
-                                <i class="nav-icon fas fa-user"></i>
-                                <p>
-                                    Users
-                                </p>
-                            </a>
-                        </li>
+
                         <li class="nav-item has-treeview">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-blog"></i>
@@ -148,6 +141,22 @@
                                     </a>
                                 </li>
                             </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/administrator/users" class="nav-link">
+                                <i class="nav-icon fas fa-user"></i>
+                                <p>
+                                    Users
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/administrator/status-reference" class="nav-link">
+                                <i class="nav-icon fas fa-list"></i>
+                                <p>
+                                    Status Reference
+                                </p>
+                            </a>
                         </li>
                         <!-- <li class="nav-item has-treeview">
                             <a href="#" class="nav-link">

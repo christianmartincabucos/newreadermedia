@@ -1380,7 +1380,7 @@ var isNullOrUndefined = function (value) { return value === null || value === un
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(148);
-module.exports = __webpack_require__(205);
+module.exports = __webpack_require__(208);
 
 
 /***/ }),
@@ -1424,6 +1424,7 @@ Vue.component('show-media', __webpack_require__(193));
 Vue.component("show-nmagazine", __webpack_require__(196));
 Vue.component("show-reviews", __webpack_require__(199));
 Vue.component("show-writing", __webpack_require__(202));
+Vue.component("status-reference", __webpack_require__(205));
 
 Vue.config.productionTip = false;
 
@@ -52958,16 +52959,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         saveBlog: function saveBlog(e, data) {
             switch (e) {
                 case 1:
-                    if (this.formData.title == null) {
+                    if (this.formData.title == '') {
                         return this.$toast.warning('Title is required.', "Warning", { timeout: 2000, position: 'topRight' });
                     }
-                    if (this.formData.meta_desc == null) {
+                    if (this.formData.meta_desc == '') {
                         return this.$toast.warning('Meta Description is required.', "Warning", { timeout: 2000, position: 'topRight' });
                     }
                     if (this.formData.meta_desc == '0') {
                         return this.$toast.warning('Category is required.', "Warning", { timeout: 2000, position: 'topRight' });
                     }
-                    if (this.formData.body == null) {
+                    if (this.formData.body == '') {
                         return this.$toast.warning('Body Description is required.', "Warning", { timeout: 2000, position: 'topRight' });
                     }
                     this.callAxios('post', '/blog/post', this.formData, 1);
@@ -53798,7 +53799,6 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 //
 //
 //
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -53824,7 +53824,6 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
         };
     },
     created: function created() {
-        this.getMedia(1);
         this.getStatus('/getstatus');
     },
 
@@ -53863,6 +53862,8 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
             }
         },
         getStatus: function getStatus(endpoint) {
+            var _this = this;
+
             var $this = this;
             axios.post(endpoint, { 'status': 'BLOGSTATUS' }).then(function (_ref) {
                 var _$this$postStatus;
@@ -53870,6 +53871,8 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
                 var data = _ref.data;
 
                 (_$this$postStatus = $this.postStatus).push.apply(_$this$postStatus, _toConsumableArray(data.data));
+                $this.post_status = _this.postStatus[0].status_id;
+                _this.getMedia(1);
             });
         },
         getMedia: function getMedia(e, data) {
@@ -53877,6 +53880,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 
             switch (e) {
                 case 1:
+                    data != undefined ? this.url = data : this.url;
                     this.callAxios('post', this.url, { 'category_id': 2, 'post_status': this.post_status || 3 }, 2);
                     break;
                 case 2:
@@ -53921,8 +53925,6 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
             }
         },
         callAxios: function callAxios(http, url, data, e) {
-            var _this = this;
-
             var $this = this;
             axios({ method: http, url: url, data: data }).then(function (_ref3) {
                 var data = _ref3.data;
@@ -53932,10 +53934,10 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
                         $this.approve(2, data);
                         break;
                     case 2:
-                        _this.getMedia(2, data);
+                        $this.getMedia(2, data);
                         break;
                     case 3:
-                        _this.updateBlog(2, data);
+                        $this.updateBlog(2, data);
                         break;
                     default:
                         break;
@@ -53978,84 +53980,80 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", [
     _c("div", { staticClass: "d-flex justify-content-between" }, [
-      _c("div", { staticClass: "col-md-4" }, [
-        _c("div", { staticClass: "form-group" }, [
-          _c("label", { attrs: { for: "sel1" } }, [_vm._v("Status Category")]),
-          _vm._v(" "),
-          _c(
-            "select",
-            {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.post_status,
-                  expression: "post_status"
-                }
-              ],
-              staticClass: "custom-select custom-select-sm",
-              attrs: { name: "status" },
-              on: {
-                change: [
-                  function($event) {
-                    var $$selectedVal = Array.prototype.filter
-                      .call($event.target.options, function(o) {
-                        return o.selected
-                      })
-                      .map(function(o) {
-                        var val = "_value" in o ? o._value : o.value
-                        return val
-                      })
-                    _vm.post_status = $event.target.multiple
-                      ? $$selectedVal
-                      : $$selectedVal[0]
-                  },
-                  function($event) {
-                    _vm.getMedia(1)
-                  }
-                ]
-              }
-            },
-            _vm._l(_vm.postStatus, function(post) {
-              return _c(
-                "option",
-                { key: post.status_id, domProps: { value: post.status_id } },
-                [_vm._v(_vm._s(post.status_name))]
-              )
-            })
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-md-4" }, [
-        _c("div", { staticClass: "form-group" }, [
-          _c("label", { attrs: { for: "sel1" } }, [_vm._v("Status Category")]),
-          _vm._v(" "),
-          _c("input", {
+      _c("div", { staticClass: "form-group" }, [
+        _c("label", { attrs: { for: "sel1" } }, [_vm._v("Status Category")]),
+        _vm._v(" "),
+        _c(
+          "select",
+          {
             directives: [
               {
                 name: "model",
                 rawName: "v-model",
-                value: _vm.search,
-                expression: "search"
+                value: _vm.post_status,
+                expression: "post_status"
               }
             ],
-            staticClass: "form-control form-control-sm",
-            attrs: { type: "text", placeholder: "Search..." },
-            domProps: { value: _vm.search },
+            staticClass: "custom-select custom-select-sm",
+            attrs: { name: "status" },
             on: {
-              input: [
+              change: [
                 function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.search = $event.target.value
+                  var $$selectedVal = Array.prototype.filter
+                    .call($event.target.options, function(o) {
+                      return o.selected
+                    })
+                    .map(function(o) {
+                      var val = "_value" in o ? o._value : o.value
+                      return val
+                    })
+                  _vm.post_status = $event.target.multiple
+                    ? $$selectedVal
+                    : $$selectedVal[0]
                 },
-                _vm.resetPagination
+                function($event) {
+                  _vm.getMedia(1)
+                }
               ]
             }
+          },
+          _vm._l(_vm.postStatus, function(post) {
+            return _c(
+              "option",
+              { key: post.status_id, domProps: { value: post.status_id } },
+              [_vm._v(_vm._s(post.status_longcodename))]
+            )
           })
-        ])
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "form-group" }, [
+        _c("label", { attrs: { for: "sel1" } }, [_vm._v("Status Category")]),
+        _vm._v(" "),
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.search,
+              expression: "search"
+            }
+          ],
+          staticClass: "form-control form-control-sm",
+          attrs: { type: "text", placeholder: "Search..." },
+          domProps: { value: _vm.search },
+          on: {
+            input: [
+              function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.search = $event.target.value
+              },
+              _vm.resetPagination
+            ]
+          }
+        })
       ])
     ]),
     _vm._v(" "),
@@ -54169,51 +54167,85 @@ var render = function() {
       ]
     ),
     _vm._v(" "),
-    _vm.pagination.next_page_url
-      ? _c(
-          "div",
-          { staticClass: "pagination  d-flex justify-content-center" },
-          [
-            _c(
-              "button",
-              {
-                staticClass: "btn btn-outline-primary btn-sm",
-                attrs: { disabled: !_vm.pagination.prev_page_url },
-                on: {
-                  click: function($event) {
-                    _vm.fetchPaginate(_vm.pagination.prev_page_url)
-                  }
-                }
-              },
-              [_vm._v("Previous")]
-            ),
-            _vm._v(" "),
-            _c("span", [
-              _vm._v(
-                " Page " +
-                  _vm._s(_vm.pagination.current_page) +
-                  " of " +
-                  _vm._s(_vm.pagination.last_page) +
-                  " "
+    _c("div", { staticClass: "d-flex justify-content-center" }, [
+      _vm.blogs.length != 0
+        ? _c(
+            "ul",
+            { staticClass: "pagination" },
+            [
+              _c(
+                "li",
+                {
+                  staticClass: "page-item ",
+                  class: !_vm.pagination.prev_page_url ? "disabled" : ""
+                },
+                [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "page-link",
+                      on: {
+                        click: function($event) {
+                          _vm.fetchPaginate(_vm.pagination.prev_page_url)
+                        }
+                      }
+                    },
+                    [_vm._v("Previous")]
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _vm._l(_vm.pagination.last_page, function(page) {
+                return _c(
+                  "li",
+                  {
+                    key: page.index,
+                    staticClass: "page-item",
+                    class: _vm.pagination.current_page == page ? "active" : ""
+                  },
+                  [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "page-link",
+                        on: {
+                          click: function($event) {
+                            _vm.getMedia(1, "/getmedia?page=" + page)
+                          }
+                        }
+                      },
+                      [_vm._v(_vm._s(page))]
+                    )
+                  ]
+                )
+              }),
+              _vm._v(" "),
+              _c(
+                "li",
+                {
+                  staticClass: "page-item",
+                  class: !_vm.pagination.next_page_url ? "disabled" : ""
+                },
+                [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "page-link",
+                      on: {
+                        click: function($event) {
+                          _vm.fetchPaginate(_vm.pagination.next_page_url)
+                        }
+                      }
+                    },
+                    [_vm._v("Next")]
+                  )
+                ]
               )
-            ]),
-            _vm._v(" "),
-            _c(
-              "button",
-              {
-                staticClass: "btn btn-outline-primary btn-sm",
-                attrs: { disabled: !_vm.pagination.next_page_url },
-                on: {
-                  click: function($event) {
-                    _vm.fetchPaginate(_vm.pagination.next_page_url)
-                  }
-                }
-              },
-              [_vm._v("Next")]
-            )
-          ]
-        )
-      : _vm._e(),
+            ],
+            2
+          )
+        : _vm._e()
+    ]),
     _vm._v(" "),
     _c("div", { staticClass: "modal fade", attrs: { id: "myModal" } }, [
       _c("div", { staticClass: "modal-dialog modal-xl" }, [
@@ -54436,7 +54468,6 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
         };
     },
     created: function created() {
-        this.getMedia(1);
         this.getStatus('/getstatus');
     },
 
@@ -54475,6 +54506,8 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
             }
         },
         getStatus: function getStatus(endpoint) {
+            var _this = this;
+
             var $this = this;
             axios.post(endpoint, { 'status': 'BLOGSTATUS' }).then(function (_ref) {
                 var _$this$postStatus;
@@ -54482,6 +54515,8 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
                 var data = _ref.data;
 
                 (_$this$postStatus = $this.postStatus).push.apply(_$this$postStatus, _toConsumableArray(data.data));
+                $this.post_status = _this.postStatus[0].status_id;
+                _this.getMedia(1);
             });
         },
         getMedia: function getMedia(e, data) {
@@ -54489,6 +54524,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 
             switch (e) {
                 case 1:
+                    data != undefined ? this.url = data : this.url;
                     this.callAxios('post', this.url, { 'category_id': 1, 'post_status': this.post_status || 3 }, 2);
                     break;
                 case 2:
@@ -54533,7 +54569,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
             }
         },
         callAxios: function callAxios(http, url, data, e) {
-            var _this = this;
+            var _this2 = this;
 
             var $this = this;
             axios({ method: http, url: url, data: data }).then(function (_ref3) {
@@ -54541,13 +54577,13 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 
                 switch (e) {
                     case 1:
-                        $this.approve(2, data);
+                        _this2.approve(2, data);
                         break;
                     case 2:
-                        _this.getMedia(2, data);
+                        _this2.getMedia(2, data);
                         break;
                     case 3:
-                        _this.updateBlog(2, data);
+                        _this2.updateBlog(2, data);
                         break;
                     default:
                         break;
@@ -54564,14 +54600,14 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
             return '/getmedia';
         },
         filteredpost: function filteredpost() {
-            var _this2 = this;
+            var _this3 = this;
 
             var blogs = this.blogs;
             if (this.search) {
 
                 blogs = blogs.filter(function (row) {
                     return Object.keys(row).some(function (key) {
-                        return String(row[key]).toLowerCase().indexOf(_this2.search.toLowerCase()) > -1;
+                        return String(row[key]).toLowerCase().indexOf(_this3.search.toLowerCase()) > -1;
                     });
                 });
             }
@@ -54590,84 +54626,80 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", [
     _c("div", { staticClass: "d-flex justify-content-between" }, [
-      _c("div", { staticClass: "col-md-4" }, [
-        _c("div", { staticClass: "form-group" }, [
-          _c("label", { attrs: { for: "sel1" } }, [_vm._v("Status Category")]),
-          _vm._v(" "),
-          _c(
-            "select",
-            {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.post_status,
-                  expression: "post_status"
-                }
-              ],
-              staticClass: "custom-select custom-select-sm",
-              attrs: { name: "status" },
-              on: {
-                change: [
-                  function($event) {
-                    var $$selectedVal = Array.prototype.filter
-                      .call($event.target.options, function(o) {
-                        return o.selected
-                      })
-                      .map(function(o) {
-                        var val = "_value" in o ? o._value : o.value
-                        return val
-                      })
-                    _vm.post_status = $event.target.multiple
-                      ? $$selectedVal
-                      : $$selectedVal[0]
-                  },
-                  function($event) {
-                    _vm.getMedia(1)
-                  }
-                ]
-              }
-            },
-            _vm._l(_vm.postStatus, function(post) {
-              return _c(
-                "option",
-                { key: post.status_id, domProps: { value: post.status_id } },
-                [_vm._v(_vm._s(post.status_name))]
-              )
-            })
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-md-4" }, [
-        _c("div", { staticClass: "form-group" }, [
-          _c("label", { attrs: { for: "sel1" } }, [_vm._v("Status Category")]),
-          _vm._v(" "),
-          _c("input", {
+      _c("div", { staticClass: "form-group" }, [
+        _c("label", { attrs: { for: "sel1" } }, [_vm._v("Status Category")]),
+        _vm._v(" "),
+        _c(
+          "select",
+          {
             directives: [
               {
                 name: "model",
                 rawName: "v-model",
-                value: _vm.search,
-                expression: "search"
+                value: _vm.post_status,
+                expression: "post_status"
               }
             ],
-            staticClass: "form-control form-control-sm",
-            attrs: { type: "text", placeholder: "Search..." },
-            domProps: { value: _vm.search },
+            staticClass: "custom-select custom-select-sm",
+            attrs: { name: "status" },
             on: {
-              input: [
+              change: [
                 function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.search = $event.target.value
+                  var $$selectedVal = Array.prototype.filter
+                    .call($event.target.options, function(o) {
+                      return o.selected
+                    })
+                    .map(function(o) {
+                      var val = "_value" in o ? o._value : o.value
+                      return val
+                    })
+                  _vm.post_status = $event.target.multiple
+                    ? $$selectedVal
+                    : $$selectedVal[0]
                 },
-                _vm.resetPagination
+                function($event) {
+                  _vm.getMedia(1)
+                }
               ]
             }
+          },
+          _vm._l(_vm.postStatus, function(post) {
+            return _c(
+              "option",
+              { key: post.status_id, domProps: { value: post.status_id } },
+              [_vm._v(_vm._s(post.status_longcodename))]
+            )
           })
-        ])
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "form-group" }, [
+        _c("label", { attrs: { for: "sel1" } }, [_vm._v("Status Category")]),
+        _vm._v(" "),
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.search,
+              expression: "search"
+            }
+          ],
+          staticClass: "form-control form-control-sm",
+          attrs: { type: "text", placeholder: "Search..." },
+          domProps: { value: _vm.search },
+          on: {
+            input: [
+              function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.search = $event.target.value
+              },
+              _vm.resetPagination
+            ]
+          }
+        })
       ])
     ]),
     _vm._v(" "),
@@ -54731,7 +54763,9 @@ var render = function() {
                     )
                   ]),
                   _vm._v(" "),
-                  _c("td", { attrs: { align: "center" } }, [_vm._v("Media")]),
+                  _c("td", { attrs: { align: "center" } }, [
+                    _vm._v("NMagazine")
+                  ]),
                   _vm._v(" "),
                   _c("td", { attrs: { align: "center", width: "100px" } }, [
                     blog.post_status == 4
@@ -54781,51 +54815,85 @@ var render = function() {
       ]
     ),
     _vm._v(" "),
-    _vm.pagination.next_page_url
-      ? _c(
-          "div",
-          { staticClass: "pagination  d-flex justify-content-center" },
-          [
-            _c(
-              "button",
-              {
-                staticClass: "btn btn-outline-primary btn-sm",
-                attrs: { disabled: !_vm.pagination.prev_page_url },
-                on: {
-                  click: function($event) {
-                    _vm.fetchPaginate(_vm.pagination.prev_page_url)
-                  }
-                }
-              },
-              [_vm._v("Previous")]
-            ),
-            _vm._v(" "),
-            _c("span", [
-              _vm._v(
-                " Page " +
-                  _vm._s(_vm.pagination.current_page) +
-                  " of " +
-                  _vm._s(_vm.pagination.last_page) +
-                  " "
+    _c("div", { staticClass: "d-flex justify-content-center" }, [
+      _vm.blogs.length != 0
+        ? _c(
+            "ul",
+            { staticClass: "pagination" },
+            [
+              _c(
+                "li",
+                {
+                  staticClass: "page-item ",
+                  class: !_vm.pagination.prev_page_url ? "disabled" : ""
+                },
+                [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "page-link",
+                      on: {
+                        click: function($event) {
+                          _vm.fetchPaginate(_vm.pagination.prev_page_url)
+                        }
+                      }
+                    },
+                    [_vm._v("Previous")]
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _vm._l(_vm.pagination.last_page, function(page) {
+                return _c(
+                  "li",
+                  {
+                    key: page.index,
+                    staticClass: "page-item",
+                    class: _vm.pagination.current_page == page ? "active" : ""
+                  },
+                  [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "page-link",
+                        on: {
+                          click: function($event) {
+                            _vm.getMedia(1, "/getmedia?page=" + page)
+                          }
+                        }
+                      },
+                      [_vm._v(_vm._s(page))]
+                    )
+                  ]
+                )
+              }),
+              _vm._v(" "),
+              _c(
+                "li",
+                {
+                  staticClass: "page-item",
+                  class: !_vm.pagination.next_page_url ? "disabled" : ""
+                },
+                [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "page-link",
+                      on: {
+                        click: function($event) {
+                          _vm.fetchPaginate(_vm.pagination.next_page_url)
+                        }
+                      }
+                    },
+                    [_vm._v("Next")]
+                  )
+                ]
               )
-            ]),
-            _vm._v(" "),
-            _c(
-              "button",
-              {
-                staticClass: "btn btn-outline-primary btn-sm",
-                attrs: { disabled: !_vm.pagination.next_page_url },
-                on: {
-                  click: function($event) {
-                    _vm.fetchPaginate(_vm.pagination.next_page_url)
-                  }
-                }
-              },
-              [_vm._v("Next")]
-            )
-          ]
-        )
-      : _vm._e(),
+            ],
+            2
+          )
+        : _vm._e()
+    ]),
     _vm._v(" "),
     _c("div", { staticClass: "modal fade", attrs: { id: "myModal" } }, [
       _c("div", { staticClass: "modal-dialog modal-xl" }, [
@@ -55021,12 +55089,14 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 //
 //
 //
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
         var sortOrders = {};
-        var columns = [{ label: 'Body', name: 'body' }, { label: 'Author', name: 'author' }, { label: 'Category', name: 'category' }];
+        var columns = [{ label: 'Title', name: 'title' }, { label: 'Meta Description', name: 'meta description' }, { label: 'Author', name: 'author' }, { label: 'Category', name: 'category' }];
         columns.forEach(function (column) {
             sortOrders[column.name] = -1;
         });
@@ -55046,7 +55116,6 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
         };
     },
     created: function created() {
-        this.getMedia(1);
         this.getStatus('/getstatus');
     },
 
@@ -55085,6 +55154,8 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
             }
         },
         getStatus: function getStatus(endpoint) {
+            var _this = this;
+
             var $this = this;
             axios.post(endpoint, { 'status': 'BLOGSTATUS' }).then(function (_ref) {
                 var _$this$postStatus;
@@ -55092,6 +55163,8 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
                 var data = _ref.data;
 
                 (_$this$postStatus = $this.postStatus).push.apply(_$this$postStatus, _toConsumableArray(data.data));
+                $this.post_status = _this.postStatus[0].status_id;
+                _this.getMedia(1);
             });
         },
         getMedia: function getMedia(e, data) {
@@ -55099,6 +55172,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 
             switch (e) {
                 case 1:
+                    data != undefined ? this.url = data : this.url;
                     this.callAxios('post', this.url, { 'category_id': 3, 'post_status': this.post_status || 3 }, 2);
                     break;
                 case 2:
@@ -55143,7 +55217,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
             }
         },
         callAxios: function callAxios(http, url, data, e) {
-            var _this = this;
+            var _this2 = this;
 
             var $this = this;
             axios({ method: http, url: url, data: data }).then(function (_ref3) {
@@ -55151,13 +55225,13 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 
                 switch (e) {
                     case 1:
-                        $this.approve(2, data);
+                        _this2.approve(2, data);
                         break;
                     case 2:
-                        _this.getMedia(2, data);
+                        _this2.getMedia(2, data);
                         break;
                     case 3:
-                        _this.updateBlog(2, data);
+                        _this2.updateBlog(2, data);
                         break;
                     default:
                         break;
@@ -55174,14 +55248,14 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
             return '/getmedia';
         },
         filteredpost: function filteredpost() {
-            var _this2 = this;
+            var _this3 = this;
 
             var blogs = this.blogs;
             if (this.search) {
 
                 blogs = blogs.filter(function (row) {
                     return Object.keys(row).some(function (key) {
-                        return String(row[key]).toLowerCase().indexOf(_this2.search.toLowerCase()) > -1;
+                        return String(row[key]).toLowerCase().indexOf(_this3.search.toLowerCase()) > -1;
                     });
                 });
             }
@@ -55200,84 +55274,80 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", [
     _c("div", { staticClass: "d-flex justify-content-between" }, [
-      _c("div", { staticClass: "col-md-4" }, [
-        _c("div", { staticClass: "form-group" }, [
-          _c("label", { attrs: { for: "sel1" } }, [_vm._v("Status Category")]),
-          _vm._v(" "),
-          _c(
-            "select",
-            {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.post_status,
-                  expression: "post_status"
-                }
-              ],
-              staticClass: "custom-select custom-select-sm",
-              attrs: { name: "status" },
-              on: {
-                change: [
-                  function($event) {
-                    var $$selectedVal = Array.prototype.filter
-                      .call($event.target.options, function(o) {
-                        return o.selected
-                      })
-                      .map(function(o) {
-                        var val = "_value" in o ? o._value : o.value
-                        return val
-                      })
-                    _vm.post_status = $event.target.multiple
-                      ? $$selectedVal
-                      : $$selectedVal[0]
-                  },
-                  function($event) {
-                    _vm.getMedia(1)
-                  }
-                ]
-              }
-            },
-            _vm._l(_vm.postStatus, function(post) {
-              return _c(
-                "option",
-                { key: post.status_id, domProps: { value: post.status_id } },
-                [_vm._v(_vm._s(post.status_name))]
-              )
-            })
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-md-4" }, [
-        _c("div", { staticClass: "form-group" }, [
-          _c("label", { attrs: { for: "sel1" } }, [_vm._v("Status Category")]),
-          _vm._v(" "),
-          _c("input", {
+      _c("div", { staticClass: "form-group" }, [
+        _c("label", { attrs: { for: "sel1" } }, [_vm._v("Status Category")]),
+        _vm._v(" "),
+        _c(
+          "select",
+          {
             directives: [
               {
                 name: "model",
                 rawName: "v-model",
-                value: _vm.search,
-                expression: "search"
+                value: _vm.post_status,
+                expression: "post_status"
               }
             ],
-            staticClass: "form-control form-control-sm",
-            attrs: { type: "text", placeholder: "Search..." },
-            domProps: { value: _vm.search },
+            staticClass: "custom-select custom-select-sm",
+            attrs: { name: "status" },
             on: {
-              input: [
+              change: [
                 function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.search = $event.target.value
+                  var $$selectedVal = Array.prototype.filter
+                    .call($event.target.options, function(o) {
+                      return o.selected
+                    })
+                    .map(function(o) {
+                      var val = "_value" in o ? o._value : o.value
+                      return val
+                    })
+                  _vm.post_status = $event.target.multiple
+                    ? $$selectedVal
+                    : $$selectedVal[0]
                 },
-                _vm.resetPagination
+                function($event) {
+                  _vm.getMedia(1)
+                }
               ]
             }
+          },
+          _vm._l(_vm.postStatus, function(post) {
+            return _c(
+              "option",
+              { key: post.status_id, domProps: { value: post.status_id } },
+              [_vm._v(_vm._s(post.status_longcodename))]
+            )
           })
-        ])
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "form-group" }, [
+        _c("label", { attrs: { for: "sel1" } }, [_vm._v("Status Category")]),
+        _vm._v(" "),
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.search,
+              expression: "search"
+            }
+          ],
+          staticClass: "form-control form-control-sm",
+          attrs: { type: "text", placeholder: "Search..." },
+          domProps: { value: _vm.search },
+          on: {
+            input: [
+              function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.search = $event.target.value
+              },
+              _vm.resetPagination
+            ]
+          }
+        })
       ])
     ]),
     _vm._v(" "),
@@ -55328,7 +55398,11 @@ var render = function() {
               _vm._l(_vm.filteredpost, function(blog) {
                 return _c("tr", { key: blog.blog_id }, [
                   _c("td", { attrs: { align: "center" } }, [
-                    _vm._v(_vm._s(blog.body))
+                    _vm._v(_vm._s(blog.title))
+                  ]),
+                  _vm._v(" "),
+                  _c("td", { attrs: { align: "center" } }, [
+                    _vm._v(_vm._s(blog.meta_desc))
                   ]),
                   _vm._v(" "),
                   _c("td", { attrs: { align: "center" } }, [
@@ -55337,7 +55411,7 @@ var render = function() {
                     )
                   ]),
                   _vm._v(" "),
-                  _c("td", { attrs: { align: "center" } }, [_vm._v("Media")]),
+                  _c("td", { attrs: { align: "center" } }, [_vm._v("Reviews")]),
                   _vm._v(" "),
                   _c("td", { attrs: { align: "center", width: "100px" } }, [
                     blog.post_status == 4
@@ -55387,51 +55461,85 @@ var render = function() {
       ]
     ),
     _vm._v(" "),
-    _vm.pagination.next_page_url
-      ? _c(
-          "div",
-          { staticClass: "pagination  d-flex justify-content-center" },
-          [
-            _c(
-              "button",
-              {
-                staticClass: "btn btn-outline-primary btn-sm",
-                attrs: { disabled: !_vm.pagination.prev_page_url },
-                on: {
-                  click: function($event) {
-                    _vm.fetchPaginate(_vm.pagination.prev_page_url)
-                  }
-                }
-              },
-              [_vm._v("Previous")]
-            ),
-            _vm._v(" "),
-            _c("span", [
-              _vm._v(
-                " Page " +
-                  _vm._s(_vm.pagination.current_page) +
-                  " of " +
-                  _vm._s(_vm.pagination.last_page) +
-                  " "
+    _c("div", { staticClass: "d-flex justify-content-center" }, [
+      _vm.blogs.length != 0
+        ? _c(
+            "ul",
+            { staticClass: "pagination" },
+            [
+              _c(
+                "li",
+                {
+                  staticClass: "page-item ",
+                  class: !_vm.pagination.prev_page_url ? "disabled" : ""
+                },
+                [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "page-link",
+                      on: {
+                        click: function($event) {
+                          _vm.fetchPaginate(_vm.pagination.prev_page_url)
+                        }
+                      }
+                    },
+                    [_vm._v("Previous")]
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _vm._l(_vm.pagination.last_page, function(page) {
+                return _c(
+                  "li",
+                  {
+                    key: page.index,
+                    staticClass: "page-item",
+                    class: _vm.pagination.current_page == page ? "active" : ""
+                  },
+                  [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "page-link",
+                        on: {
+                          click: function($event) {
+                            _vm.getMedia(1, "/getmedia?page=" + page)
+                          }
+                        }
+                      },
+                      [_vm._v(_vm._s(page))]
+                    )
+                  ]
+                )
+              }),
+              _vm._v(" "),
+              _c(
+                "li",
+                {
+                  staticClass: "page-item",
+                  class: !_vm.pagination.next_page_url ? "disabled" : ""
+                },
+                [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "page-link",
+                      on: {
+                        click: function($event) {
+                          _vm.fetchPaginate(_vm.pagination.next_page_url)
+                        }
+                      }
+                    },
+                    [_vm._v("Next")]
+                  )
+                ]
               )
-            ]),
-            _vm._v(" "),
-            _c(
-              "button",
-              {
-                staticClass: "btn btn-outline-primary btn-sm",
-                attrs: { disabled: !_vm.pagination.next_page_url },
-                on: {
-                  click: function($event) {
-                    _vm.fetchPaginate(_vm.pagination.next_page_url)
-                  }
-                }
-              },
-              [_vm._v("Next")]
-            )
-          ]
-        )
-      : _vm._e(),
+            ],
+            2
+          )
+        : _vm._e()
+    ]),
     _vm._v(" "),
     _c("div", { staticClass: "modal fade", attrs: { id: "myModal" } }, [
       _c("div", { staticClass: "modal-dialog modal-xl" }, [
@@ -55628,6 +55736,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 //
 //
 //
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -55653,7 +55762,6 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
         };
     },
     created: function created() {
-        this.getMedia(1);
         this.getStatus('/getstatus');
     },
 
@@ -55693,6 +55801,8 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
             }
         },
         getStatus: function getStatus(endpoint) {
+            var _this = this;
+
             var $this = this;
             axios.post(endpoint, { 'status': 'BLOGSTATUS' }).then(function (_ref) {
                 var _$this$postStatus;
@@ -55701,6 +55811,8 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 
                 console.log(data.data);
                 (_$this$postStatus = $this.postStatus).push.apply(_$this$postStatus, _toConsumableArray(data.data));
+                $this.post_status = _this.postStatus[0].status_id;
+                _this.getMedia(1);
             });
         },
         getMedia: function getMedia(e, data) {
@@ -55708,6 +55820,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 
             switch (e) {
                 case 1:
+                    data != undefined ? this.url = data : this.url;
                     this.callAxios('post', this.url, { 'category_id': 4, 'post_status': this.post_status || 3 }, 2);
                     break;
                 case 2:
@@ -55754,7 +55867,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
             }
         },
         callAxios: function callAxios(http, url, data, e) {
-            var _this = this;
+            var _this2 = this;
 
             var $this = this;
             axios({ method: http, url: url, data: data }).then(function (_ref3) {
@@ -55766,10 +55879,10 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
                         $this.approve(2, data);
                         break;
                     case 2:
-                        _this.getMedia(2, data);
+                        _this2.getMedia(2, data);
                         break;
                     case 3:
-                        _this.updateBlog(2, data);
+                        _this2.updateBlog(2, data);
                         break;
                     default:
                         break;
@@ -55786,14 +55899,14 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
             return '/getmedia';
         },
         filteredpost: function filteredpost() {
-            var _this2 = this;
+            var _this3 = this;
 
             var blogs = this.blogs;
             if (this.search) {
 
                 blogs = blogs.filter(function (row) {
                     return Object.keys(row).some(function (key) {
-                        return String(row[key]).toLowerCase().indexOf(_this2.search.toLowerCase()) > -1;
+                        return String(row[key]).toLowerCase().indexOf(_this3.search.toLowerCase()) > -1;
                     });
                 });
             }
@@ -55812,84 +55925,80 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", [
     _c("div", { staticClass: "d-flex justify-content-between" }, [
-      _c("div", { staticClass: "col-md-4" }, [
-        _c("div", { staticClass: "form-group" }, [
-          _c("label", { attrs: { for: "sel1" } }, [_vm._v("Status Category")]),
-          _vm._v(" "),
-          _c(
-            "select",
-            {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.post_status,
-                  expression: "post_status"
-                }
-              ],
-              staticClass: "custom-select custom-select-sm",
-              attrs: { name: "status" },
-              on: {
-                change: [
-                  function($event) {
-                    var $$selectedVal = Array.prototype.filter
-                      .call($event.target.options, function(o) {
-                        return o.selected
-                      })
-                      .map(function(o) {
-                        var val = "_value" in o ? o._value : o.value
-                        return val
-                      })
-                    _vm.post_status = $event.target.multiple
-                      ? $$selectedVal
-                      : $$selectedVal[0]
-                  },
-                  function($event) {
-                    _vm.getMedia(1)
-                  }
-                ]
-              }
-            },
-            _vm._l(_vm.postStatus, function(post) {
-              return _c(
-                "option",
-                { key: post.status_id, domProps: { value: post.status_id } },
-                [_vm._v(_vm._s(post.status_name))]
-              )
-            })
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-md-4" }, [
-        _c("div", { staticClass: "form-group" }, [
-          _c("label", { attrs: { for: "sel1" } }, [_vm._v("Status Category")]),
-          _vm._v(" "),
-          _c("input", {
+      _c("div", { staticClass: "form-group" }, [
+        _c("label", { attrs: { for: "sel1" } }, [_vm._v("Status Category")]),
+        _vm._v(" "),
+        _c(
+          "select",
+          {
             directives: [
               {
                 name: "model",
                 rawName: "v-model",
-                value: _vm.search,
-                expression: "search"
+                value: _vm.post_status,
+                expression: "post_status"
               }
             ],
-            staticClass: "form-control form-control-sm",
-            attrs: { type: "text", placeholder: "Search..." },
-            domProps: { value: _vm.search },
+            staticClass: "custom-select custom-select-sm",
+            attrs: { name: "status" },
             on: {
-              input: [
+              change: [
                 function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.search = $event.target.value
+                  var $$selectedVal = Array.prototype.filter
+                    .call($event.target.options, function(o) {
+                      return o.selected
+                    })
+                    .map(function(o) {
+                      var val = "_value" in o ? o._value : o.value
+                      return val
+                    })
+                  _vm.post_status = $event.target.multiple
+                    ? $$selectedVal
+                    : $$selectedVal[0]
                 },
-                _vm.resetPagination
+                function($event) {
+                  _vm.getMedia(1)
+                }
               ]
             }
+          },
+          _vm._l(_vm.postStatus, function(post) {
+            return _c(
+              "option",
+              { key: post.status_id, domProps: { value: post.status_id } },
+              [_vm._v(_vm._s(post.status_longcodename))]
+            )
           })
-        ])
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "form-group" }, [
+        _c("label", { attrs: { for: "sel1" } }, [_vm._v("Status Category")]),
+        _vm._v(" "),
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.search,
+              expression: "search"
+            }
+          ],
+          staticClass: "form-control form-control-sm",
+          attrs: { type: "text", placeholder: "Search..." },
+          domProps: { value: _vm.search },
+          on: {
+            input: [
+              function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.search = $event.target.value
+              },
+              _vm.resetPagination
+            ]
+          }
+        })
       ])
     ]),
     _vm._v(" "),
@@ -55953,7 +56062,9 @@ var render = function() {
                     )
                   ]),
                   _vm._v(" "),
-                  _c("td", { attrs: { align: "center" } }, [_vm._v("Media")]),
+                  _c("td", { attrs: { align: "center" } }, [
+                    _vm._v("Writing Tips")
+                  ]),
                   _vm._v(" "),
                   _c("td", { attrs: { align: "center", width: "100px" } }, [
                     blog.post_status == 4
@@ -56003,51 +56114,85 @@ var render = function() {
       ]
     ),
     _vm._v(" "),
-    _vm.pagination.next_page_url
-      ? _c(
-          "div",
-          { staticClass: "pagination  d-flex justify-content-center" },
-          [
-            _c(
-              "button",
-              {
-                staticClass: "btn btn-outline-primary btn-sm",
-                attrs: { disabled: !_vm.pagination.prev_page_url },
-                on: {
-                  click: function($event) {
-                    _vm.fetchPaginate(_vm.pagination.prev_page_url)
-                  }
-                }
-              },
-              [_vm._v("Previous")]
-            ),
-            _vm._v(" "),
-            _c("span", [
-              _vm._v(
-                " Page " +
-                  _vm._s(_vm.pagination.current_page) +
-                  " of " +
-                  _vm._s(_vm.pagination.last_page) +
-                  " "
+    _c("div", { staticClass: "d-flex justify-content-center" }, [
+      _vm.blogs.length != 0
+        ? _c(
+            "ul",
+            { staticClass: "pagination" },
+            [
+              _c(
+                "li",
+                {
+                  staticClass: "page-item ",
+                  class: !_vm.pagination.prev_page_url ? "disabled" : ""
+                },
+                [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "page-link",
+                      on: {
+                        click: function($event) {
+                          _vm.fetchPaginate(_vm.pagination.prev_page_url)
+                        }
+                      }
+                    },
+                    [_vm._v("Previous")]
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _vm._l(_vm.pagination.last_page, function(page) {
+                return _c(
+                  "li",
+                  {
+                    key: page.index,
+                    staticClass: "page-item",
+                    class: _vm.pagination.current_page == page ? "active" : ""
+                  },
+                  [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "page-link",
+                        on: {
+                          click: function($event) {
+                            _vm.getMedia(1, "/getmedia?page=" + page)
+                          }
+                        }
+                      },
+                      [_vm._v(_vm._s(page))]
+                    )
+                  ]
+                )
+              }),
+              _vm._v(" "),
+              _c(
+                "li",
+                {
+                  staticClass: "page-item",
+                  class: !_vm.pagination.next_page_url ? "disabled" : ""
+                },
+                [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "page-link",
+                      on: {
+                        click: function($event) {
+                          _vm.fetchPaginate(_vm.pagination.next_page_url)
+                        }
+                      }
+                    },
+                    [_vm._v("Next")]
+                  )
+                ]
               )
-            ]),
-            _vm._v(" "),
-            _c(
-              "button",
-              {
-                staticClass: "btn btn-outline-primary btn-sm",
-                attrs: { disabled: !_vm.pagination.next_page_url },
-                on: {
-                  click: function($event) {
-                    _vm.fetchPaginate(_vm.pagination.next_page_url)
-                  }
-                }
-              },
-              [_vm._v("Next")]
-            )
-          ]
-        )
-      : _vm._e(),
+            ],
+            2
+          )
+        : _vm._e()
+    ]),
     _vm._v(" "),
     _c("div", { staticClass: "modal fade", attrs: { id: "myModal" } }, [
       _c("div", { staticClass: "modal-dialog modal-xl" }, [
@@ -56114,6 +56259,765 @@ if (false) {
 
 /***/ }),
 /* 205 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(3)
+/* script */
+var __vue_script__ = __webpack_require__(206)
+/* template */
+var __vue_template__ = __webpack_require__(207)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources\\assets\\js\\components\\StatusReference.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-1f1a1e5c", Component.options)
+  } else {
+    hotAPI.reload("data-v-1f1a1e5c", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 206 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            formData: {
+                status_id: null,
+                status_groupname: '',
+                status_short: '',
+                status_long: '',
+                status: ''
+            },
+            hide: true,
+            postStatus: [],
+            tableStatus: []
+        };
+    },
+    created: function created() {
+        this.getStatus('/getstatus');
+    },
+
+    methods: {
+        getTableStatus: function getTableStatus(endpoint) {
+            var $this = this;
+            axios.post(endpoint, { 'status': 'TABLESTATUS' }).then(function (_ref) {
+                var _$this$tableStatus;
+
+                var data = _ref.data;
+
+                $this.tableStatus = [];
+                (_$this$tableStatus = $this.tableStatus).push.apply(_$this$tableStatus, _toConsumableArray(data.data));
+            });
+        },
+        getStatus: function getStatus(endpoint) {
+            var $this = this;
+            axios.post(endpoint, { 'status': null }).then(function (_ref2) {
+                var _$this$postStatus;
+
+                var data = _ref2.data;
+
+                $this.postStatus = [];
+                (_$this$postStatus = $this.postStatus).push.apply(_$this$postStatus, _toConsumableArray(data.data));
+            });
+        },
+        resetForm: function resetForm() {
+            this.formData.status_id = null;
+            this.formData.status_groupname = '';
+            this.formData.status_short = '';
+            this.formData.status_long = '';
+            this.formData.status = '';
+        },
+        editStatus: function editStatus(e, data) {
+            switch (e) {
+                case 1:
+                    this.hide = false;
+                    this.getTableStatus('/getstatus');
+                    this.formData.status_id = data.status_id;
+                    this.formData.status_groupname = data.status_groupname;
+                    this.formData.status_short = data.status_shortacodename;
+                    this.formData.status_long = data.status_longcodename;
+                    this.formData.status = data.table_status;
+                    break;
+                case 2:
+                    console.log(data);
+                    break;
+                default:
+                    break;
+            }
+        },
+        createUpdateStatus: function createUpdateStatus(e, data) {
+            switch (e) {
+                case 1:
+                    if (this.formData.status_groupname == '') {
+                        return this.$toast.warning('Status Group Name is required.', "Warning", { timeout: 2000, position: 'topRight' });
+                    }
+                    if (this.formData.status_short == '') {
+                        return this.$toast.warning('Status Short Code is required.', "Warning", { timeout: 2000, position: 'topRight' });
+                    }
+                    if (this.formData.status_long == '') {
+                        return this.$toast.warning('Status Long Code is required.', "Warning", { timeout: 2000, position: 'topRight' });
+                    }
+                    console.log(data);
+                    this.formData.status_id == null ? this.callAxios('post', '/administrator/status-reference', this.formData, 1) : this.callAxios('post', '/administrator/status-reference/' + this.formData.status_id, this.formData, 2);
+                    break;
+                case 2:
+                    this.$toast.success(data.message, "Success", { timeout: 2000, position: 'topRight' });
+                    this.resetForm();
+                    this.getStatus('/getstatus');
+                    this.hide = true;
+                    console.log(data);
+                    break;
+                default:
+                    break;
+            }
+        },
+        callAxios: function callAxios(http, url, data, e) {
+            var $this = this;
+            axios({ method: http, url: url, data: data }).then(function (_ref3) {
+                var data = _ref3.data;
+
+                switch (e) {
+                    case 1:
+                        $this.createUpdateStatus(2, data);
+                        break;
+                    case 2:
+                        $this.createUpdateStatus(2, data);
+                        break;
+                    default:
+                        break;
+                }
+            }).catch(function (error) {
+                // handle error
+                console.log(error);
+            });
+        }
+    }
+});
+
+/***/ }),
+/* 207 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _vm._m(0),
+    _vm._v(" "),
+    _c("section", { staticClass: "content" }, [
+      _c("div", { staticClass: "container-fluid" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-12" }, [
+            _c("div", { staticClass: "card" }, [
+              _vm._m(1),
+              _vm._v(" "),
+              _c("div", { staticClass: "card-body" }, [
+                _c(
+                  "table",
+                  {
+                    staticClass: "table table-bordered table-striped",
+                    attrs: { id: "example1" }
+                  },
+                  [
+                    _vm._m(2),
+                    _vm._v(" "),
+                    _vm.postStatus.length != 0
+                      ? _c(
+                          "tbody",
+                          _vm._l(_vm.postStatus, function(status) {
+                            return _c("tr", { key: status.status_id }, [
+                              _c("td", { attrs: { align: "center" } }, [
+                                _vm._v(_vm._s(status.status_id))
+                              ]),
+                              _vm._v(" "),
+                              _c("td", { attrs: { align: "center" } }, [
+                                _vm._v(_vm._s(status.status_groupname))
+                              ]),
+                              _vm._v(" "),
+                              _c("td", { attrs: { align: "center" } }, [
+                                _vm._v(_vm._s(status.status_shortacodename))
+                              ]),
+                              _vm._v(" "),
+                              _c("td", { attrs: { align: "center" } }, [
+                                _vm._v(_vm._s(status.status_longcodename))
+                              ]),
+                              _vm._v(" "),
+                              _c("td", { attrs: { align: "center" } }, [
+                                _c(
+                                  "span",
+                                  {
+                                    staticClass: "rounded p-1",
+                                    class:
+                                      status.table_status == 1
+                                        ? "btn-primary"
+                                        : "btn-warning"
+                                  },
+                                  [
+                                    _vm._v(
+                                      _vm._s(
+                                        status.table_status == 1
+                                          ? "Active"
+                                          : "Inactive"
+                                      )
+                                    )
+                                  ]
+                                )
+                              ]),
+                              _vm._v(" "),
+                              _c(
+                                "td",
+                                { attrs: { align: "center", width: "100px" } },
+                                [
+                                  _c(
+                                    "button",
+                                    {
+                                      staticClass:
+                                        "btn btn-outline-secondary btn-sm",
+                                      attrs: {
+                                        "data-toggle": "modal",
+                                        "data-target": "#myModalstatus"
+                                      },
+                                      on: {
+                                        click: function($event) {
+                                          _vm.editStatus(1, status)
+                                        }
+                                      }
+                                    },
+                                    [
+                                      _c("i", { staticClass: "fas fa-edit" }),
+                                      _vm._v(" Edit")
+                                    ]
+                                  )
+                                ]
+                              )
+                            ])
+                          })
+                        )
+                      : _vm._e()
+                  ]
+                )
+              ])
+            ])
+          ])
+        ])
+      ])
+    ]),
+    _vm._v(" "),
+    _c(
+      "div",
+      {
+        staticClass: "modal fade",
+        staticStyle: { "padding-right": "0px!important" },
+        attrs: { id: "myModalstatus" }
+      },
+      [
+        _c("div", { staticClass: "modal-dialog modal-dialog-centered" }, [
+          _c("div", { staticClass: "modal-content" }, [
+            _vm._m(3),
+            _vm._v(" "),
+            _c("div", { staticClass: "modal-body" }, [
+              _c("div", { attrs: { id: "app" } }, [
+                _c(
+                  "form",
+                  { attrs: { id: "form-blog", method: "POST", action: "" } },
+                  [
+                    _c("div", { staticClass: "row" }, [
+                      _c("div", { staticClass: "col-md-12" }, [
+                        _c("div", { staticClass: "form-group" }, [
+                          _c("label", { attrs: { for: "title" } }, [
+                            _vm._v("Status Name")
+                          ]),
+                          _vm._v(" "),
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.formData.status_groupname,
+                                expression: "formData.status_groupname"
+                              }
+                            ],
+                            staticClass: "form-control",
+                            attrs: {
+                              type: "text",
+                              name: "status_groupname",
+                              id: "title",
+                              placeholder: "Enter Status Name.."
+                            },
+                            domProps: { value: _vm.formData.status_groupname },
+                            on: {
+                              input: function($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.formData,
+                                  "status_groupname",
+                                  $event.target.value
+                                )
+                              }
+                            }
+                          })
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col-md-12" }, [
+                        _c("div", { staticClass: "form-group" }, [
+                          _c("label", { attrs: { for: "title" } }, [
+                            _vm._v("Status Short Code")
+                          ]),
+                          _vm._v(" "),
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.formData.status_short,
+                                expression: "formData.status_short"
+                              }
+                            ],
+                            staticClass: "form-control",
+                            attrs: {
+                              type: "text",
+                              name: "meta-desc",
+                              id: "meta-desc",
+                              placeholder: "Enter Status Code..."
+                            },
+                            domProps: { value: _vm.formData.status_short },
+                            on: {
+                              input: function($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.formData,
+                                  "status_short",
+                                  $event.target.value
+                                )
+                              }
+                            }
+                          })
+                        ])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "row" }, [
+                      _c("div", { staticClass: "col-md-12" }, [
+                        _c("div", { staticClass: "form-group" }, [
+                          _c("label", { attrs: { for: "author" } }, [
+                            _vm._v("Status Long Code")
+                          ]),
+                          _vm._v(" "),
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.formData.status_long,
+                                expression: "formData.status_long"
+                              }
+                            ],
+                            staticClass: "form-control",
+                            attrs: {
+                              type: "text",
+                              name: "author",
+                              id: "author",
+                              placeholder: "Enter Status Long Code..."
+                            },
+                            domProps: { value: _vm.formData.status_long },
+                            on: {
+                              input: function($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.formData,
+                                  "status_long",
+                                  $event.target.value
+                                )
+                              }
+                            }
+                          })
+                        ])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "row" }, [
+                      _c("div", { staticClass: "col-md-12" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass: "form-group",
+                            attrs: { hidden: _vm.hide }
+                          },
+                          [
+                            _c(
+                              "select",
+                              {
+                                directives: [
+                                  {
+                                    name: "model",
+                                    rawName: "v-model",
+                                    value: _vm.formData.status,
+                                    expression: "formData.status"
+                                  }
+                                ],
+                                staticClass: "custom-select custom-select-sm",
+                                attrs: { name: "status" },
+                                on: {
+                                  change: function($event) {
+                                    var $$selectedVal = Array.prototype.filter
+                                      .call($event.target.options, function(o) {
+                                        return o.selected
+                                      })
+                                      .map(function(o) {
+                                        var val =
+                                          "_value" in o ? o._value : o.value
+                                        return val
+                                      })
+                                    _vm.$set(
+                                      _vm.formData,
+                                      "status",
+                                      $event.target.multiple
+                                        ? $$selectedVal
+                                        : $$selectedVal[0]
+                                    )
+                                  }
+                                }
+                              },
+                              _vm._l(_vm.tableStatus, function(post) {
+                                return _c(
+                                  "option",
+                                  {
+                                    key: post.status_id,
+                                    domProps: { value: post.status_id }
+                                  },
+                                  [_vm._v(_vm._s(post.status_longcodename))]
+                                )
+                              })
+                            )
+                          ]
+                        )
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "text-right" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-primary",
+                          attrs: { type: "button" },
+                          on: {
+                            click: function($event) {
+                              _vm.createUpdateStatus(1)
+                            }
+                          }
+                        },
+                        [_vm._v("Save")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-warning",
+                          attrs: { type: "button", id: "btn-blogclear" },
+                          on: { click: _vm.resetForm }
+                        },
+                        [_vm._v("Clear")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-danger",
+                          attrs: { type: "button", "data-dismiss": "modal" }
+                        },
+                        [_vm._v("Close")]
+                      )
+                    ])
+                  ]
+                )
+              ])
+            ])
+          ])
+        ])
+      ]
+    )
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "content-header" }, [
+      _c("div", { staticClass: "container-fluid" }, [
+        _c("div", { staticClass: "row mb-2" }, [
+          _c("div", { staticClass: "col-sm-6" }, [
+            _c("h1", { staticClass: "m-0 text-dark" }, [
+              _vm._v("Status Reference")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-sm-6" }, [
+            _c("ol", { staticClass: "breadcrumb float-sm-right" }, [
+              _c("li", { staticClass: "breadcrumb-item" }, [
+                _c("a", { attrs: { href: "/administrator" } }, [_vm._v("Home")])
+              ]),
+              _vm._v(" "),
+              _c("li", { staticClass: "breadcrumb-item active" }, [
+                _vm._v("Status Reference")
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card-header" }, [
+      _c("div", { staticClass: "d-flex justify-content-between" }, [
+        _c("h3", { staticClass: "card-title" }, [
+          _vm._v("List of Status Reference")
+        ]),
+        _vm._v(" "),
+        _c(
+          "button",
+          {
+            staticClass: "btn btn-outline-primary btn-sm",
+            attrs: {
+              type: "submit",
+              "data-toggle": "modal",
+              "data-target": "#myModalstatus"
+            }
+          },
+          [_c("i", { staticClass: "fas fa-folder-plus" }), _vm._v(" Add")]
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("thead", [
+      _c("tr", [
+        _c("th", { staticClass: "text-center" }, [_vm._v("Status ID")]),
+        _vm._v(" "),
+        _c("th", { staticClass: "text-center" }, [_vm._v("Status Group Name")]),
+        _vm._v(" "),
+        _c("th", { staticClass: "text-center" }, [_vm._v("Status Short Code")]),
+        _vm._v(" "),
+        _c("th", { staticClass: "text-center" }, [_vm._v("Status Long Code")]),
+        _vm._v(" "),
+        _c("th", { staticClass: "text-center" }, [_vm._v("Status")]),
+        _vm._v(" "),
+        _c("th", { staticClass: "text-center" }, [_vm._v("Action")])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "modal-header" }, [
+      _c("h4", { staticClass: "modal-title" }, [
+        _vm._v("Create Ststus Reference")
+      ]),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass: "close",
+          attrs: { type: "button", "data-dismiss": "modal" }
+        },
+        [_vm._v("×")]
+      )
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-1f1a1e5c", module.exports)
+  }
+}
+
+/***/ }),
+/* 208 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

@@ -27,6 +27,7 @@ Vue.component('show-media', require('./components/ShowMedia.vue'));
 Vue.component("show-nmagazine", require("./components/ShowNmagazine.vue"));
 Vue.component("show-reviews", require("./components/ShowReviews.vue"));
 Vue.component("show-writing", require("./components/ShowWriting.vue"));
+Vue.component("status-reference", require("./components/StatusReference.vue"));
 
 Vue.config.productionTip = false;
 

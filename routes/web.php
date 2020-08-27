@@ -34,6 +34,9 @@ Route::group(['middleware' => 'is_admin'], function () {
         Route::get('/nmagazine', 'BlogsController@adminnmagazine')->name('admin.nmagazine');
         Route::get('/writingtips', 'BlogsController@adminnwritingtips')->name('admin.writingtips');
         Route::get('/reviews', 'BlogsController@adminreviews')->name('admin.reviews');
+        Route::get('/status-reference', 'StatusRefenceController@index')->name('admin.status.reference');
+        Route::post('/status-reference', 'StatusRefenceController@store');
+        Route::post('/status-reference/{status}', 'StatusRefenceController@update');
         Route::get('/media/{blog}', 'BlogsController@showadminmedia')->name('admin.show');
         Route::post('/approve/{blog}', 'BlogsController@approve')->name('admin.approve');
         Route::post('/updateblog/{blog}', 'BlogsController@updateblog');

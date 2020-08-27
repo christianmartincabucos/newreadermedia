@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateStatusReferenceTable extends Migration
+class AddColumnStatusStatusReference extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,8 @@ class CreateStatusReferenceTable extends Migration
      */
     public function up()
     {
-        Schema::create('status_reference', function (Blueprint $table) {
-            $table->bigIncrements('status_id');
-            $table->string('status_shortacodename');
-            $table->string('status_longcodename');
-            $table->timestamps();
+        Schema::table('status_reference', function (Blueprint $table) {
+            $table->string('table_status')->after('status_longcodename')->default(1);
         });
     }
 
@@ -28,6 +25,8 @@ class CreateStatusReferenceTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('status_reference');
+        Schema::table('status_reference', function (Blueprint $table) {
+            //
+        });
     }
 }

@@ -1,19 +1,15 @@
 <template>
 <div>
     <div class="d-flex justify-content-between">
-        <div class="col-md-4">
-            <div class="form-group">
-                <label for="sel1">Status Category</label>
-                <select class="custom-select custom-select-sm" name="status" v-cloak v-model="post_status" @change="getMedia(1)">
-                    <option v-for="post in postStatus" v-bind:value="post.status_id" :key="post.status_id">{{ post.status_name }}</option>
-                </select>
-            </div>
+        <div class="form-group">
+            <label for="sel1">Status Category</label>
+            <select class="custom-select custom-select-sm" name="status" v-cloak v-model="post_status" @change="getMedia(1)">
+                <option v-for="post in postStatus" v-bind:value="post.status_id" :key="post.status_id">{{ post.status_longcodename }}</option>
+            </select>
         </div>
-        <div class="col-md-4">
-            <div class="form-group">
-                <label for="sel1">Status Category</label>
-                <input class="form-control form-control-sm" type="text" v-model="search" @input="resetPagination" placeholder="Search...">
-            </div>
+        <div class="form-group">
+            <label for="sel1">Status Category</label>
+            <input class="form-control form-control-sm" type="text" v-model="search" @input="resetPagination" placeholder="Search...">
         </div>
     </div>
     
@@ -29,12 +25,14 @@
         </thead>
         <tbody v-if="blogs.length != 0">
             <tr v-for="blog in filteredpost" :key="blog.blog_id">
-                <td align="center">{{ blog.body }}</td>
+                <td align="center">{{ blog.title }}</td>
+                <td align="center">{{ blog.meta_desc }}</td>
                 <td align="center">{{ blog.author == ''? 'anonymous':  blog.author }}</td>
-                <td align="center">Media</td>
+                <td align="center">Reviews</td>
                 <td align="center" width="100px">
                     <button v-if="blog.post_status == 4" class="btn btn-outline-warning btn-sm" @click="updateBlog(1, blog.blog_id)" ><i class="fas fa-trash "></i> Cancel</button>
                     <button v-else class="btn btn-outline-primary btn-sm" @click="show(blog.blog_id)" data-toggle="modal" data-target="#myModal"><i class="fas fa-eye"></i> Check</button>
+                    
                 </td>
             </tr>
         </tbody>
@@ -42,10 +40,14 @@
             <td align="center" colspan="5">No Data Found</td>
         </tbody>
     </table>
-    <div class="pagination  d-flex justify-content-center" v-if="pagination.next_page_url">
-        <button class="btn btn-outline-primary btn-sm" @click="fetchPaginate(pagination.prev_page_url)" :disabled="!pagination.prev_page_url">Previous</button>
-        <span>&nbsp;Page {{ pagination.current_page }} of {{ pagination.last_page }}&nbsp;</span>
-        <button class="btn btn-outline-primary btn-sm" @click="fetchPaginate(pagination.next_page_url)" :disabled="!pagination.next_page_url">Next</button>
+    <div class="d-flex justify-content-center">
+        <ul class="pagination" v-if="blogs.length != 0">
+            <li :class="!pagination.prev_page_url ? 'disabled':''" class="page-item "><a class="page-link" @click="fetchPaginate(pagination.prev_page_url)">Previous</a></li>
+            <li :class="pagination.current_page == page ? 'active':''" class="page-item" v-for="page in pagination.last_page" :key="page.index">
+                <a class="page-link" @click="getMedia(1, `/getmedia?page=${page}`)">{{ page }}</a>
+            </li>
+            <li :class="!pagination.next_page_url ? 'disabled':''" class="page-item"><a class="page-link" @click="fetchPaginate(pagination.next_page_url)">Next</a></li>
+        </ul>
     </div>
     
     <div class="modal fade" id="myModal">
@@ -80,7 +82,8 @@ export default {
     data() {
         let sortOrders = {};
         let columns = [
-            {label: 'Body', name: 'body'},
+            {label: 'Title', name: 'title' },
+            {label: 'Meta Description', name: 'meta description'},
             {label: 'Author', name: 'author'},
             {label: 'Category', name: 'category'},
         ];
@@ -104,7 +107,6 @@ export default {
     },
    
     created() {
-        this.getMedia(1);
         this.getStatus('/getstatus');
     },
    
@@ -146,11 +148,15 @@ export default {
             axios.post(endpoint, {'status': 'BLOGSTATUS'})
             .then(({data}) =>{
                 $this.postStatus.push(...data.data);
+                $this.post_status = this.postStatus[0].status_id
+                this.getMedia(1);
+
             })
         },
         getMedia(e, data){
             switch (e) {
                 case 1:
+                    data != undefined ? this.url = data : this.url
                     this.callAxios('post', this.url,{'category_id': 3,'post_status': this.post_status || 3}, 2)
                 break;
                 case 2:
@@ -200,7 +206,7 @@ export default {
                 .then(({data}) =>{
                     switch (e) {
                         case 1:
-                            $this.approve(2, data)
+                            this.approve(2, data)
                         break;
                         case 2:
                             this.getMedia(2, data)

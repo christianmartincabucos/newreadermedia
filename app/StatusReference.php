@@ -8,7 +8,7 @@ class StatusReference extends Model
 {
     protected $table = 'status_reference';
     protected $primaryKey = 'status_id';
-    protected $fillable = ['status_code', 'status_name'];
+    protected $fillable = ['status_groupname', 'status_shortacodename', 'status_longcodename', 'created_by'];
 
     public function user()
     {

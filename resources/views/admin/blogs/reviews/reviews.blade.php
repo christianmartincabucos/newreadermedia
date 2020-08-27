@@ -1,5 +1,5 @@
 @extends('admin.layouts.admin-app')
-@section('title')New Reader Media | Admin Dashboard @endsection
+@section('title')New Reader Media | Admin Reviews @endsection
 @section('og-title')New Reader Media | Admin @endsection
 @section('content')
 
