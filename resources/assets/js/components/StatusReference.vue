@@ -49,7 +49,7 @@
                                         <td align="center">{{ status.status_longcodename }}</td>
                                         <td align="center"><span :class="status.table_status == 1 ? 'btn-primary':'btn-warning' " class="rounded p-1">{{ status.table_status == 1 ? 'Active':'Inactive'}}</span></td>
                                         <td align="center" width="100px">
-                                            <button class="btn btn-outline-secondary btn-sm" @click="editStatus(1, status)"  data-toggle="modal" data-target="#myModalstatus"><i class="fas fa-edit"></i> Edit</button>
+                                            <button class="btn btn-outline-secondary btn-sm" @click="editStatus(1, status)"><i class="fas fa-edit"></i> Edit</button>
 
                                         </td>
                                     </tr>
@@ -72,7 +72,7 @@
             <div class="modal-content">
 
                 <div class="modal-header">
-                    <h4 class="modal-title">Create Ststus Reference</h4>
+                    <h4 class="modal-title">Create Status Reference</h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
@@ -177,6 +177,7 @@ export default {
             switch (e) {
                 case 1:
                     this.hide = false
+                    $('#myModalstatus').modal('show')
                     this.getTableStatus('/getstatus');
                     this.formData.status_id         = data.status_id
                     this.formData.status_groupname  = data.status_groupname
@@ -209,6 +210,7 @@ export default {
                 case 2:
                     this.$toast.success(data.message, "Success", {timeout: 2000, position:'topRight'});
                     this.resetForm();
+                    $('#myModalstatus').modal('hide')
                     this.getStatus('/getstatus')
                     this.hide = true
                     console.log(data);

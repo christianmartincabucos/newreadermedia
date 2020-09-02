@@ -42,10 +42,24 @@ class AdminController extends Controller
         $users = User::orderBy('id', 'desc')->get();
         return view('admin.userslist', compact('users'));
     }
+    public function getusers()
+    {
+        $users = User::paginate(7);
+            
+        return response()->json([
+            'data' => $users
+        ]); 
+    }
     public function update(Request $request, User $user)
     {
-        $user->status = $request->status;
+
+        $user->user_type    = $request->user_type;
+        $user->status       = $request->status;
         $user->save();
-        return back()->withErrors('Successfully updated');
+
+        return response()->json([
+            'data' => $user,
+            'message' => 'Successfully updated!'
+        ]); 
     }
 }

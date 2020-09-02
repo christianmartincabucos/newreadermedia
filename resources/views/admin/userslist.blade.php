@@ -27,85 +27,13 @@
     }
 </style>
 @endpush
-<div class="content-header">
-    <div class="container-fluid">
-        <div class="row mb-2">
-            <div class="col-sm-6">
-                <h1 class="m-0 text-dark">Users</h1>
-            </div><!-- /.col -->
-            <div class="col-sm-6">
-                <ol class="breadcrumb float-sm-right">
-                    <li class="breadcrumb-item"><a href="/administrator">Home</a></li>
-                    <li class="breadcrumb-item active">Users</li>
-                </ol>
-            </div><!-- /.col -->
-        </div><!-- /.row -->
-    </div><!-- /.container-fluid -->
-
+<div id="app">
+    <user-list></user-list>
 </div>
-<section class="content">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12">
-                <div class="card">
-                    <div class="card-header">
-                        <h3 class="card-title">List od Users</h3>
-                    </div>
-                    <!-- /.card-header -->
-                    <div class="card-body">
-                        @if($errors->count() > 0)
-                        <div class="alert alert-success alert-dismissible">
-                            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                            @foreach($errors->all() as $error)
-                            <strong>Success!</strong>
-                            &nbsp;{{ $error }}
-                            @endforeach
-                        </div>
-                        @endif
-                        <table id="example1" class="table table-bordered table-striped">
-                            <thead>
-                                <tr>
-                                    <th align="center">Name</th>
-                                    <th align="center">Email</th>
-                                    <th align="center">User Type</th>
-                                    <th align="center">Status</th>
-                                    <th align="center">Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @foreach($users as $data)
-                                <tr>
-                                    <td align="center">{{ $data->name }}</td>
-                                    <td align="center">{{ $data->email }}</td>
-                                    <td align="center">{{ $data->user_type }}</td>
-                                    <td align="center"><span class="{{ $data->status == 1 ? 'btn-primary':'btn-warning'}} rounded p-1">{{ $data->status == 1 ? 'Active':'Inactive'}}</span></td>
-                                    <td align="center">
-                                        <button type="submit" class="btn btn-outline-secondary btn-sm" onclick="userUpdate({ status :'{{ $data->status }}', id : '{{ $data->id }}'} )"><i class="fas fa-user-edit"></i> Edit</button>
-                                        <form id="user-form{{ $data->id }}" action="{{ route('user.update', $data->id) }}" method="POST" style="display: none;">
-                                            {{ csrf_field() }}
-                                            <input type="hidden" id="status" name="status" value="2">
-                                        </form>
-                                    </td>
-                                </tr>
-                                @endforeach
-                            </tbody>
-
-                        </table>
-                    </div>
-                    <!-- /.card-body -->
-                </div>
-                <!-- /.card -->
-            </div>
-            <!-- /.col -->
-        </div>
-        <!-- /.row -->
-    </div>
-    <!-- /.container-fluid -->
-</section>
 
 @push('scripts')
 <script>
-    $(function() {
+    /* $(function() {
         $("#example1").DataTable({
             "responsive": true,
             "autoWidth": false,
@@ -119,7 +47,7 @@
             document.getElementById(`user-form${data.id}`).submit();
         }
         return;
-    }
+    } */
 </script>
 @endpush
 

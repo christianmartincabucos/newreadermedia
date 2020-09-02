@@ -16,11 +16,12 @@ class IsAdmin
      */
     public function handle($request, Closure $next)
     {
-        if (auth()->user()->isAdmin()) {
-            if (auth()->user()->is_verified) {
+        if (auth()->user()->isAdmin()){
+            if (Auth::user()->is_verified == 5) {
                 return $next($request);
-                return redirect('/verify');
             }
+            return redirect('/verify');
+
         }
         return redirect('/');
     }
