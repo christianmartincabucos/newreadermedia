@@ -8,7 +8,7 @@
             </select>
         </div>
         <div class="form-group">
-            <label for="sel1">Status Category</label>
+            <label for="sel1">Search</label>
             <input class="form-control form-control-sm" type="text" v-model="search" @input="resetPagination" placeholder="Search...">
         </div>
     </div>
