@@ -165,6 +165,9 @@
 </head>
 
 <body style="background:url({{{ url('storage/poster.PNG') }}}) center center no-repeat;background-size: cover;">
+   
+    @include('templates.form-blog')
+               
     <nav class="navbar navbar-default navbar-static-top" style="margin-bottom: 0px!important;">
         <div class="container">
             <div class="navbar-header">

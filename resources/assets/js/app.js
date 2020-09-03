@@ -4,15 +4,16 @@
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
-
 require('./bootstrap');
 // import 'ckeditor/ckeditor';
 
 window.Vue = require('vue');
+import $ from 'jquery'
 import VueIziToast from "vue-izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 import DataTable from "laravel-vue-datatable";
 
+Vue.use($);
 Vue.use(DataTable);
 Vue.use(VueIziToast);
 /**
@@ -28,6 +29,7 @@ Vue.component("show-nmagazine", require("./components/ShowNmagazine.vue"));
 Vue.component("show-reviews", require("./components/ShowReviews.vue"));
 Vue.component("show-writing", require("./components/ShowWriting.vue"));
 Vue.component("status-reference", require("./components/StatusReference.vue"));
+Vue.component("user-list", require("./components/UserList.vue"));
 
 Vue.config.productionTip = false;
 

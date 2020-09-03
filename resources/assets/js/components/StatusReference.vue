@@ -24,7 +24,7 @@
                         <div class="card-header">
                             <div class="d-flex justify-content-between">
                                 <h3 class="card-title">List of Status Reference</h3>
-                                <button type="submit" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#myModalstatus"><i class="fas fa-folder-plus"></i> Add</button>
+                                <button type="submit" class="btn btn-outline-primary btn-sm" @click="modalHideShow(1)"><i class="fas fa-folder-plus"></i> Add</button>
                             </div>
 
                         </div>
@@ -49,7 +49,7 @@
                                         <td align="center">{{ status.status_longcodename }}</td>
                                         <td align="center"><span :class="status.table_status == 1 ? 'btn-primary':'btn-warning' " class="rounded p-1">{{ status.table_status == 1 ? 'Active':'Inactive'}}</span></td>
                                         <td align="center" width="100px">
-                                            <button class="btn btn-outline-secondary btn-sm" @click="editStatus(1, status)"  data-toggle="modal" data-target="#myModalstatus"><i class="fas fa-edit"></i> Edit</button>
+                                            <button class="btn btn-outline-secondary btn-sm" @click="editStatus(1, status)"><i class="fas fa-edit"></i> Edit</button>
 
                                         </td>
                                     </tr>
@@ -72,7 +72,7 @@
             <div class="modal-content">
 
                 <div class="modal-header">
-                    <h4 class="modal-title">Create Ststus Reference</h4>
+                    <h4 class="modal-title">Create Status Reference</h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
@@ -150,6 +150,20 @@ export default {
         this.getStatus('/getstatus');
     },
     methods: {
+        modalHideShow(e){
+            switch (e) {
+                case 1:
+                    $('#myModalstatus').modal('show')
+                    break;
+                case 2:
+                    $('#myModalstatus').modal('hide')
+                    
+                    break;
+            
+                default:
+                    break;
+            }
+        },
         getTableStatus(endpoint){
             var $this = this;
             axios.post(endpoint, {'status': 'TABLESTATUS'})
@@ -177,6 +191,7 @@ export default {
             switch (e) {
                 case 1:
                     this.hide = false
+                    this.modalHideShow(1)
                     this.getTableStatus('/getstatus');
                     this.formData.status_id         = data.status_id
                     this.formData.status_groupname  = data.status_groupname
@@ -209,6 +224,7 @@ export default {
                 case 2:
                     this.$toast.success(data.message, "Success", {timeout: 2000, position:'topRight'});
                     this.resetForm();
+                    this.modalHideShow(2)
                     this.getStatus('/getstatus')
                     this.hide = true
                     console.log(data);

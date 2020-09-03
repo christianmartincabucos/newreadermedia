@@ -173,7 +173,31 @@ class BlogsController extends Controller
 
         return view('blogs.new-reader-media.index', compact(['datas', 'recent', 'categories']));    
     }
-    public function store(Request $request)
+    public function formSubmit(Request $request)
+    {
+        $imageName = '';
+        if($request->image != null){
+            $imageName = time() . '.' . $request->image->getClientOriginalExtension();
+            $path = $request->category == 1 ? 'nmagazine': ($request->category == 2 ? 'media': ($request->category == 3 ? 'reviews': 'newsletter'));
+            $request->image->move(public_path('storage/blogs/'. $path), $path.$imageName);
+        }
+        $data = Blog::create([
+            'image' => $path.$imageName,
+            'category_id' => $request->category,
+            'title' => $request->title,
+            'meta_desc' => $request->meta_desc,
+            'body'  => $request->body,
+            'author'  => $request->author,
+            'posted_by'  => auth()->id(),
+        ]);
+        if ($request->expectsJson()) {
+            return response()->json([
+                    'data' => $data,
+                    'message' => "Your blog has been submitted."
+                ]);
+        }
+    }
+    /* public function store(Request $request)
     {
         $data = Blog::create([
                 'image' => $request->input('image'),
@@ -185,14 +209,8 @@ class BlogsController extends Controller
                 'posted_by'  => auth()->id(), 
         ]);
 
-        if ($request->expectsJson()) {
-            return response()->json([
-                    'data' => $data,
-                    'message' => "Your blog has been submitted."
-                ]);
-        }
         return redirect('/');
 
-    }
+    } */
 
 }   
