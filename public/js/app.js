@@ -57259,7 +57259,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
                     this.$toast.success(data.message, "Success", { timeout: 2000, position: 'topRight' });
                     this.resetForm();
                     this.modalHideShow(2);
-                    this.getStatus('/getstatus');
+                    this.getStatus(1, null, '/getstatus');
                     this.hide = true;
                     console.log(data);
                     break;
@@ -57492,7 +57492,7 @@ var render = function() {
                       : _c("tbody", [
                           _c(
                             "td",
-                            { attrs: { align: "center", colspan: "5" } },
+                            { attrs: { align: "center", colspan: "6" } },
                             [_vm._v("No Data Found")]
                           )
                         ])

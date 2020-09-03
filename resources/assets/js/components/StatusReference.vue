@@ -60,7 +60,7 @@
                                 </tbody>
 
                             <tbody v-else>
-                                    <td align="center" colspan="5">No Data Found</td>
+                                    <td align="center" colspan="6">No Data Found</td>
                                 </tbody>
                             </table>
                             <div class="d-flex justify-content-center mt-4">
@@ -294,7 +294,7 @@ export default {
                     this.$toast.success(data.message, "Success", {timeout: 2000, position:'topRight'});
                     this.resetForm();
                     this.modalHideShow(2)
-                    this.getStatus('/getstatus')
+                    this.getStatus(1,null,'/getstatus')
                     this.hide = true
                     console.log(data);
                 break;
