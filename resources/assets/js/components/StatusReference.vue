@@ -24,7 +24,7 @@
                         <div class="card-header">
                             <div class="d-flex justify-content-between">
                                 <h3 class="card-title">List of Status Reference</h3>
-                                <button type="submit" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#myModalstatus"><i class="fas fa-folder-plus"></i> Add</button>
+                                <button type="submit" class="btn btn-outline-primary btn-sm" @click="modalHideShow(1)"><i class="fas fa-folder-plus"></i> Add</button>
                             </div>
 
                         </div>
@@ -150,6 +150,20 @@ export default {
         this.getStatus('/getstatus');
     },
     methods: {
+        modalHideShow(e){
+            switch (e) {
+                case 1:
+                    $('#myModalstatus').modal('show')
+                    break;
+                case 2:
+                    $('#myModalstatus').modal('hide')
+                    
+                    break;
+            
+                default:
+                    break;
+            }
+        },
         getTableStatus(endpoint){
             var $this = this;
             axios.post(endpoint, {'status': 'TABLESTATUS'})
@@ -177,7 +191,7 @@ export default {
             switch (e) {
                 case 1:
                     this.hide = false
-                    $('#myModalstatus').modal('show')
+                    this.modalHideShow(1)
                     this.getTableStatus('/getstatus');
                     this.formData.status_id         = data.status_id
                     this.formData.status_groupname  = data.status_groupname
@@ -210,7 +224,7 @@ export default {
                 case 2:
                     this.$toast.success(data.message, "Success", {timeout: 2000, position:'topRight'});
                     this.resetForm();
-                    $('#myModalstatus').modal('hide')
+                    this.modalHideShow(2)
                     this.getStatus('/getstatus')
                     this.hide = true
                     console.log(data);

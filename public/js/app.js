@@ -57114,6 +57114,20 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
     },
 
     methods: {
+        modalHideShow: function modalHideShow(e) {
+            switch (e) {
+                case 1:
+                    $('#myModalstatus').modal('show');
+                    break;
+                case 2:
+                    $('#myModalstatus').modal('hide');
+
+                    break;
+
+                default:
+                    break;
+            }
+        },
         getTableStatus: function getTableStatus(endpoint) {
             var $this = this;
             axios.post(endpoint, { 'status': 'TABLESTATUS' }).then(function (_ref) {
@@ -57147,7 +57161,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
             switch (e) {
                 case 1:
                     this.hide = false;
-                    $('#myModalstatus').modal('show');
+                    this.modalHideShow(1);
                     this.getTableStatus('/getstatus');
                     this.formData.status_id = data.status_id;
                     this.formData.status_groupname = data.status_groupname;
@@ -57180,7 +57194,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
                 case 2:
                     this.$toast.success(data.message, "Success", { timeout: 2000, position: 'topRight' });
                     this.resetForm();
-                    $('#myModalstatus').modal('hide');
+                    this.modalHideShow(2);
                     this.getStatus('/getstatus');
                     this.hide = true;
                     console.log(data);
@@ -57228,7 +57242,30 @@ var render = function() {
         _c("div", { staticClass: "row" }, [
           _c("div", { staticClass: "col-12" }, [
             _c("div", { staticClass: "card" }, [
-              _vm._m(1),
+              _c("div", { staticClass: "card-header" }, [
+                _c("div", { staticClass: "d-flex justify-content-between" }, [
+                  _c("h3", { staticClass: "card-title" }, [
+                    _vm._v("List of Status Reference")
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-outline-primary btn-sm",
+                      attrs: { type: "submit" },
+                      on: {
+                        click: function($event) {
+                          _vm.modalHideShow(1)
+                        }
+                      }
+                    },
+                    [
+                      _c("i", { staticClass: "fas fa-folder-plus" }),
+                      _vm._v(" Add")
+                    ]
+                  )
+                ])
+              ]),
               _vm._v(" "),
               _c("div", { staticClass: "card-body" }, [
                 _c(
@@ -57238,7 +57275,7 @@ var render = function() {
                     attrs: { id: "example1" }
                   },
                   [
-                    _vm._m(2),
+                    _vm._m(1),
                     _vm._v(" "),
                     _vm.postStatus.length != 0
                       ? _c(
@@ -57328,7 +57365,7 @@ var render = function() {
       [
         _c("div", { staticClass: "modal-dialog modal-dialog-centered" }, [
           _c("div", { staticClass: "modal-content" }, [
-            _vm._m(3),
+            _vm._m(2),
             _vm._v(" "),
             _c("div", { staticClass: "modal-body" }, [
               _c("div", { attrs: { id: "app" } }, [
@@ -57586,31 +57623,6 @@ var staticRenderFns = [
             ])
           ])
         ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-header" }, [
-      _c("div", { staticClass: "d-flex justify-content-between" }, [
-        _c("h3", { staticClass: "card-title" }, [
-          _vm._v("List of Status Reference")
-        ]),
-        _vm._v(" "),
-        _c(
-          "button",
-          {
-            staticClass: "btn btn-outline-primary btn-sm",
-            attrs: {
-              type: "submit",
-              "data-toggle": "modal",
-              "data-target": "#myModalstatus"
-            }
-          },
-          [_c("i", { staticClass: "fas fa-folder-plus" }), _vm._v(" Add")]
-        )
       ])
     ])
   },
