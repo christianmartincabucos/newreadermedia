@@ -38,6 +38,7 @@
                                     <div class="form-group">
                                         <label for="sel1">Category</label>
                                         <select class="form-control" name="category" v-model="formData.category">
+                                            <option value="0" :disabled="true">Select Blog Category</option>
                                             <option v-for="category in blogcategories" v-bind:value="category.category_id" :key="category.blog_category_id">{{ category.category_name }}</option>
 
                                         </select>
@@ -122,7 +123,7 @@
                             <div class="text-right">
 
                                 <button type="button" class="btn btn-primary" @click="imageSaveBlog(1)">Save</button>
-                                <button type="button" class="btn btn-warning" id="btn-blogclear">Clear</button>
+                                <button type="button" class="btn btn-warning" @click="resetForm">Clear</button>
                                 <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                             </div>
                         </form>
@@ -158,7 +159,7 @@ export default {
                 title:'',
                 meta_desc:'',
                 author:'',
-                category:'',
+                category:0,
                 image:null,
                 body:'',
             }
@@ -195,13 +196,13 @@ export default {
             this.formData.title = '';
             this.formData.meta_desc = '';
             this.formData.author = '';
-            this.formData.category = '';
+            this.formData.category = 0;
             this.formData.image = '';
             this.formData.body = '';
             this.$refs.image.value=null;
 
         },
-        saveBlog(e, data){
+        /* saveBlog(e, data){
             switch (e) {
                 case 1:
                     if(this.formData.title == ''){
@@ -210,7 +211,7 @@ export default {
                     if(this.formData.meta_desc == ''){
                         return this.$toast.warning('Meta Description is required.', "Warning", {timeout: 2000, position:'topRight'});
                     }
-                    if(this.formData.meta_desc == '0'){
+                    if(this.formData.category == 0){
                         return this.$toast.warning('Category is required.', "Warning", {timeout: 2000, position:'topRight'});
                     }
                     if(this.formData.body == ''){
@@ -226,7 +227,7 @@ export default {
                 default:
                 break;
             }
-        },
+        }, */
         imageSaveBlog(e, data) {
             switch (e) {
                 case 1:
@@ -236,7 +237,7 @@ export default {
                     if(this.formData.meta_desc == ''){
                         return this.$toast.warning('Meta Description is required.', "Warning", {timeout: 2000, position:'topRight'});
                     }
-                    if(this.formData.meta_desc == '0'){
+                    if(this.formData.category == 0){
                         return this.$toast.warning('Category is required.', "Warning", {timeout: 2000, position:'topRight'});
                     }
                     if(this.formData.body == ''){

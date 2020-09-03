@@ -53425,6 +53425,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -53445,7 +53446,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 title: '',
                 meta_desc: '',
                 author: '',
-                category: '',
+                category: 0,
                 image: null,
                 body: ''
             }
@@ -53478,37 +53479,38 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.formData.title = '';
             this.formData.meta_desc = '';
             this.formData.author = '';
-            this.formData.category = '';
+            this.formData.category = 0;
             this.formData.image = '';
             this.formData.body = '';
             this.$refs.image.value = null;
         },
-        saveBlog: function saveBlog(e, data) {
+
+        /* saveBlog(e, data){
             switch (e) {
                 case 1:
-                    if (this.formData.title == '') {
-                        return this.$toast.warning('Title is required.', "Warning", { timeout: 2000, position: 'topRight' });
+                    if(this.formData.title == ''){
+                        return this.$toast.warning('Title is required.', "Warning", {timeout: 2000, position:'topRight'});
                     }
-                    if (this.formData.meta_desc == '') {
-                        return this.$toast.warning('Meta Description is required.', "Warning", { timeout: 2000, position: 'topRight' });
+                    if(this.formData.meta_desc == ''){
+                        return this.$toast.warning('Meta Description is required.', "Warning", {timeout: 2000, position:'topRight'});
                     }
-                    if (this.formData.meta_desc == '0') {
-                        return this.$toast.warning('Category is required.', "Warning", { timeout: 2000, position: 'topRight' });
+                    if(this.formData.category == 0){
+                        return this.$toast.warning('Category is required.', "Warning", {timeout: 2000, position:'topRight'});
                     }
-                    if (this.formData.body == '') {
-                        return this.$toast.warning('Body Description is required.', "Warning", { timeout: 2000, position: 'topRight' });
+                    if(this.formData.body == ''){
+                        return this.$toast.warning('Body Description is required.', "Warning", {timeout: 2000, position:'topRight'});
                     }
-                    this.callAxios('post', '/blog/post', this.formData, 1);
-                    break;
+                    this.callAxios('post', '/blog/post', this.formData, 1)
+                break;
                 case 2:
-                    $('#myModal').modal('hide');
+                    $('#myModal').modal('hide')
                     this.resetForm();
-                    this.$toast.success(data.message, "Success", { timeout: 2000, position: 'topRight' });
-                    console.log(data);
+                    this.$toast.success(data.message, "Success", {timeout: 2000, position:'topRight'});
+                    console.log(data)
                 default:
-                    break;
+                break;
             }
-        },
+        }, */
         imageSaveBlog: function imageSaveBlog(e, data) {
             switch (e) {
                 case 1:
@@ -53518,7 +53520,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     if (this.formData.meta_desc == '') {
                         return this.$toast.warning('Meta Description is required.', "Warning", { timeout: 2000, position: 'topRight' });
                     }
-                    if (this.formData.meta_desc == '0') {
+                    if (this.formData.category == 0) {
                         return this.$toast.warning('Category is required.', "Warning", { timeout: 2000, position: 'topRight' });
                     }
                     if (this.formData.body == '') {
@@ -53987,16 +53989,25 @@ var render = function() {
                               }
                             }
                           },
-                          _vm._l(_vm.blogcategories, function(category) {
-                            return _c(
+                          [
+                            _c(
                               "option",
-                              {
-                                key: category.blog_category_id,
-                                domProps: { value: category.category_id }
-                              },
-                              [_vm._v(_vm._s(category.category_name))]
-                            )
-                          })
+                              { attrs: { value: "0", disabled: true } },
+                              [_vm._v("Select Blog Category")]
+                            ),
+                            _vm._v(" "),
+                            _vm._l(_vm.blogcategories, function(category) {
+                              return _c(
+                                "option",
+                                {
+                                  key: category.blog_category_id,
+                                  domProps: { value: category.category_id }
+                                },
+                                [_vm._v(_vm._s(category.category_name))]
+                              )
+                            })
+                          ],
+                          2
                         )
                       ])
                     ])
@@ -54131,7 +54142,8 @@ var render = function() {
                       "button",
                       {
                         staticClass: "btn btn-warning",
-                        attrs: { type: "button", id: "btn-blogclear" }
+                        attrs: { type: "button" },
+                        on: { click: _vm.resetForm }
                       },
                       [_vm._v("Clear")]
                     ),
