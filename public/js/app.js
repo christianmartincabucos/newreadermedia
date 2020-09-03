@@ -54485,7 +54485,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
         },
         fetchPaginate: function fetchPaginate(url) {
             this.url = url;
-            this.getMedia(1);
+            this.getMedia(1, '/getmedia');
         },
         makePagination: function makePagination(data) {
             var pagination = {
@@ -54504,7 +54504,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
                 case 2:
                     this.$toast.success(data.message, "Success", { timeout: 2000, position: 'topRight' });
                     this.blogs = [];
-                    this.getMedia(1);
+                    this.getMedia(1, '/getmedia');
                     break;
                 default:
                     break;
@@ -54521,7 +54521,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 
                 (_$this$postStatus = $this.postStatus).push.apply(_$this$postStatus, _toConsumableArray(data.data));
                 $this.post_status = _this.postStatus[0].status_id;
-                _this.getMedia(1);
+                _this.getMedia(1, '/getmedia');
             });
         },
         getMedia: function getMedia(e, data) {
@@ -54537,6 +54537,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
                     (_blogs = this.blogs).push.apply(_blogs, _toConsumableArray(data.data.data));
                     this.makePagination(data.data);
                     this.nextUrl = data.data.next_page_url;
+
                     break;
 
                 default:
@@ -54661,7 +54662,7 @@ var render = function() {
                     : $$selectedVal[0]
                 },
                 function($event) {
-                  _vm.getMedia(1)
+                  _vm.getMedia(1, "/getmedia")
                 }
               ]
             }
@@ -55129,7 +55130,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
         },
         fetchPaginate: function fetchPaginate(url) {
             this.url = url;
-            this.getMedia(1);
+            this.getMedia(1, '/getmedia');
         },
         makePagination: function makePagination(data) {
             var pagination = {
@@ -55148,7 +55149,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
                 case 2:
                     this.$toast.success(data.message, "Success", { timeout: 2000, position: 'topRight' });
                     this.blogs = [];
-                    this.getMedia(1);
+                    this.getMedia(1, '/getmedia');
                     break;
                 default:
                     break;
@@ -55165,7 +55166,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 
                 (_$this$postStatus = $this.postStatus).push.apply(_$this$postStatus, _toConsumableArray(data.data));
                 $this.post_status = _this.postStatus[0].status_id;
-                _this.getMedia(1);
+                _this.getMedia(1, '/getmedia');
             });
         },
         getMedia: function getMedia(e, data) {
@@ -55307,7 +55308,7 @@ var render = function() {
                     : $$selectedVal[0]
                 },
                 function($event) {
-                  _vm.getMedia(1)
+                  _vm.getMedia(1, "/getmedia")
                 }
               ]
             }
@@ -55777,7 +55778,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
         },
         fetchPaginate: function fetchPaginate(url) {
             this.url = url;
-            this.getMedia(1);
+            this.getMedia(1, '/getmedia');
         },
         makePagination: function makePagination(data) {
             var pagination = {
@@ -55796,7 +55797,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
                 case 2:
                     this.$toast.success(data.message, "Success", { timeout: 2000, position: 'topRight' });
                     this.blogs = [];
-                    this.getMedia(1);
+                    this.getMedia(1, '/getmedia');
                     break;
                 default:
                     break;
@@ -55813,7 +55814,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 
                 (_$this$postStatus = $this.postStatus).push.apply(_$this$postStatus, _toConsumableArray(data.data));
                 $this.post_status = _this.postStatus[0].status_id;
-                _this.getMedia(1);
+                _this.getMedia(1, '/getmedia');
             });
         },
         getMedia: function getMedia(e, data) {
@@ -55955,7 +55956,7 @@ var render = function() {
                     : $$selectedVal[0]
                 },
                 function($event) {
-                  _vm.getMedia(1)
+                  _vm.getMedia(1, "/getmedia")
                 }
               ]
             }
@@ -56423,7 +56424,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
         },
         fetchPaginate: function fetchPaginate(url) {
             this.url = url;
-            this.getMedia(1);
+            this.getMedia(1, '/getmedia');
         },
         makePagination: function makePagination(data) {
             var pagination = {
@@ -56443,7 +56444,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
                     console.log(data);
                     this.$toast.success(data.message, "Success", { timeout: 2000, position: 'topRight' });
                     this.blogs = [];
-                    this.getMedia(1);
+                    this.getMedia(1, '/getmedia');
                     break;
                 default:
                     break;
@@ -56461,7 +56462,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
                 console.log(data.data);
                 (_$this$postStatus = $this.postStatus).push.apply(_$this$postStatus, _toConsumableArray(data.data));
                 $this.post_status = _this.postStatus[0].status_id;
-                _this.getMedia(1);
+                _this.getMedia(1, '/getmedia');
             });
         },
         getMedia: function getMedia(e, data) {
@@ -56606,7 +56607,7 @@ var render = function() {
                     : $$selectedVal[0]
                 },
                 function($event) {
-                  _vm.getMedia(1)
+                  _vm.getMedia(1, "/getmedia")
                 }
               ]
             }
@@ -57093,10 +57094,37 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
+        var sortOrders = {};
+
+        var columns = [{ label: 'Status ID', name: 'status id' }, { label: 'Status Group Name', name: 'status group name' }, { label: 'Status Short Code	', name: 'status short code ' }, { label: 'Status Long Code	', name: 'status long code ' }, { label: 'Status', name: 'status' }];
+        columns.forEach(function (column) {
+            sortOrders[column.name] = -1;
+        });
         return {
+            search: '',
+            columns: columns,
+            nextUrl: null,
+            pagination: [],
             formData: {
                 status_id: null,
                 status_groupname: '',
@@ -57110,10 +57138,28 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
         };
     },
     created: function created() {
-        this.getStatus('/getstatus');
+        this.getStatus(1, null, '/getstatus');
     },
 
     methods: {
+        resetPagination: function resetPagination() {
+            this.pagination.current_page = 1;
+            this.pagination.prev_page_url = '';
+            this.pagination.next_page_url = '';
+        },
+        fetchPaginate: function fetchPaginate(url) {
+            this.url = url;
+            this.getMedia(1, '/getmedia');
+        },
+        makePagination: function makePagination(data) {
+            var pagination = {
+                current_page: data.current_page,
+                last_page: data.last_page,
+                next_page_url: data.next_page_url,
+                prev_page_url: data.prev_page_url
+            };
+            this.pagination = pagination;
+        },
         modalHideShow: function modalHideShow(e) {
             switch (e) {
                 case 1:
@@ -57139,16 +57185,34 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
                 (_$this$tableStatus = $this.tableStatus).push.apply(_$this$tableStatus, _toConsumableArray(data.data));
             });
         },
-        getStatus: function getStatus(endpoint) {
+
+        /* getStatus(endpoint){
             var $this = this;
-            axios.post(endpoint, { 'status': null }).then(function (_ref2) {
-                var _$this$postStatus;
+            axios.post(endpoint, {'status': null})
+            .then(({data}) =>{
+                $this.postStatus = []
+                $this.postStatus.push(...data.data);
+                console.log( $this.postStatus )
+            })
+        }, */
+        getStatus: function getStatus(e, data, url) {
+            var _postStatus;
 
-                var data = _ref2.data;
+            switch (e) {
+                case 1:
+                    this.postStatus = [];
+                    this.callAxios('post', url, null, 3);
+                    break;
+                case 2:
+                    (_postStatus = this.postStatus).push.apply(_postStatus, _toConsumableArray(data.data.data));
+                    this.makePagination(data.data);
+                    this.nextUrl = data.data.next_page_url;
+                    console.log(this.postStatus);
+                    break;
 
-                $this.postStatus = [];
-                (_$this$postStatus = $this.postStatus).push.apply(_$this$postStatus, _toConsumableArray(data.data));
-            });
+                default:
+                    break;
+            }
         },
         resetForm: function resetForm() {
             this.formData.status_id = null;
@@ -57205,8 +57269,8 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
         },
         callAxios: function callAxios(http, url, data, e) {
             var $this = this;
-            axios({ method: http, url: url, data: data }).then(function (_ref3) {
-                var data = _ref3.data;
+            axios({ method: http, url: url, data: data }).then(function (_ref2) {
+                var data = _ref2.data;
 
                 switch (e) {
                     case 1:
@@ -57215,6 +57279,9 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
                     case 2:
                         $this.createUpdateStatus(2, data);
                         break;
+                    case 3:
+                        $this.getStatus(2, data);
+                        break;
                     default:
                         break;
                 }
@@ -57222,6 +57289,22 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
                 // handle error
                 console.log(error);
             });
+        }
+    },
+    computed: {
+        filteredStatus: function filteredStatus() {
+            var _this = this;
+
+            var postStatus = this.postStatus;
+            if (this.search) {
+
+                postStatus = postStatus.filter(function (row) {
+                    return Object.keys(row).some(function (key) {
+                        return String(row[key]).toLowerCase().indexOf(_this.search.toLowerCase()) > -1;
+                    });
+                });
+            }
+            return postStatus;
         }
     }
 });
@@ -57268,6 +57351,35 @@ var render = function() {
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "card-body" }, [
+                _c("div", { staticClass: "d-flex justify-content-end" }, [
+                  _c("div", { staticClass: "form-group" }, [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.search,
+                          expression: "search"
+                        }
+                      ],
+                      staticClass: "form-control form-control-sm",
+                      attrs: { type: "text", placeholder: "Search..." },
+                      domProps: { value: _vm.search },
+                      on: {
+                        input: [
+                          function($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.search = $event.target.value
+                          },
+                          _vm.resetPagination
+                        ]
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
                 _c(
                   "table",
                   {
@@ -57275,12 +57387,44 @@ var render = function() {
                     attrs: { id: "example1" }
                   },
                   [
-                    _vm._m(1),
+                    _c("thead", [
+                      _c(
+                        "tr",
+                        [
+                          _vm._l(_vm.columns, function(column) {
+                            return _c(
+                              "th",
+                              {
+                                key: column.name,
+                                staticStyle: { "text-align": "center" },
+                                on: {
+                                  click: function($event) {
+                                    _vm.sortBy(column.name)
+                                  }
+                                }
+                              },
+                              [
+                                _vm._v(
+                                  "\r\n                                            " +
+                                    _vm._s(column.label) +
+                                    "\r\n                                        "
+                                )
+                              ]
+                            )
+                          }),
+                          _vm._v(" "),
+                          _c("th", { staticClass: "text-center" }, [
+                            _vm._v("Action")
+                          ])
+                        ],
+                        2
+                      )
+                    ]),
                     _vm._v(" "),
                     _vm.postStatus.length != 0
                       ? _c(
                           "tbody",
-                          _vm._l(_vm.postStatus, function(status) {
+                          _vm._l(_vm.filteredStatus, function(status) {
                             return _c("tr", { key: status.status_id }, [
                               _c("td", { attrs: { align: "center" } }, [
                                 _vm._v(_vm._s(status.status_id))
@@ -57345,6 +57489,111 @@ var render = function() {
                             ])
                           })
                         )
+                      : _c("tbody", [
+                          _c(
+                            "td",
+                            { attrs: { align: "center", colspan: "5" } },
+                            [_vm._v("No Data Found")]
+                          )
+                        ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "d-flex justify-content-center mt-4" },
+                  [
+                    _vm.postStatus.length != 0
+                      ? _c(
+                          "ul",
+                          { staticClass: "pagination" },
+                          [
+                            _c(
+                              "li",
+                              {
+                                staticClass: "page-item ",
+                                class: !_vm.pagination.prev_page_url
+                                  ? "disabled"
+                                  : ""
+                              },
+                              [
+                                _c(
+                                  "a",
+                                  {
+                                    staticClass: "page-link",
+                                    on: {
+                                      click: function($event) {
+                                        _vm.fetchPaginate(
+                                          _vm.pagination.prev_page_url
+                                        )
+                                      }
+                                    }
+                                  },
+                                  [_vm._v("Previous")]
+                                )
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _vm._l(_vm.pagination.last_page, function(page) {
+                              return _c(
+                                "li",
+                                {
+                                  key: page.index,
+                                  staticClass: "page-item",
+                                  class:
+                                    _vm.pagination.current_page == page
+                                      ? "active"
+                                      : ""
+                                },
+                                [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "page-link",
+                                      on: {
+                                        click: function($event) {
+                                          _vm.getStatus(
+                                            1,
+                                            null,
+                                            "/getstatus?page=" + page
+                                          )
+                                        }
+                                      }
+                                    },
+                                    [_vm._v(_vm._s(page))]
+                                  )
+                                ]
+                              )
+                            }),
+                            _vm._v(" "),
+                            _c(
+                              "li",
+                              {
+                                staticClass: "page-item",
+                                class: !_vm.pagination.next_page_url
+                                  ? "disabled"
+                                  : ""
+                              },
+                              [
+                                _c(
+                                  "a",
+                                  {
+                                    staticClass: "page-link",
+                                    on: {
+                                      click: function($event) {
+                                        _vm.fetchPaginate(
+                                          _vm.pagination.next_page_url
+                                        )
+                                      }
+                                    }
+                                  },
+                                  [_vm._v("Next")]
+                                )
+                              ]
+                            )
+                          ],
+                          2
+                        )
                       : _vm._e()
                   ]
                 )
@@ -57365,7 +57614,7 @@ var render = function() {
       [
         _c("div", { staticClass: "modal-dialog modal-dialog-centered" }, [
           _c("div", { staticClass: "modal-content" }, [
-            _vm._m(2),
+            _vm._m(1),
             _vm._v(" "),
             _c("div", { staticClass: "modal-body" }, [
               _c("div", { attrs: { id: "app" } }, [
@@ -57630,26 +57879,6 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("thead", [
-      _c("tr", [
-        _c("th", { staticClass: "text-center" }, [_vm._v("Status ID")]),
-        _vm._v(" "),
-        _c("th", { staticClass: "text-center" }, [_vm._v("Status Group Name")]),
-        _vm._v(" "),
-        _c("th", { staticClass: "text-center" }, [_vm._v("Status Short Code")]),
-        _vm._v(" "),
-        _c("th", { staticClass: "text-center" }, [_vm._v("Status Long Code")]),
-        _vm._v(" "),
-        _c("th", { staticClass: "text-center" }, [_vm._v("Status")]),
-        _vm._v(" "),
-        _c("th", { staticClass: "text-center" }, [_vm._v("Action")])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
     return _c("div", { staticClass: "modal-header" }, [
       _c("h4", { staticClass: "modal-title" }, [
         _vm._v("Create Status Reference")
@@ -57857,6 +58086,12 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -57895,7 +58130,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
         },
         fetchPaginate: function fetchPaginate(url) {
             this.url = url;
-            this.getMedia(1);
+            this.getMedia(1, '/getmedia');
         },
         makePagination: function makePagination(data) {
             var pagination = {
@@ -57990,6 +58225,22 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
                 console.log(error);
             });
         }
+    },
+    computed: {
+        filteredusers: function filteredusers() {
+            var _this = this;
+
+            var users = this.users;
+            if (this.search) {
+
+                users = users.filter(function (row) {
+                    return Object.keys(row).some(function (key) {
+                        return String(row[key]).toLowerCase().indexOf(_this.search.toLowerCase()) > -1;
+                    });
+                });
+            }
+            return users;
+        }
     }
 });
 
@@ -58009,7 +58260,40 @@ var render = function() {
         _c("div", { staticClass: "row" }, [
           _c("div", { staticClass: "col-sm-12" }, [
             _c("div", { staticClass: "card" }, [
-              _vm._m(1),
+              _c("div", { staticClass: "card-header" }, [
+                _c("div", { staticClass: "d-flex justify-content-between" }, [
+                  _c("h3", { staticClass: "card-title" }, [
+                    _vm._v("List of Users")
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "form-group mb-0" }, [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.search,
+                          expression: "search"
+                        }
+                      ],
+                      staticClass: "form-control form-control-sm",
+                      attrs: { type: "text", placeholder: "Search..." },
+                      domProps: { value: _vm.search },
+                      on: {
+                        input: [
+                          function($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.search = $event.target.value
+                          },
+                          _vm.resetPagination
+                        ]
+                      }
+                    })
+                  ])
+                ])
+              ]),
               _vm._v(" "),
               _c("div", { staticClass: "card-body" }, [
                 _c(
@@ -58056,7 +58340,7 @@ var render = function() {
                     _vm.users.length != 0
                       ? _c(
                           "tbody",
-                          _vm._l(_vm.users, function(user) {
+                          _vm._l(_vm.filteredusers, function(user) {
                             return _c("tr", { key: user.id }, [
                               _c("td", { attrs: { align: "center" } }, [
                                 _vm._v(_vm._s(user.name))
@@ -58239,7 +58523,7 @@ var render = function() {
       [
         _c("div", { staticClass: "modal-dialog modal-dialog-centered" }, [
           _c("div", { staticClass: "modal-content" }, [
-            _vm._m(2),
+            _vm._m(1),
             _vm._v(" "),
             _c("div", { staticClass: "modal-body" }, [
               _c("div", { attrs: { id: "app" } }, [
@@ -58469,14 +58753,6 @@ var staticRenderFns = [
           ])
         ])
       ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-header" }, [
-      _c("h3", { staticClass: "card-title" }, [_vm._v("List od Users")])
     ])
   },
   function() {

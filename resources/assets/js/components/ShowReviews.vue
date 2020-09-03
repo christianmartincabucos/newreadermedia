@@ -3,7 +3,7 @@
     <div class="d-flex justify-content-between">
         <div class="form-group">
             <label for="sel1">Status Category</label>
-            <select class="custom-select custom-select-sm" name="status" v-cloak v-model="post_status" @change="getMedia(1)">
+            <select class="custom-select custom-select-sm" name="status" v-cloak v-model="post_status" @change="getMedia(1, '/getmedia')">
                 <option v-for="post in postStatus" v-bind:value="post.status_id" :key="post.status_id">{{ post.status_longcodename }}</option>
             </select>
         </div>
@@ -118,7 +118,7 @@ export default {
         },
         fetchPaginate(url){
             this.url = url
-            this.getMedia(1)
+            this.getMedia(1, '/getmedia')
         },
         makePagination(data){
             let pagination = {
@@ -137,7 +137,7 @@ export default {
                 case 2:
                     this.$toast.success(data.message, "Success", {timeout: 2000, position:'topRight'});
                     this.blogs = []
-                    this.getMedia(1)
+                    this.getMedia(1, '/getmedia')
                 break;
                 default:
                     break;
@@ -149,7 +149,7 @@ export default {
             .then(({data}) =>{
                 $this.postStatus.push(...data.data);
                 $this.post_status = this.postStatus[0].status_id
-                this.getMedia(1);
+                this.getMedia(1, '/getmedia');
 
             })
         },

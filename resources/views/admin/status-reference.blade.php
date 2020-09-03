@@ -32,13 +32,13 @@
 </div>
 @push('scripts')
 <script>
-    $(function() {
+    /* $(function() {
         $("#example1").DataTable({
             "responsive": true,
             "autoWidth": false,
         });
     });
-
+ */
     function userUpdate(data) {
         // alert(data.status)
         document.getElementById("status").value = data.status == 1 ? 2 : 1;

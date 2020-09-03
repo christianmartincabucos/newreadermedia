@@ -91,8 +91,8 @@ class BlogsController extends Controller
     }
     public function media()
     {
-        $datas      = Blog::where(['status' => 1, 'category_id' => 2])->orderBy('blog_id', 'desc')->paginate(5);
-        $recent     = Blog::where(['status' => 1, 'category_id' => 2])->orderBy('blog_id', 'desc')->take(3)->get();
+        $datas      = Blog::where(['status' => 1, 'category_id' =>2, 'post_status' => 4])->orderBy('blog_id', 'desc')->paginate(5);
+        $recent     = Blog::where(['status' => 1, 'category_id' =>2, 'post_status' => 4])->orderBy('blog_id', 'desc')->take(3)->get();
 
         return view('blogs.media.index', compact(['datas','recent']));
     }
@@ -114,8 +114,8 @@ class BlogsController extends Controller
     }
     public function newsletters()
     {
-        $datas      = Blog::where(['status' => 1, 'category_id' => 4 ])->orderBy('blog_id', 'desc')->paginate(5);
-        $recent     = Blog::where(['status' => 1, 'category_id' => 4])->orderBy('blog_id', 'desc')->take(3)->get();
+        $datas      = Blog::where(['status' => 1, 'category_id' => 4, 'post_status' => 4 ])->orderBy('blog_id', 'desc')->paginate(5);
+        $recent     = Blog::where(['status' => 1, 'category_id' =>4, 'post_status' => 4])->orderBy('blog_id', 'desc')->take(3)->get();
         
         return view('blogs.newsletters.index', compact(['datas', 'recent']));
     }
@@ -133,7 +133,7 @@ class BlogsController extends Controller
     }
     public function upload(Request $request)
     {
-        dd($request->file('file'));
+        
         /* $folder = uniqid();
         if (!\Storage::exists($folder)) {
             \Storage::disk('posts')->makeDirectory($folder);
@@ -167,8 +167,8 @@ class BlogsController extends Controller
     }
     public function newreadermedia()
     {
-        $datas      = Blog::where(['status' => 1, 'category_id' => 1])->orderBy('blog_id', 'desc')->paginate(5);
-        $recent     = Blog::where(['status' => 1, 'category_id' => 1])->orderBy('blog_id','desc')->take(3)->get();
+        $datas      = Blog::where(['status' => 1, 'category_id' =>1, 'post_status' => 4])->orderBy('blog_id', 'desc')->paginate(5);
+        $recent     = Blog::where(['status' => 1, 'category_id' =>1, 'post_status' => 4])->orderBy('blog_id','desc')->take(3)->get();
         $categories = BlogCategory::where('status', 1)->orderBy('category_id','desc')->get();
 
         return view('blogs.new-reader-media.index', compact(['datas', 'recent', 'categories']));    

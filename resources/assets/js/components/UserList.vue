@@ -22,11 +22,17 @@
                 <div class="col-sm-12">
                     <div class="card">
                         <div class="card-header">
-                            <h3 class="card-title">List od Users</h3>
+                            <div class="d-flex justify-content-between">
+                                <h3 class="card-title">List of Users</h3>
+                                <div class="form-group mb-0">
+                                    <input class="form-control form-control-sm" type="text" v-model="search" @input="resetPagination" placeholder="Search...">
+                                </div>
+                            </div>
+    
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
-                            <table id="example1" class="table table-bordered table-striped">
+                            <table id="example1" class="table table-bordered table-striped" v-cloak>
                                 <thead>
                                     <tr>
                                         <th style="text-align:center;" v-for="column in columns" :key="column.name" @click="sortBy(column.name)">
@@ -36,7 +42,7 @@
                                     </tr>
                                 </thead>
                                 <tbody v-if="users.length != 0">
-                                    <tr v-for="user in users" :key="user.id">
+                                    <tr v-for="user in filteredusers" :key="user.id">
                                         <td align="center">{{ user.name }}</td>
                                         <td align="center">{{ user.email }}</td>
                                         <td align="center">{{ user.user_type }}</td>
@@ -170,7 +176,7 @@
             },
             fetchPaginate(url){
                 this.url = url
-                this.getMedia(1)
+                this.getMedia(1, '/getmedia')
             },
             makePagination(data){
                 let pagination = {
@@ -260,6 +266,20 @@
                         console.log(error);
                     });
             }
+        },
+        computed:{
+            filteredusers() {
+                let users = this.users;
+                if (this.search) {
+                    
+                    users = users.filter((row) => {
+                        return Object.keys(row).some((key) => {
+                            return String(row[key]).toLowerCase().indexOf(this.search.toLowerCase()) > -1;
+                        })
+                    });
+                }
+                return users
+            },
         },
     }
 </script>

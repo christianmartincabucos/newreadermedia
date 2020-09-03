@@ -13,7 +13,7 @@ class StatusRefenceController extends Controller
             $status = StatusReference::where(['status_groupname' => $request->status])->orderBy('status_id', 'desc')->get();
         }
         if($request->status == null){
-            $status = StatusReference::all();
+            $status = StatusReference::paginate(7);
         }
         return response()->json([
             'data' => $status

@@ -30,19 +30,23 @@
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
-                            <table id="example1" class="table table-bordered table-striped">
+                            <div class="d-flex justify-content-end">
+                                <div class="form-group">
+                                    <input class="form-control form-control-sm" type="text" v-model="search" @input="resetPagination" placeholder="Search...">
+                                </div>
+                            </div>
+                            <table id="example1" class="table table-bordered table-striped" v-cloak>
                                 <thead>
+                                    
                                     <tr>
-                                        <th class="text-center">Status ID</th>
-                                        <th class="text-center">Status Group Name</th>
-                                        <th class="text-center">Status Short Code</th>
-                                        <th class="text-center">Status Long Code</th>
-                                        <th class="text-center">Status</th>
+                                         <th style="text-align:center;" v-for="column in columns" :key="column.name" @click="sortBy(column.name)">
+                                            {{column.label}}
+                                        </th>
                                         <th class="text-center">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody v-if="postStatus.length != 0">
-                                    <tr v-for="status in postStatus" :key="status.status_id">
+                                    <tr v-for="status in filteredStatus" :key="status.status_id">
                                         <td align="center">{{ status.status_id }}</td>
                                         <td align="center">{{ status.status_groupname }}</td>
                                         <td align="center">{{ status.status_shortacodename }}</td>
@@ -55,7 +59,20 @@
                                     </tr>
                                 </tbody>
 
+                            <tbody v-else>
+                                    <td align="center" colspan="5">No Data Found</td>
+                                </tbody>
                             </table>
+                            <div class="d-flex justify-content-center mt-4">
+                                <ul class="pagination" v-if="postStatus.length != 0">
+                                    <li :class="!pagination.prev_page_url ? 'disabled':''" class="page-item "><a class="page-link" @click="fetchPaginate(pagination.prev_page_url)">Previous</a></li>
+                                    <li :class="pagination.current_page == page ? 'active':''" class="page-item" v-for="page in pagination.last_page" :key="page.index">
+                                        <a class="page-link" @click="getStatus(1,null, `/getstatus?page=${page}`)">{{ page }}</a>
+                                    </li>
+                                    <li :class="!pagination.next_page_url ? 'disabled':''" class="page-item"><a class="page-link" @click="fetchPaginate(pagination.next_page_url)">Next</a></li>
+                                </ul>
+                            </div>
+                        
                         </div>
                         <!-- /.card-body -->
                     </div>
@@ -133,7 +150,23 @@
 <script>
 export default {
     data() {
+        let sortOrders = {};
+        
+            let columns = [
+                {label: 'Status ID', name: 'status id' },
+                {label: 'Status Group Name', name: 'status group name'},
+                {label: 'Status Short Code	', name: 'status short code '},
+                {label: 'Status Long Code	', name: 'status long code '},
+                {label: 'Status', name: 'status'},
+            ];
+            columns.forEach((column) => {
+            sortOrders[column.name] = -1;
+            });
         return {
+            search:'',
+            columns: columns,
+            nextUrl: null,
+            pagination:[],
             formData:{
                 status_id               : null,
                 status_groupname        : ''
@@ -147,9 +180,27 @@ export default {
         }
     },
     created() {
-        this.getStatus('/getstatus');
+        this.getStatus(1, null, '/getstatus');
     },
     methods: {
+         resetPagination(){
+            this.pagination.current_page = 1;
+            this.pagination.prev_page_url = '';
+            this.pagination.next_page_url = '';
+        },
+        fetchPaginate(url){
+            this.url = url
+            this.getMedia(1, '/getmedia')
+        },
+        makePagination(data){
+            let pagination = {
+                current_page: data.current_page,
+                last_page: data.last_page,
+                next_page_url: data.next_page_url,
+                prev_page_url:data.prev_page_url,
+            }
+            this.pagination = pagination
+        },
         modalHideShow(e){
             switch (e) {
                 case 1:
@@ -172,13 +223,31 @@ export default {
                 $this.tableStatus.push(...data.data);
             })
         },
-        getStatus(endpoint){
+        /* getStatus(endpoint){
             var $this = this;
             axios.post(endpoint, {'status': null})
             .then(({data}) =>{
                 $this.postStatus = []
                 $this.postStatus.push(...data.data);
+                console.log( $this.postStatus )
             })
+        }, */
+        getStatus(e, data, url){
+            switch (e) {
+                case 1:
+                    this.postStatus = []
+                    this.callAxios('post', url, null, 3)
+                break;
+                case 2:
+                    this.postStatus.push(...data.data.data)
+                    this.makePagination(data.data)
+                    this.nextUrl = data.data.next_page_url;
+                    console.log(this.postStatus)
+                break;
+            
+                default:
+                    break;
+            }
         },
         resetForm(){
             this.formData.status_id = null;
@@ -244,6 +313,9 @@ export default {
                         case 2:
                             $this.createUpdateStatus(2, data)
                         break;
+                        case 3:
+                            $this.getStatus(2, data)
+                        break;
                         default:
                         break;
                     }
@@ -253,6 +325,20 @@ export default {
                     console.log(error);
                 });
         } 
+    },
+    computed:{
+        filteredStatus() {
+            let postStatus = this.postStatus;
+            if (this.search) {
+                
+                postStatus = postStatus.filter((row) => {
+                    return Object.keys(row).some((key) => {
+                        return String(row[key]).toLowerCase().indexOf(this.search.toLowerCase()) > -1;
+                    })
+                });
+            }
+            return postStatus
+        },
     },
 }
 </script>
