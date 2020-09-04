@@ -15,7 +15,10 @@ class TwoFA
      */
     public function handle($request, Closure $next)
     {
-        if(auth()->user()->is_verified){
+        /* if (Auth::user()->is_verified == 5) {
+            return $next($request);
+        } */
+        if(auth()->user()->is_verified == 5){
             return $next($request);
         }
         return redirect('/verify');
