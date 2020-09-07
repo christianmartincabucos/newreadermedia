@@ -70,7 +70,7 @@ class BlogsController extends Controller
         $blog = Blog::where([
             'status'            => 1, 
             'category_id'       => $request->category_id, 
-            'post_status'       => $request->post_status],)
+            'post_status'       => $request->post_status])
             ->orderBy('blog_id', 'desc')
             ->paginate(7);
             
