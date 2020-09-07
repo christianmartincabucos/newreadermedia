@@ -87,7 +87,7 @@ Route::post('/contact', function(Request $request){
 Route::get('/unsubscribe', 'SubscriberController@unsubscribe')->name('unsubscribe');
 
 // SPOTLIGHTS
-Route::get('/spotlight', 'FeaturedAuthorController@index')->name('spotlight');
+/* Route::get('/spotlight', 'FeaturedAuthorController@index')->name('spotlight');
 Route::get('/spotlight/steven-bentley', 'FeaturedAuthorController@featured1')->name('spotlight.steven-bentley');
 Route::get('/spotlight/zachary-zeigler', 'FeaturedAuthorController@featured2')->name('spotlight.zachary-zeigler');
 Route::get('/spotlight/kristy-kraft', 'FeaturedAuthorController@featured3')->name('spotlight.kristy-kraft');
@@ -123,7 +123,7 @@ Route::get('/spotlight/clifton-west', 'FeaturedAuthorController@featured32')->na
 Route::get('/spotlight/tyrone-holcomb', 'FeaturedAuthorController@featured33')->name('spotlight.tyrone-holcomb');
 Route::get('/spotlight/richard-jurgensen', 'FeaturedAuthorController@featured34')->name('spotlight.richard-jurgensen');
 Route::get('/spotlight/malaika-horne', 'FeaturedAuthorController@featured35')->name('spotlight.malaika-horne');
-Route::get('/spotlight/bill-sanford', 'FeaturedAuthorController@featured36')->name('spotlight.bill-sanford');
+Route::get('/spotlight/bill-sanford', 'FeaturedAuthorController@featured36')->name('spotlight.bill-sanford'); */
 
 
 // BLOGS

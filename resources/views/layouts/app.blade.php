@@ -272,7 +272,7 @@
                             <li class="{{{ (Request::is(['screen-adaptation', 'screen-adaptation/*']) ? 'active' : '') }}}"><a href="{{ url('/screen-adaptation') }}">Screen Adaptation</a></li>
                             <li class="{{{ (Request::is(['bookstore-display', 'bookstore-display/*']) ? 'active' : '') }}}"><a href="{{ url('/bookstore-display') }}">Bookstore Display</a></li>
 
-                            <li class="  {{{ (Request::is(['spotlight', 'spotlight/*']) ? 'active' : '') }}}"><a href="{{ url('/spotlight') }}">Spotlight</a></li>
+                            <!-- <li class="  {{{ (Request::is(['spotlight', 'spotlight/*']) ? 'active' : '') }}}"><a href="{{ url('/spotlight') }}">Spotlight</a></li> -->
 
                             <li class="dropdown ">
                                 <a href="{{ url('/blogs') }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blogs</a>

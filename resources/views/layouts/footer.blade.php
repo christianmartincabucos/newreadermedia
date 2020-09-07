@@ -14,7 +14,7 @@
                 <li><a href="{{ url('/screen-adaptation') }}" style="color:#fff">Screen Adaptation</a></li>
                 <li><a href="{{ url('/bookstore-display') }}" style="color:#fff">Bookstore Display</a></li>
                 
-                <li><a href="{{ url('/spotlight') }}" style="color:#fff">Spotlight</a></li>
+                <!-- <li><a href="{{ url('/spotlight') }}" style="color:#fff">Spotlight</a></li> -->
                 <li><a href="{{ url('/blogs') }}" style="color:#fff">Blogs</a></li>
                 
                 
