@@ -18,6 +18,9 @@
                                 </h1>
                             </div>
                             <div class="col-md-9 right-divider">
+                                @if ($datas == '')
+                                <h1 style="text-align:center;color:#B42828;"><b>No data Found!</b></h1>
+                                @endif
                                 @foreach($datas as $data)
                                 <div class="box-article">
                                     <div class="row">
@@ -42,7 +45,7 @@
                                 <div class="text-center">
                                     {{ $datas->links() }}
                                 </div>
-                                
+
                             </div>
                             <div class="col-md-3">
                                 <p><strong>RECENT POSTS</strong></p>

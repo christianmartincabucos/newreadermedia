@@ -17,6 +17,9 @@
                                 </h1>
                             </div>
                             <div class="col-md-9 right-divider">
+                                @if ($datas == '')
+                                <h1 style="text-align:center;color:#B42828;"><b>No data Found!</b></h1>
+                                @endif
                                 @foreach ($datas as $data)
                                 <!-- <a href="{{ $data->url }}">{{ $data->title }}</a> -->
                                 <div class="box-article">

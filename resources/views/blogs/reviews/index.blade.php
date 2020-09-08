@@ -12,14 +12,18 @@
                     <div class="row">
                         <section class="box-section">
                             <div class="col-md-12 px-5">
-                                <h1 class="text-center ">REVIEWS</h1>
+
+                                @if ($datas == '')
+                                <h1 style="text-align:center;color:#B42828;"><b>No data Found!</b></h1>
+                                @endif
+                                <!-- <h1 class="text-center ">REVIEWS</h1> -->
                                 @foreach($datas as $data)
                                 <div class="px-5">
                                     <br>
                                     <br>
                                     <blockquote>
                                         <div class="panel-review">
-                                            @parsedown($data->body)
+                                            {!!$data->body!!}
 
                                             <br>
                                             <br>
@@ -35,6 +39,7 @@
                                     <hr />
                                 </div>
                                 @endforeach
+
                                 <div class="text-center">
                                     {{ $datas->links() }}
                                 </div>

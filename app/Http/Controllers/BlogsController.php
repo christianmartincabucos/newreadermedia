@@ -115,7 +115,7 @@ class BlogsController extends Controller
     public function newsletters()
     {
         $datas      = Blog::where(['status' => 1, 'category_id' => 4, 'post_status' => 4 ])->orderBy('blog_id', 'desc')->paginate(5);
-        $recent     = Blog::where(['status' => 1, 'category_id' =>4, 'post_status' => 4])->orderBy('blog_id', 'desc')->take(3)->get();
+        $recent     = Blog::where(['status' => 1, 'category_id' => 4, 'post_status' => 4])->orderBy('blog_id', 'desc')->take(3)->get();
         
         return view('blogs.newsletters.index', compact(['datas', 'recent']));
     }
@@ -164,6 +164,14 @@ class BlogsController extends Controller
             @header('Content-type: text/html; charset=utf-8');
             echo $response; */
         }
+    }
+    public function reviews()
+    {
+        $datas      = Blog::where(['status' => 1, 'category_id' => 3, 'post_status' => 4])->orderBy('blog_id', 'desc')->paginate(1);
+        // $recent     = Blog::where(['status' => 1, 'category_id' => 3, 'post_status' => 4])->orderBy('blog_id','desc')->take(3)->get();
+        // $categories = BlogCategory::where('status', 1)->orderBy('category_id','desc')->get();
+
+        return view('blogs.reviews.index', compact('datas')); 
     }
     public function newreadermedia()
     {
