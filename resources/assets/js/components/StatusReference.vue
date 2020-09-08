@@ -223,15 +223,6 @@ export default {
                 $this.tableStatus.push(...data.data);
             })
         },
-        /* getStatus(endpoint){
-            var $this = this;
-            axios.post(endpoint, {'status': null})
-            .then(({data}) =>{
-                $this.postStatus = []
-                $this.postStatus.push(...data.data);
-                console.log( $this.postStatus )
-            })
-        }, */
         getStatus(e, data, url){
             switch (e) {
                 case 1:

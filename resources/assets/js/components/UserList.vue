@@ -41,7 +41,7 @@
                                         <th class="text-center">Action</th>
                                     </tr>
                                 </thead>
-                                <tbody v-if="users.length != 0">
+                                <tbody v-if="users.length != 0" v-cloak>
                                     <tr v-for="user in filteredusers" :key="user.id">
                                         <td align="center">{{ user.name }}</td>
                                         <td align="center">{{ user.email }}</td>

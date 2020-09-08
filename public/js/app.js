@@ -58461,16 +58461,6 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
                 (_$this$tableStatus = $this.tableStatus).push.apply(_$this$tableStatus, _toConsumableArray(data.data));
             });
         },
-
-        /* getStatus(endpoint){
-            var $this = this;
-            axios.post(endpoint, {'status': null})
-            .then(({data}) =>{
-                $this.postStatus = []
-                $this.postStatus.push(...data.data);
-                console.log( $this.postStatus )
-            })
-        }, */
         getStatus: function getStatus(e, data, url) {
             var _postStatus;
 
@@ -59618,6 +59608,7 @@ var render = function() {
                     _vm.users.length != 0
                       ? _c(
                           "tbody",
+                          {},
                           _vm._l(_vm.filteredusers, function(user) {
                             return _c("tr", { key: user.id }, [
                               _c("td", { attrs: { align: "center" } }, [
