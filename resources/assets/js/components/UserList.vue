@@ -196,7 +196,7 @@
                         $('#myModaluser').modal('hide')
                         this.getUsers(1, null, '/getusers')
                         this.$toast.success(data.message, "Success", {timeout: 2000, position:'topRight'})
-                        console.log(data)
+                        // console.log(data)
                     break;
                 
                     default:
@@ -231,7 +231,7 @@
                         this.users.push(...data.data.data)
                         this.makePagination(data.data)
                         this.nextUrl = data.data.next_page_url;
-                        console.log(this.users)
+                        // console.log(this.users)
                     break;
                 
                     default:

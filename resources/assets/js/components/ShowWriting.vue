@@ -135,7 +135,7 @@ export default {
                     this.callAxios('post', `/administrator/updateblog/${data}`, {'status': 2}, 3)
                 break;
                 case 2:
-                    console.log(data)
+                    // console.log(data)
                     this.$toast.success(data.message, "Success", {timeout: 2000, position:'topRight'});
                     this.blogs = []
                     this.getMedia(1, '/getmedia')
@@ -148,7 +148,7 @@ export default {
             var $this = this;
             axios.post(endpoint, {'status': 'BLOGSTATUS'})
             .then(({data}) =>{
-                console.log(data.data);
+                // console.log(data.data);
                 $this.postStatus.push(...data.data);
                 $this.post_status = this.postStatus[0].status_id
                 this.getMedia(1, '/getmedia');
@@ -174,7 +174,7 @@ export default {
             /* var $this = this;
             axios.post('/getmedia', {'category_id': 3,'post_status': 2})
             .then(({data}) =>{
-                console.log(data);
+                // console.log(data);
                 $this.blogs.push(...data.data.data);
                 $this.nextUrl = data.data.next_page_url;
             }) */
@@ -196,7 +196,7 @@ export default {
                 case 2:
                     this.$toast.success(data.message, "Success", {timeout: 2000, position:'topRight'});
                     this.blogs = [];
-                    console.log(this.blogs);
+                    // console.log(this.blogs);
                     this.getMedia(this.endpoint)
                     break;
                 default:
@@ -210,7 +210,7 @@ export default {
                 .then(({data}) =>{
                     switch (e) {
                         case 1:
-                            console.log(data);
+                            // console.log(data);
                             $this.approve(2, data)
                         break;
                         case 2:

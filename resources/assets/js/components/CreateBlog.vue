@@ -169,7 +169,7 @@ export default {
         var $this = this;
         axios.get('/getcategory')
         .then(function (response) {
-            console.log($this.blogcategories);
+            // console.log($this.blogcategories);
             for (let i = 0; i < response.data.categories.length; i++) {
                
                 $this.blogcategories.push({
@@ -223,7 +223,7 @@ export default {
                     $('#myModal').modal('hide')
                     this.resetForm();
                     this.$toast.success(data.message, "Success", {timeout: 2000, position:'topRight'});
-                    console.log(data)
+                    // console.log(data)
                 default:
                 break;
             }

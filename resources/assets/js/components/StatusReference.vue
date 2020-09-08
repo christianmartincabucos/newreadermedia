@@ -242,7 +242,7 @@ export default {
                     this.postStatus.push(...data.data.data)
                     this.makePagination(data.data)
                     this.nextUrl = data.data.next_page_url;
-                    console.log(this.postStatus)
+                    // console.log(this.postStatus)
                 break;
             
                 default:
@@ -269,7 +269,7 @@ export default {
                     this.formData.status            = data.table_status
                 break;
                 case 2:
-                    console.log(data)    
+                    // console.log(data)    
                 break;
                 default:
                 break;
@@ -287,7 +287,7 @@ export default {
                     if(this.formData.status_long == ''){
                         return this.$toast.warning('Status Long Code is required.', "Warning", {timeout: 2000, position:'topRight'});
                     }
-                    console.log(data)
+                    // console.log(data)
                     this.formData.status_id == null ? this.callAxios('post', '/administrator/status-reference', this.formData, 1):this.callAxios('post', `/administrator/status-reference/${this.formData.status_id}`, this.formData, 2)
                 break;
                 case 2:
@@ -296,7 +296,7 @@ export default {
                     this.modalHideShow(2)
                     this.getStatus(1,null,'/getstatus')
                     this.hide = true
-                    console.log(data);
+                    // console.log(data);
                 break;
                 default:
                 break;

@@ -6,7 +6,6 @@
 export default {
     props:['blog'],
     data() {
-    console.log(blog);
         return {
             blog_id: this.blog
         }
@@ -20,7 +19,6 @@ export default {
                     break;
                 case 2:
                     this.$toast.success(data.message, "Success", {timeout: 2000, position:'topRight'});
-                    console.log(data);
                     break;
                 default:
                     break;

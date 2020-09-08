@@ -54725,7 +54725,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     mounted: function mounted() {
         var $this = this;
         axios.get('/getcategory').then(function (response) {
-            console.log($this.blogcategories);
+            // console.log($this.blogcategories);
             for (var i = 0; i < response.data.categories.length; i++) {
 
                 $this.blogcategories.push({
@@ -54776,7 +54776,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     $('#myModal').modal('hide')
                     this.resetForm();
                     this.$toast.success(data.message, "Success", {timeout: 2000, position:'topRight'});
-                    console.log(data)
+                    // console.log(data)
                 default:
                 break;
             }
@@ -55525,7 +55525,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: ['blog'],
     data: function data() {
-        console.log(blog);
         return {
             blog_id: this.blog
         };
@@ -55540,7 +55539,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     break;
                 case 2:
                     this.$toast.success(data.message, "Success", { timeout: 2000, position: 'topRight' });
-                    console.log(data);
                     break;
                 default:
                     break;
@@ -57717,7 +57715,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
                     this.callAxios('post', '/administrator/updateblog/' + data, { 'status': 2 }, 3);
                     break;
                 case 2:
-                    console.log(data);
+                    // console.log(data)
                     this.$toast.success(data.message, "Success", { timeout: 2000, position: 'topRight' });
                     this.blogs = [];
                     this.getMedia(1, '/getmedia');
@@ -57735,7 +57733,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 
                 var data = _ref.data;
 
-                console.log(data.data);
+                // console.log(data.data);
                 (_$this$postStatus = $this.postStatus).push.apply(_$this$postStatus, _toConsumableArray(data.data));
                 $this.post_status = _this.postStatus[0].status_id;
                 _this.getMedia(1, '/getmedia');
@@ -57762,7 +57760,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
             /* var $this = this;
             axios.post('/getmedia', {'category_id': 3,'post_status': 2})
             .then(({data}) =>{
-                console.log(data);
+                // console.log(data);
                 $this.blogs.push(...data.data.data);
                 $this.nextUrl = data.data.next_page_url;
             }) */
@@ -57785,7 +57783,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
                 case 2:
                     this.$toast.success(data.message, "Success", { timeout: 2000, position: 'topRight' });
                     this.blogs = [];
-                    console.log(this.blogs);
+                    // console.log(this.blogs);
                     this.getMedia(this.endpoint);
                     break;
                 default:
@@ -57801,7 +57799,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 
                 switch (e) {
                     case 1:
-                        console.log(data);
+                        // console.log(data);
                         $this.approve(2, data);
                         break;
                     case 2:
@@ -58485,7 +58483,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
                     (_postStatus = this.postStatus).push.apply(_postStatus, _toConsumableArray(data.data.data));
                     this.makePagination(data.data);
                     this.nextUrl = data.data.next_page_url;
-                    console.log(this.postStatus);
+                    // console.log(this.postStatus)
                     break;
 
                 default:
@@ -58512,7 +58510,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
                     this.formData.status = data.table_status;
                     break;
                 case 2:
-                    console.log(data);
+                    // console.log(data)    
                     break;
                 default:
                     break;
@@ -58530,7 +58528,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
                     if (this.formData.status_long == '') {
                         return this.$toast.warning('Status Long Code is required.', "Warning", { timeout: 2000, position: 'topRight' });
                     }
-                    console.log(data);
+                    // console.log(data)
                     this.formData.status_id == null ? this.callAxios('post', '/administrator/status-reference', this.formData, 1) : this.callAxios('post', '/administrator/status-reference/' + this.formData.status_id, this.formData, 2);
                     break;
                 case 2:
@@ -58539,7 +58537,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
                     this.modalHideShow(2);
                     this.getStatus(1, null, '/getstatus');
                     this.hide = true;
-                    console.log(data);
+                    // console.log(data);
                     break;
                 default:
                     break;
@@ -59430,7 +59428,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
                     $('#myModaluser').modal('hide');
                     this.getUsers(1, null, '/getusers');
                     this.$toast.success(data.message, "Success", { timeout: 2000, position: 'topRight' });
-                    console.log(data);
+                    // console.log(data)
                     break;
 
                 default:
@@ -59467,7 +59465,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
                     (_users = this.users).push.apply(_users, _toConsumableArray(data.data.data));
                     this.makePagination(data.data);
                     this.nextUrl = data.data.next_page_url;
-                    console.log(this.users);
+                    // console.log(this.users)
                     break;
 
                 default:
