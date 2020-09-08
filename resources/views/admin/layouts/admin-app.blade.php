@@ -250,7 +250,7 @@
         <!-- /.control-sidebar -->
     </div>
     <!-- ./wrapper -->
-    <script src="{{ asset('js/public/app.js') }}"></script>
+    <script src="{{ asset('public/js/app.js') }}"></script>
 
     <!-- <script src="{{ asset('js/admin.js') }}') }}"></script> -->
     <script src="{{ asset('public/admin-lte/plugins/jquery/jquery.min.js') }}"></script>
