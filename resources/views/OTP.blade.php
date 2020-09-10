@@ -19,6 +19,6 @@
 <h1 style="text-align:center;font-size: 36px;color:#BC3738;font-weight:bold!important;">{{ $OTP }}</h1>
 <br>
 <p>DO NOT SHARE THE CODE WITH ANYONE. If you did not make this request, change your password immediately and contact support.</p>
-<p>Note on account security: NRMedia will never ask for your password and verification code via email. Only log in to the official <a href="http://127.0.0.1:8000/verify">NRMedia homepage.</a></p>
+<p>Note on account security: NRMedia will never ask for your password and verification code via email. Only log in to the official <a href="https://www.newreadermedia.com/verify">NRMedia homepage.</a></p>
 
 @endcomponent
