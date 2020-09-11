@@ -27,9 +27,9 @@
                                         <div class="col-xs-12 col-sm-4">
                                             <a href="{{ $data->url }}" rel="nofollow">
                                                 @if($data->image != '')
-                                                <img src="{{ asset('storage/blogs/newsletter/'.$data->image) }}" style="position:relative;width:100%;overflow:hidden;margin-bottom:10px">
+                                                <img src="{{ asset('public/storage/blogs/newsletter/'.$data->image) }}" style="position:relative;width:100%;overflow:hidden;margin-bottom:10px">
                                                 @else
-                                                <img src="{{ asset('storage/nrmedia-logo2.png') }}" style="position:relative;width:100%;overflow:hidden;margin-bottom:10px">
+                                                <img src="{{ asset('public/storage/nrmedia-logo2.png') }}" style="position:relative;width:100%;overflow:hidden;margin-bottom:10px">
                                                 @endif
                                                 <div class="layer" style="background-color: rgba(0, 0, 0, 0.0);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
                                                 </div>

@@ -10,7 +10,7 @@
                     {{-- BIG IMAGE --}}
                     <div class="row">
                         <section class="box-section">
-                            <img src="{{ asset('storage/blogs/nmagazine/'.$blog->image) }}" style="width:100%;">
+                            <img src="{{ asset('public/storage/blogs/nmagazine/'.$blog->image) }}" style="width:100%;">
                             <div class="col-md-12 lead">
                                 <br>
                                 <br>
