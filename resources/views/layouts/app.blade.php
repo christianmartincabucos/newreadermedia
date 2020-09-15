@@ -15,12 +15,12 @@
     <meta property="og:url" content="@yield('og-url', url('/') )">
     <meta property="og:type" content="website">
     <meta property="og:title" content="@yield('og-title', config('app.name') )" />
-    <meta property="og:description" content="@yield('meta-description', 'New Reader Media is a marketing and publicity firm for enterprising creatives, artists, and independent authors.')" />
+    <meta property="og:description" content="@yield('meta-description', 'New Reader Media is a marketing and ty firm for enterprising creatives, artists, and independent authors.')" />
     <meta property="og:image" content="@yield('og-image', url('storage/nrmedia-tag.jpg'))">
     <link rel="canonical" href="@yield('canonical', URL::current() )" />
     <!-- Styles -->
-    <link href="{{ asset('public/css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('public/css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     {{-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet"> --}}
@@ -167,7 +167,7 @@
     </script>
 </head>
 
-<body style="background:url({{{ url('public/storage/poster.PNG') }}}) center center no-repeat;background-size: cover;">
+<body style="background:url({{{ url('storage/poster.PNG') }}}) center center no-repeat;background-size: cover;">
 
     @include('templates.form-blog')
 
@@ -186,7 +186,7 @@
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <!-- New Reader Media -->
-                    <img src="{{ asset('public/storage/nrmedia.png')}}" style="width:70px;">
+                    <img src="{{ asset('storage/nrmedia.png')}}" style="width:70px;">
                 </a>
             </div>
 
@@ -311,7 +311,7 @@
         <a href="#app" class="back-to-top" style="display: inline;color:#fff"><i class="fa fa-arrow-circle-up"></i></a>
     </div>
 
-    <!-- <script src="{{ asset('public/tinymce/tinymce.js') }}"></script> -->
+    <!-- <script src="{{ asset('tinymce/tinymce.js') }}"></script> -->
     <!-- <script>
         var editor_config = {
             path_absolute: "{{ URL::to('/') }}/",
@@ -375,7 +375,7 @@
         tinymce.init(editor_config);
     </script> -->
     <!-- Scripts -->
-    <script src="{{ asset('public/js/app.js') }}"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     {!! Toastr::message() !!}
     <script>
@@ -437,8 +437,8 @@
 
         });
     </script>
-    <!-- <script src="{{ asset('public/vendor/unisharp/laravel-ckeditor/ckeditor.js') }}"></script>
-    <script src="{{ asset('public/vendor/unisharp/laravel-ckeditor/adapters/jquery.js') }}"></script> -->
+    <!-- <script src="{{ asset('vendor/unisharp/laravel-ckeditor/ckeditor.js') }}"></script>
+    <script src="{{ asset('vendor/unisharp/laravel-ckeditor/adapters/jquery.js') }}"></script> -->
 
     <script id="dsq-count-scr" src="//newreadermedia.disqus.com/count.js" async></script>
 </body>

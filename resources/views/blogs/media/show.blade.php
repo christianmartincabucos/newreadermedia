@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @foreach ($datas as $data)
-    @section('title') {!! $data->title !!}@endsection
-    @section('meta-description') {!! $data->meta_desc !!}@endsection
+@section('title') {!! $data->title !!}@endsection
+@section('meta-description') {!! $data->meta_desc !!}@endsection
 @endforeach
 
 @section('content')
@@ -31,7 +31,10 @@
                     <br>
                     <br>
                     <br>
+                    @guest
+                    @else
                     <div id="disqus_thread"></div>
+                    @endguest
                     <script>
                         /**
                          *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
