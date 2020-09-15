@@ -14,7 +14,7 @@ class AddColumnEmailVerifiedInUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->string('email_verified_at')->after('user_type');
+            $table->dateTime('email_verified_at')->nullable()->after('user_type');
             
         });
     }

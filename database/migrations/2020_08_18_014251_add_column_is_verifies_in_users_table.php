@@ -14,7 +14,7 @@ class AddColumnIsVerifiesInUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->bigInteger('is_verified')->unsigned()->after('status');
+            $table->bigInteger('is_verified')->default(6)->unsigned()->after('status');
         });
     }
 

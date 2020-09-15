@@ -27,6 +27,9 @@
     <link rel="shortcut icon" href="{{{ url('storage/nrmedia-logo2.png') }}}">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <style>
+        .tox-notifications-container {
+            display: none !important;
+        }
         .panel-review {
             font-weight: bold;
             background: #ddd;
@@ -165,9 +168,9 @@
 </head>
 
 <body style="background:url({{{ url('public/storage/poster.PNG') }}}) center center no-repeat;background-size: cover;">
-   
+
     @include('templates.form-blog')
-               
+
     <nav class="navbar navbar-default navbar-static-top" style="margin-bottom: 0px!important;">
         <div class="container">
             <div class="navbar-header">
