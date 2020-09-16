@@ -30,7 +30,7 @@
                                             <br>
                                             <br>
                                             <h4 class="float-right text-uppercase">
-                                                <strong>{!! $data->temp_user !!}</strong>
+                                                <strong>{!! $data->author !!}</strong>
                                             </h4>
                                             <br>
                                             <br>
