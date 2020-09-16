@@ -30,6 +30,7 @@
         .tox-notifications-container {
             display: none !important;
         }
+
         .panel-review {
             font-weight: bold;
             background: #ddd;
@@ -278,7 +279,8 @@
                             <!-- <li class="  {{{ (Request::is(['spotlight', 'spotlight/*']) ? 'active' : '') }}}"><a href="{{ url('/spotlight') }}">Spotlight</a></li> -->
 
                             <li class="dropdown ">
-                                <a href="{{ url('/blogs') }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blogs</a>
+                                <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blogs</a>
+                                
                                 <ul class="dropdown-menu">
                                     <li class="{{{ (Request::is(['blogs-media']) ? 'active' : '') }}}"><a href="{{ url('/blogs/media') }}">Media</a></li>
                                     <li class=" {{{ (Request::is(['blog-nrm/*']) ? '' : '') }}}"><a href="{{ url('/blogs/new-reader-media') }}">NMagazine</a></li>
