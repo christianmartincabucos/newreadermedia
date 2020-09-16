@@ -55836,7 +55836,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
                 case 2:
                     this.$toast.success(data.message, "Success", { timeout: 2000, position: 'topRight' });
                     this.blogs = [];
-                    this.getMedia(this.endpoint);
+                    this.getMedia(1, '/getmedia');
                     break;
                 default:
                     break;
@@ -56482,7 +56482,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
                 case 2:
                     this.$toast.success(data.message, "Success", { timeout: 2000, position: 'topRight' });
                     this.blogs = [];
-                    this.getMedia(this.endpoint);
+                    this.getMedia(1, '/getmedia');
                     break;
                 default:
                     break;
@@ -57132,7 +57132,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
                 case 2:
                     this.$toast.success(data.message, "Success", { timeout: 2000, position: 'topRight' });
                     this.blogs = [];
-                    this.getMedia(this.endpoint);
+                    this.getMedia(1, '/getmedia');
                     break;
                 default:
                     break;
@@ -57784,7 +57784,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
                     this.$toast.success(data.message, "Success", { timeout: 2000, position: 'topRight' });
                     this.blogs = [];
                     // console.log(this.blogs);
-                    this.getMedia(this.endpoint);
+                    this.getMedia(1, '/getmedia');
                     break;
                 default:
                     break;

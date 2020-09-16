@@ -197,7 +197,7 @@ export default {
                     this.$toast.success(data.message, "Success", {timeout: 2000, position:'topRight'});
                     this.blogs = [];
                     // console.log(this.blogs);
-                    this.getMedia(this.endpoint)
+                    this.getMedia(1, '/getmedia')
                     break;
                 default:
                     break;
