@@ -19,7 +19,7 @@ Route::group(['middleware' => 'TwoFA'], function(){
     Route::get('/blogs/newsletters', 'BlogsController@newsletters')->name('blog-newsletters');
     Route::post('/blog/post', 'BlogsController@store')->name('blog.post');
     Route::get('/blogs/reviews', 'BlogsController@reviews')->name('reviews');
-    Route::get('/blogs', 'BlogsController@index')->name('blogs');
+    // Route::get('/blogs', 'BlogsController@index')->name('blogs');
     Route::get('/blog/new-reader-media/{blog}', 'BlogsController@show')->name('blog-show');
     Route::get('/blogs/new-reader-media', 'BlogsController@newreadermedia')->name('blog-nrm');
     Route::get('/blogs/media', 'BlogsController@media')->name('blog-media');
