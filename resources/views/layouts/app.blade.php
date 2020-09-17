@@ -168,11 +168,11 @@
     </script>
 </head>
 
-<body style="background:url({{{ url('public/storage/poster.PNG') }}}) center center no-repeat;background-size: cover;">
+<body style="background:url({{{ url('storage/poster.PNG') }}}) center center no-repeat;background-size: cover;">
 
     @include('templates.form-blog')
 
-    <nav class="navbar navbar-default navbar-static-top" style="margin-bottom: 0px!important;">
+    <nav class="navbar navbar-default navbar-static-top navbar-fixed-top" style="margin-bottom: 0px!important;">
         <div class="container">
             <div class="navbar-header">
 
@@ -241,7 +241,7 @@
         </video>
     </div>
     <div id="app">
-        <div class="container hide-show">
+        <div class="container hide-show" style="margin-top:50px!important;">
 
             <div id="banner" style="height:120px;background:url({{{ url('storage/reel-bg4.jpg') }}});background-size: cover;border-bottom: 1px solid rgba(255,255,255,.2);padding:0;">
 
@@ -280,7 +280,7 @@
 
                             <li class="dropdown ">
                                 <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blogs</a>
-                                
+
                                 <ul class="dropdown-menu">
                                     <li class="{{{ (Request::is(['blogs-media']) ? 'active' : '') }}}"><a href="{{ url('/blogs/media') }}">Media</a></li>
                                     <li class=" {{{ (Request::is(['blog-nrm/*']) ? '' : '') }}}"><a href="{{ url('/blogs/new-reader-media') }}">NMagazine</a></li>

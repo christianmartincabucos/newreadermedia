@@ -37,6 +37,9 @@
                                                      document.getElementById('resend-form').submit();">Resend</button>
                             </div>
                         </div>
+                        <div class="form-group">
+                            <div class="col-md-6 col-md-offset-4"><small style="color: #bbc;">*Check your email for the OTP code.</small></div>
+                        </div>
                     </form>
                     <form id="resend-form" action="{{ route('resendOTP') }}" class="form-horizontal" method="post" style="display: none;">
                         {{ csrf_field() }}
