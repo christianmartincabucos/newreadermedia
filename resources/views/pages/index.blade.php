@@ -6,6 +6,74 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
+            <div class="box" style="margin-bottom:0;/* margin-left: 15px; */">
+                <div class="box-body">
+    
+                    <div class="row">
+                        <section class="box-section">
+                            <div class="col-md-12 ">
+                                <h1 class="header-white">Latest Posts
+    
+                                    <!-- <a class="btn btn-maron btn-sm float-right btn-curve" data-toggle="modal" data-target="#myModal">Create Blog</a> -->
+                                </h1>
+                            </div>
+                            <div class="col-md-12 ">
+    
+    
+    
+                                <div class="divider"></div>
+                                <div class="box-article">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-4">
+                                            <a href="https://www.newreadermedia.com/blogs/media/5-famous-poems-for-everyone" rel="nofollow">
+                                                <!-- <img src="https://www.newreadermedia.com/public/storage/blogs/nmagazine" style="position:relative;width:100%;overflow:hidden;margin-bottom:10px"> -->
+                                                <img src="https://www.newreadermedia.com/public/storage/blogs/media/img1596085335.jpg" style="position:relative;width:100%;overflow:hidden;margin-bottom:10px">
+                                                <div class="layer" style="background-color: rgba(0, 0, 0, 0.0);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
+                                                </div>
+                                            </a>
+    
+                                        </div>
+                                        <div class="col-xs-12 col-sm-8">
+                                            <h2 class="title"><a href="https://www.newreadermedia.com/blogs/media/5-famous-poems-for-everyone" rel="nofollow">5 Famous Poems for Everyone</a></h2>
+                                            <p class="text-white lead" style="margin:0">Poems are filled with knowledge, wisdom, and insights that are sure to inspire their readers. Here are five of the best poems that everyone must read.</p>
+                                            <!-- <small><img class="article-thumbnail img-circle" src="https://www.newreadermedia.com/storage/featured-author/lindy-kerr.jpg" style="width:20px;height:20px;margin-right:5px;margin-top:5px"> <a class="article-links" href="http://amazingcreationsofgod.com/" target="_blank" rel="nofollow"></a></small> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="divider"></div>
+    
+    
+                                <div class="box-article">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-4">
+                                            <a href="https://www.newreadermedia.com/blogs/media/a-second-chance-benefits-of-mountain-trekking-after-a-heart-bypass-surgery" rel="nofollow">
+                                                <!-- <img src="https://www.newreadermedia.com/public/storage/blogs/nmagazine" style="position:relative;width:100%;overflow:hidden;margin-bottom:10px"> -->
+                                                <img src="https://www.newreadermedia.com/public/storage/blogs/media/img1596076569.jpg" style="position:relative;width:100%;overflow:hidden;margin-bottom:10px">
+                                                <div class="layer" style="background-color: rgba(0, 0, 0, 0.0);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
+                                                </div>
+                                            </a>
+    
+                                        </div>
+                                        <div class="col-xs-12 col-sm-8">
+                                            <h2 class="title"><a href="https://www.newreadermedia.com/blogs/media/a-second-chance-benefits-of-mountain-trekking-after-a-heart-bypass-surgery" rel="nofollow">A Second Chance: Benefits of Mountain Trekking After A Heart Bypass Surgery</a></h2>
+                                            <p class="text-white lead" style="margin:0">You may have seen or heard a few somewhere, but you might want to read this before your next mountain trekking plans. You will thank me later!</p>
+                                            <!-- <small><img class="article-thumbnail img-circle" src="https://www.newreadermedia.com/storage/featured-author/lindy-kerr.jpg" style="width:20px;height:20px;margin-right:5px;margin-top:5px"> <a class="article-links" href="http://amazingcreationsofgod.com/" target="_blank" rel="nofollow"></a></small> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="divider"></div>
+    
+    
+                            </div>
+    
+    
+    
+    
+                        </section>
+                    </div>
+                </div>
+    
+            </div>
             <div class="box" style="margin-bottom:0">
                 <div class="box-body">
                     {{-- BIG IMAGE --}}
