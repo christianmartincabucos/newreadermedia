@@ -172,47 +172,34 @@
 
     @include('templates.form-blog')
 
-    <nav class="navbar navbar-default navbar-static-top navbar-fixed-top" style="margin-bottom: 0px!important;">
+    <nav class="navbar navbar-fixed-top navbar-inverse">
         <div class="container">
             <div class="navbar-header">
-
-                <!-- Collapsed Hamburger -->
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse" aria-expanded="false">
-                    <span class="sr-only">Toggle Navigation</span>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-
-                <!-- Branding Image -->
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <!-- New Reader Media -->
                     <img src="{{ asset('public/storage/nrmedia.png')}}" style="width:70px;">
                 </a>
             </div>
-
-            <div class="collapse navbar-collapse" id="app-navbar-collapse">
-                <!-- Left Side Of Navbar -->
-                <ul class="nav navbar-nav">
-                    &nbsp;
-                </ul>
-
-                <!-- Right Side Of Navbar -->
+            <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <!-- Authentication Links -->
                     @guest
-                    <li><a href="{{ route('login') }}">Login</a></li>
-                    <li><a href="{{ route('register') }}">Register</a></li>
+                    <li class="text-center"><a href="{{ route('login') }}">Login</a></li>
+                    <li class="text-center"><a href="{{ route('register') }}">Register</a></li>
                     @else
                     @if(Auth::user()->is_verified != 6)
-                    <li> <a data-toggle="modal" data-target="#myModal">Create Blog</a></li>
-                    <li class="dropdown">
+                    <li class="text-center"> <a data-toggle="modal" data-target="#myModal">Create Blog</a></li>
+                    <li class="text-center" class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>
                             {{ Auth::user()->name }} <span class="caret"></span>
                         </a>
 
                         <ul class="dropdown-menu">
-                            <li>
+                            <li class="text-center">
                                 <a href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                     Logout
@@ -262,7 +249,7 @@
             <nav class="navbar navbar-default  navbar-static-top" style="min-height:0;border-radius:0;margin-bottom:0">
                 <div>
                     <div class="navbar-header" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <button type="button" class="navbar-toggle collapsed navbar-toggle-center" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <button type="button" class="navbar-toggle collapsed navbar-toggle-center text-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="fa fa-bars"></span>
                             <span class="navmenu">MENU</span>
