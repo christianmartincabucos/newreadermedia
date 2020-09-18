@@ -22,7 +22,7 @@
                                 <div class="box-article">
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-4">
-                                            <a href="{{ $data->url_media }}" rel="nofollow">
+                                            <a href="{{ $data->category_id == 3 ? url('/blogs/reviews') :$data->url_media }}" rel="nofollow">
                                                 @php
                                                 $url = $data->category_id == 1 ? 'public/storage/blogs/nmagazine/': ($data->category_id == 2 ? 'public/storage/blogs/media/':'public/storage/blogs/newsletter/')
                                                 @endphp
