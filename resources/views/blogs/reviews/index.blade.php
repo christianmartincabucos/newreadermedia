@@ -58,5 +58,12 @@
     .ul .nav .nav-pills .nav-justified {
         display: none !important;
     }
+
+    @media only screen and (max-width: 400px) {
+        .px-5 {
+            padding-left: 0.5rem !important;
+            padding-right: 0rem !important;
+        }
+    }
 </style>
 @endsection
