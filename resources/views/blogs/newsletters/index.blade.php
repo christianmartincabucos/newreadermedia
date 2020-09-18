@@ -39,6 +39,7 @@
                                         <div class="col-xs-12 col-sm-8">
                                             <h2 class="title"><a href="{{ $data->url }}" rel="nofollow">{{ $data->title }}</a></h2>
                                             <p class="text-white lead" style="margin:0">{{ $data->meta_desc }}</p>
+                                            <small> <a class="article-links">{{ $data->author}}</a></small>
                                         </div>
                                     </div>
                                 </div>

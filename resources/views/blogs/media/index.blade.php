@@ -36,7 +36,7 @@
                                         <div class="col-xs-12 col-sm-8">
                                             <h2 class="title"><a href="{{ $data->urlmedia }}" rel="nofollow">{{ $data->title }}</a></h2>
                                             <p class="text-white lead" style="margin:0">{{ $data->meta_desc }}</p>
-                                            <!-- <small><img class="article-thumbnail img-circle" src="{{{ url('storage/featured-author/lindy-kerr.jpg') }}}" style="width:20px;height:20px;margin-right:5px;margin-top:5px"> <a class="article-links" href="{{ url('http://amazingcreationsofgod.com/') }}" target="_blank" rel="nofollow">{{ $data->author }}</a></small> -->
+                                            <small> <a class="article-links">{{ $data->author}}</a></small>
                                         </div>
                                     </div>
                                 </div>
