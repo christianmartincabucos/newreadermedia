@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use App\BlogCategory;
+// use App\BlogCategory;
+use App\Blog;
 
 class HomeController extends Controller
 {
@@ -32,9 +33,10 @@ class HomeController extends Controller
                 return redirect('verify');
             }
         }
-        $categories = BlogCategory::where('status', 1)->orderBy('category_id', 'desc')->get();
+        $latest     = Blog::where(['status' => 1, 'post_status' => 4])->orderBy('blog_id', 'desc')->take(3)->get();
+        // $categories = BlogCategory::where('status', 1)->orderBy('category_id', 'desc')->get();
         
-        return view('pages.index', compact('categories'));
+        return view('pages.index', compact(['latest']));
     }
     public function verify()
     

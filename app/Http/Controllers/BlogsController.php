@@ -184,13 +184,13 @@ class BlogsController extends Controller
     public function formSubmit(Request $request)
     {
         $imageName = '';
-        if($request->image != null){
+        if($request->image != "null"){
             $imageName = time() . '.' . $request->image->getClientOriginalExtension();
             $path = $request->category == 1 ? 'nmagazine': ($request->category == 2 ? 'media': ($request->category == 3 ? 'reviews': 'newsletter'));
             $request->image->move(public_path('storage/blogs/'. $path), $path.$imageName);
         }
         $data = Blog::create([
-            'image' => $path.$imageName,
+            'image' => ($request->image != "null" ? $path.$imageName : 'nrmedia-logo2.png'),
             'category_id' => $request->category,
             'title' => $request->title,
             'meta_desc' => $request->meta_desc,

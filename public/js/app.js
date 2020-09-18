@@ -54754,33 +54754,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.formData.body = '';
             this.$refs.image.value = null;
         },
-
-        /* saveBlog(e, data){
-            switch (e) {
-                case 1:
-                    if(this.formData.title == ''){
-                        return this.$toast.warning('Title is required.', "Warning", {timeout: 2000, position:'topRight'});
-                    }
-                    if(this.formData.meta_desc == ''){
-                        return this.$toast.warning('Meta Description is required.', "Warning", {timeout: 2000, position:'topRight'});
-                    }
-                    if(this.formData.category == 0){
-                        return this.$toast.warning('Category is required.', "Warning", {timeout: 2000, position:'topRight'});
-                    }
-                    if(this.formData.body == ''){
-                        return this.$toast.warning('Body Description is required.', "Warning", {timeout: 2000, position:'topRight'});
-                    }
-                    this.callAxios('post', '/blog/post', this.formData, 1)
-                break;
-                case 2:
-                    $('#myModal').modal('hide')
-                    this.resetForm();
-                    this.$toast.success(data.message, "Success", {timeout: 2000, position:'topRight'});
-                    // console.log(data)
-                default:
-                break;
-            }
-        }, */
         imageSaveBlog: function imageSaveBlog(e, data) {
             switch (e) {
                 case 1:
