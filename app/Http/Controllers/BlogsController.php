@@ -157,7 +157,7 @@ class BlogsController extends Controller
             
             return response()->json(['location' => '/' . $imgpath]);
             /* $CKEditorFuncNum = $request->input('CKEditorFuncNum');
-            $url = asset('storage/blogs/newsletter/' . $fileName);
+            $url = asset('public/storage/blogs/newsletter/' . $fileName);
             $msg = 'Image uploaded successfully';
             $response = "<script>window.parent.CKEDITOR.tools.callFunction($CKEditorFuncNum, '$url', '$msg')</script>";
             
