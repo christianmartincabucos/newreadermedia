@@ -33,17 +33,25 @@
 
         .panel-review {
             font-weight: bold;
-            background: #ddd;
-            color: #000;
+            background: #6d927f;
+            color: #fff;
             padding: 5rem;
             border-radius: 15px 40px 100px 20px;
         }
 
-        .px-5 {
-            padding-left: 5rem !important;
-            padding-right: 5rem !important;
+        @media only screen and (max-width: 400px) {
+            .px-5 {
+                padding-left: 0.5rem !important;
+                padding-right: 0rem !important;
+            }
         }
 
+        @media only screen and (min-width: 401px) {
+            .px-5 {
+                padding-left: 5rem !important;
+                padding-right: 5rem !important;
+            }
+        }
         .box-section a {
             color: #fff !important;
             text-shadow: none !important;
@@ -170,8 +178,6 @@
 
 <body style="background:url({{{ url('storage/poster.PNG') }}}) center center no-repeat;background-size: cover;">
 
-    @include('templates.form-blog')
-
     <nav class="navbar navbar-fixed-top navbar-inverse">
         <div class="container">
             <div class="navbar-header">
@@ -228,6 +234,7 @@
         </video>
     </div>
     <div id="app">
+        <form-blog></form-blog>
         <div class="container hide-show" style="margin-top:50px!important;">
 
             <div id="banner" style="height:120px;background:url({{{ url('storage/reel-bg4.jpg') }}});background-size: cover;border-bottom: 1px solid rgba(255,255,255,.2);padding:0;">

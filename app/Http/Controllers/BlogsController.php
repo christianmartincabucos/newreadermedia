@@ -205,20 +205,9 @@ class BlogsController extends Controller
                 ]);
         }
     }
-    /* public function store(Request $request)
+    public function uploadtinymce()
     {
-        $data = Blog::create([
-                'image' => $request->input('image'),
-                'category_id' => $request->input('category'),
-                'title' => $request->input('title'),
-                'meta_desc' => $request->input('meta_desc'),
-                'body'  => $request->input('body'),
-                'author'  => $request->input('author'), 
-                'posted_by'  => auth()->id(), 
-        ]);
-
-        return redirect('/');
-
-    } */
+        
+    }
 
 }   

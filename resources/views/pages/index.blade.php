@@ -21,6 +21,22 @@
                                 @foreach($latest as $data)
                                 <div class="box-article">
                                     <div class="row">
+                                        @if($data->category_id == 3)
+
+                                        <div class="px-5">
+                                            <blockquote style="padding-top:0px!important;">
+                                                <div class="panel-review">
+                                                    {!! $data->body!!}
+
+                                                    <br>
+                                                    <br>
+                                                    <h4 class="float-right text-uppercase">
+                                                        <strong>{!! $data->author !!}</strong>
+                                                    </h4>
+                                                    </div>
+                                            </blockquote>
+                                        </div>
+                                        @else
                                         <div class="col-xs-12 col-sm-4">
                                             <a href="{{ $data->category_id == 3 ? url('/blogs/reviews') :$data->url_media }}" rel="nofollow">
                                                 @php
@@ -38,6 +54,7 @@
                                             <p class="text-white lead" style="margin:0">{{ $data->meta_desc }}</p>
                                             <small><a class="article-links" href="" target="_blank" rel="nofollow">{{ $data->author }}</a></small>
                                         </div>
+                                        @endif
                                     </div>
                                 </div>
                                 <div class="divider"></div>

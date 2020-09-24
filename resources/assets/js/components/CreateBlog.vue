@@ -1,5 +1,7 @@
 <template>
     <div>
+        {{ formData }}
+        <a class="float-right" @click="showModal(1)" data-toggle="modal" data-target="#myModal">Edit</a>
         <div class="modal fade" id="myModal" style="padding-right:0px!important;">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -15,14 +17,14 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="title">Title</label>
-                                        <input type="text" class="form-control" name="title" id="title" v-model="formData.title" placeholder="Enter title...">
+                                        <input type="text" class="form-control" name="title"  v-model="formData.title" placeholder="Enter title...">
                                     </div>
 
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="title">Meta Description</label>
-                                        <input type="text" class="form-control" name="meta-desc" id="meta-desc" v-model="formData.meta_desc" placeholder="Enter meta description...">
+                                        <input type="text" class="form-control" name="meta-desc" v-model="formData.meta_desc" placeholder="Enter meta description...">
                                     </div>
 
                                 </div>
@@ -31,7 +33,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="author">Author</label>
-                                        <input type="text" class="form-control" name="author" id="author" v-model="formData.author" placeholder="Enter author...">
+                                        <input type="text" class="form-control" name="author"  v-model="formData.author" placeholder="Enter author...">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -49,7 +51,7 @@
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label for="author">Image</label>
-                                        <input type="file" class="form-control" name="image" id="image" ref="image" @change="onFileChange"  placeholder="Browse image...">
+                                        <input type="file" class="form-control" name="image"  ref="image" @change="onFileChange"  placeholder="Browse image...">
                                     </div>
                                 </div>
                             </div>
@@ -64,6 +66,7 @@
                                     :init="{
                                         height: 500,
                                         menubar: true,
+                                        paste_data_images: true,
                                         plugins: [
                                             'advlist autolink lists link image charmap print preview hr anchor pagebreak',
                                             'searchreplace wordcount visualblocks visualchars code fullscreen',
@@ -71,49 +74,56 @@
                                             'emoticons template paste textcolor colorpicker textpattern',
                                             'image code'
                                         ],
-                                        toolbar:
+                                        toolbar1:
                                         'insertfile undo redo | formatselect | bold italic backcolor | \
                                         alignleft aligncenter alignright alignjustify | \
-                                        bullist numlist outdent indent | removeformat | link image media | fullscreen | code | help',
+                                        bullist numlist outdent indent | removeformat | link image media | print preview | forecolor  emoticons |fullscreen | code | help',
                                         /* without images_upload_url set, Upload tab won't show up*/
+                                        images_upload_url:'/tinymce/uploadtinymce',
                                         convert_urls : false,
                                         automatic_uploads: false, 
-                                        images_upload_base_path: '/public/storage/blogs/',
                                         relative_urls : false,
 
                                         // override default upload handler to simulate successful upload
-                                        images_upload_handler: function (blobInfo, success, failure,folderName) {
+                                        images_upload_url:'/tinymce/uploadtinymce',
+                                        images_upload_handler: function (blobInfo, success, failure, progress) {
                                             var xhr, formData;
+
                                             xhr = new XMLHttpRequest();
                                             xhr.withCredentials = false;
-                                        
-                                            xhr.open('POST', '/api/upload-image');
-                                            var token = document.head.querySelector('[name=csrf-token]').content;
-                                            xhr.setRequestHeader('X-CSRF-Token', token);
-                                        
-                                            xhr.onload = function() {
-                                                var json;
-                                            
-                                                if (xhr.status != 200) {
-                                                    failure('HTTP Error: ' + xhr.status);
-                                                    return;
-                                                }
-                                                json = JSON.parse(xhr.responseText);
+                                            xhr.open('POST', '/tinymce/uploadtinymce');
 
-                                                if (!json || typeof json.location != 'string') {
-                                                    failure('Invalid JSON: ' + xhr.responseText);
-                                                    return;
-                                                }
-                                                success(json.location);
-                                            
+                                            xhr.upload.onprogress = function (e) {
+                                            progress(e.loaded / e.total * 100);
                                             };
-                                        
+
+                                            xhr.onload = function() {
+                                            var json;
+
+                                            if (xhr.status < 200 || xhr.status >= 300) {
+                                                failure('HTTP Error: ' + xhr.status);
+                                                return;
+                                            }
+
+                                            json = JSON.parse(xhr.responseText);
+
+                                            if (!json || typeof json.location != 's tring') {
+                                                failure('Invalid JSON: ' + xhr.responseText);
+                                                return;
+                                            }
+
+                                            success(json.location);
+                                            };
+
+                                            xhr.onerror = function () {
+                                            failure('Image upload failed due to a XHR Transport error. Code: ' + xhr.status);
+                                            };
+
                                             formData = new FormData();
                                             formData.append('file', blobInfo.blob(), blobInfo.filename());
-                                    
+
                                             xhr.send(formData);
-                                        
-                                        }                
+                                        }     
                                     }"
                                     v-model="formData.body" 
                                     value="test"
@@ -141,7 +151,7 @@
 <script>
 import Editor from '@tinymce/tinymce-vue'
 export default {
-    name:'formblog',
+    props: ['data'],
     components: {
      'editor': Editor
     },
@@ -155,8 +165,9 @@ export default {
         return {
             id: 'editor_' + _.random(10000, 99999),
             blogcategories: [],
+            blog_id : this.data,
             formData:{
-                title:'',
+                title: '',
                 meta_desc:'',
                 author:'',
                 category:0,
@@ -186,6 +197,26 @@ export default {
         
     },
     methods: {
+        showModal(e, data){
+            switch (e) {
+                case 1:
+                    if(this.blog_id != undefined){
+                        this.callAxios('post', `/media/${this.blog_id}`, null, 2)
+                    }
+                break;
+                case 2:
+                    console.log(data.data.title)
+                    this.formData.title = data.data.title;
+                    this.formData.meta_desc = '';
+                    this.formData.author = '';
+                    this.formData.category = 0;
+                    this.formData.image = '';
+                    this.formData.body = data.data.body;
+                break;
+                default:
+                    break;
+            }
+        },
         onFileChange(e) {
             var files = e.target.files || e.dataTransfer.files;
             this.formData.image = e.target.files[0]
@@ -193,6 +224,8 @@ export default {
                 return;
         },
         resetForm(){
+        console.log(this.blogdata)
+
             this.formData.title = '';
             this.formData.meta_desc = '';
             this.formData.author = '';
@@ -248,7 +281,9 @@ export default {
                         case 1:
                             $this.imageSaveBlog(2, response.data)
                         break;
-                    
+                        case 2:
+                            $this.showModal(2, response.data)
+                        break;
                         default:
                             break;
                     }

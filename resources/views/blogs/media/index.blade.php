@@ -21,7 +21,7 @@
                                 @if ($datas == '')
                                 <h1 style="text-align:center;color:#B42828;"><b>No data Found!</b></h1>
                                 @endif
-                                @foreach($datas as $data)
+                                @foreach ($datas as $data)
                                 <div class="box-article">
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-4">
@@ -68,7 +68,7 @@
 
     </div>
 </div>
-<div class="modal fade" id="myModal" style="padding-right:0px!important;">
+<!-- <div class="modal fade" id="myModal" style="padding-right:0px!important;">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
 
@@ -89,9 +89,6 @@
                     </div>
                     <div class="form-group">
                         <label for="blog-editor">Description:</label>
-
-                        <!-- <textarea name="blog-editor" id="blog-editor" style="color:#000!important; visibility: visible!important;">
-                        </textarea> -->
                     </div>
                 </form>
             </div>
@@ -104,6 +101,6 @@
 
         </div>
     </div>
-</div>
+</div> -->
 
 @endsection

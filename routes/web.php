@@ -37,13 +37,13 @@ Route::group(['middleware' => 'is_admin'], function () {
         Route::get('/status-reference', 'StatusRefenceController@index')->name('admin.status.reference');
         Route::post('/status-reference', 'StatusRefenceController@store');
         Route::post('/status-reference/{status}', 'StatusRefenceController@update');
-        Route::get('/media/{blog}', 'BlogsController@showadminmedia')->name('admin.show');
         Route::post('/approve/{blog}', 'BlogsController@approve')->name('admin.approve');
         Route::post('/updateblog/{blog}', 'BlogsController@updateblog');
         Route::post('/user/update/{user}', 'AdminController@update')->name('user.update');
     });
 });
 
+Route::post('media/{blog}', 'BlogsController@showadminmedia');
 Route::post('getusers', 'AdminController@getusers');
 Route::post('getstatus', 'StatusRefenceController@getStatus');
 Route::get('getcategory', 'BlogsController@getCategory');
@@ -67,6 +67,7 @@ Route::get('/bookstore-display', 'BookstoreDisplayController@index')->name('book
 
 // Route::get('/administrator', 'AdminController@admin')->name('administrator');
 Route::post('tinymce/upload', 'BlogsController@upload')->name('tinymce.upload');
+Route::post('tinymce/uploadtinymce', 'BlogsControuploadtinymceller@uploadtinymce')->name('tinymce.uploadtinymce');
 Route::post('formSubmit', 'BlogsController@formSubmit');
 Route::get('/marketing-and-partnership', 'PartnershipController@index')->name('marketing-and-partnership');
 Route::get('/press-release', 'PressReleaseController@index')->name('press-release');
