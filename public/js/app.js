@@ -54704,12 +54704,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    props: ['data'],
     components: {
         'editor': __WEBPACK_IMPORTED_MODULE_0__tinymce_tinymce_vue__["a" /* default */]
     },
@@ -54722,7 +54719,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         return {
             id: 'editor_' + _.random(10000, 99999),
             blogcategories: [],
-            blog_id: this.data,
             formData: {
                 title: '',
                 meta_desc: '',
@@ -54751,34 +54747,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
 
     methods: {
-        showModal: function showModal(e, data) {
-            switch (e) {
-                case 1:
-                    if (this.blog_id != undefined) {
-                        this.callAxios('post', '/media/' + this.blog_id, null, 2);
-                    }
-                    break;
-                case 2:
-                    console.log(data.data.title);
-                    this.formData.title = data.data.title;
-                    this.formData.meta_desc = '';
-                    this.formData.author = '';
-                    this.formData.category = 0;
-                    this.formData.image = '';
-                    this.formData.body = data.data.body;
-                    break;
-                default:
-                    break;
-            }
-        },
         onFileChange: function onFileChange(e) {
             var files = e.target.files || e.dataTransfer.files;
             this.formData.image = e.target.files[0];
             if (!files.length) return;
         },
         resetForm: function resetForm() {
-            console.log(this.blogdata);
-
             this.formData.title = '';
             this.formData.meta_desc = '';
             this.formData.author = '';
@@ -54829,9 +54803,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 switch (e) {
                     case 1:
                         $this.imageSaveBlog(2, response.data);
-                        break;
-                    case 2:
-                        $this.showModal(2, response.data);
                         break;
                     default:
                         break;
@@ -55084,21 +55055,6 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _vm._v("\n    " + _vm._s(_vm.formData) + "\n    "),
-    _c(
-      "a",
-      {
-        staticClass: "float-right",
-        attrs: { "data-toggle": "modal", "data-target": "#myModal" },
-        on: {
-          click: function($event) {
-            return _vm.showModal(1)
-          }
-        }
-      },
-      [_vm._v("Edit")]
-    ),
-    _vm._v(" "),
     _c(
       "div",
       {

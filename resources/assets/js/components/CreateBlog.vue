@@ -1,7 +1,5 @@
 <template>
     <div>
-        {{ formData }}
-        <a class="float-right" @click="showModal(1)" data-toggle="modal" data-target="#myModal">Edit</a>
         <div class="modal fade" id="myModal" style="padding-right:0px!important;">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -151,7 +149,6 @@
 <script>
 import Editor from '@tinymce/tinymce-vue'
 export default {
-    props: ['data'],
     components: {
      'editor': Editor
     },
@@ -165,7 +162,6 @@ export default {
         return {
             id: 'editor_' + _.random(10000, 99999),
             blogcategories: [],
-            blog_id : this.data,
             formData:{
                 title: '',
                 meta_desc:'',
@@ -197,26 +193,6 @@ export default {
         
     },
     methods: {
-        showModal(e, data){
-            switch (e) {
-                case 1:
-                    if(this.blog_id != undefined){
-                        this.callAxios('post', `/media/${this.blog_id}`, null, 2)
-                    }
-                break;
-                case 2:
-                    console.log(data.data.title)
-                    this.formData.title = data.data.title;
-                    this.formData.meta_desc = '';
-                    this.formData.author = '';
-                    this.formData.category = 0;
-                    this.formData.image = '';
-                    this.formData.body = data.data.body;
-                break;
-                default:
-                    break;
-            }
-        },
         onFileChange(e) {
             var files = e.target.files || e.dataTransfer.files;
             this.formData.image = e.target.files[0]
@@ -224,8 +200,6 @@ export default {
                 return;
         },
         resetForm(){
-        console.log(this.blogdata)
-
             this.formData.title = '';
             this.formData.meta_desc = '';
             this.formData.author = '';
@@ -280,9 +254,6 @@ export default {
                     switch (e) {
                         case 1:
                             $this.imageSaveBlog(2, response.data)
-                        break;
-                        case 2:
-                            $this.showModal(2, response.data)
                         break;
                         default:
                             break;
