@@ -178,7 +178,7 @@ export default {
         },
         show(id){
             var $this = this;
-            axios.get(`/administrator/media/${id}`)
+            axios.post(`/media/${id}`)
             .then(({data}) =>{
                 $this.title = data.data.title;
                 $this.body = data.data.body;

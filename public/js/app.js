@@ -55853,7 +55853,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
         },
         show: function show(id) {
             var $this = this;
-            axios.get('/administrator/media/' + id).then(function (_ref2) {
+            axios.post('/media/' + id).then(function (_ref2) {
                 var data = _ref2.data;
 
                 $this.title = data.data.title;
@@ -56499,7 +56499,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
         },
         show: function show(id) {
             var $this = this;
-            axios.get('/administrator/media/' + id).then(function (_ref2) {
+            axios.post('/media/' + id).then(function (_ref2) {
                 var data = _ref2.data;
 
                 $this.title = data.data.title;
@@ -57149,7 +57149,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
         },
         show: function show(id) {
             var $this = this;
-            axios.get('/administrator/media/' + id).then(function (_ref2) {
+            axios.post('/media/' + id).then(function (_ref2) {
                 var data = _ref2.data;
 
                 $this.title = data.data.title;
@@ -57800,7 +57800,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
         },
         show: function show(id) {
             var $this = this;
-            axios.get('/administrator/media/' + id).then(function (_ref2) {
+            axios.post('/media/' + id).then(function (_ref2) {
                 var data = _ref2.data;
 
                 $this.title = data.data.title;
