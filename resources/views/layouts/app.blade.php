@@ -376,8 +376,8 @@
     {!! Toastr::message() !!}
     <script>
         $(document).ready(function() {
-            const timeout = 300000; // 900000 ms = 15 minutes
-            var idleTimer = 300000;
+            const timeout = 1800000; // 900000 ms = 15 minutes
+            var idleTimer = 1800000;
             $('*').bind('mousemove click mouseup mousedown keydown keypress keyup submit change mouseenter scroll resize dblclick', function() {
                 clearTimeout(idleTimer);
 
