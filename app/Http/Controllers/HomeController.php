@@ -33,10 +33,11 @@ class HomeController extends Controller
                 return redirect('verify');
             }
         }
-        $latest     = Blog::where(['status' => 1, 'post_status' => 4])->orderBy('blog_id', 'desc')->take(3)->get();
+        $articles     = Blog::where('status' , 1)->where('post_status', 4)->where('category_id' ,'!=', '3' )->orderBy('blog_id', 'desc')->take(3)->get();
+        $reviews      = Blog::where('status', 1)->where('post_status', 4)->where('category_id', '=', '3')->orderBy('blog_id', 'desc')->take(2)->get();
         // $categories = BlogCategory::where('status', 1)->orderBy('category_id', 'desc')->get();
         
-        return view('pages.index', compact(['latest']));
+        return view('pages.index', compact(['articles','reviews']));
     }
     public function verify()
     
