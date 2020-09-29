@@ -187,8 +187,8 @@ class BlogsController extends Controller
         if($request->image != "null"){
             $imageName = time() . '.' . $request->image->getClientOriginalExtension();
             $path = $request->category == 1 ? 'nmagazine': ($request->category == 2 ? 'media': ($request->category == 3 ? 'reviews': 'newsletter'));
+            $request->image->move(public_path('storage/blogs/'. $path), $path.$imageName);
             // $request->image->move(public_path('storage/blogs/'. $path), $path.$imageName);
-            $request->image->move(public_path('public/storage/blogs/'. $path), $path.$imageName);
         }
         $data = Blog::create([
             'image' => ($request->image != "null" ? $path.$imageName : 'nrmedia-logo2.png'),

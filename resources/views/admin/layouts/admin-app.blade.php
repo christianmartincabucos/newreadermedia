@@ -252,7 +252,7 @@
     <!-- ./wrapper -->
     <script src="{{ asset('public/js/app.js') }}"></script>
 
-    <!-- <script src="{{ asset('js/admin.js') }}') }}"></script> -->
+    <!-- <script src="{{ asset('public/js/admin.js') }}') }}"></script> -->
     <script src="{{ asset('public/admin-lte/plugins/jquery/jquery.min.js') }}"></script>
     <!-- jQuery UI 1.11.4 -->
     <script src="{{ asset('public/admin-lte/plugins/jquery-ui/jquery-ui.min.js') }}"></script>
@@ -286,7 +286,7 @@
     <script src="{{ asset('public/admin-lte/plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>
     <script src="{{ asset('public/admin-lte/plugins/datatables-responsive/js/responsive.bootstrap4.min.js') }}"></script>
     <!-- AdminLTE App -->
-    <script src="{{ asset('public/admin-lte/dist/js/adminlte.js') }}"></script>
+    <script src="{{ asset('admin-lte/dist/js/adminlte.js') }}"></script>
     @stack('scripts')
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 

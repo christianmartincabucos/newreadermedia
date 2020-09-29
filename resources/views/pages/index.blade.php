@@ -52,7 +52,7 @@
                                         <div class="col-xs-12 col-sm-8">
                                             <h2 class="title"><a href="{{ $data->urlmedia }}" rel="nofollow">{{ $data->title }}</a></h2>
                                             <p class="text-white lead" style="margin:0">{{ $data->meta_desc }}</p>
-                                            <small><a class="article-links" href="" target="_blank" rel="nofollow">{{ $data->author }}</a></small>
+                                            <small><a class="article-links" rel="nofollow">{{ $data->author }}</a></small>
                                         </div>
                                         @endif
                                     </div>
