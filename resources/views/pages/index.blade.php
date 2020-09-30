@@ -12,7 +12,7 @@
                     <div class="row">
                         <section class="box-section">
                             <div class="col-md-12 ">
-                                <h1 class="header-white">Latest Posts
+                                <h1 class="header-white">Latest Articles
 
                                     <!-- <a class="btn btn-maron btn-sm float-right btn-curve" data-toggle="modal" data-target="#myModal">Create Blog</a> -->
                                 </h1>
@@ -25,7 +25,7 @@
                                         <div class="col-xs-12 col-sm-4">
                                             <a href="{{ $data->category_id == 3 ? url('/blogs/reviews') :$data->url_media }}" rel="nofollow">
                                                 @php
-                                                $url = $data->category_id == 1 ? 'public/storage/blogs/nmagazine/': ($data->category_id == 2 ? 'public/storage/blogs/media/':'public/storage/blogs/newsletter/')
+                                                $url = $data->category_id == 1 ? 'storage/blogs/nmagazine/': ($data->category_id == 2 ? 'storage/blogs/media/':'storage/blogs/newsletter/')
                                                 @endphp
                                                 <!-- <img src="{{ asset('public/storage/blogs/nmagazine/') }}" style="position:relative;width:100%;overflow:hidden;margin-bottom:10px"> -->
                                                 <img src="{{ asset($url.$data->image) }}" style="position:relative;width:100%;overflow:hidden;margin-bottom:10px">
@@ -43,6 +43,7 @@
                                 </div>
                                 <div class="divider"></div>
                                 @endforeach
+                                <h1 class="header-white">Latest Reviews</h1>
                                 @foreach($reviews as $data)
                                 <div class="box-article">
                                     <div class="row">
