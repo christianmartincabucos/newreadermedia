@@ -50,7 +50,7 @@
                                         <div class="px-5">
                                             <blockquote style="padding-top:0px!important;">
                                                 <div class="panel-review">
-                                                    {!! $data->body!!}
+                                                    <a href="{{ url('/blogs/reviews') }}">{!! $data->body!!}</a>
 
                                                     <br>
                                                     <br>
