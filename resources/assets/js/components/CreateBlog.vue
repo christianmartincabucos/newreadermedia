@@ -59,74 +59,12 @@
                                 <!-- <textarea name="blog-editor" id="blog-editor" rows="40" v-model="formData.body" style="color:#000!important; visibility: visible!important;">
                                 </textarea> -->
                                 <!-- <textarea :id="id" v-model="formData.body" v-el:editor></textarea> -->
-                                <editor 
-                                    api-key="no-api-key"
-                                    :init="{
-                                        height: 500,
-                                        menubar: true,
-                                        paste_data_images: true,
-                                        plugins: [
-                                            'advlist autolink lists link image charmap print preview hr anchor pagebreak',
-                                            'searchreplace wordcount visualblocks visualchars code fullscreen',
-                                            'insertdatetime media nonbreaking save table contextmenu directionality',
-                                            'emoticons template paste textcolor colorpicker textpattern',
-                                            'image code'
-                                        ],
-                                        toolbar1:
-                                        'insertfile undo redo | formatselect | bold italic backcolor | \
-                                        alignleft aligncenter alignright alignjustify | \
-                                        bullist numlist outdent indent | removeformat | link image media | print preview | forecolor  emoticons |fullscreen | code | help',
-                                        /* without images_upload_url set, Upload tab won't show up*/
-                                        images_upload_url:'/tinymce/uploadtinymce',
-                                        convert_urls : false,
-                                        automatic_uploads: false, 
-                                        relative_urls : false,
-
-                                        // override default upload handler to simulate successful upload
-                                        images_upload_url:'/tinymce/uploadtinymce',
-                                        images_upload_handler: function (blobInfo, success, failure, progress) {
-                                            var xhr, formData;
-
-                                            xhr = new XMLHttpRequest();
-                                            xhr.withCredentials = false;
-                                            xhr.open('POST', '/tinymce/uploadtinymce');
-
-                                            xhr.upload.onprogress = function (e) {
-                                            progress(e.loaded / e.total * 100);
-                                            };
-
-                                            xhr.onload = function() {
-                                            var json;
-
-                                            if (xhr.status < 200 || xhr.status >= 300) {
-                                                failure('HTTP Error: ' + xhr.status);
-                                                return;
-                                            }
-
-                                            json = JSON.parse(xhr.responseText);
-
-                                            if (!json || typeof json.location != 's tring') {
-                                                failure('Invalid JSON: ' + xhr.responseText);
-                                                return;
-                                            }
-
-                                            success(json.location);
-                                            };
-
-                                            xhr.onerror = function () {
-                                            failure('Image upload failed due to a XHR Transport error. Code: ' + xhr.status);
-                                            };
-
-                                            formData = new FormData();
-                                            formData.append('file', blobInfo.blob(), blobInfo.filename());
-
-                                            xhr.send(formData);
-                                        }     
-                                    }"
-                                    v-model="formData.body" 
-                                    value="test"
-                                    v-cloak
-                                    />
+                                <tinymce v-model="formData.body"
+                                    :plugins="myPlugins" 
+                                    :toolbar ="myToolbar1"
+                                    :init="myInit"
+                                    >
+                                </tinymce>
                             </div>
                             <div class="text-right">
 
@@ -148,9 +86,10 @@
 </template>
 <script>
 import Editor from '@tinymce/tinymce-vue'
+import tinymce from 'tinymce/tinymce'
 export default {
     components: {
-     'editor': Editor
+     'tinymce': Editor
     },
     watch: {
         model() {
@@ -160,6 +99,7 @@ export default {
     },
     data() {
         return {
+            
             id: 'editor_' + _.random(10000, 99999),
             blogcategories: [],
             formData:{
@@ -169,7 +109,39 @@ export default {
                 category:0,
                 image:null,
                 body:'',
-            }
+                
+            },
+            myModel:'',
+            theme: "modern",
+            myToolbar1: 'insertfile undo redo | formatselect | bold italic underline forecolor backcolor emoticons | alignleft aligncenter alignright alignjustify | hr bullist numlist outdent indent | print preview removeformat | link image table | fullscreen code preview',
+            myPlugins: "link image code preview imagetools table lists textcolor hr wordcount",
+           
+            myInit: {
+              
+                images_dataimg_filter: function(img) {
+                    return false;
+                    return img.hasAttribute('internal-blob');
+                },
+                convert_urls : false,
+                height:500,
+                automatic_uploads: true, 
+                images_upload_base_path: '/../../',
+                relative_urls : false,
+
+                // override default upload handler to simulate successful upload
+                file_picker_types: 'image',
+                images_upload_handler: function (blobInfo, success, failure) {
+                    let data = new FormData();
+                    data.append('file', blobInfo.blob(), blobInfo.filename());
+                    axios.post('/tinymce/upload', data)
+                        .then(function (res) {
+                            success(res.data.location);
+                        })
+                        .catch(function (err) {
+                            failure('HTTP Error: ' + err.message);
+                        });
+                }
+            }     
         }
     },
     mounted() {

@@ -307,7 +307,7 @@
         <a href="#app" class="back-to-top" style="display: inline;color:#fff"><i class="fa fa-arrow-circle-up"></i></a>
     </div>
 
-    <!-- <script src="{{ asset('public/tinymce/tinymce.js') }}"></script> -->
+    <script src="{{ asset('public/tinymce/tinymce.js') }}"></script>
     <!-- <script>
         var editor_config = {
             path_absolute: "{{ URL::to('/') }}/",

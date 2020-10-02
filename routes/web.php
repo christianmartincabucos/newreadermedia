@@ -67,7 +67,6 @@ Route::get('/bookstore-display', 'BookstoreDisplayController@index')->name('book
 
 // Route::get('/administrator', 'AdminController@admin')->name('administrator');
 Route::post('tinymce/upload', 'BlogsController@upload')->name('tinymce.upload');
-Route::post('tinymce/uploadtinymce', 'BlogsControuploadtinymceller@uploadtinymce')->name('tinymce.uploadtinymce');
 Route::post('formSubmit', 'BlogsController@formSubmit');
 Route::get('/marketing-and-partnership', 'PartnershipController@index')->name('marketing-and-partnership');
 Route::get('/press-release', 'PressReleaseController@index')->name('press-release');

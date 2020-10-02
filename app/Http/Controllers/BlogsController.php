@@ -38,7 +38,6 @@ class BlogsController extends Controller
         return response()->json([
             'data' => $blog
         ]); 
-        // return view('admin.blogs.media.edit', compact('blog'));
     }
     
     public function updateblog(Request $request, Blog $blog){
@@ -103,13 +102,11 @@ class BlogsController extends Controller
     public function shownewsletters(Blog $blog, $slug)
     {
         $datas = Blog::where('slug', $slug)->get();    
-        // dd($datas);
         return view('blogs.newsletters.show', compact('datas'));
     }
     public function mediashow(Blog $blog, $slug)
     {
         $datas = Blog::where('slug', $slug)->get();
-        // dd($datas);    
         return view('blogs.media.show', compact('datas'));
     }
     public function newsletters()
@@ -134,42 +131,18 @@ class BlogsController extends Controller
     public function upload(Request $request)
     {
         
-        /* $folder = uniqid();
-        if (!\Storage::exists($folder)) {
-            \Storage::disk('posts')->makeDirectory($folder);
-        }
+        $request->validate([
+            'file' => 'required|file',
+        ]);
 
-        $imgpath = \Storage::disk('posts')->put($folder, request()->file('file'))->store('uploaded', 'public');
+        $imageName = time() . '.' . $request->file->getClientOriginalExtension();
+        $request->file('file')->move(public_path('storage/blogs/'), $imageName);
+        return response()->json(['location' => url('storage/blogs/').'/'.$imageName]);
 
-        return \Response::json(['folder' => $folder, 'location' => '/storage/blogs/posts/' . $imgpath]);
-        
-        $imgpath = request()->file('file')->store('uploaded', 'public');
-        return response()->json(['location' => '/' . $imgpath]);
-         */
-        if ($request->hasFile('file')) {
-            $originName = $request->file('file')->getClientOriginalName();
-            $fileName = pathinfo($originName, PATHINFO_FILENAME);
-            $extension = $request->file('file')->getClientOriginalExtension();
-            $fileName = $fileName . '_' . time() . '.' . $extension;
-
-            $imgpath = request()->file('file')->move(public_path('storage/blogs/newsletter'), $fileName);
-            // $imgpath = request()->file('upload')->store('storage/blogs/newsletter', 'public');
-            
-            return response()->json(['location' => '/' . $imgpath]);
-            /* $CKEditorFuncNum = $request->input('CKEditorFuncNum');
-            $url = asset('public/storage/blogs/newsletter/' . $fileName);
-            $msg = 'Image uploaded successfully';
-            $response = "<script>window.parent.CKEDITOR.tools.callFunction($CKEditorFuncNum, '$url', '$msg')</script>";
-            
-            @header('Content-type: text/html; charset=utf-8');
-            echo $response; */
-        }
     }
     public function reviews()
     {
         $datas      = Blog::where(['status' => 1, 'category_id' => 3, 'post_status' => 4])->orderBy('blog_id', 'desc')->paginate(1);
-        // $recent     = Blog::where(['status' => 1, 'category_id' => 3, 'post_status' => 4])->orderBy('blog_id','desc')->take(3)->get();
-        // $categories = BlogCategory::where('status', 1)->orderBy('category_id','desc')->get();
 
         return view('blogs.reviews.index', compact('datas')); 
     }
@@ -206,9 +179,6 @@ class BlogsController extends Controller
                 ]);
         }
     }
-    public function uploadtinymce()
-    {
-        
-    }
+    
 
 }   
