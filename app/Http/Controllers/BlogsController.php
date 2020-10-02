@@ -137,7 +137,7 @@ class BlogsController extends Controller
 
         $imageName = time() . '.' . $request->file->getClientOriginalExtension();
         $request->file('file')->move(public_path('storage/blogs/'), $imageName);
-        return response()->json(['location' => url('storage/blogs/').'/'.$imageName]);
+        return response()->json(['location' => url('public/storage/blogs/').'/'.$imageName]);
 
     }
     public function reviews()
