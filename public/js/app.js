@@ -54644,6 +54644,20 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -54667,13 +54681,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 author: '',
                 category: 0,
                 image: null,
+                mainkey: '',
+                secondkey: '',
                 body: ''
 
             },
             myModel: '',
             theme: "modern",
-            myToolbar1: 'insertfile undo redo | formatselect | bold italic underline forecolor backcolor emoticons | alignleft aligncenter alignright alignjustify | hr bullist numlist outdent indent | print preview removeformat | link image table | fullscreen code preview',
-            myPlugins: "link image code preview imagetools table lists textcolor hr wordcount",
+            myToolbar1: 'insertfile undo redo | formatselect | bold italic underline forecolor backcolor emoticons | alignleft aligncenter alignright alignjustify | hr bullist numlist outdent indent | removeformat link image table | print fullscreen | code preview',
+            myPlugins: "link image code preview imagetools table lists textcolor hr wordcount| print fullscreen",
 
             myInit: {
 
@@ -54731,6 +54747,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.formData.category = 0;
             this.formData.image = '';
             this.formData.body = '';
+            this.formData.mainkey = '';
+            this.formData.secondkey = '';
             this.$refs.image.value = null;
         },
         imageSaveBlog: function imageSaveBlog(e, data) {
@@ -54755,6 +54773,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     formData.append('author', this.formData.author);
                     formData.append('category', this.formData.category);
                     formData.append('body', this.formData.body);
+                    formData.append('mainkey', this.formData.mainkey);
+                    formData.append('secondkey', this.formData.secondkey);
                     this.callAxios('post', '/formSubmit', formData, 1);
                     break;
                 case 2:
@@ -84372,6 +84392,82 @@ var render = function() {
                               _vm.$set(
                                 _vm.formData,
                                 "meta_desc",
+                                $event.target.value
+                              )
+                            }
+                          }
+                        })
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col-md-6" }, [
+                      _c("div", { staticClass: "form-group" }, [
+                        _c("label", { attrs: { for: "main" } }, [
+                          _vm._v("Main Keyword")
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.formData.mainkey,
+                              expression: "formData.mainkey"
+                            }
+                          ],
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "text",
+                            placeholder: "Enter Main Keyword ..."
+                          },
+                          domProps: { value: _vm.formData.mainkey },
+                          on: {
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.$set(
+                                _vm.formData,
+                                "mainkey",
+                                $event.target.value
+                              )
+                            }
+                          }
+                        })
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-6" }, [
+                      _c("div", { staticClass: "form-group" }, [
+                        _c("label", { attrs: { for: "secondary" } }, [
+                          _vm._v("Secondary Keyword")
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.formData.secondkey,
+                              expression: "formData.secondkey"
+                            }
+                          ],
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "text",
+                            placeholder: "Enter Secondary Keyword ..."
+                          },
+                          domProps: { value: _vm.formData.secondkey },
+                          on: {
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.$set(
+                                _vm.formData,
+                                "secondkey",
                                 $event.target.value
                               )
                             }

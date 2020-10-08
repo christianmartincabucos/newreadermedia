@@ -166,6 +166,8 @@ class BlogsController extends Controller
         $data = Blog::create([
             'image' => ($request->image != "null" ? $path.$imageName : 'nrmedia-logo2.png'),
             'category_id' => $request->category,
+            'primary_key' => $request->mainkey,
+            'secondary_key' => $request->secondkey,
             'title' => $request->title,
             'meta_desc' => $request->meta_desc,
             'body'  => $request->body,

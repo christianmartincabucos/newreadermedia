@@ -30,6 +30,20 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
+                                        <label for="main">Main Keyword</label>
+                                        <input type="text" class="form-control" v-model="formData.mainkey"  placeholder="Enter Main Keyword ...">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="secondary">Secondary Keyword</label>
+                                        <input type="text" class="form-control" v-model="formData.secondkey"  placeholder="Enter Secondary Keyword ...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
                                         <label for="author">Author</label>
                                         <input type="text" class="form-control" name="author"  v-model="formData.author" placeholder="Enter author...">
                                     </div>
@@ -108,13 +122,15 @@ export default {
                 author:'',
                 category:0,
                 image:null,
+                mainkey: '',
+                secondkey: '',
                 body:'',
                 
             },
             myModel:'',
             theme: "modern",
-            myToolbar1: 'insertfile undo redo | formatselect | bold italic underline forecolor backcolor emoticons | alignleft aligncenter alignright alignjustify | hr bullist numlist outdent indent | print preview removeformat | link image table | fullscreen code preview',
-            myPlugins: "link image code preview imagetools table lists textcolor hr wordcount",
+            myToolbar1: 'insertfile undo redo | formatselect | bold italic underline forecolor backcolor emoticons | alignleft aligncenter alignright alignjustify | hr bullist numlist outdent indent | removeformat link image table | print fullscreen | code preview',
+            myPlugins: "link image code preview imagetools table lists textcolor hr wordcount| print fullscreen",
            
             myInit: {
               
@@ -178,6 +194,8 @@ export default {
             this.formData.category = 0;
             this.formData.image = '';
             this.formData.body = '';
+            this.formData.mainkey = '';
+            this.formData.secondkey = '';
             this.$refs.image.value=null;
 
         },
@@ -204,6 +222,8 @@ export default {
                     formData.append('author', this.formData.author);
                     formData.append('category', this.formData.category);
                     formData.append('body', this.formData.body);
+                    formData.append('mainkey', this.formData.mainkey);
+                    formData.append('secondkey', this.formData.secondkey);
                     this.callAxios('post', '/formSubmit', formData, 1)
                 break;
                 case 2:
