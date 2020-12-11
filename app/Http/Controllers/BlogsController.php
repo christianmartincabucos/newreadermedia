@@ -17,7 +17,9 @@ class BlogsController extends Controller
         // $this->middleware('auth');
         
     }
-
+    public function gallery(){
+        return view('blogs.photos.index');
+    } 
     public function adminmedia()
     {
         return view('admin.blogs.media.media');

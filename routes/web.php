@@ -19,7 +19,7 @@ Route::group(['middleware' => 'TwoFA'], function(){
     Route::get('/blogs/newsletters', 'BlogsController@newsletters')->name('blog-newsletters');
     Route::post('/blog/post', 'BlogsController@store')->name('blog.post');
     Route::get('/blogs/reviews', 'BlogsController@reviews')->name('reviews');
-    // Route::get('/blogs', 'BlogsController@index')->name('blogs');
+    Route::get('/blogs/photos', 'BlogsController@gallery')->name('photos.gallery');
     Route::get('/blog/new-reader-media/{blog}', 'BlogsController@show')->name('blog-show');
     Route::get('/blogs/new-reader-media', 'BlogsController@newreadermedia')->name('blog-nrm');
     Route::get('/blogs/media', 'BlogsController@media')->name('blog-media');
@@ -35,6 +35,7 @@ Route::group(['middleware' => 'is_admin'], function () {
         Route::get('/writingtips', 'BlogsController@adminnwritingtips')->name('admin.writingtips');
         Route::get('/reviews', 'BlogsController@adminreviews')->name('admin.reviews');
         Route::get('/status-reference', 'StatusRefenceController@index')->name('admin.status.reference');
+        Route::get('/upload-photos', 'UploadPhotosController@index')->name('admin.uplpad.photos');
         Route::post('/status-reference', 'StatusRefenceController@store');
         Route::post('/status-reference/{status}', 'StatusRefenceController@update');
         Route::post('/approve/{blog}', 'BlogsController@approve')->name('admin.approve');
@@ -44,6 +45,8 @@ Route::group(['middleware' => 'is_admin'], function () {
 });
 
 Route::post('media/{blog}', 'BlogsController@showadminmedia');
+Route::post('getAlbums', 'AlbumController@getAlbums');
+Route::post('savealbum', 'AlbumController@store');
 Route::post('getusers', 'AdminController@getusers');
 Route::post('getstatus', 'StatusRefenceController@getStatus');
 Route::get('getcategory', 'BlogsController@getCategory');

@@ -6,15 +6,17 @@
  */
 require('./bootstrap');
 // import 'ckeditor/ckeditor';
-
+import 'vue-masonry-gallery/vendor/VueMasonryGallery/VueMasonryGallery'
 window.Vue = require('vue');
 import $ from 'jquery'
 import VueIziToast from "vue-izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 import DataTable from "laravel-vue-datatable";
+import VueWMasonryGallery from "vue-masonry-gallery";
 
 Vue.use($);
 Vue.use(DataTable);
+Vue.use(VueWMasonryGallery);
 Vue.use(VueIziToast);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -23,6 +25,7 @@ Vue.use(VueIziToast);
  */
 
 Vue.component('form-blog', require('./components/CreateBlog.vue'));
+Vue.component('photos-gallery', require('./components/PhotosGallery.vue'));
 Vue.component('approve-blog', require('./components/ApprovePost.vue'));
 Vue.component('show-media', require('./components/ShowMedia.vue'));
 Vue.component("show-nmagazine", require("./components/ShowNmagazine.vue"));

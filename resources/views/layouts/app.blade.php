@@ -19,8 +19,9 @@
     <meta property="og:image" content="@yield('og-image', url('storage/nrmedia-tag.jpg'))">
     <link rel="canonical" href="@yield('canonical', URL::current() )" />
     <!-- Styles -->
-    <link href="{{ asset('public/css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('public/css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('masonry/style.css') }}" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     {{-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet"> --}}
@@ -52,6 +53,7 @@
                 padding-right: 5rem !important;
             }
         }
+
         .box-section a {
             color: #fff !important;
             text-shadow: none !important;
@@ -143,7 +145,9 @@
             height: 100%!important;
         } */
     </style>
+    @stack('css')
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125947986-1"></script>
+    <script async src="{{ asset('masonry/lighbox.js') }}"></script>
 
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -188,7 +192,7 @@
                 </button>
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <!-- New Reader Media -->
-                    <img src="{{ asset('public/storage/nrmedia.png')}}" style="width:70px;">
+                    <img src="{{ asset('storage/nrmedia.png')}}" style="width:70px;">
                 </a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
@@ -282,6 +286,7 @@
                                     <!-- <li class=" {{{ (Request::is(['blogs/*']) ? '' : '') }}}"><a href="{{ url('/blogs') }}"></a></li> -->
                                     <!-- <li class="{{{ (Request::is(['blogs/arts-and-culture']) ? '' : '') }}}"><a href="{{ url('/blogs/arts-and-culture') }}">Arts and Culture</a></li> -->
                                     <li class=" {{{ (Request::is(['blogs-newsletters*']) ? '' : '') }}}"><a href="{{ url('/blogs/newsletters') }}">Writing Tips</a></li>
+                                    <li class=" {{{ (Request::is(['photos.gallery*']) ? '' : '') }}}"><a href="{{ url('/blogs/photos') }}">Photos</a></li>
                                 </ul>
                             </li>
                             {{-- <li class="{{{ (Request::is(['partnership', 'partnership/*']) ? 'active' : '') }}}"><a href="{{ url('/partnership') }}" style="border-radius:0">Partnership</a></li> --}}
@@ -306,8 +311,9 @@
 
         <a href="#app" class="back-to-top" style="display: inline;color:#fff"><i class="fa fa-arrow-circle-up"></i></a>
     </div>
+    @stack('scripts')
 
-    <script src="{{ asset('public/tinymce/tinymce.js') }}"></script>
+    <script src="{{ asset('tinymce/tinymce.js') }}"></script>
     <!-- <script>
         var editor_config = {
             path_absolute: "{{ URL::to('/') }}/",
@@ -371,7 +377,7 @@
         tinymce.init(editor_config);
     </script> -->
     <!-- Scripts -->
-    <script src="{{ asset('public/js/app.js') }}"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     {!! Toastr::message() !!}
     <script>
@@ -433,8 +439,8 @@
 
         });
     </script>
-    <!-- <script src="{{ asset('public/vendor/unisharp/laravel-ckeditor/ckeditor.js') }}"></script>
-    <script src="{{ asset('public/vendor/unisharp/laravel-ckeditor/adapters/jquery.js') }}"></script> -->
+    <!-- <script src="{{ asset('vendor/unisharp/laravel-ckeditor/ckeditor.js') }}"></script>
+    <script src="{{ asset('vendor/unisharp/laravel-ckeditor/adapters/jquery.js') }}"></script> -->
 
     <script id="dsq-count-scr" src="//newreadermedia.disqus.com/count.js" async></script>
 </body>
