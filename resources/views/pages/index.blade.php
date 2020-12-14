@@ -27,7 +27,7 @@
                                                 @php
                                                 $url = $data->category_id == 1 ? 'public/storage/blogs/nmagazine/': ($data->category_id == 2 ? 'public/storage/blogs/media/':'public/storage/blogs/newsletter/')
                                                 @endphp
-                                                <!-- <img src="{{ asset('public/storage/blogs/nmagazine/') }}" style="position:relative;width:100%;overflow:hidden;margin-bottom:10px"> -->
+                                                <!-- <img src="{{ asset('public/public/storage/blogs/nmagazine/') }}" style="position:relative;width:100%;overflow:hidden;margin-bottom:10px"> -->
                                                 <img src="{{ asset($url.$data->image) }}" style="position:relative;width:100%;overflow:hidden;margin-bottom:10px">
                                                 <div class="layer" style="background-color: rgba(0, 0, 0, 0.0);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
                                                 </div>

@@ -22,17 +22,14 @@
                 <form>
                     <div class="form-group">
                         <label for="email">Album Name:</label>
-                        <select name="cars" class="custom-select">
-                            <option selected>Select Album</option>
-                            <option value="volvo">Volvo</option>
-                            <option value="fiat">Fiat</option>
-                            <option value="audi">Audi</option>
+                        <select name="cars" class="custom-select" v-model="album_id">
+                            <option selected disabled>Select Album Name</option>
+                            <option v-for="album in albums" :key="album.album_id" :value="album.album_id">{{ album.album_name }}</option>
                         </select>
                     </div>
                     <div class="form-group">
                         <label for="pwd">Select Photo(s)</label>
                         <div class="custom-file">
-                            <!-- <input accept="image/*" multiple="multiple" @change.prevent="previewMultiImage" id="fileUpload" type="file" hidden> -->
                             <input accept="image/*" multiple="multiple" @change.prevent="previewMultiImage" id="fileUpload"  type="file" class="custom-file-input">
                             <label class="custom-file-label" for="customFile">Choose files</label>
                         </div>
@@ -48,7 +45,7 @@
                             </div> 
                         </div>
                     </div>
-                    <button type="button" class="btn btn-primary">Submit</button>
+                    <button type="button" class="btn btn-primary" @click.prevent="uploadPhotos(1)">Submit</button>
                 </form>
             </div>
         </div>
@@ -161,6 +158,7 @@ export default {
     data() {
         return {
             albumname:'',
+            album_id:'',
             albums:[],
             preview: null,
             image: null,
@@ -169,18 +167,22 @@ export default {
             image_list: [],
         }
     },
-    computed:{
-        getAlbums(){
-            $this = this
-            axios.post('/getAlbums')
-            .then(({data}) =>{
-                $this.albums = data;
-                $this.post_status = this.postStatus[0].status_id
-
-            })
-        }
+    watch(){
+        this.getAlbums();
+    },
+    created() {
+        this.getAlbums();
     },
     methods: {
+        getAlbums(){    
+            var $this = this
+            axios.post('/getAlbums')    
+            .then(({data}) =>{
+                console.log(data)
+                $this.albums = data.data;
+
+            })
+        },
         deleteItem(e) {
             this.preview_list.splice(e, 1)
             this.image_list.splice(e, 1)
@@ -207,6 +209,7 @@ export default {
         },
         reset() {
             this.image = null;
+            this.album_id = '';
             this.preview = null;
             this.image_list = [];
             this.preview_list = [];
@@ -217,10 +220,38 @@ export default {
                     this.callAxios('post', '/savealbum', {'albumname':this.albumname}, 1)
                 break;
                 case 2:
-                    this.albumname = ''
-                    this.$toast.success(data.message, "Success", {timeout: 2000, position:'topRight'});
+                    this.$toast.success('Successfully created album', "Success", {timeout: 2000, position:'topRight'});
+                    this.getAlbums();
+
+                    this.albumname = '';
                     console.log(data)
                 break;
+                default:
+                    break;
+            }
+        },
+        uploadPhotos(e, data){
+            let form = new FormData;
+            switch (e) {
+                case 1:
+                    Object.entries(this.image_list).forEach(([key, image]) =>{
+                        form.append(`items[${key}]`, image);
+                        
+                    })
+                    form.append('album', this.album_id)
+                    this.callAxios('post', '/uploadphotos', form, 2)
+                break;
+                case 2:
+                    if(data.IsSuccess == true){
+                        this.reset()
+                        this.$toast.success('Successfully uploaded image(s)', "Success", {timeout: 2000, position:'topRight'});
+                    }    
+                    if(data.IsSuccess == false){
+                        this.$toast.error(data.data, "Error", {timeout: 2000, position:'topRight'});
+                    }    
+                    
+                break;
+            
                 default:
                     break;
             }
@@ -232,6 +263,9 @@ export default {
                     switch (e) {
                         case 1:
                             $this.saveAlbum(2, data)
+                        break;
+                        case 2:
+                            $this.uploadPhotos(2, data)
                         break;
                         default:
                             break;

@@ -8,7 +8,7 @@ class UploadPhotos extends Model
 {
     protected $table = 'album_images';
     protected $primaryKey = 'album_images_id';
-    protected $fillable = ['album_name'];
+    protected $fillable = ['image_path', 'album_id', 'uploaded_by'];
 
     public function album()
     {

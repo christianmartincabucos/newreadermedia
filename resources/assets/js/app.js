@@ -5,15 +5,13 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 require('./bootstrap');
-// import 'ckeditor/ckeditor';
-import 'vue-masonry-gallery/vendor/VueMasonryGallery/VueMasonryGallery'
+import 'lightbox2/dist/js/lightbox'
 window.Vue = require('vue');
 import $ from 'jquery'
 import VueIziToast from "vue-izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 import DataTable from "laravel-vue-datatable";
 import VueWMasonryGallery from "vue-masonry-gallery";
-
 Vue.use($);
 Vue.use(DataTable);
 Vue.use(VueWMasonryGallery);
@@ -25,6 +23,8 @@ Vue.use(VueIziToast);
  */
 
 Vue.component('form-blog', require('./components/CreateBlog.vue'));
+Vue.component('album', require('./components/_Album.vue'));
+Vue.component('album-gallery', require('./components/AlbumGallery.vue'));
 Vue.component('photos-gallery', require('./components/PhotosGallery.vue'));
 Vue.component('approve-blog', require('./components/ApprovePost.vue'));
 Vue.component('show-media', require('./components/ShowMedia.vue'));

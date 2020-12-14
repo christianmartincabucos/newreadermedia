@@ -26,7 +26,7 @@ class AlbumController extends Controller
     {
         $albums = Album::all();
         return response()->json([
-            'albums' => $albums
+            'data' => $albums
         ]); 
     }
 }

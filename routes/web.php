@@ -24,6 +24,7 @@ Route::group(['middleware' => 'TwoFA'], function(){
     Route::get('/blogs/new-reader-media', 'BlogsController@newreadermedia')->name('blog-nrm');
     Route::get('/blogs/media', 'BlogsController@media')->name('blog-media');
     Route::get('/blogs/media/{slug}', 'BlogsController@mediashow')->name('blog-media-show');
+    Route::get('/blogs/album/{id}', 'UploadPhotosController@show')->name('photos.show');
 });
 
 Route::group(['middleware' => 'is_admin'], function () {
@@ -45,6 +46,7 @@ Route::group(['middleware' => 'is_admin'], function () {
 });
 
 Route::post('media/{blog}', 'BlogsController@showadminmedia');
+Route::post('uploadphotos', 'UploadPhotosController@store');
 Route::post('getAlbums', 'AlbumController@getAlbums');
 Route::post('savealbum', 'AlbumController@store');
 Route::post('getusers', 'AdminController@getusers');
