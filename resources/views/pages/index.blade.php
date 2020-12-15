@@ -27,7 +27,7 @@
                                                 @php
                                                 $url = $data->category_id == 1 ? 'public/storage/blogs/nmagazine/': ($data->category_id == 2 ? 'public/storage/blogs/media/':'public/storage/blogs/newsletter/')
                                                 @endphp
-                                                <!-- <img src="{{ asset('storage/blogs/nmagazine/') }}" style="position:relative;width:100%;overflow:hidden;margin-bottom:10px"> -->
+                                                <!-- <img src="{{ asset('public/storage/blogs/nmagazine/') }}" style="position:relative;width:100%;overflow:hidden;margin-bottom:10px"> -->
                                                 <img src="{{ asset($url.$data->image) }}" style="position:relative;width:100%;overflow:hidden;margin-bottom:10px">
                                                 <div class="layer" style="background-color: rgba(0, 0, 0, 0.0);position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding:10px 15px">
                                                 </div>
@@ -353,10 +353,10 @@
                             <section class="box-section" style="border-top: 3px solid rgb(180, 40, 40);">
                                 <div class="box-article">
                                     <!-- <div class="embed-container" style="margin:0px!important" id="vid">
-                                        <iframe width="560"  height="315" src="{{ asset('storage/videos/The-Jewelers-(FINAL CUT).mp4')}}?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen ></iframe>
+                                        <iframe width="560"  height="315" src="{{ asset('public/storage/videos/The-Jewelers-(FINAL CUT).mp4')}}?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen ></iframe>
                                     </div> -->
                                     <video width="100%" autoplay controls controlsList="nodownload" id="vid" style="border-color: 0px;">
-                                        <source src="{{ asset('storage/videos/The-Jewelers-(FINAL CUT).mp4')}}?autoplay=1" type="video/mp4">
+                                        <source src="{{ asset('public/storage/videos/The-Jewelers-(FINAL CUT).mp4')}}?autoplay=1" type="video/mp4">
                                     Your browser does not support HTML video.
                                     </video>
                                     <h3 class="title">
