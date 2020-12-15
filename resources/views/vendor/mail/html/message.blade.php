@@ -1,7 +1,7 @@
 @component('mail::layout')
 
 @component('mail::panel')
-    <img src="{{ asset('public/public/storage/nrmedia1.png') }}">
+    <img src="{{ asset('public/storage/nrmedia1.png') }}">
 @endcomponent
 {{-- Body --}}
 {{ $slot }}
