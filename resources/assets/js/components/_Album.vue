@@ -4,9 +4,16 @@
         <div class="card pb-5">
 
             <!-- Card content -->
-            <div class="rowcard-body px-5 ">
+            <div class="rowcard-body px-5 " v-if="albums.length < 1">
                 <div class="col-md-3" v-for="album in albums" :key="album.album_id">
                     <button class="folder"><a :href="'album/'+album.album_id" >{{ album.album_name }}</a></button>
+                </div>
+            </div>
+            <div v-else>
+                <div class="text-center">
+                    <i class="fa fa-folder-open fa-5x" style="color: #FB8C00; "></i>
+                    <h3>It looks there's no album added! </h3>
+                    <p>Ask the admin to add album first. <i class="fa fa-frown-o"  style="color:#FB8C00;"></i></p>
                 </div>
             </div>
 

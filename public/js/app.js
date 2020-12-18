@@ -85675,6 +85675,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -85709,24 +85716,52 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", [
     _c("div", { staticClass: "card pb-5" }, [
-      _c(
-        "div",
-        { staticClass: "rowcard-body px-5 " },
-        _vm._l(_vm.albums, function(album) {
-          return _c("div", { key: album.album_id, staticClass: "col-md-3" }, [
-            _c("button", { staticClass: "folder" }, [
-              _c("a", { attrs: { href: "album/" + album.album_id } }, [
-                _vm._v(_vm._s(album.album_name))
-              ])
-            ])
-          ])
-        }),
-        0
-      )
+      _vm.albums.length < 1
+        ? _c(
+            "div",
+            { staticClass: "rowcard-body px-5 " },
+            _vm._l(_vm.albums, function(album) {
+              return _c(
+                "div",
+                { key: album.album_id, staticClass: "col-md-3" },
+                [
+                  _c("button", { staticClass: "folder" }, [
+                    _c("a", { attrs: { href: "album/" + album.album_id } }, [
+                      _vm._v(_vm._s(album.album_name))
+                    ])
+                  ])
+                ]
+              )
+            }),
+            0
+          )
+        : _c("div", [_vm._m(0)])
     ])
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "text-center" }, [
+      _c("i", {
+        staticClass: "fa fa-folder-open fa-5x",
+        staticStyle: { color: "#FB8C00" }
+      }),
+      _vm._v(" "),
+      _c("h3", [_vm._v("It looks there's no album added! ")]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v("Ask the admin to add album first. "),
+        _c("i", {
+          staticClass: "fa fa-frown-o",
+          staticStyle: { color: "#FB8C00" }
+        })
+      ])
+    ])
+  }
+]
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
@@ -85800,8 +85835,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -85835,32 +85868,29 @@ var render = function() {
     _c(
       "section",
       { staticClass: "box-section" },
-      [
-        _vm._v("\n        " + _vm._s(_vm.images) + "\n        "),
-        _vm._l(_vm.photos, function(photo) {
-          return _c(
-            "ul",
-            {
-              key: photo.album_images_id,
-              staticClass: "grid",
-              attrs: { id: "WS-LiSli" }
-            },
-            [
-              _c("li", [
-                _c("img", {
-                  attrs: {
-                    title: "Title 1",
-                    src: photo.image_path,
-                    "data-description":
-                      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
-                  }
-                })
-              ])
-            ]
-          )
-        })
-      ],
-      2
+      _vm._l(_vm.photos, function(photo) {
+        return _c(
+          "ul",
+          {
+            key: photo.album_images_id,
+            staticClass: "grid",
+            attrs: { id: "WS-LiSli" }
+          },
+          [
+            _c("li", [
+              _c("img", {
+                attrs: {
+                  title: "Title 1",
+                  src: photo.image_path,
+                  "data-description":
+                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+                }
+              })
+            ])
+          ]
+        )
+      }),
+      0
     )
   ])
 }
@@ -86217,7 +86247,8 @@ var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = [
 
                         form.append('items[' + key + ']', image);
                     });
-                    form.append('album', this.album_id);
+                    form.append('album_name', this.album_id.text);
+                    form.append('album', this.album_id.id);
                     this.callAxios('post', '/uploadphotos', form, 2);
                     break;
                 case 2:
@@ -86365,7 +86396,9 @@ var render = function() {
                     "option",
                     {
                       key: album.album_id,
-                      domProps: { value: album.album_id }
+                      domProps: {
+                        value: { id: album.album_id, text: album.album_name }
+                      }
                     },
                     [_vm._v(_vm._s(album.album_name))]
                   )

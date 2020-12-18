@@ -39,13 +39,20 @@ class UploadPhotosController extends Controller
     {
         try {
             foreach ($request->items as $file) {
-                $imagepath = Storage::disk('gallery')->put($request->album_name, $file);
-                $originname = $file->getClientOriginalName();
-                $baseUrl = URL::to('/')."/gallery/";
-                $images[] = $baseUrl.$imagepath;
+                // $imagepath = move_uploaded_file($file,public_path('gallery') ); /* Storage::disk('gallery')->put($request->album_name, $file); */
+                // $originname = $file->getClientOriginalName();
+                /* 
+                $imageName = time() . '.' . $request->image->getClientOriginalExtension();
+                $path = $request->category == 1 ? 'nmagazine': ($request->category == 2 ? 'media': ($request->category == 3 ? 'reviews': 'newsletter'));
+                $request->image->move(public_path('storage/blogs/'. $path), $path.$imageName); */
+                $imageName = time() . '.' . $file->getClientOriginalExtension();
+                $file->move(public_path('gallery/'. $request->album_name.'/'), $imageName);
+                
+                $baseUrl = URL::to('/').'/public//gallery/'.$request->album_name.'/';
+                $images[] = $baseUrl.$imageName;    
                 
                 $photos = UploadPhotos::create([
-                    'image_path' => $baseUrl.$imagepath,
+                    'image_path' => $baseUrl.$imageName,
                     'album_id'   => $request->album,
                     'uploaded_by'=> auth()->id() 
                 ]);

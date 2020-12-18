@@ -24,7 +24,7 @@
                         <label for="email">Album Name:</label>
                         <select name="cars" class="custom-select" v-model="album_id">
                             <option selected disabled>Select Album Name</option>
-                            <option v-for="album in albums" :key="album.album_id" :value="album.album_id">{{ album.album_name }}</option>
+                            <option v-for="album in albums" :key="album.album_id" :value="{ id: album.album_id, text: album.album_name }">{{ album.album_name }}</option>
                         </select>
                     </div>
                     <div class="form-group">
@@ -236,9 +236,9 @@ export default {
                 case 1:
                     Object.entries(this.image_list).forEach(([key, image]) =>{
                         form.append(`items[${key}]`, image);
-                        
                     })
-                    form.append('album', this.album_id)
+                    form.append('album_name', this.album_id.text);
+                    form.append('album', this.album_id.id)
                     this.callAxios('post', '/uploadphotos', form, 2)
                 break;
                 case 2:
