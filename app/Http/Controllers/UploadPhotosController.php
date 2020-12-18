@@ -45,7 +45,7 @@ class UploadPhotosController extends Controller
                 $imageName = time() . '.' . $request->image->getClientOriginalExtension();
                 $path = $request->category == 1 ? 'nmagazine': ($request->category == 2 ? 'media': ($request->category == 3 ? 'reviews': 'newsletter'));
                 $request->image->move(public_path('storage/blogs/'. $path), $path.$imageName); */
-                $imageName = time() . '.' . $file->getClientOriginalExtension();
+                $imageName = str_random(20).time() . '.' . $file->getClientOriginalExtension();
                 $file->move(public_path('gallery/'. $request->album_name.'/'), $imageName);
                 
                 $baseUrl = URL::to('/').'/public/gallery/'.$request->album_name.'/';
