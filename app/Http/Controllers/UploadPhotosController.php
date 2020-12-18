@@ -48,7 +48,7 @@ class UploadPhotosController extends Controller
                 $imageName = time() . '.' . $file->getClientOriginalExtension();
                 $file->move(public_path('gallery/'. $request->album_name.'/'), $imageName);
                 
-                $baseUrl = URL::to('/').'/public//gallery/'.$request->album_name.'/';
+                $baseUrl = URL::to('/').'/public/gallery/'.$request->album_name.'/';
                 $images[] = $baseUrl.$imageName;    
                 
                 $photos = UploadPhotos::create([
