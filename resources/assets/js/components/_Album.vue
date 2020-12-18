@@ -1,10 +1,9 @@
 <template>
     <div>
         <!-- Card -->
-        <div class="card pb-5">
-
+        <div class="card pb-5" v-cloak>
             <!-- Card content -->
-            <div class="rowcard-body px-5 " v-if="albums.length < 1">
+            <div class="row card-body px-5 " v-if="albums.length > 0">
                 <div class="col-md-3" v-for="album in albums" :key="album.album_id">
                     <button class="folder"><a :href="'album/'+album.album_id" >{{ album.album_name }}</a></button>
                 </div>

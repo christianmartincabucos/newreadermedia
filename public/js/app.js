@@ -85681,7 +85681,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -85716,10 +85715,10 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", [
     _c("div", { staticClass: "card pb-5" }, [
-      _vm.albums.length < 1
+      _vm.albums.length > 0
         ? _c(
             "div",
-            { staticClass: "rowcard-body px-5 " },
+            { staticClass: "row card-body px-5 " },
             _vm._l(_vm.albums, function(album) {
               return _c(
                 "div",
